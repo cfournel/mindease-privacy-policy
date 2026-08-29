@@ -25,8 +25,16 @@ from content import SITE, THEMES, LANGS
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ORIGIN = SITE["origin"]
 
-MOON = ('<svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
-        '<path d="M20.5 14.3A8.5 8.5 0 1 1 9.7 3.5a6.8 6.8 0 0 0 10.8 10.8Z" fill="currentColor"/>'
+# The Onira mark: a sun over calm waves. Kept in step with the launcher glyph in
+# app/src/main/res/drawable/ic_launcher_foreground.xml (same geometry, scaled from
+# that file's 108 viewport to 24) — if one changes, change both.
+MARK = ('<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+        'stroke-width="1.4" stroke-linecap="round" aria-hidden="true">'
+        '<circle cx="12" cy="9.8" r="2.7" fill="none"/>'
+        '<path d="M4.4 14.7C6.7 12.9 8.4 16.4 10.7 14.7C12.9 12.9 14.7 16.4 16.9 14.7'
+        'C17.8 14 18.7 14.2 19.6 14.7" fill="none"/>'
+        '<path d="M4.4 16.9C6.7 15.1 8.4 18.7 10.7 16.9C12.9 15.1 14.7 18.7 16.9 16.9'
+        'C17.8 16.2 18.7 16.4 19.6 16.9" fill="none" opacity=".7"/>'
         '</svg>')
 
 
@@ -108,7 +116,7 @@ def header(lang, alternates):
   <nav class="langs" aria-label="%s">%s</nav>
 </div></header>
 <main class="wrap">
-""" % (home_url(lang), MOON, esc(lang["ui"]["langs_label"]), langs)
+""" % (home_url(lang), MARK, esc(lang["ui"]["langs_label"]), langs)
 
 
 def footer(lang):
