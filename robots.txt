@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onirahypno.com/sitemap.xml
