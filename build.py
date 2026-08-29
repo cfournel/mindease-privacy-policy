@@ -28,7 +28,7 @@ ORIGIN = SITE["origin"]
 # The Onira mark: a sun over calm waves. Kept in step with the launcher glyph in
 # app/src/main/res/drawable/ic_launcher_foreground.xml (same geometry, scaled from
 # that file's 108 viewport to 24) — if one changes, change both.
-MARK = ('<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+MARK = ('<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
         'stroke-width="1.4" stroke-linecap="round" aria-hidden="true">'
         '<circle cx="12" cy="9.8" r="2.7" fill="none"/>'
         '<path d="M4.4 14.7C6.7 12.9 8.4 16.4 10.7 14.7C12.9 12.9 14.7 16.4 16.9 14.7'
@@ -102,7 +102,8 @@ def head(lang, title, desc, url, alternates, jsonld):
     }
 
 
-def header(lang, alternates):
+def header(lang, alternates, title):
+    """The wordmark spells out the page's own <title>, not just "Onira"."""
     langs = "".join(
         '<a href="%s" hreflang="%s" %s>%s</a>' % (
             path, code,
@@ -112,11 +113,11 @@ def header(lang, alternates):
         for code, path in alternates
     )
     return """<header class="site-head"><div class="wrap">
-  <a class="mark" href="%s">%s Onira</a>
+  <a class="mark" href="%s">%s<span>%s</span></a>
   <nav class="langs" aria-label="%s">%s</nav>
 </div></header>
 <main class="wrap">
-""" % (home_url(lang), MARK, esc(lang["ui"]["langs_label"]), langs)
+""" % (home_url(lang), MARK, esc(title), esc(lang["ui"]["langs_label"]), langs)
 
 
 def footer(lang):
@@ -226,7 +227,7 @@ def build_home(lang):
     body.append(theme_cards(lang))
     body.append(privacy_and_safety(lang))
     markup = (head(lang, h["title"], h["desc"], url, alts, [site_ld, app_ld])
-              + header(lang, alts) + "".join(body) + footer(lang))
+              + header(lang, alts, h["title"]) + "".join(body) + footer(lang))
     return write(url, markup)
 
 
@@ -275,7 +276,7 @@ def build_theme(lang, key):
     body.append("<h2>%s</h2>\n%s" % (esc(ui["related_title"]), theme_cards(lang, exclude=key)))
 
     markup = (head(lang, t["title"], t["desc"], url, alts, [crumbs_ld, faq_ld])
-              + header(lang, alts) + "".join(body) + footer(lang))
+              + header(lang, alts, t["title"]) + "".join(body) + footer(lang))
     return write(url, markup)
 
 
@@ -333,11 +334,12 @@ def build_privacy():
     en = LANGS[0]
     url = "/privacy/"
     alts = [(en["code"], url)]
-    markup = (head(en, "Privacy Policy — Onira",
+    title = "Privacy Policy — Onira"
+    markup = (head(en, title,
                    "Onira generates hypnosis sessions entirely on your device. This policy "
                    "explains what stays on your phone and what does not.",
                    url, alts, [])
-              + header(en, alternates_home()) + PRIVACY_BODY + footer(en))
+              + header(en, alternates_home(), title) + PRIVACY_BODY + footer(en))
     return write(url, markup)
 
 
@@ -346,9 +348,10 @@ def build_404():
     body = ("<h1>Page not found</h1>\n"
             '<p class="lede">That page does not exist. Start from the home page, or pick a '
             "theme below.</p>\n" + theme_cards(en))
-    markup = (head(en, "Page not found — Onira", "This page does not exist.",
+    title = "Page not found — Onira"
+    markup = (head(en, title, "This page does not exist.",
                    "/404.html", [(en["code"], "/")], [])
-              + header(en, alternates_home()) + body + footer(en))
+              + header(en, alternates_home(), title) + body + footer(en))
     path = os.path.join(ROOT, "404.html")
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(markup)
