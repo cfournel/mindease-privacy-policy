@@ -137,9 +137,18 @@ def footer(lang):
 
 
 def cta(lang):
+    """Official Google Play badge, localised, served from assets/badges/.
+
+    Google's badge guidelines require the artwork unmodified, so it is an <img>
+    rather than a redrawn button: no recolouring for dark mode, no cropping, and
+    the width/height attributes match the file's own aspect ratio.
+    """
     ui = lang["ui"]
-    return ('<p><a class="cta" href="%s" rel="noopener">%s</a></p>\n'
-            '<p class="muted">%s</p>\n' % (SITE["play"], esc(ui["cta"]), esc(ui["cta_note"])))
+    return ('<p><a class="cta" href="%s" rel="noopener">'
+            '<img src="/assets/badges/%s.png" width="216" height="84" '
+            'alt="%s" loading="lazy" decoding="async"></a></p>\n'
+            '<p class="muted">%s</p>\n'
+            % (SITE["play"], lang["code"], esc(ui["badge_alt"]), esc(ui["cta_note"])))
 
 
 def how_it_works(lang):

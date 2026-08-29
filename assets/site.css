@@ -71,12 +71,10 @@ li { margin: .45rem 0; }
   padding: .95rem 1.1rem; border-radius: 0 6px 6px 0; margin: 1.4rem 0;
 }
 .callout p { margin: 0; }
-.cta {
-  display: inline-block; margin: .4rem 0 0;
-  background: var(--sage); color: #fff; text-decoration: none;
-  padding: .7rem 1.2rem; border-radius: 8px; font-weight: 600;
-}
-@media (prefers-color-scheme: dark) { .cta { color: #141814; } }
+/* Official Google Play badge. The artwork must not be recoloured or cropped, so
+   the only styling here is sizing and the clear space the guidelines ask for. */
+.cta { display: inline-block; line-height: 0; margin: .4rem 0 0; }
+.cta img { display: block; width: 216px; height: auto; max-width: 100%; }
 .cards { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); margin: 1.25rem 0; padding: 0; list-style: none; }
 .cards li { margin: 0; }
 .cards a {

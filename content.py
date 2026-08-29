@@ -29,7 +29,7 @@ EN = {
     "ui": {
         "home_name": "Onira",
         "home_crumb": "Home",
-        "cta": "Get Onira on Google Play",
+        "badge_alt": "Get it on Google Play",
         "cta_note": "Free, no account, no subscription. One-time purchase to remove ads.",
         "how_title": "How Onira builds your session",
         "how_steps": [
@@ -380,7 +380,7 @@ FR = {
     "ui": {
         "home_name": "Onira",
         "home_crumb": "Accueil",
-        "cta": "Télécharger Onira sur Google Play",
+        "badge_alt": "Disponible sur Google Play",
         "cta_note": "Gratuit, sans compte, sans abonnement. Achat unique pour retirer les publicités.",
         "how_title": "Comment Onira compose votre séance",
         "how_steps": [
@@ -742,7 +742,7 @@ ES = {
     "ui": {
         "home_name": "Onira",
         "home_crumb": "Inicio",
-        "cta": "Descargar Onira en Google Play",
+        "badge_alt": "Disponible en Google Play",
         "cta_note": "Gratis, sin cuenta, sin suscripción. Compra única para quitar los anuncios.",
         "how_title": "Cómo compone Onira tu sesión",
         "how_steps": [

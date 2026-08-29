@@ -56,6 +56,16 @@ Keep the language list in step with the app's `SupportedLanguage`
 (`data/LocaleManager.kt` in the [mindease](https://github.com/cfournel/mindease)
 repo): a landing page in a language the app cannot narrate is a bad first impression.
 
+## The Google Play badge
+
+`assets/badges/{en,fr,es}.png` are Google's own localised "Get it on Google Play"
+badges, downloaded from `play.google.com/intl/<locale>/badges/`. Google's badge
+guidelines require the artwork unmodified — no recolouring, cropping or redrawing —
+so `build.py` emits it as an `<img>` and the CSS only sizes it. Adding a language
+means downloading that language's badge too; falling back to the English badge on a
+French page is worse than it looks, since the badge is the one element on the page a
+visitor recognises before reading anything.
+
 ## SEO notes
 
 - Each theme page targets one intent in one language ("self-hypnosis for anxiety",
