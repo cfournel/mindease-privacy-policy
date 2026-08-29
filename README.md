@@ -40,6 +40,33 @@ are committed — GitHub Pages serves them directly, there is no build on the Pa
 side, so **a change to `content.py` is not live until you rerun `build.py` and
 commit the result.**
 
+## Auditing
+
+```bash
+python3 audit.py                     # indexability checks, all languages, no deps
+python3 audit.py --lighthouse        # + Lighthouse on a sample: home + 1 theme per language
+python3 audit.py --lighthouse --all  # every page (~25 runs, several minutes)
+python3 audit.py --live              # against onirahypno.com instead of the build
+```
+
+Exits non-zero on a failure, so it can gate a deploy. Run it after every
+`build.py`.
+
+Two halves, because no single tool covers both. **Lighthouse** (Google's own,
+driven headless against the installed Chrome via `npx`) scores performance,
+accessibility, best practices and SEO per page — but its SEO category is generic:
+it checks that a page *can* be indexed, and has no idea that
+`/fr/hypnose/sommeil/` and `/hypnosis/sleep/` are the same page in two languages.
+**The static checks in `audit.py`** cover exactly that gap — reciprocal `hreflang`
+sets, canonicals pointing at their own language, sitemap coverage, duplicate
+titles or descriptions across languages, `<title>` and description lengths, one
+`<h1>`, valid JSON-LD, no broken internal links. That is the half that breaks
+silently: none of it is visible in a browser and all of it costs rankings.
+
+Warnings are advice; failures are wiring that is actually wrong. Baseline at the
+time of writing: 100 performance / 100 accessibility / 100 SEO on mobile
+emulation, every language, with no warnings.
+
 ## Adding a language
 
 1. Copy an existing language block in `content.py` (`EN`, `FR`, `ES`), translate it,
