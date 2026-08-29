@@ -177,12 +177,43 @@ def how_it_works(lang):
 
 
 def privacy_and_safety(lang):
+    """The privacy card gets its own full-width figure rather than a slot in the
+    gallery grid: it is a text poster, and its headline is unreadable at thumbnail
+    size. It is also the one capture that exists per language."""
     ui = lang["ui"]
-    return ("<h2>%s</h2>\n<p>%s</p>\n<p><a href=\"%s\">%s</a></p>\n"
+    _, alt, caption = next(i for i in ui["screens"] if i[0] == "privacy")
+    figure = ('<figure class="shot-wide">'
+              '<img src="/assets/screens/privacy-%s.webp" width="540" height="1200" '
+              'loading="lazy" decoding="async" alt="%s">'
+              '<figcaption>%s</figcaption></figure>\n'
+              % (lang["code"], esc(alt), esc(caption)))
+    return ("<h2>%s</h2>\n<p>%s</p>\n%s<p><a href=\"%s\">%s</a></p>\n"
             "<h2>%s</h2>\n<div class=\"callout\"><p>%s</p></div>\n" % (
-                esc(ui["privacy_title"]), esc(ui["privacy_body"]),
+                esc(ui["privacy_title"]), esc(ui["privacy_body"]), figure,
                 privacy_url(lang), esc(ui["privacy_link"]),
                 esc(ui["safety_title"]), esc(ui["safety_body"])))
+
+
+def screens(lang, only=None):
+    """Phone captures. The app's UI is only captured in French so far, so those
+    files are shared across languages; the privacy card, which is generated, has a
+    file per language. Alt text and captions are localised either way.
+
+    Every image is lazy-loaded and carries its intrinsic width/height, which is
+    what keeps CLS at 0 and the images out of the LCP measurement.
+    """
+    items = [i for i in lang["ui"]["screens"]
+             if i[0] != "privacy" and (only is None or i[0] in only)]
+    figures = []
+    for key, alt, caption in items:
+        name = "privacy-%s" % lang["code"] if key == "privacy" else key
+        figures.append(
+            '<li><figure>'
+            '<img src="/assets/screens/%s.webp" width="540" height="1200" '
+            'loading="lazy" decoding="async" alt="%s">'
+            '<figcaption>%s</figcaption></figure></li>'
+            % (name, esc(alt), esc(caption)))
+    return '<ul class="shots">%s</ul>\n' % "".join(figures)
 
 
 def theme_cards(lang, exclude=None):
@@ -241,6 +272,8 @@ def build_home(lang):
     body.append(cta(lang))
     body += ["<p>%s</p>\n" % esc(p) for p in h["intro"]]
     body.append(how_it_works(lang))
+    body.append("<h2>%s</h2>\n" % esc(lang["ui"]["screens_title"]))
+    body.append(screens(lang))
     body.append("<h2>%s</h2>\n" % esc(h["themes_title"]))
     body.append(theme_cards(lang))
     body.append(privacy_and_safety(lang))
@@ -286,6 +319,7 @@ def build_theme(lang, key):
         esc(ui["works_title"]), "".join("<li>%s</li>" % esc(w) for w in t["works_on"])))
     body.append(how_it_works(lang))
     body.append("<h2>%s</h2>\n<p>%s</p>\n" % (esc(ui["expect_title"]), esc(t["expect"])))
+    body.append(screens(lang, only={"session"}))
     body.append(cta(lang))
     body.append('<h2>%s</h2>\n<div class="faq">%s</div>\n' % (
         esc(ui["faq_title"]),

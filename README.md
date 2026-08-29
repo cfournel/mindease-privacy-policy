@@ -90,6 +90,29 @@ Keep the language list in step with the app's `SupportedLanguage`
 (`data/LocaleManager.kt` in the [mindease](https://github.com/cfournel/mindease)
 repo): a landing page in a language the app cannot narrate is a bad first impression.
 
+## Screenshots
+
+`assets/screens/*.webp` are the phone captures, downscaled to 540px wide and
+converted from the PNGs in the app repo's `marketing/assets/`. Regenerate with:
+
+```bash
+convert marketing/assets/screenshot_1_home.png -resize 540x1200 -quality 82 assets/screens/home.webp
+```
+
+Two things keep them from costing anything: every `<img>` carries its intrinsic
+`width`/`height`, so the grid never reflows as they load (CLS stays 0), and every
+one is `loading="lazy"`, so none of them is the LCP element.
+
+The app's UI is only captured in French so far, so those three files are shared
+across all languages — alt text and captions are localised, the pixels are not.
+Recapturing the app in English and Spanish would mean per-language files and a
+`screens` entry pointing at them, the way the privacy card already works.
+
+The privacy card is generated (`marketing/make_privacy_callout.py` in the app
+repo) and exists per language. It gets its own wide figure in the "private by
+design" section rather than a slot in the gallery: it is a text poster, and its
+headline is unreadable at thumbnail size.
+
 ## The Google Play badge
 
 `assets/badges/{en,fr,es}.png` are Google's own localised "Get it on Google Play"
