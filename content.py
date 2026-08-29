@@ -12,6 +12,12 @@ SITE = {
     "play": "https://play.google.com/store/apps/details?id=com.oytaub.mindease",
     "email": "charlesantoine.fournel@gmail.com",
     "updated": "2026-08-29",
+    # Google Search Console verification token for a "URL prefix" property — the
+    # content= value of the google-site-verification meta tag it hands you. Leave
+    # empty if the property is verified by DNS TXT record instead (preferred: a
+    # domain property covers every subdomain and both schemes, and cannot be lost
+    # by a template change).
+    "search_console": "",
 }
 
 # Order used for nav cards and the sitemap.

@@ -28,14 +28,26 @@ ORIGIN = SITE["origin"]
 # The Onira mark: a sun over calm waves. Kept in step with the launcher glyph in
 # app/src/main/res/drawable/ic_launcher_foreground.xml (same geometry, scaled from
 # that file's 108 viewport to 24) — if one changes, change both.
+# The Onira mark: a sun over calm waves. Kept in step with the launcher glyph in
+# app/src/main/res/drawable/ic_launcher_foreground.xml (same geometry, scaled from
+# that file's 108 viewport to 24) — if one changes, change both.
+MARK_SHAPES = ('<circle cx="12" cy="9.8" r="2.7" fill="none"/>'
+               '<path d="M4.4 14.7C6.7 12.9 8.4 16.4 10.7 14.7C12.9 12.9 14.7 16.4 16.9 14.7'
+               'C17.8 14 18.7 14.2 19.6 14.7" fill="none"/>'
+               '<path d="M4.4 16.9C6.7 15.1 8.4 18.7 10.7 16.9C12.9 15.1 14.7 18.7 16.9 16.9'
+               'C17.8 16.2 18.7 16.4 19.6 16.9" fill="none" opacity=".7"/>')
+
 MARK = ('<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-        'stroke-width="1.4" stroke-linecap="round" aria-hidden="true">'
-        '<circle cx="12" cy="9.8" r="2.7" fill="none"/>'
-        '<path d="M4.4 14.7C6.7 12.9 8.4 16.4 10.7 14.7C12.9 12.9 14.7 16.4 16.9 14.7'
-        'C17.8 14 18.7 14.2 19.6 14.7" fill="none"/>'
-        '<path d="M4.4 16.9C6.7 15.1 8.4 18.7 10.7 16.9C12.9 15.1 14.7 18.7 16.9 16.9'
-        'C17.8 16.2 18.7 16.4 19.6 16.9" fill="none" opacity=".7"/>'
+        'stroke-width="1.4" stroke-linecap="round" aria-hidden="true">' + MARK_SHAPES +
         '</svg>')
+
+# Same shapes on the app's sage background, for the browser tab. The PNG and .ico
+# fallbacks beside it are downscaled from the Play Store icon, so tab, home screen
+# and store listing all show one glyph.
+FAVICON_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">'
+               '<rect width="24" height="24" rx="5" fill="#5E7F6A"/>'
+               '<g stroke="#fff" stroke-width="1.4" stroke-linecap="round">'
+               + MARK_SHAPES + '</g></svg>')
 
 
 # ------------------------------------------------------------------ paths ----
@@ -77,6 +89,9 @@ def head(lang, title, desc, url, alternates, jsonld):
         '\n<script type="application/ld+json">%s</script>' % json.dumps(b, ensure_ascii=False)
         for b in jsonld
     )
+    if SITE.get("search_console"):
+        blocks = ('\n<meta name="google-site-verification" content="%s">'
+                  % esc(SITE["search_console"])) + blocks
     return """<!doctype html>
 <html lang="%(code)s">
 <head>
@@ -93,6 +108,9 @@ def head(lang, title, desc, url, alternates, jsonld):
 <meta property="og:url" content="%(origin)s%(url)s">
 <meta name="twitter:card" content="summary">
 <meta name="theme-color" content="#5E7F6A">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/site.css">%(blocks)s
 </head>
 <body>
@@ -409,9 +427,16 @@ def clean():
             shutil.rmtree(target)
 
 
+def build_favicon_svg():
+    path = os.path.join(ROOT, "assets", "favicon.svg")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(FAVICON_SVG + "\n")
+    return path
+
+
 def main():
     clean()
-    written = []
+    written = [build_favicon_svg()]
     for lang in LANGS:
         written.append(build_home(lang))
         for key in THEMES:
