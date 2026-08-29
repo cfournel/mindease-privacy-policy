@@ -58,9 +58,9 @@ EN = {
         "langs_label": "Language",
     },
     "home": {
-        "title": "Onira — Self-Hypnosis Sessions Written for You, On Your Phone",
-        "desc": "Onira writes a personal hypnosis session on your phone and narrates it aloud. "
-                "Sleep, anxiety, stress, confidence, focus, smoking, weight. Nothing leaves your device.",
+        "title": "Onira — Self-Hypnosis Sessions Written for You",
+        "desc": "Onira writes a personal hypnosis session on your phone and narrates it aloud — "
+                "sleep, anxiety, stress, confidence, focus. Nothing leaves your device.",
         "h1": "Self-hypnosis sessions written for you, on your phone",
         "lede": "Most hypnosis apps hand you the same recording as everyone else. Onira writes a "
                 "session for your situation, in the moment, with an AI model that runs entirely on "
@@ -81,7 +81,7 @@ EN = {
             "slug": "anxiety",
             "nav": "Anxiety",
             "card": "Loosen the grip of anxious thinking and settle the body.",
-            "title": "Self-Hypnosis for Anxiety — A Session Written for You | Onira",
+            "title": "Self-Hypnosis for Anxiety — Written for You | Onira",
             "desc": "Guided self-hypnosis for anxiety, written on your phone around what you are "
                     "actually anxious about, and narrated aloud. Private, free, no subscription.",
             "h1": "Self-hypnosis for anxiety",
@@ -409,10 +409,9 @@ FR = {
         "langs_label": "Langue",
     },
     "home": {
-        "title": "Onira — Séances d'auto-hypnose écrites pour vous, sur votre téléphone",
+        "title": "Onira — Séances d'auto-hypnose écrites pour vous",
         "desc": "Onira écrit une séance d'hypnose personnelle sur votre téléphone et la narre à voix "
-                "haute. Sommeil, anxiété, stress, confiance, concentration, tabac, poids. Rien ne quitte "
-                "votre appareil.",
+                "haute : sommeil, anxiété, stress, confiance. Rien ne sort de l'appareil.",
         "h1": "Des séances d'auto-hypnose écrites pour vous, sur votre téléphone",
         "lede": "La plupart des applications d'hypnose vous donnent le même enregistrement qu'à tout le "
                 "monde. Onira écrit une séance pour votre situation, sur le moment, avec un modèle d'IA "
@@ -434,9 +433,9 @@ FR = {
             "slug": "anxiete",
             "nav": "Anxiété",
             "card": "Desserrer l'étau des pensées anxieuses et apaiser le corps.",
-            "title": "Auto-hypnose pour l'anxiété — une séance écrite pour vous | Onira",
+            "title": "Auto-hypnose pour l'anxiété — écrite pour vous | Onira",
             "desc": "Auto-hypnose guidée contre l'anxiété, écrite sur votre téléphone à partir de ce qui "
-                    "vous inquiète vraiment, et narrée à voix haute. Privée, gratuite, sans abonnement.",
+                    "vous inquiète vraiment, et narrée à voix haute. Privée et gratuite.",
             "h1": "Auto-hypnose pour l'anxiété",
             "lede": "Une séance guidée qui ralentit d'abord le corps, puis travaille la pensée anxieuse "
                     "elle-même — écrite autour de ce qui vous inquiète réellement.",
@@ -478,9 +477,9 @@ FR = {
             "slug": "sommeil",
             "nav": "Sommeil",
             "card": "Calmer un esprit trop actif et laisser le sommeil venir.",
-            "title": "Auto-hypnose pour le sommeil — une séance écrite pour vous | Onira",
+            "title": "Auto-hypnose pour le sommeil — écrite pour vous | Onira",
             "desc": "Hypnose guidée pour dormir, écrite sur votre téléphone à partir de ce qui vous tient "
-                    "éveillé, et narrée à voix haute. Fonctionne hors ligne, rien ne quitte l'appareil.",
+                    "éveillé, et narrée à voix haute. Fonctionne entièrement hors ligne.",
             "h1": "Auto-hypnose pour le sommeil",
             "lede": "Une séance lente et peu stimulante, pour le moment où vous êtes au lit et où votre "
                     "esprit refuse de s'arrêter.",
@@ -519,9 +518,9 @@ FR = {
             "slug": "confiance-en-soi",
             "nav": "Confiance en soi",
             "card": "Répéter la version de vous-même que vous savez déjà être.",
-            "title": "Auto-hypnose pour la confiance en soi et l'estime de soi | Onira",
+            "title": "Auto-hypnose pour la confiance en soi | Onira",
             "desc": "Auto-hypnose guidée pour la confiance en soi, écrite sur votre téléphone à partir de "
-                    "la situation que vous affrontez, et narrée à voix haute. Privée et gratuite.",
+                    "la situation que vous affrontez, et narrée à voix haute. Gratuite.",
             "h1": "Auto-hypnose pour la confiance en soi",
             "lede": "Une séance fondée sur la répétition mentale : vous voir gérer la situation, avec "
                     "assez de détails pour que cela cesse d'être hypothétique.",
@@ -562,7 +561,7 @@ FR = {
             "slug": "stress",
             "nav": "Stress",
             "card": "Redescendre après une journée exigeante et récupérer vraiment.",
-            "title": "Auto-hypnose contre le stress — une séance écrite pour vous | Onira",
+            "title": "Auto-hypnose contre le stress — écrite pour vous | Onira",
             "desc": "Auto-hypnose guidée contre le stress, écrite sur votre téléphone à partir de la "
                     "pression que vous vivez, et narrée à voix haute. Hors ligne et confidentielle.",
             "h1": "Auto-hypnose contre le stress",
@@ -604,7 +603,7 @@ FR = {
             "slug": "arret-du-tabac",
             "nav": "Arrêt du tabac",
             "card": "Soutenir une décision déjà prise, envie après envie.",
-            "title": "Auto-hypnose pour arrêter de fumer — écrite pour vous | Onira",
+            "title": "Auto-hypnose pour arrêter de fumer | Onira",
             "desc": "Auto-hypnose guidée pour accompagner l'arrêt du tabac, écrite sur votre téléphone à "
                     "partir de vos déclencheurs et de vos raisons, et narrée à voix haute.",
             "h1": "Auto-hypnose pour arrêter de fumer",
@@ -689,7 +688,7 @@ FR = {
             "slug": "perte-de-poids",
             "nav": "Poids",
             "card": "Travailler les habitudes et le rapport à la nourriture, pas les règles.",
-            "title": "Auto-hypnose pour le poids et les habitudes alimentaires | Onira",
+            "title": "Auto-hypnose pour le poids et l'alimentation | Onira",
             "desc": "Auto-hypnose guidée pour le poids et les habitudes alimentaires, écrite sur votre "
                     "téléphone à partir de vos propres schémas, et narrée à voix haute.",
             "h1": "Auto-hypnose pour le poids et les habitudes alimentaires",
@@ -771,10 +770,9 @@ ES = {
         "langs_label": "Idioma",
     },
     "home": {
-        "title": "Onira — Sesiones de autohipnosis escritas para ti, en tu teléfono",
-        "desc": "Onira escribe una sesión de hipnosis personal en tu teléfono y la narra en voz alta. "
-                "Sueño, ansiedad, estrés, confianza, concentración, tabaco, peso. Nada sale de tu "
-                "dispositivo.",
+        "title": "Onira — Sesiones de autohipnosis escritas para ti",
+        "desc": "Onira escribe una sesión de hipnosis personal en tu teléfono y la narra en voz alta: "
+                "sueño, ansiedad, estrés, confianza. Nada sale de tu dispositivo.",
         "h1": "Sesiones de autohipnosis escritas para ti, en tu teléfono",
         "lede": "Casi todas las apps de hipnosis te dan la misma grabación que a los demás. Onira escribe "
                 "una sesión para tu situación, en el momento, con un modelo de IA que funciona "
@@ -795,7 +793,7 @@ ES = {
             "slug": "ansiedad",
             "nav": "Ansiedad",
             "card": "Aflojar el pensamiento ansioso y calmar el cuerpo.",
-            "title": "Autohipnosis para la ansiedad — una sesión escrita para ti | Onira",
+            "title": "Autohipnosis para la ansiedad — escrita para ti | Onira",
             "desc": "Autohipnosis guiada para la ansiedad, escrita en tu teléfono a partir de lo que "
                     "realmente te preocupa y narrada en voz alta. Privada, gratis, sin suscripción.",
             "h1": "Autohipnosis para la ansiedad",
@@ -839,7 +837,7 @@ ES = {
             "slug": "sueno",
             "nav": "Sueño",
             "card": "Bajar revoluciones y dejar que el sueño llegue solo.",
-            "title": "Autohipnosis para dormir — una sesión escrita para ti | Onira",
+            "title": "Autohipnosis para dormir — escrita para ti | Onira",
             "desc": "Hipnosis guiada para dormir, escrita en tu teléfono a partir de lo que te mantiene "
                     "despierto y narrada en voz alta. Funciona sin conexión.",
             "h1": "Autohipnosis para dormir",
