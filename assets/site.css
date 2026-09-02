@@ -56,6 +56,16 @@ a { color: var(--sage); }
   border: 1px solid var(--rule); border-radius: 999px; padding: .18rem .6rem;
 }
 .langs a[aria-current="true"] { color: var(--bg); background: var(--sage); border-color: var(--sage); }
+/* Language switcher and install button travel together, so the button keeps its
+   place beside them when the wordmark wraps onto its own line on a phone. */
+.head-end { display: flex; align-items: center; gap: .75rem; flex: none; }
+.get {
+  text-decoration: none; white-space: nowrap;
+  color: var(--bg); background: var(--sage); border: 1px solid var(--sage);
+  border-radius: 999px; padding: .3rem .85rem;
+  font-size: .82rem; font-weight: 600;
+}
+.get:hover, .get:focus-visible { filter: brightness(1.08); }
 
 /* Type */
 h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -.015em; margin: 0 0 .75rem; }

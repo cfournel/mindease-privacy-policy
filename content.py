@@ -61,6 +61,7 @@ EN = {
         "foot_tag": "Onira — hypnotherapy sessions written on your phone, by your phone.",
         "foot_privacy": "Privacy policy",
         "foot_play": "Google Play",
+        "head_cta": "Get the app",
         "langs_label": "Language",
         "screens_title": "Inside the app",
         # (asset key, alt text, caption). "privacy" resolves to the localised file.
@@ -424,6 +425,7 @@ FR = {
         "foot_tag": "Onira — des séances d'hypnose écrites sur votre téléphone, par votre téléphone.",
         "foot_privacy": "Confidentialité",
         "foot_play": "Google Play",
+        "head_cta": "Obtenir l'app",
         "langs_label": "Langue",
         "screens_title": "Dans l'application",
         "screens": [
@@ -796,6 +798,7 @@ ES = {
         "foot_tag": "Onira — sesiones de hipnosis escritas en tu teléfono, por tu teléfono.",
         "foot_privacy": "Privacidad",
         "foot_play": "Google Play",
+        "head_cta": "Obtener la app",
         "langs_label": "Idioma",
         "screens_title": "Dentro de la app",
         "screens": [

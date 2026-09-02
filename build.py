@@ -130,12 +130,21 @@ def header(lang, alternates, title):
         )
         for code, path in alternates
     )
+    # A text button, not the Play badge: Google's badge guidelines forbid resizing
+    # or redrawing the artwork, and the real badge already sits in the page body
+    # (see cta()). This one only has to be reachable without scrolling.
     return """<header class="site-head"><div class="wrap">
   <a class="mark" href="%s">%s<span>%s</span></a>
-  <nav class="langs" aria-label="%s">%s</nav>
+  <div class="head-end">
+    <nav class="langs" aria-label="%s">%s</nav>
+    <a class="get" href="%s" rel="noopener">%s</a>
+  </div>
 </div></header>
 <main class="wrap">
-""" % (home_url(lang), MARK, esc(title), esc(lang["ui"]["langs_label"]), langs)
+""" % (
+        home_url(lang), MARK, esc(title), esc(lang["ui"]["langs_label"]), langs,
+        SITE["play"], esc(lang["ui"]["head_cta"]),
+    )
 
 
 def footer(lang):
