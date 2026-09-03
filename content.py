@@ -20,8 +20,12 @@ SITE = {
     "search_console": "",
 }
 
-# Order used for nav cards and the sitemap.
-THEMES = ["anxiety", "sleep", "confidence", "stress", "smoking", "focus", "weight"]
+# Order used for nav cards and the sitemap. A theme does not have to exist in
+# every language: search demand differs by market, and a page is only worth
+# having where people actually look for it. `build.py` derives each theme's
+# hreflang set from the languages that publish it.
+THEMES = ["anxiety", "sleep", "confidence", "stress", "smoking", "focus", "weight",
+          "fear", "letting_go", "learning", "motivation", "habits"]
 
 # ---------------------------------------------------------------- English ----
 
@@ -382,6 +386,183 @@ EN = {
                 ("What if I have a history of disordered eating?",
                  "Please speak to a clinician rather than using a self-help tool. Onira is not designed "
                  "for eating disorders and will redirect content that heads that way."),
+            ],
+        },
+        "fear": {
+            "slug": "fear-and-phobias",
+            "nav": "Fear",
+            "card": "Face the flight, the drive or the height with a rehearsed calm.",
+            "title": "Self-Hypnosis for Fear and Phobias | Onira",
+            "desc": "Guided self-hypnosis for fear of flying, driving or heights, written on your "
+                    "phone around the situation you actually face. Private, free, offline.",
+            "h1": "Self-hypnosis for fear and phobias",
+            "lede": "A session built around one specific situation — the flight, the lift, the "
+                    "motorway — rehearsed slowly enough that your body stops treating it as an "
+                    "emergency.",
+            "why_title": "Why hypnosis helps with a specific fear",
+            "why": [
+                "A fear is rarely argued away. The reaction arrives before the reasoning does: the "
+                "chest tightens, the attention narrows, and the situation is over before any "
+                "sensible thought gets a turn. Guided hypnosis works on the part that moves first "
+                "— slow, paced language settles the body, and a settled body reacts differently to "
+                "the same trigger.",
+                "From there the session rehearses the scene rather than avoiding it. You walk "
+                "through the boarding gate, the roundabout, the glass lift, at a pace you can stay "
+                "calm through. Repeated rehearsal is what makes the real thing feel familiar "
+                "instead of sudden.",
+            ],
+            "works_on": [
+                "The physical spike — breath, chest, hands — slowed deliberately before the scene begins.",
+                "Avoidance itself: the situation gets smaller every time it is faced calmly in rehearsal.",
+                "An anchor to use in the moment: a breath, a word, a gesture that recalls the session.",
+                "Your own situation, if you type it in — a flight next month, a driving test, a tunnel.",
+            ],
+            "expect": "Sessions run roughly 15 to 30 minutes. You stay aware throughout, and the "
+                      "session always closes by bringing you back to full alertness — so it can be "
+                      "used the morning of the flight, not only the night before. Most people "
+                      "listen with headphones somewhere they will not be interrupted.",
+            "faq": [
+                ("Can self-hypnosis cure a phobia?",
+                 "No. Guided relaxation and mental rehearsal are a self-help tool, and many people "
+                 "find them useful for an everyday fear. A phobia that limits your life is treated "
+                 "by a clinician — often very effectively — and that is the conversation to have."),
+                ("Should I listen during the flight itself?",
+                 "You can, and many people do. The session ends by returning you to full alertness, "
+                 "so it is safe before or during — but never while driving, even a session about "
+                 "driving."),
+                ("Do I have to describe what scares me?",
+                 "No, the theme alone works. If you do describe it, the detail makes the rehearsal "
+                 "sharper — and it stays on your phone, because the model runs locally."),
+            ],
+        },
+        "learning": {
+            "slug": "memory-and-learning",
+            "nav": "Memory",
+            "card": "Settle into the state where studying actually sticks.",
+            "title": "Self-Hypnosis for Memory and Learning | Onira",
+            "desc": "Guided self-hypnosis for studying, recall and language learning, written on "
+                    "your phone around what you are learning. Free, private, works offline.",
+            "h1": "Self-hypnosis for memory and learning",
+            "lede": "A session for the state learning needs — unhurried, undistracted attention — "
+                    "written around the exam, the language or the material in front of you.",
+            "why_title": "Why hypnosis helps with studying",
+            "why": [
+                "Most study problems are not memory problems. They are state problems: half your "
+                "attention is on the deadline, the phone, or how badly it is going. What gets "
+                "encoded in that state is thin, which is why an hour of anxious revision can leave "
+                "almost nothing behind.",
+                "A guided session lowers the noise first, then puts the material into the quiet it "
+                "leaves. Recall is rehearsed the way it will actually be needed — the word arriving "
+                "in conversation, the answer arriving in the exam room — so the practice matches "
+                "the moment.",
+            ],
+            "works_on": [
+                "The restlessness that makes a study session collapse into ten minutes of scrolling.",
+                "Exam-day recall: rehearsing retrieval under calm conditions rather than only rereading.",
+                "Language learning — hearing yourself speak it without the self-consciousness.",
+                "A specific subject, if you type one in: an exam date, a vocabulary set, a viva.",
+            ],
+            "expect": "Sessions run roughly 15 to 30 minutes and close by bringing you back to "
+                      "full alertness — they are meant to be used before studying, not instead of "
+                      "it. A session recorded once can be replayed before every revision block.",
+            "faq": [
+                ("Will this let me learn while I sleep?",
+                 "No. Sleep-learning is not something hypnosis delivers, and Onira does not claim "
+                 "it. What a session can do is get you into a state where deliberate study works "
+                 "better — the studying still has to happen."),
+                ("Can it help me remember something I have forgotten?",
+                 "It can help with ordinary recall — a name, a list, where something was left. "
+                 "Hypnosis is not a reliable way to recover distant or distressing memories, and "
+                 "Onira is not written for that."),
+                ("Is it useful for language learning specifically?",
+                 "Yes — mainly for the confidence half. Sessions rehearse speaking without "
+                 "hesitation, which is usually what blocks a language you already partly know."),
+            ],
+        },
+        "motivation": {
+            "slug": "motivation-and-energy",
+            "nav": "Motivation",
+            "card": "Start the thing you have been circling for a week.",
+            "title": "Self-Hypnosis for Motivation and Energy | Onira",
+            "desc": "Guided self-hypnosis for procrastination, low energy and getting started, "
+                    "written on your phone around the task you are avoiding. Free and private.",
+            "h1": "Self-hypnosis for motivation and energy",
+            "lede": "A session about starting — the ten minutes before the task, where motivation "
+                    "is actually won or lost — written around the thing you keep putting off.",
+            "why_title": "Why hypnosis helps with procrastination",
+            "why": [
+                "Procrastination is rarely laziness. It is usually avoidance of a feeling attached "
+                "to the task — it will be boring, it will expose that you are behind, it will not "
+                "be good enough. The task gets postponed because the feeling does, and the feeling "
+                "grows every hour it waits.",
+                "A session addresses the feeling rather than lecturing you about the task. In a "
+                "settled state, starting is rehearsed in detail: sitting down, opening the file, "
+                "the first small action. Having rehearsed the start, the start is what stops "
+                "being the hard part.",
+            ],
+            "works_on": [
+                "The stall before beginning — rehearsed as a sequence you have already been through.",
+                "Flat, heavy energy in the afternoon, addressed as tension rather than as a lack of will.",
+                "The all-or-nothing story that a task must be done perfectly or not begun at all.",
+                "One specific task, if you type it in: the tax return, the gym, the message you owe.",
+            ],
+            "expect": "Sessions run roughly 15 to 30 minutes and end by bringing you back to full "
+                      "alertness, deliberately — this is a theme to use before the task, not at "
+                      "bedtime. Many people record one and replay it as a start-of-day ritual.",
+            "faq": [
+                ("Will one session make me productive?",
+                 "No, and any tool promising that is overselling. What a session reliably does is "
+                 "lower the resistance to starting once; doing that repeatedly is what changes a "
+                 "habit."),
+                ("Is low energy something hypnosis can fix?",
+                 "Relaxation can help with energy that is really tension or poor sleep. Persistent "
+                 "exhaustion is a medical question first — worth raising with a doctor rather than "
+                 "an app."),
+                ("Can I use it for exercise motivation?",
+                 "Yes. Rehearsing the start — putting the shoes on, leaving the flat — works better "
+                 "than rehearsing the workout itself, and that is how the session is written."),
+            ],
+        },
+        "habits": {
+            "slug": "nervous-habits",
+            "nav": "Nervous habits",
+            "card": "Interrupt nail biting or jaw clenching before it runs.",
+            "title": "Self-Hypnosis for Nervous Habits | Onira",
+            "desc": "Guided self-hypnosis for nail biting, teeth grinding and jaw clenching, "
+                    "written on your phone around your own trigger. Private, free, offline.",
+            "h1": "Self-hypnosis for nervous habits",
+            "lede": "A session for the habits that run without you — biting, clenching, picking — "
+                    "aimed at the moment just before they start.",
+            "why_title": "Why hypnosis helps with a nervous habit",
+            "why": [
+                "These habits are not decisions. By the time you notice, the hand is already at "
+                "your mouth and the jaw has already been tight for an hour. Willpower arrives too "
+                "late to be the tool, which is why deciding to stop so rarely works on its own.",
+                "What a session works on is the gap before the habit — the tension that precedes "
+                "it and the cue that sets it off. Rehearsing a different response to the same cue, "
+                "in a relaxed state, is how the automatic part gets something else to do.",
+            ],
+            "works_on": [
+                "The build-up: shoulders, jaw and hands released before the habit has a reason to start.",
+                "Cue awareness — noticing the moment of reaching, which is the only moment you can act in.",
+                "A replacement action rehearsed until it is as automatic as the one it replaces.",
+                "Your own trigger, if you type it in: meetings, driving, screens, a particular time of day.",
+            ],
+            "expect": "Sessions run roughly 15 to 30 minutes and close by returning you to full "
+                      "alertness. Habits respond to repetition rather than intensity, so a "
+                      "recorded session replayed daily does more than an occasional long one.",
+            "faq": [
+                ("Does this work for teeth grinding at night?",
+                 "It can help with the daytime clenching that feeds it. Night grinding is a dental "
+                 "matter — worn enamel and jaw pain need a dentist, and a guard often does more "
+                 "than any relaxation session."),
+                ("How long before a habit changes?",
+                 "Longer than one session. These are automatic patterns built over years, and the "
+                 "realistic expectation is gradual reduction with daily use, not a switch."),
+                ("Is skin picking or hair pulling the same thing?",
+                 "They can be more than a nervous habit, and when they cause real distress or "
+                 "damage they are worth taking to a clinician. Onira is a relaxation tool, not a "
+                 "treatment for them."),
             ],
         },
     },
@@ -757,6 +938,142 @@ FR = {
                  "pas conçu pour les TCA et redirige les contenus qui vont dans cette direction."),
             ],
         },
+        "fear": {
+            "slug": "peurs-et-phobies",
+            "nav": "Peurs et phobies",
+            "card": "Répéter au calme l'avion, la route ou le vide, avant d'y être.",
+            "title": "Auto-hypnose pour les peurs et les phobies | Onira",
+            "desc": "Hypnose guidée contre la peur de l'avion, de conduire ou du vide, écrite sur "
+                    "votre téléphone à partir de la situation que vous affrontez. Hors ligne.",
+            "h1": "Auto-hypnose pour les peurs et les phobies",
+            "lede": "Une séance construite autour d'une situation précise — le vol, l'ascenseur, "
+                    "l'autoroute — répétée assez lentement pour que le corps cesse d'y voir une "
+                    "urgence.",
+            "why_title": "Pourquoi l'hypnose aide face à une peur précise",
+            "why": [
+                "Une peur ne se raisonne pas. La réaction arrive avant le raisonnement : la poitrine "
+                "se serre, l'attention se rétrécit, et tout est terminé avant qu'une pensée sensée "
+                "ait eu son tour. L'hypnose guidée travaille sur ce qui bouge en premier — un rythme "
+                "lent et une respiration posée font sortir de l'état d'alerte, et un corps sorti de "
+                "l'alerte ne réagit plus pareil au même déclencheur.",
+                "Ensuite, la séance répète la scène au lieu de l'éviter. Vous passez la porte "
+                "d'embarquement, le rond-point, l'ascenseur vitré, à une vitesse où vous restez "
+                "calme. C'est cette répétition qui rend la situation réelle familière plutôt que "
+                "soudaine.",
+            ],
+            "works_on": [
+                "La montée physique — souffle, poitrine, mains — ralentie délibérément avant la scène.",
+                "L'évitement lui-même : la situation rétrécit à chaque fois qu'elle est traversée au calme.",
+                "Un point d'ancrage utilisable sur le moment : une respiration, un mot, un geste.",
+                "Votre situation, si vous l'écrivez : un vol le mois prochain, un examen de conduite, un tunnel.",
+            ],
+            "expect": "Les séances durent 15 à 30 minutes. Vous restez conscient du début à la fin, "
+                      "et la séance se termine toujours par un retour net à la vigilance — elle "
+                      "s'utilise donc le matin même du vol, pas seulement la veille. Au casque, "
+                      "dans un endroit où vous ne serez pas dérangé.",
+            "faq": [
+                ("L'auto-hypnose peut-elle guérir une phobie ?",
+                 "Non. La relaxation guidée et la répétition mentale sont un outil d'auto-assistance, "
+                 "utile pour une peur du quotidien. Une phobie qui limite votre vie se traite avec "
+                 "un professionnel, souvent très efficacement : c'est là qu'il faut aller."),
+                ("Puis-je écouter pendant le vol ?",
+                 "Oui, et beaucoup le font. La séance se termine par un retour à la vigilance, elle "
+                 "convient donc avant comme pendant — mais jamais en conduisant, même une séance "
+                 "sur la conduite."),
+                ("Dois-je décrire ce qui me fait peur ?",
+                 "Non, le thème suffit. Si vous le décrivez, la répétition devient plus précise — et "
+                 "cela reste sur votre téléphone, puisque le modèle tourne en local."),
+            ],
+        },
+        "letting_go": {
+            "slug": "oublier-une-personne",
+            "nav": "Tourner la page",
+            "card": "Cesser de rejouer la même conversation en boucle.",
+            "title": "Auto-hypnose pour oublier une personne | Onira",
+            "desc": "Hypnose guidée pour tourner la page après une rupture, écrite sur votre "
+                    "téléphone à partir de ce qui vous revient en tête. Gratuite et hors ligne.",
+            "h1": "Auto-hypnose pour tourner la page",
+            "lede": "Une séance pour le moment où la personne est partie mais où votre tête, elle, "
+                    "continue la conversation.",
+            "why_title": "Pourquoi l'hypnose aide à passer à autre chose",
+            "why": [
+                "Ce qui use, après une rupture, ce n'est pas le souvenir : c'est la répétition. La "
+                "même scène revient, la même phrase, la réponse que vous auriez dû donner. Chaque "
+                "passage rouvre la chose au lieu de la refermer, et décider d'arrêter d'y penser "
+                "revient à y penser encore.",
+                "Une séance guidée ne cherche pas à effacer quelqu'un — ce n'est pas possible, et "
+                "ce n'est pas le but. Elle réduit la charge attachée au souvenir : dans un état "
+                "calme, la scène est revisitée à distance, plus lentement, jusqu'à ce qu'elle "
+                "cesse de déclencher la même réaction. Le souvenir reste, l'aiguillon s'émousse.",
+            ],
+            "works_on": [
+                "La rumination du soir, quand la même conversation recommence dès que le silence tombe.",
+                "L'envie de vérifier son profil, traitée comme une habitude et pas comme une faiblesse.",
+                "Le retour de l'attention vers vous : ce que vous voulez, indépendamment de cette personne.",
+                "Une scène précise, si vous l'écrivez : le dernier échange, un lieu, une date qui revient.",
+            ],
+            "expect": "Les séances durent 15 à 30 minutes et se terminent par un retour à la "
+                      "vigilance. Les premières remuent parfois un peu — c'est normal quand le "
+                      "sujet est récent. Si une séance vous fait du bien, enregistrez-la et "
+                      "réécoutez la même : la répétition fait ici l'essentiel du travail.",
+            "faq": [
+                ("Est-ce que je vais oublier la personne ?",
+                 "Non, et ce serait une mauvaise promesse. Ce qui change, c'est l'intensité : le "
+                 "souvenir revient moins souvent et pèse moins lourd. C'est ce que fait le temps, "
+                 "en un peu plus dirigé."),
+                ("Et si c'est un deuil et pas une rupture ?",
+                 "Les séances peuvent apaiser les nuits difficiles, mais un deuil n'est pas une "
+                 "chose à traiter avec une application. Un accompagnement humain compte davantage, "
+                 "et Onira n'est pas écrit pour cela."),
+                ("Faut-il écrire son nom ?",
+                 "Ce n'est pas nécessaire, le thème suffit. Ce que vous écrivez ne quitte jamais "
+                 "le téléphone : la génération se fait en local, rien n'est envoyé."),
+            ],
+        },
+        "motivation": {
+            "slug": "motivation-et-energie",
+            "nav": "Motivation",
+            "card": "Commencer enfin ce que vous repoussez depuis une semaine.",
+            "title": "Auto-hypnose pour la motivation et l'énergie | Onira",
+            "desc": "Hypnose guidée contre la procrastination et les coups de fatigue, écrite sur "
+                    "votre téléphone à partir de la tâche que vous évitez. Gratuite, hors ligne.",
+            "h1": "Auto-hypnose pour la motivation et l'énergie",
+            "lede": "Une séance sur le fait de commencer — les dix minutes qui précèdent la tâche, "
+                    "là où la motivation se gagne ou se perd.",
+            "why_title": "Pourquoi l'hypnose aide contre la procrastination",
+            "why": [
+                "Repousser n'est presque jamais de la paresse. C'est l'évitement d'une sensation "
+                "attachée à la tâche : ce sera ennuyeux, cela va montrer le retard accumulé, ce ne "
+                "sera pas assez bien. La tâche est repoussée parce que la sensation l'est — et la "
+                "sensation grossit à chaque heure d'attente.",
+                "Une séance s'occupe de la sensation plutôt que de vous sermonner sur la tâche. "
+                "Dans un état calme, le démarrage est répété en détail : s'asseoir, ouvrir le "
+                "dossier, faire le premier petit geste. Une fois le démarrage répété, c'est lui "
+                "qui cesse d'être le passage difficile.",
+            ],
+            "works_on": [
+                "Le blocage d'avant le début, répété comme une séquence que vous avez déjà traversée.",
+                "L'énergie plate de l'après-midi, traitée comme une tension et non comme un manque de volonté.",
+                "Le tout ou rien : l'idée qu'une tâche doit être parfaite ou ne pas être commencée.",
+                "Une tâche précise, si vous l'écrivez : la déclaration, la salle de sport, le message en retard.",
+            ],
+            "expect": "Les séances durent 15 à 30 minutes et se terminent volontairement par un "
+                      "retour net à la vigilance : c'est un thème à utiliser avant la tâche, pas au "
+                      "coucher. Beaucoup en enregistrent une et la rejouent en début de journée.",
+            "faq": [
+                ("Une séance suffit-elle à me rendre productif ?",
+                 "Non, et un outil qui le promet exagère. Ce qu'une séance fait de façon fiable, "
+                 "c'est abaisser une fois la résistance à commencer ; c'est en le refaisant que "
+                 "l'habitude change."),
+                ("L'hypnose peut-elle régler un manque d'énergie ?",
+                 "La relaxation aide quand la fatigue est surtout de la tension ou du mauvais "
+                 "sommeil. Un épuisement qui dure est d'abord une question médicale, à poser à un "
+                 "médecin plutôt qu'à une application."),
+                ("Est-ce utile pour se motiver à faire du sport ?",
+                 "Oui. Répéter le démarrage — mettre les chaussures, sortir — fonctionne mieux que "
+                 "répéter la séance elle-même, et c'est ainsi que le thème est écrit."),
+            ],
+        },
     },
 }
 
@@ -1122,6 +1439,142 @@ ES = {
                 ("¿Y si tengo antecedentes de trastorno alimentario?",
                  "Habla con un profesional en lugar de usar una herramienta de autoayuda. Onira no está "
                  "diseñada para los TCA y redirige el contenido que va en esa dirección."),
+            ],
+        },
+        "fear": {
+            "slug": "miedos-y-fobias",
+            "nav": "Miedos y fobias",
+            "card": "Ensayar en calma el vuelo, la carretera o la altura.",
+            "title": "Autohipnosis para los miedos y las fobias | Onira",
+            "desc": "Hipnosis guiada para el miedo a volar, a conducir o a las alturas, escrita en "
+                    "tu móvil a partir de la situación que afrontas. Gratis y sin conexión.",
+            "h1": "Autohipnosis para los miedos y las fobias",
+            "lede": "Una sesión construida alrededor de una situación concreta — el vuelo, el "
+                    "ascensor, la autopista — ensayada lo bastante despacio como para que el "
+                    "cuerpo deje de tratarla como una emergencia.",
+            "why_title": "Por qué la hipnosis ayuda con un miedo concreto",
+            "why": [
+                "Un miedo no se razona. La reacción llega antes que el razonamiento: el pecho se "
+                "cierra, la atención se estrecha y todo ha terminado antes de que un pensamiento "
+                "sensato tenga su turno. La hipnosis guiada trabaja sobre lo que se mueve primero "
+                "— un ritmo lento y una respiración pausada sacan del estado de alerta, y un "
+                "cuerpo fuera de alerta no responde igual al mismo detonante.",
+                "Después, la sesión ensaya la escena en lugar de evitarla. Pasas la puerta de "
+                "embarque, la rotonda, el ascensor de cristal, a una velocidad en la que sigues "
+                "en calma. Ese ensayo repetido es lo que vuelve familiar la situación real, en "
+                "lugar de repentina.",
+            ],
+            "works_on": [
+                "La subida física — respiración, pecho, manos — frenada a propósito antes de la escena.",
+                "La evitación misma: la situación encoge cada vez que se atraviesa con calma en el ensayo.",
+                "Un ancla para el momento: una respiración, una palabra, un gesto que devuelve el estado.",
+                "Tu propia situación, si la escribes: un vuelo el mes que viene, un examen, un túnel.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos. Estás consciente en todo momento "
+                      "y la sesión termina siempre devolviéndote a la vigilia, así que sirve la "
+                      "misma mañana del vuelo, no solo la víspera. Con auriculares y en un sitio "
+                      "donde nadie te interrumpa.",
+            "faq": [
+                ("¿La autohipnosis cura una fobia?",
+                 "No. La relajación guiada y el ensayo mental son una herramienta de autoayuda, "
+                 "útil para un miedo cotidiano. Una fobia que limita tu vida la trata un "
+                 "profesional, a menudo con muy buenos resultados: ahí es donde hay que ir."),
+                ("¿Puedo escucharla durante el vuelo?",
+                 "Sí, y mucha gente lo hace. La sesión termina devolviéndote a la vigilia, así que "
+                 "vale antes y durante — pero nunca conduciendo, ni siquiera una sesión sobre "
+                 "conducir."),
+                ("¿Tengo que describir lo que me da miedo?",
+                 "No, basta con el tema. Si lo describes, el ensayo se vuelve más preciso — y se "
+                 "queda en tu móvil, porque el modelo funciona en local."),
+            ],
+        },
+        "letting_go": {
+            "slug": "olvidar-a-alguien",
+            "nav": "Pasar página",
+            "card": "Dejar de repetir la misma conversación en bucle.",
+            "title": "Autohipnosis para olvidar a alguien | Onira",
+            "desc": "Hipnosis guiada para pasar página tras una ruptura, escrita en tu móvil a "
+                    "partir de lo que se te repite en la cabeza. Gratis y sin conexión.",
+            "h1": "Autohipnosis para pasar página",
+            "lede": "Una sesión para cuando la persona ya se ha ido pero tu cabeza sigue "
+                    "manteniendo la conversación.",
+            "why_title": "Por qué la hipnosis ayuda a pasar página",
+            "why": [
+                "Lo que desgasta después de una ruptura no es el recuerdo: es la repetición. Vuelve "
+                "la misma escena, la misma frase, la respuesta que deberías haber dado. Cada "
+                "pasada reabre el asunto en lugar de cerrarlo, y decidir dejar de pensar en ello "
+                "es pensar en ello otra vez.",
+                "Una sesión guiada no intenta borrar a nadie — no se puede, y no es el objetivo. "
+                "Reduce la carga que lleva pegada el recuerdo: en un estado de calma, la escena se "
+                "revisita a distancia y más despacio, hasta que deja de disparar la misma "
+                "reacción. El recuerdo se queda; el aguijón se gasta.",
+            ],
+            "works_on": [
+                "La rumiación nocturna, cuando la conversación se reanuda en cuanto llega el silencio.",
+                "Las ganas de mirar su perfil, tratadas como un hábito y no como una debilidad.",
+                "Devolver la atención a ti: lo que quieres, al margen de esa persona.",
+                "Una escena concreta, si la escribes: el último mensaje, un lugar, una fecha que vuelve.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos y terminan devolviéndote a la "
+                      "vigilia. Las primeras a veces remueven un poco: es normal cuando el tema es "
+                      "reciente. Si una sesión te sienta bien, guárdala y repite la misma — aquí "
+                      "la repetición hace la mayor parte del trabajo.",
+            "faq": [
+                ("¿Voy a olvidar a esa persona?",
+                 "No, y sería una mala promesa. Lo que cambia es la intensidad: el recuerdo vuelve "
+                 "menos veces y pesa menos. Es lo que hace el tiempo, algo más dirigido."),
+                ("¿Y si es un duelo y no una ruptura?",
+                 "Las sesiones pueden calmar las noches difíciles, pero un duelo no es algo que "
+                 "resuelva una aplicación. El acompañamiento humano importa más, y Onira no está "
+                 "escrita para eso."),
+                ("¿Hace falta escribir su nombre?",
+                 "No hace falta, basta con el tema. Lo que escribas no sale nunca del móvil: la "
+                 "generación ocurre en local y no se envía nada."),
+            ],
+        },
+        "learning": {
+            "slug": "memoria-y-aprendizaje",
+            "nav": "Memoria",
+            "card": "Entrar en el estado en el que estudiar de verdad cuaja.",
+            "title": "Autohipnosis para la memoria y el estudio | Onira",
+            "desc": "Hipnosis guiada para estudiar, memorizar y aprender idiomas, escrita en tu "
+                    "móvil a partir de lo que estás aprendiendo. Gratis y sin conexión.",
+            "h1": "Autohipnosis para la memoria y el aprendizaje",
+            "lede": "Una sesión para el estado que el aprendizaje necesita — atención sin prisa y "
+                    "sin ruido — escrita alrededor del examen, el idioma o el material que tienes "
+                    "delante.",
+            "why_title": "Por qué la hipnosis ayuda a estudiar",
+            "why": [
+                "La mayoría de los problemas de estudio no son problemas de memoria, sino de "
+                "estado: media atención está en la fecha de entrega, en el móvil o en lo mal que "
+                "va la cosa. Lo que se graba en ese estado es fino, y por eso una hora de repaso "
+                "angustiado deja casi nada.",
+                "Una sesión guiada baja primero el ruido y coloca el material en el silencio que "
+                "queda. El recuerdo se ensaya tal como hará falta — la palabra que llega en una "
+                "conversación, la respuesta que llega en el examen — de modo que la práctica se "
+                "parezca al momento real.",
+            ],
+            "works_on": [
+                "La inquietud que convierte una sesión de estudio en diez minutos de pantalla.",
+                "La recuperación el día del examen: ensayar el recordar, no solo releer.",
+                "Aprender idiomas — oírte hablarlo sin la vergüenza que suele frenar.",
+                "Una materia concreta, si la escribes: una fecha de examen, una lista de vocabulario.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos y terminan devolviéndote a la "
+                      "vigilia: están pensadas para usarse antes de estudiar, no en lugar de "
+                      "estudiar. Una sesión guardada se puede repetir antes de cada bloque de repaso.",
+            "faq": [
+                ("¿Sirve para aprender mientras duermo?",
+                 "No. Aprender dormido no es algo que la hipnosis consiga, y Onira no lo promete. "
+                 "Lo que una sesión sí hace es dejarte en un estado donde el estudio deliberado "
+                 "cunde más — estudiar hay que estudiar igual."),
+                ("¿Puede ayudarme a recordar algo olvidado?",
+                 "Con el recuerdo cotidiano sí — un nombre, una lista, dónde quedó algo. La "
+                 "hipnosis no es una forma fiable de recuperar recuerdos lejanos o dolorosos, y "
+                 "Onira no está escrita para eso."),
+                ("¿Sirve para aprender inglés?",
+                 "Sobre todo para la parte de confianza. Las sesiones ensayan hablar sin frenarse, "
+                 "que es lo que suele bloquear un idioma que ya conoces a medias."),
             ],
         },
     },
