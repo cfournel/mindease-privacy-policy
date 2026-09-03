@@ -20,6 +20,7 @@ keep the two in sync when the policy changes.
 ```
 index.html                     English home
 hypnosis/<slug>/               English theme pages (anxiety, sleep, …)
+                               — not every theme exists in every language
 fr/  fr/hypnose/<slug>/        French
 es/  es/hipnosis/<slug>/       Spanish
 privacy/                       Privacy policy (English, shared by all languages)
@@ -65,9 +66,10 @@ accessibility, best practices and SEO per page — but its SEO category is gener
 it checks that a page *can* be indexed, and has no idea that
 `/fr/hypnose/sommeil/` and `/hypnosis/sleep/` are the same page in two languages.
 **The static checks in `audit.py`** cover exactly that gap — reciprocal `hreflang`
-sets, canonicals pointing at their own language, sitemap coverage, duplicate
-titles or descriptions across languages, `<title>` and description lengths, one
-`<h1>`, valid JSON-LD, no broken internal links. That is the half that breaks
+sets (over the languages that publish each theme), canonicals pointing at their
+own language, sitemap coverage, duplicate titles or descriptions across
+languages, `<title>` and description lengths, one `<h1>`, valid JSON-LD, no
+broken internal links. That is the half that breaks
 silently: none of it is visible in a browser and all of it costs rankings.
 
 Warnings are advice; failures are wiring that is actually wrong. Baseline at the
@@ -81,10 +83,18 @@ emulation, every language, with no warnings.
 2. Append it to `LANGS`.
 3. `python3 build.py`, commit, push.
 
-The `THEMES` keys must stay identical across languages — `hreflang` alternates are
-matched on those keys, not on slugs, so a missing key breaks the alternate set for
-that theme. The slugs themselves should be the natural search phrasing in each
-language, not transliterations of the English ones.
+`hreflang` alternates are matched on the `THEMES` keys, not on slugs, so a theme
+that exists in several languages must use the same key in each. The slugs
+themselves should be the natural search phrasing in each language, not
+transliterations of the English ones.
+
+A theme does **not** have to exist in every language. Search demand differs by
+market — "olvidar a tu ex" is a large Spanish intent and a marginal English one,
+"teeth grinding" is the reverse — and a page is only worth having where people
+look for it. Omit the key from a language's `themes` dict and `build.py` handles
+the rest: the theme's `hreflang` set covers exactly the languages that publish
+it, the sitemap lists only those, and the language switcher falls back to the
+home page for the others rather than linking to a page that does not exist.
 
 Keep the language list in step with the app's `SupportedLanguage`
 (`data/LocaleManager.kt` in the [mindease](https://github.com/cfournel/mindease)
@@ -184,3 +194,26 @@ technical identifier everywhere. Only user-visible text says Onira.
 Live: `onirahypno.com` resolves to GitHub Pages and the `CNAME` file in this repo
 pins the domain. Removing or changing `CNAME` takes the site — and the Play policy
 URL — offline.
+
+## Where the themes come from
+
+The theme list is not guesswork. `keywords.py` in the SEO monitor
+(`~/.hermes/seo-monitor/`) crosses two sources — the Search Console export in
+BigQuery, and Google's own autocomplete suggestions per market — classifies every
+query against the themes already published, and groups what is left into
+concepts scored per language. A concept becomes a page in a given language when
+the demand is there in *that* language.
+
+The five themes added in September 2026 came out of that run:
+
+| Theme | FR | ES | EN | Why |
+|---|---|---|---|---|
+| `fear` | ✓ | ✓ | ✓ | fear of flying / driving / heights, strong in all three markets |
+| `letting_go` | ✓ | ✓ | — | "olvidar a tu ex" is a top Spanish intent; English barely asks |
+| `learning` | — | ✓ | ✓ | language learning and exam recall; thin in French |
+| `motivation` | ✓ | — | ✓ | procrastination and energy; almost absent in Spanish |
+| `habits` | — | — | ✓ | nail biting, teeth grinding, jaw clenching |
+
+Clinical intents that scored well — chronic pain, trauma and healing — were
+deliberately left out. The site positions Onira as a relaxation tool, not a
+treatment, and those pages would put it on medical ground it does not belong on.

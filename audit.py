@@ -133,8 +133,12 @@ def expected_alternates(path):
             return {l["code"]: ("/" if not l["base"] else "/%s/" % l["base"])
                     for l in LANGS}
     for key in THEMES:
+        # A theme is not necessarily published in every language — the alternate
+        # set it must carry is exactly the languages that do publish it.
         urls = {}
         for l in LANGS:
+            if key not in l["themes"]:
+                continue
             prefix = "/%s" % l["base"] if l["base"] else ""
             urls[l["code"]] = "%s/%s/%s/" % (prefix, l["theme_dir"],
                                              l["themes"][key]["slug"])
@@ -324,8 +328,9 @@ def sample_paths(pages):
     for lang in LANGS:
         base = "/" if not lang["base"] else "/%s/" % lang["base"]
         prefix = "/%s" % lang["base"] if lang["base"] else ""
+        first = next(k for k in THEMES if k in lang["themes"])
         theme = "%s/%s/%s/" % (prefix, lang["theme_dir"],
-                               lang["themes"][THEMES[0]]["slug"])
+                               lang["themes"][first]["slug"])
         out += [p for p in (base, theme) if p in pages]
     return out
 

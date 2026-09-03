@@ -227,7 +227,7 @@ def screens(lang, only=None):
 
 def theme_cards(lang, exclude=None):
     lis = []
-    for key in THEMES:
+    for key in themes_for(lang):
         if key == exclude:
             continue
         t = lang["themes"][key]
@@ -246,12 +246,48 @@ def write(url, markup):
 
 # ------------------------------------------------------------------ pages ----
 
+def themes_for(lang):
+    """Theme keys published in this language, in the global THEMES order.
+
+    A theme need not exist in every language: search demand differs by market
+    (quitting an ex is a large Spanish intent and a marginal English one), and
+    a page is only worth having where people look for it.
+    """
+    return [key for key in THEMES if key in lang["themes"]]
+
+
+def langs_with(key):
+    """Languages that publish a given theme."""
+    return [l for l in LANGS if key in l["themes"]]
+
+
 def alternates_home():
     return [(l["code"], home_url(l)) for l in LANGS]
 
 
 def alternates_theme(key):
-    return [(l["code"], theme_url(l, key)) for l in LANGS]
+    """hreflang set of a theme — only the languages that actually publish it.
+
+    Pointing an alternate at a page that does not exist is worse than having no
+    alternate at all, so a theme published in two languages carries two.
+    """
+    return [(l["code"], theme_url(l, key)) for l in langs_with(key)]
+
+
+def nav_langs(key=None):
+    """Language switcher targets — always every language.
+
+    Distinct from the hreflang set: a reader on an English-only theme page must
+    still be able to reach the French site, so a language that lacks the theme
+    falls back to its home page.
+    """
+    out = []
+    for l in LANGS:
+        if key and key in l["themes"]:
+            out.append((l["code"], theme_url(l, key)))
+        else:
+            out.append((l["code"], home_url(l)))
+    return out
 
 
 def build_home(lang):
@@ -337,7 +373,7 @@ def build_theme(lang, key):
     body.append("<h2>%s</h2>\n%s" % (esc(ui["related_title"]), theme_cards(lang, exclude=key)))
 
     markup = (head(lang, t["title"], t["desc"], url, alts, [crumbs_ld, faq_ld])
-              + header(lang, alts, t["title"]) + "".join(body) + footer(lang))
+              + header(lang, nav_langs(key), t["title"]) + "".join(body) + footer(lang))
     return write(url, markup)
 
 
@@ -431,7 +467,7 @@ def build_sitemap():
     for lang in LANGS:
         entries.append((home_url(lang), alternates_home(), "1.0"))
     for key in THEMES:
-        for lang in LANGS:
+        for lang in langs_with(key):
             entries.append((theme_url(lang, key), alternates_theme(key), "0.8"))
     entries.append(("/privacy/", [("en", "/privacy/")], "0.3"))
 
@@ -489,7 +525,7 @@ def main():
     written = [build_favicon_svg()]
     for lang in LANGS:
         written.append(build_home(lang))
-        for key in THEMES:
+        for key in themes_for(lang):
             written.append(build_theme(lang, key))
     written.append(build_privacy())
     written.append(build_404())
