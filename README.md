@@ -2,8 +2,8 @@
 
 Static site for the Onira Android app, published via GitHub Pages at
 <https://onirahypno.com/>. It is both the app's public site and its SEO surface:
-one page per session theme, per language, plus the privacy policy used as the
-Play Console policy URL.
+one page per session theme and one per question people search, per language,
+plus the privacy policy used as the Play Console policy URL.
 
 ## The privacy policy lives at `/privacy/`
 
@@ -21,8 +21,9 @@ keep the two in sync when the policy changes.
 index.html                     English home
 hypnosis/<slug>/               English theme pages (anxiety, sleep, …)
                                — not every theme exists in every language
-fr/  fr/hypnose/<slug>/        French
-es/  es/hipnosis/<slug>/       Spanish
+guides/<slug>/                 English question pages (see "Themes and guides")
+fr/  fr/hypnose/<slug>/  fr/guides/<slug>/     French
+es/  es/hipnosis/<slug>/ es/guias/<slug>/      Spanish
 privacy/                       Privacy policy (English, shared by all languages)
 assets/site.css                The only stylesheet
 assets/badges/<lang>.png       Official Google Play badges
@@ -167,6 +168,11 @@ get a 404 and log a console error, which costs a Lighthouse best-practices point
 
 - Each theme page targets one intent in one language ("self-hypnosis for anxiety",
   "auto-hypnose pour le sommeil", …), with an FAQ block marked up as `FAQPage`.
+- Each guide page targets one *question* ("hypnosis vs meditation", "does
+  self-hypnosis work") and answers it above the first `<h2>`, in a callout, before
+  any argument for the app — that block is what a featured snippet is drawn from,
+  and `audit.py` fails the build if it drifts below the first heading. Guides carry
+  an `Article` node on top of the `FAQPage` and `BreadcrumbList` a theme page has.
 - Every page declares a canonical URL and a full reciprocal `hreflang` set including
   `x-default` (English). The sitemap repeats the alternates per URL.
 - After a content change, resubmit `sitemap.xml` in Google Search Console.
@@ -194,6 +200,26 @@ technical identifier everywhere. Only user-visible text says Onira.
 Live: `onirahypno.com` resolves to GitHub Pages and the `CNAME` file in this repo
 pins the domain. Removing or changing `CNAME` takes the site — and the Play policy
 URL — offline.
+
+## Themes and guides
+
+Two page types, aimed at two moments.
+
+A **theme** page answers "I want a session about X" — the reader already wants the
+thing the app does, and the page's job is to be the specific version of it. A
+**guide** page answers a question asked *before* anyone knows an app is involved:
+"how do I fall asleep with self-hypnosis", "hypnosis or meditation", "does this
+actually work". That traffic converts worse per visit and is several times larger,
+which is the trade the guides exist to make.
+
+The ordering constraint follows from that: a guide opens with the honest answer to
+its own question and only argues for Onira after the method. A question page that
+withholds its answer until the CTA is the shape searchers bounce off, and it is
+also the shape that never earns a snippet.
+
+Guides follow the same per-market rule as themes — `GUIDES` keys matched across
+languages, slugs written in each language's own phrasing, and a guide only
+published where the question is actually asked.
 
 ## Where the themes come from
 

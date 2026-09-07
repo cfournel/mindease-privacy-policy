@@ -41,7 +41,7 @@ import threading
 import xml.etree.ElementTree as ET
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
-from content import SITE, THEMES, LANGS
+from content import SITE, THEMES, GUIDES, LANGS
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ORIGIN = SITE["origin"]
@@ -144,6 +144,18 @@ def expected_alternates(path):
                                              l["themes"][key]["slug"])
         if path in urls.values():
             return urls
+    for key in GUIDES:
+        # Guides follow the theme rule: published per market, so the alternate
+        # set is exactly the languages that carry the guide.
+        urls = {}
+        for l in LANGS:
+            if key not in l["guides"]:
+                continue
+            prefix = "/%s" % l["base"] if l["base"] else ""
+            urls[l["code"]] = "%s/%s/%s/" % (prefix, l["guide_dir"],
+                                             l["guides"][key]["slug"])
+        if path in urls.values():
+            return urls
     return None  # privacy page: single-language, no alternate set expected
 
 
@@ -235,6 +247,74 @@ def check_pages(pages):
     for value, paths in descs.items():
         if len(paths) > 1:
             fail(paths[1], "meta description duplicated with %s" % paths[0])
+
+
+def check_orphans(pages):
+    """Built pages the generator would not produce again.
+
+    Every other check reads a file and validates it against itself. A page left
+    over from a renamed slug passes all of them — it has a canonical, a title and
+    reciprocal alternates — while no longer being linked from anywhere. Only a
+    comparison against content.py catches it.
+    """
+    expected = {"/privacy/"}
+    for lang in LANGS:
+        base = "/" if not lang["base"] else "/%s/" % lang["base"]
+        prefix = "/%s" % lang["base"] if lang["base"] else ""
+        expected.add(base)
+        for key in THEMES:
+            if key in lang["themes"]:
+                expected.add("%s/%s/%s/" % (prefix, lang["theme_dir"],
+                                            lang["themes"][key]["slug"]))
+        for key in GUIDES:
+            if key in lang["guides"]:
+                expected.add("%s/%s/%s/" % (prefix, lang["guide_dir"],
+                                            lang["guides"][key]["slug"]))
+    for path in sorted(set(pages) - expected):
+        fail(path, "built page no other page links to — stale slug? rerun build.py")
+    for path in sorted(expected - set(pages)):
+        fail(path, "declared in content.py but not built — rerun build.py")
+
+
+def check_guides(pages):
+    """Question pages carry two things a theme page does not.
+
+    The direct answer has to come before the first <h2>: a page that buries it
+    under the reasoning is not the page the query asked for, and it is the block
+    a featured snippet is drawn from. And an Article node is what tells a crawler
+    this is editorial rather than another product page.
+    """
+    for lang in LANGS:
+        prefix = "/%s" % lang["base"] if lang["base"] else ""
+        for key in GUIDES:
+            if key not in lang["guides"]:
+                continue
+            path = "%s/%s/%s/" % (prefix, lang["guide_dir"],
+                                  lang["guides"][key]["slug"])
+            f = pages.get(path)
+            if not f:
+                fail(path, "guide declared in content.py but not built")
+                continue
+            markup = open(f, encoding="utf-8").read()
+            main = markup.split("<main", 1)[-1]
+            answer = main.find('class="callout"')
+            first_h2 = main.find("<h2")
+            if answer == -1:
+                fail(path, "no answer block")
+            elif first_h2 != -1 and answer > first_h2:
+                fail(path, "answer block sits below the first <h2>")
+            types = []
+            for block in parse(markup)["jsonld"]:
+                try:
+                    types.append(json.loads(block).get("@type"))
+                except ValueError:
+                    pass  # check_pages already fails on invalid JSON-LD
+            for want in ("Article", "FAQPage", "BreadcrumbList"):
+                if want not in types:
+                    fail(path, "no %s JSON-LD" % want)
+            home = "/" if not lang["base"] else "/%s/" % lang["base"]
+            if home not in parse(markup)["hrefs"]:
+                fail(path, "does not link back to the %s home page" % lang["code"])
 
 
 def check_sitemap(pages):
@@ -331,7 +411,10 @@ def sample_paths(pages):
         first = next(k for k in THEMES if k in lang["themes"])
         theme = "%s/%s/%s/" % (prefix, lang["theme_dir"],
                                lang["themes"][first]["slug"])
-        out += [p for p in (base, theme) if p in pages]
+        guides = [k for k in GUIDES if k in lang["guides"]]
+        guide = "%s/%s/%s/" % (prefix, lang["guide_dir"],
+                               lang["guides"][guides[0]]["slug"]) if guides else None
+        out += [p for p in (base, theme, guide) if p and p in pages]
     return out
 
 
@@ -351,6 +434,8 @@ def main():
     print("%d pages built, %d languages\n" % (len(pages), len(LANGS)))
 
     check_pages(pages)
+    check_orphans(pages)
+    check_guides(pages)
     check_sitemap(pages)
 
     if args.lighthouse:

@@ -1580,4 +1580,807 @@ ES = {
     },
 }
 
+# ----------------------------------------------------------------- guides ----
+
+# Question pages, as opposed to the theme pages above. A theme page answers
+# "I want a session about X"; a guide answers a question someone types before
+# they know an app is the answer — which is where the traffic that has never
+# heard of Onira comes from. Each one ends on the app as the concrete answer
+# rather than opening with it.
+#
+# Same contract as THEMES: the keys are matched across languages to build the
+# hreflang set, the slugs are not, and a guide only has to exist where the
+# question is actually asked. The order here is the order of the nav cards and
+# the sitemap.
+GUIDES = ["fall_asleep", "vs_meditation", "does_it_work"]
+
+EN["guide_dir"] = "guides"
+EN["ui"]["guides_title"] = "Questions people ask"
+EN["ui"]["guides_crumb"] = "Guides"
+EN["ui"]["guide_answer_title"] = "The short answer"
+EN["ui"]["guide_cta_title"] = "Try it tonight"
+EN["guides"] = {
+    "fall_asleep": {
+        "slug": "how-to-fall-asleep-with-self-hypnosis",
+        "nav": "Falling asleep",
+        "card": "The method, step by step, for the nights your mind will not stop.",
+        "title": "How to Fall Asleep With Self-Hypnosis | Onira",
+        "desc": "A step-by-step self-hypnosis method for falling asleep when your mind "
+                "will not stop, and what to do when it does not work the first time.",
+        "h1": "How to fall asleep with self-hypnosis",
+        "lede": "A practical method for the nights when the body is tired and the mind "
+                "is still running — and an honest account of what it can and cannot do.",
+        "answer": "Lie down, let your eyes close, and count slowly down from twenty, "
+                  "letting each number land on an out-breath. At every number, release one "
+                  "specific place — jaw, shoulders, hands. When you reach one, picture a "
+                  "single quiet scene in as much sensory detail as you can hold, and stay "
+                  "in it. The point is not to force sleep; it is to give the mind one slow "
+                  "thing to do instead of the fast ones it had planned.",
+        "sections": [
+            ("Why counting yourself down works",
+             ["Insomnia at the start of the night is rarely a lack of tiredness. It is a "
+              "mind that has been given nothing to do and has filled the gap with tomorrow. "
+              "Self-hypnosis works on that gap directly: a slow, repetitive, mildly "
+              "demanding task occupies exactly the attention that would otherwise rehearse "
+              "an argument or a deadline.",
+              "The descending count matters more than the number. Counting down implies "
+              "arrival, and pairing each number with an out-breath slows the breath without "
+              "you having to think about breathing — which is the reliable way to shift the "
+              "nervous system out of its alert setting."],
+             []),
+            ("The method, step by step",
+             ["None of this needs training, and none of it needs you to believe in anything. "
+              "It needs about fifteen minutes and a willingness to start over when you drift "
+              "into thinking, which you will."],
+             ["Set the room up first: dark, cool, phone face down. Deciding to check "
+              "something halfway through is what ends most attempts.",
+              "Lie on your back, arms at your sides, and take three breaths that are longer "
+              "on the way out than on the way in.",
+              "Count down from twenty. Say each number silently as you breathe out.",
+              "With each number, release one place: jaw, tongue, shoulders, hands, stomach, "
+              "thighs, feet. Naming the place is what makes it let go.",
+              "At one, choose a scene — a beach at dusk, a path through trees, a room you "
+              "remember — and fill it in: the temperature, the sound, what is underfoot.",
+              "When you notice you have wandered off into thinking, do not start again from "
+              "twenty. Pick the count back up wherever you left it and carry on."]),
+            ("What to do when it does not work",
+             ["The first few attempts often end in a wandering mind, and that is not failure "
+              "— it is the ordinary way attention behaves before it settles into a habit. "
+              "What changes the outcome is repetition at the same time of night, so the "
+              "sequence itself becomes a cue.",
+              "If you are still awake after twenty minutes or so, get up, keep the lights "
+              "low, and do something dull until you feel sleepy. Lying in bed fighting for "
+              "sleep teaches the body that bed is a place where you fight for sleep, which "
+              "is the one association worth protecting against."],
+             []),
+            ("Where a written session helps",
+             ["Doing this from memory means part of you is running the instructions, which "
+              "is part of you staying awake. Being narrated to removes that job: you follow "
+              "a voice instead of remembering a list, which is why guided sessions work "
+              "better than self-directed ones for most people at bedtime.",
+              "Onira writes the session on your phone around what is actually keeping you "
+              "up — if you type that you cannot stop replaying a conversation, the imagery "
+              "and suggestions are built on that rather than on a generic beach. It runs "
+              "the model on the device, so nothing you type is uploaded, and it works with "
+              "the phone offline and face down."],
+             []),
+        ],
+        "faq": [
+            ("How long does it take to fall asleep this way?",
+             "Most people who get on with it fall asleep somewhere in the scene rather than "
+             "at the end of the count — often fifteen to twenty-five minutes in. If you are "
+             "regularly still awake at the end, treat it as a signal to look at the hours "
+             "before bed rather than to try harder in bed."),
+            ("Is self-hypnosis safe to do at night?",
+             "For ordinary sleeplessness, yes — it is guided relaxation, and the worst "
+             "common outcome is that you stay awake. It is not a treatment for a sleep "
+             "disorder, and persistent insomnia, sleep apnoea or insomnia alongside low "
+             "mood are matters for a doctor."),
+            ("Can I use a recording instead of doing it myself?",
+             "Yes, and for falling asleep a recording is usually better: it removes the job "
+             "of remembering the steps. What a recording cannot do is mention the thing you "
+             "are actually turning over, which is the gap a session written in the moment "
+             "fills."),
+        ],
+    },
+    "vs_meditation": {
+        "slug": "hypnosis-vs-meditation",
+        "nav": "Hypnosis vs meditation",
+        "card": "Two states, two aims — and which one fits what you want tonight.",
+        "title": "Hypnosis vs Meditation: Which to Use | Onira",
+        "desc": "What actually separates guided hypnosis from meditation, what each one is "
+                "good at, and how to pick between them for sleep, anxiety or a habit.",
+        "h1": "Hypnosis vs meditation",
+        "lede": "They look similar from the outside — eyes closed, slow breathing, a calm "
+                "voice — and they are aimed at two different things.",
+        "answer": "Meditation trains attention: you practise noticing where the mind went "
+                  "and bringing it back, without trying to change what you find. Hypnosis "
+                  "uses a relaxed, focused state to rehearse something specific — sleeping, "
+                  "staying steady in a meeting, not reaching for the cigarette. If you want "
+                  "a general skill, meditate. If you want to work on one named thing, a "
+                  "hypnosis session is the more direct tool.",
+        "sections": [
+            ("What is actually different",
+             ["Both practices produce a similar physiological state: slower breath, lower "
+              "arousal, narrowed attention. The difference is what you do once you are "
+              "there. A meditation keeps returning you to a neutral anchor and asks nothing "
+              "of the content of your mind. A hypnosis session takes that same settled "
+              "state and puts suggestion into it — images, phrases and rehearsals aimed at "
+              "one outcome.",
+              "That is also why hypnosis is structured and meditation often is not. A "
+              "session has an arc: an induction that settles you, a deepening, imagery, the "
+              "suggestions themselves, an anchor to carry out, and a deliberate return to "
+              "full alertness. Each part exists to make the next one land."],
+             []),
+            ("What each one is good at",
+             ["Neither is a better practice in the abstract. They answer different "
+              "questions, and the honest way to choose is by what you want in the next "
+              "month rather than by which sounds more serious."],
+             ["Meditation, for a general relationship with your own attention: less "
+              "reactivity, more room between a feeling and what you do about it. It pays "
+              "off slowly and broadly.",
+              "Hypnosis, for a specific target: falling asleep, a fear of flying next "
+              "Tuesday, the first ten minutes of a task you keep avoiding, a habit you want "
+              "interrupted.",
+              "Meditation asks you to stop chasing an outcome, which is exactly what makes "
+              "it frustrating when you have one.",
+              "Hypnosis is outcome-shaped, which makes it easier to start with and easier "
+              "to over-claim for — no session rewrites a life in one sitting."]),
+            ("Is one of them better evidenced?",
+             ["Both have a real literature and both have more enthusiasm than evidence "
+              "around the edges. Mindfulness-based programmes have the larger body of "
+              "clinical work, mostly around stress, relapse in depression and chronic pain. "
+              "Clinical hypnotherapy has a narrower but genuine record — pain and procedural "
+              "distress are its strongest showing, with useful results for sleep onset and "
+              "irritable bowel symptoms.",
+              "What neither has is a claim to replace treatment. Both are adjuncts: things "
+              "that help alongside care, not instead of it."],
+             []),
+            ("You do not have to pick one",
+             ["A common and sensible pattern is meditation as the daily practice and a "
+              "hypnosis session for the specific thing that is in the way this week. They "
+              "do not compete; if anything, regular meditation makes the settling stage of a "
+              "session faster.",
+              "Onira sits on the hypnosis side of this. You pick the target, add a sentence "
+              "about what is actually going on, and a model running on the phone writes a "
+              "session around it, then narrates it — no account, nothing uploaded, and "
+              "nothing generic about the imagery."],
+             []),
+        ],
+        "faq": [
+            ("Can hypnosis make me do something I do not want to do?",
+             "No. In a self-hypnosis session you stay aware and in control throughout, and "
+             "suggestions that cut against what you actually want simply do not take. "
+             "Stage hypnosis is entertainment built on volunteers who are willing to play "
+             "along, and it is not what a therapeutic session is."),
+            ("Which is better for anxiety?",
+             "For anxiety as a general pattern, meditation has the better long-run "
+             "evidence. For a specific anxious situation you can name — a flight, a "
+             "presentation, a scan — rehearsing it in a hypnosis session tends to be more "
+             "useful than sitting with the breath."),
+            ("Is guided meditation the same as hypnosis?",
+             "It is the nearest thing. A guided meditation that visualises an outcome and "
+             "repeats suggestions is doing most of what a hypnosis session does; the label "
+             "differs more than the practice."),
+        ],
+    },
+    "does_it_work": {
+        "slug": "does-self-hypnosis-work",
+        "nav": "Does it work?",
+        "card": "What the evidence supports, what it does not, and who it fails.",
+        "title": "Does Self-Hypnosis Actually Work? | Onira",
+        "desc": "An honest look at what self-hypnosis is good for, what the evidence "
+                "supports, who it does not work for, and how to tell it is doing something.",
+        "h1": "Does self-hypnosis actually work?",
+        "lede": "Yes, for some things, moderately, and not for everyone — which is a duller "
+                "answer than either side of the argument usually gives.",
+        "answer": "Self-hypnosis has decent evidence for sleep onset, for pain and "
+                  "procedural distress, and for lowering the arousal that feeds anxiety in a "
+                  "specific situation. It has weak evidence as a standalone treatment for "
+                  "anything clinical, and roughly one person in four responds poorly to "
+                  "suggestion regardless of technique. It is a real tool with a narrow "
+                  "remit, not a cure and not a placebo.",
+        "sections": [
+            ("What it is good at",
+             ["The clearest results are the least dramatic ones. Getting to sleep faster, "
+              "sitting through a dental or medical procedure with less distress, taking the "
+              "edge off pain, and going into one identifiable stressful event calmer than "
+              "you otherwise would. All of these share a shape: a short horizon and a "
+              "physical component that relaxation genuinely moves.",
+              "Habit work — smoking, nail biting, the first ten minutes of an avoided task "
+              "— sits a step below that. Sessions help, most reliably as one part of a plan "
+              "rather than as the plan, and the effect comes from repetition rather than "
+              "from any single session being powerful."],
+             []),
+            ("What it is not",
+             ["It is not therapy, and it does not treat depression, an anxiety disorder, "
+              "PTSD or an eating disorder. It is not a way to recover forgotten memories — "
+              "suggestion makes memory less reliable, not more. It is not a substitute for "
+              "medication anyone has prescribed you, and no honest session will suggest "
+              "otherwise.",
+              "It is also not fast. The marketing around hypnosis leans on single dramatic "
+              "sessions, and the actual pattern is a modest effect that accumulates with "
+              "daily use over weeks."],
+             []),
+            ("Why it does not work for everyone",
+             ["Suggestibility varies between people and is fairly stable over a lifetime. "
+              "Somewhere around one in four people respond weakly to hypnotic suggestion no "
+              "matter how it is delivered, and about the same proportion respond strongly. "
+              "That is not a matter of intelligence or willpower, and there is no technique "
+              "that reliably moves someone from one group to the other.",
+              "The practical consequence is worth knowing before you start: if three or "
+              "four honest attempts do nothing at all, the reasonable conclusion is that "
+              "this is not your tool, rather than that you did it wrong."],
+             []),
+            ("How to tell whether it is doing anything",
+             ["Judge it on the target, not on the experience. People expect to feel "
+              "hypnotised and mostly do not — the state is unremarkable from the inside, "
+              "closer to being absorbed in a book than to anything theatrical. Feeling "
+              "nothing special during a session says very little about whether it worked.",
+              "Pick one measurable thing and watch it for two weeks: minutes to fall "
+              "asleep, cigarettes in a day, whether you started the task. If the number "
+              "moves, keep going; if it does not, stop and try something else. That is a "
+              "better test than any account of how deep you went."],
+             []),
+            ("Where Onira fits",
+             ["Onira is a relaxation and self-hypnosis tool, and deliberately not sold as "
+              "more than that. What it changes about the usual offering is specificity: "
+              "instead of a recording made for everyone, a model on your phone writes the "
+              "session around the theme you pick and the sentence you type, then narrates "
+              "it aloud.",
+              "It runs entirely on the device, so what you type about your own life never "
+              "leaves the phone — there is no account and no server that could read it. If "
+              "you are in real distress, that is a conversation to have with a person, and "
+              "no app is the right answer to it."],
+             []),
+        ],
+        "faq": [
+            ("Is self-hypnosis just the placebo effect?",
+             "Expectation is a real part of it, as it is in most of medicine. But hypnotic "
+             "responding shows up in ways placebo alone does not predict — it varies by "
+             "trait suggestibility, and imaging studies find state changes that track it. "
+             "The fair summary is a modest genuine effect with an expectation component on "
+             "top."),
+            ("How often should I do a session?",
+             "Daily, for two or three weeks, if you are working on a habit or on sleep. The "
+             "effect is cumulative, and the single biggest predictor of getting anything "
+             "out of it is having actually done it repeatedly."),
+            ("Can I get stuck in hypnosis?",
+             "No. Without a voice guiding you, the state simply fades or turns into sleep. "
+             "A session that ends properly includes a deliberate return to full alertness "
+             "for comfort, not for safety."),
+        ],
+    },
+}
+
+FR["guide_dir"] = "guides"
+FR["ui"]["guides_title"] = "Les questions qu'on se pose"
+FR["ui"]["guides_crumb"] = "Guides"
+FR["ui"]["guide_answer_title"] = "En bref"
+FR["ui"]["guide_cta_title"] = "À essayer ce soir"
+FR["guides"] = {
+    "fall_asleep": {
+        "slug": "s-endormir-avec-l-auto-hypnose",
+        "nav": "S'endormir",
+        "card": "La méthode, étape par étape, pour les nuits où la tête ne s'arrête pas.",
+        "title": "S'endormir avec l'auto-hypnose : la méthode | Onira",
+        "desc": "Une méthode d'auto-hypnose étape par étape pour s'endormir quand la tête "
+                "tourne, et quoi faire quand ça ne marche pas du premier coup.",
+        "h1": "S'endormir avec l'auto-hypnose",
+        "lede": "Une méthode concrète pour les nuits où le corps est fatigué et l'esprit "
+                "continue de tourner — et ce qu'elle peut, ou non, y changer.",
+        "answer": "Allongez-vous, laissez les yeux se fermer et comptez lentement de vingt "
+                  "à un, chaque chiffre posé sur une expiration. À chaque chiffre, relâchez "
+                  "un endroit précis : la mâchoire, les épaules, les mains. Arrivé à un, "
+                  "installez une scène calme et remplissez-la de détails sensoriels. Il ne "
+                  "s'agit pas de forcer le sommeil, mais de donner à l'esprit une chose "
+                  "lente à faire à la place de celles, rapides, qu'il avait prévues.",
+        "sections": [
+            ("Pourquoi le compte à rebours fonctionne",
+             ["L'insomnie de début de nuit vient rarement d'un manque de fatigue. C'est un "
+              "esprit à qui l'on ne donne rien à faire et qui remplit le vide avec demain. "
+              "L'auto-hypnose s'adresse directement à ce vide : une tâche lente, répétitive "
+              "et juste assez exigeante occupe exactement l'attention qui, sinon, rejouerait "
+              "une conversation ou une échéance.",
+              "C'est la descente qui compte, plus que le nombre choisi. Compter à rebours "
+              "suppose une arrivée, et associer chaque chiffre à une expiration ralentit le "
+              "souffle sans avoir à y penser — c'est le levier le plus fiable pour faire "
+              "sortir le système nerveux de son réglage de vigilance."],
+             []),
+            ("La méthode, étape par étape",
+             ["Rien là-dedans ne demande d'apprentissage, et rien ne demande d'y croire. Il "
+              "faut environ un quart d'heure et l'acceptation de recommencer quand l'esprit "
+              "part ailleurs, ce qui arrivera."],
+             ["Préparez la pièce d'abord : sombre, fraîche, téléphone retourné. Décider de "
+              "vérifier quelque chose en cours de route est ce qui interrompt la plupart des "
+              "tentatives.",
+              "Allongez-vous sur le dos, bras le long du corps, et prenez trois respirations "
+              "plus longues à l'expiration qu'à l'inspiration.",
+              "Comptez de vingt à un, chaque chiffre prononcé intérieurement sur l'expiration.",
+              "À chaque chiffre, relâchez un endroit : mâchoire, langue, épaules, mains, "
+              "ventre, cuisses, pieds. C'est le fait de nommer l'endroit qui le fait lâcher.",
+              "À un, choisissez une scène — une plage au crépuscule, un chemin sous les "
+              "arbres, une pièce dont vous vous souvenez — et remplissez-la : la "
+              "température, le son, ce qu'il y a sous les pieds.",
+              "Quand vous vous apercevez que vous êtes reparti dans vos pensées, ne "
+              "recommencez pas à vingt. Reprenez le compte là où vous l'aviez laissé."]),
+            ("Quand ça ne marche pas",
+             ["Les premières tentatives finissent souvent en esprit qui vagabonde, et ce "
+              "n'est pas un échec : c'est la façon ordinaire dont l'attention se comporte "
+              "avant que la séquence devienne une habitude. Ce qui change le résultat, c'est "
+              "la répétition à la même heure, jusqu'à ce que la séquence elle-même serve de "
+              "signal.",
+              "Si vous êtes encore éveillé au bout d'une vingtaine de minutes, levez-vous, "
+              "gardez une lumière basse et faites quelque chose d'ennuyeux jusqu'à ce que le "
+              "sommeil revienne. Rester au lit à lutter apprend au corps que le lit est un "
+              "endroit où l'on lutte — c'est la seule association qu'il vaille vraiment la "
+              "peine de protéger."],
+             []),
+            ("Ce qu'apporte une séance écrite",
+             ["Le faire de mémoire, c'est laisser une partie de soi dérouler les consignes — "
+              "donc une partie de soi éveillée. Être guidé par une voix supprime ce travail : "
+              "on suit au lieu de se souvenir, et c'est pourquoi les séances guidées "
+              "fonctionnent mieux, au coucher, que l'auto-hypnose menée de tête.",
+              "Onira écrit la séance sur votre téléphone à partir de ce qui vous empêche "
+              "réellement de dormir : si vous tapez que vous rejouez une conversation en "
+              "boucle, les images et les suggestions se construisent là-dessus plutôt que "
+              "sur une plage générique. Le modèle tourne sur l'appareil, donc rien de ce que "
+              "vous écrivez n'est envoyé, et tout fonctionne hors ligne, téléphone retourné."],
+             []),
+        ],
+        "faq": [
+            ("En combien de temps s'endort-on avec cette méthode ?",
+             "La plupart de ceux à qui elle convient s'endorment dans la scène plutôt qu'à "
+             "la fin du compte, souvent entre quinze et vingt-cinq minutes. Si vous êtes "
+             "régulièrement encore éveillé à la fin, c'est un signal à regarder du côté des "
+             "heures qui précèdent le coucher, pas une raison d'insister au lit."),
+            ("L'auto-hypnose est-elle sans risque le soir ?",
+             "Pour un mauvais sommeil ordinaire, oui : c'est de la relaxation guidée, et "
+             "l'issue la plus désagréable est de rester éveillé. Ce n'est pas un traitement "
+             "d'un trouble du sommeil : une insomnie persistante, une apnée ou une insomnie "
+             "avec humeur basse relèvent d'un médecin."),
+            ("Puis-je utiliser un enregistrement plutôt que le faire moi-même ?",
+             "Oui, et pour s'endormir un enregistrement vaut généralement mieux : il "
+             "supprime le travail de mémorisation. Ce qu'un enregistrement ne peut pas "
+             "faire, c'est nommer ce qui vous préoccupe ce soir-là — c'est exactement le "
+             "vide que comble une séance écrite sur le moment."),
+        ],
+    },
+    "vs_meditation": {
+        "slug": "hypnose-ou-meditation",
+        "nav": "Hypnose ou méditation",
+        "card": "Deux états, deux objectifs — et lequel correspond à ce que vous cherchez.",
+        "title": "Hypnose ou méditation : laquelle choisir ? | Onira",
+        "desc": "Ce qui sépare vraiment l'hypnose guidée de la méditation, ce que chacune "
+                "sait faire, et comment choisir pour le sommeil, l'anxiété ou une habitude.",
+        "h1": "Hypnose ou méditation",
+        "lede": "De l'extérieur, elles se ressemblent — yeux fermés, souffle lent, une voix "
+                "calme — et elles ne visent pas la même chose.",
+        "answer": "La méditation entraîne l'attention : on s'exerce à remarquer où l'esprit "
+                  "est parti et à revenir, sans chercher à changer ce qu'on trouve. "
+                  "L'hypnose utilise un état détendu et focalisé pour répéter quelque chose "
+                  "de précis : dormir, rester posé en réunion, ne pas tendre la main vers la "
+                  "cigarette. Pour une compétence générale, méditez. Pour travailler une "
+                  "chose nommée, une séance d'hypnose est l'outil le plus direct.",
+        "sections": [
+            ("Ce qui change vraiment",
+             ["Les deux pratiques produisent un état physiologique voisin : souffle ralenti, "
+              "vigilance abaissée, attention resserrée. La différence est ce qu'on y fait "
+              "une fois arrivé. Une méditation vous ramène sans cesse à un point neutre et "
+              "ne demande rien au contenu de l'esprit. Une séance d'hypnose prend ce même "
+              "état posé et y introduit de la suggestion : des images, des formulations et "
+              "des répétitions orientées vers un résultat.",
+              "C'est aussi pourquoi l'hypnose est structurée là où la méditation ne l'est "
+              "souvent pas. Une séance a un arc : une induction qui installe, un "
+              "approfondissement, des images, les suggestions elles-mêmes, un ancrage à "
+              "emporter, puis un retour net à l'état de veille. Chaque partie existe pour "
+              "que la suivante fonctionne."],
+             []),
+            ("Ce que chacune sait faire",
+             ["Aucune n'est meilleure dans l'absolu. Elles répondent à des questions "
+              "différentes, et la façon honnête de choisir, c'est de partir de ce que vous "
+              "voulez dans le mois qui vient, pas de celle qui paraît la plus sérieuse."],
+             ["La méditation, pour un rapport général à votre attention : moins de "
+              "réactivité, plus d'espace entre une émotion et ce qu'on en fait. Le bénéfice "
+              "est lent et large.",
+              "L'hypnose, pour une cible précise : s'endormir, la peur de l'avion mardi "
+              "prochain, les dix premières minutes d'une tâche évitée, une habitude à "
+              "interrompre.",
+              "La méditation demande d'arrêter de courir après un résultat, ce qui la rend "
+              "frustrante précisément quand on en a un.",
+              "L'hypnose est faite pour un résultat, ce qui la rend plus facile à commencer "
+              "et plus facile à survendre : aucune séance ne réécrit une vie en une fois."]),
+            ("Laquelle est la mieux étayée ?",
+             ["Les deux ont une vraie littérature, et les deux traînent plus d'enthousiasme "
+              "que de preuves à leurs marges. Les programmes fondés sur la pleine conscience "
+              "ont le corpus clinique le plus large, surtout autour du stress, de la rechute "
+              "dépressive et de la douleur chronique. L'hypnothérapie clinique a un dossier "
+              "plus étroit mais réel : la douleur et la détresse pendant un acte médical "
+              "sont ses meilleurs résultats, avec des effets utiles sur l'endormissement et "
+              "le côlon irritable.",
+              "Ce qu'aucune des deux ne peut revendiquer, c'est de remplacer un traitement. "
+              "Ce sont des compléments : des choses qui aident à côté d'un suivi, pas à sa "
+              "place."],
+             []),
+            ("Vous n'avez pas à choisir",
+             ["Un schéma courant et raisonnable : la méditation comme pratique quotidienne, "
+              "et une séance d'hypnose pour la chose précise qui gêne cette semaine. Elles "
+              "ne se concurrencent pas ; méditer régulièrement rend même la phase "
+              "d'installation d'une séance plus rapide.",
+              "Onira se situe du côté de l'hypnose. Vous choisissez la cible, ajoutez une "
+              "phrase sur ce qui se passe vraiment, et un modèle qui tourne sur le téléphone "
+              "écrit une séance autour de ça, puis la narre — sans compte, sans rien "
+              "envoyer, et sans images génériques."],
+             []),
+        ],
+        "faq": [
+            ("L'hypnose peut-elle me faire faire quelque chose contre ma volonté ?",
+             "Non. En auto-hypnose, vous restez conscient et aux commandes du début à la "
+             "fin, et une suggestion qui va contre ce que vous voulez ne prend tout "
+             "simplement pas. L'hypnose de spectacle est un divertissement reposant sur des "
+             "volontaires prêts à jouer le jeu ; ce n'est pas une séance thérapeutique."),
+            ("Laquelle est la meilleure pour l'anxiété ?",
+             "Pour l'anxiété comme tendance générale, la méditation a les meilleures données "
+             "sur la durée. Pour une situation anxiogène identifiable — un vol, une "
+             "présentation, un examen — répéter la scène en hypnose est en général plus "
+             "utile que de rester avec le souffle."),
+            ("La méditation guidée, est-ce la même chose que l'hypnose ?",
+             "C'est ce qui s'en rapproche le plus. Une méditation guidée qui visualise un "
+             "résultat et répète des suggestions fait l'essentiel de ce que fait une séance "
+             "d'hypnose ; l'étiquette diffère plus que la pratique."),
+        ],
+    },
+    "does_it_work": {
+        "slug": "l-auto-hypnose-marche-t-elle",
+        "nav": "Est-ce que ça marche ?",
+        "card": "Ce que les données soutiennent, ce qu'elles ne soutiennent pas, et pour qui "
+                "ça ne marche pas.",
+        "title": "L'auto-hypnose marche-t-elle vraiment ? | Onira",
+        "desc": "Un point honnête sur ce que l'auto-hypnose sait faire, ce que les données "
+                "soutiennent, pour qui elle ne marche pas, et comment le vérifier.",
+        "h1": "L'auto-hypnose marche-t-elle vraiment ?",
+        "lede": "Oui, pour certaines choses, modérément, et pas pour tout le monde — une "
+                "réponse plus terne que celles que donnent d'habitude les deux camps.",
+        "answer": "L'auto-hypnose est correctement étayée sur l'endormissement, sur la "
+                  "douleur et la détresse pendant un acte médical, et sur la baisse de "
+                  "vigilance qui alimente l'anxiété dans une situation donnée. Elle est mal "
+                  "étayée comme traitement autonome de quoi que ce soit de clinique, et "
+                  "environ une personne sur quatre répond mal à la suggestion, quelle que "
+                  "soit la technique. C'est un outil réel au périmètre étroit, ni remède ni "
+                  "placebo.",
+        "sections": [
+            ("Ce qu'elle sait faire",
+             ["Les résultats les plus nets sont les moins spectaculaires. S'endormir plus "
+              "vite, traverser un soin dentaire ou médical avec moins de détresse, atténuer "
+              "une douleur, aborder un événement stressant identifié plus calmement qu'on ne "
+              "l'aurait fait. Tout cela a la même forme : un horizon court et une composante "
+              "physique que la relaxation déplace réellement.",
+              "Le travail sur les habitudes — tabac, ongles rongés, les dix premières "
+              "minutes d'une tâche évitée — vient un cran en dessous. Les séances aident, "
+              "surtout comme un élément d'un plan plutôt que comme le plan, et l'effet vient "
+              "de la répétition, pas de la puissance d'une séance isolée."],
+             []),
+            ("Ce qu'elle n'est pas",
+             ["Ce n'est pas une psychothérapie, et elle ne traite ni la dépression, ni un "
+              "trouble anxieux, ni un état de stress post-traumatique, ni un trouble du "
+              "comportement alimentaire. Ce n'est pas un moyen de retrouver des souvenirs "
+              "oubliés : la suggestion rend la mémoire moins fiable, pas plus. Ce n'est pas "
+              "un substitut à un médicament prescrit, et aucune séance honnête ne laissera "
+              "entendre le contraire.",
+              "Ce n'est pas rapide non plus. Le marketing de l'hypnose s'appuie sur des "
+              "séances uniques et spectaculaires ; la réalité est un effet modeste qui "
+              "s'accumule avec un usage quotidien sur plusieurs semaines."],
+             []),
+            ("Pourquoi elle ne marche pas pour tout le monde",
+             ["La suggestibilité varie d'une personne à l'autre et reste assez stable au "
+              "cours d'une vie. Environ une personne sur quatre répond faiblement à la "
+              "suggestion hypnotique quelle que soit la manière dont elle est amenée, et à "
+              "peu près autant y répondent fortement. Ce n'est une question ni "
+              "d'intelligence ni de volonté, et aucune technique ne fait passer de façon "
+              "fiable d'un groupe à l'autre.",
+              "La conséquence pratique mérite d'être connue avant de commencer : si trois ou "
+              "quatre tentatives honnêtes ne produisent rien du tout, la conclusion "
+              "raisonnable est que ce n'est pas votre outil, pas que vous vous y prenez mal."],
+             []),
+            ("Comment savoir si ça fait quelque chose",
+             ["Jugez sur la cible, pas sur la sensation. On s'attend à se sentir hypnotisé "
+              "et, la plupart du temps, ça n'arrive pas : de l'intérieur, l'état n'a rien de "
+              "remarquable, plus proche d'être absorbé par un livre que de quoi que ce soit "
+              "de théâtral. Ne rien ressentir de spécial pendant une séance ne dit presque "
+              "rien de son effet.",
+              "Choisissez une seule chose mesurable et suivez-la deux semaines : minutes "
+              "pour s'endormir, cigarettes dans la journée, tâche commencée ou non. Si le "
+              "chiffre bouge, continuez ; sinon, arrêtez et essayez autre chose. C'est un "
+              "meilleur test que n'importe quel récit de profondeur atteinte."],
+             []),
+            ("Où se situe Onira",
+             ["Onira est un outil de relaxation et d'auto-hypnose, et n'est délibérément pas "
+              "vendue comme davantage. Ce qu'elle change à l'offre habituelle, c'est la "
+              "précision : au lieu d'un enregistrement fait pour tout le monde, un modèle "
+              "embarqué dans votre téléphone écrit la séance autour du thème choisi et de la "
+              "phrase que vous tapez, puis la narre à voix haute.",
+              "Tout tourne sur l'appareil : ce que vous écrivez de votre vie ne quitte jamais "
+              "le téléphone — il n'y a ni compte ni serveur qui pourrait le lire. Si vous "
+              "allez réellement mal, c'est une conversation à avoir avec une personne, et "
+              "aucune application n'est la bonne réponse à ça."],
+             []),
+        ],
+        "faq": [
+            ("L'auto-hypnose, n'est-ce pas juste un effet placebo ?",
+             "L'attente en fait partie, comme dans une grande partie de la médecine. Mais la "
+             "réponse hypnotique se manifeste d'une façon que le placebo seul ne prédit "
+             "pas : elle varie selon la suggestibilité de la personne, et l'imagerie "
+             "retrouve des changements d'état qui la suivent. Le résumé juste : un effet "
+             "réel et modeste, avec une part d'attente par-dessus."),
+            ("À quelle fréquence faire une séance ?",
+             "Tous les jours, deux à trois semaines, s'il s'agit d'une habitude ou du "
+             "sommeil. L'effet est cumulatif, et le meilleur prédicteur d'un résultat reste "
+             "de l'avoir réellement fait de façon répétée."),
+            ("Peut-on rester bloqué en hypnose ?",
+             "Non. Sans voix pour guider, l'état se dissipe simplement ou se transforme en "
+             "sommeil. Une séance qui se termine correctement comprend un retour net à "
+             "l'état de veille, par confort et non par sécurité."),
+        ],
+    },
+}
+
+ES["guide_dir"] = "guias"
+ES["ui"]["guides_title"] = "Preguntas frecuentes"
+ES["ui"]["guides_crumb"] = "Guías"
+ES["ui"]["guide_answer_title"] = "En corto"
+ES["ui"]["guide_cta_title"] = "Pruébalo esta noche"
+ES["guides"] = {
+    "fall_asleep": {
+        "slug": "dormirse-con-autohipnosis",
+        "nav": "Dormirse",
+        "card": "El método, paso a paso, para las noches en que la cabeza no para.",
+        "title": "Dormirse con autohipnosis: el método | Onira",
+        "desc": "Un método de autohipnosis paso a paso para dormirse cuando la cabeza no "
+                "para, y qué hacer cuando no funciona a la primera.",
+        "h1": "Dormirse con autohipnosis",
+        "lede": "Un método concreto para las noches en que el cuerpo está cansado y la "
+                "cabeza sigue funcionando — y qué puede y qué no puede cambiar.",
+        "answer": "Túmbate, deja que se cierren los ojos y cuenta despacio de veinte a uno, "
+                  "con cada número apoyado en una espiración. En cada número suelta un sitio "
+                  "concreto: la mandíbula, los hombros, las manos. Al llegar a uno, instala "
+                  "una escena tranquila y llénala de detalles sensoriales. No se trata de "
+                  "forzar el sueño, sino de darle a la mente algo lento que hacer en lugar "
+                  "de lo rápido que tenía previsto.",
+        "sections": [
+            ("Por qué funciona la cuenta atrás",
+             ["El insomnio del principio de la noche rara vez es falta de cansancio. Es una "
+              "mente a la que no se le ha dado nada que hacer y que ha llenado el hueco con "
+              "el día siguiente. La autohipnosis va directa a ese hueco: una tarea lenta, "
+              "repetitiva y algo exigente ocupa exactamente la atención que si no estaría "
+              "repasando una conversación o una fecha de entrega.",
+              "Importa más la bajada que el número. Contar hacia atrás implica una llegada, "
+              "y unir cada número a una espiración frena la respiración sin tener que pensar "
+              "en respirar, que es la palanca más fiable para sacar al sistema nervioso de "
+              "su ajuste de alerta."],
+             []),
+            ("El método, paso a paso",
+             ["Nada de esto requiere entrenamiento ni creer en nada. Requiere un cuarto de "
+              "hora y aceptar volver a empezar cuando la mente se vaya, que se irá."],
+             ["Prepara antes la habitación: oscura, fresca, el móvil boca abajo. Decidir "
+              "mirar algo a mitad de camino es lo que corta la mayoría de los intentos.",
+              "Túmbate boca arriba, los brazos a los lados, y haz tres respiraciones más "
+              "largas al soltar que al tomar aire.",
+              "Cuenta de veinte a uno, cada número dicho por dentro al espirar.",
+              "Con cada número suelta un sitio: mandíbula, lengua, hombros, manos, vientre, "
+              "muslos, pies. Nombrar el sitio es lo que hace que se suelte.",
+              "En el uno, elige una escena — una playa al atardecer, un camino entre "
+              "árboles, una habitación que recuerdes — y complétala: la temperatura, el "
+              "sonido, lo que hay bajo los pies.",
+              "Cuando te des cuenta de que te has ido a pensar, no vuelvas al veinte. Retoma "
+              "la cuenta donde la dejaste y sigue."]),
+            ("Cuando no funciona",
+             ["Los primeros intentos suelen acabar con la mente dispersa, y eso no es un "
+              "fracaso: es cómo se comporta la atención antes de que la secuencia se "
+              "convierta en costumbre. Lo que cambia el resultado es repetirla a la misma "
+              "hora, hasta que la propia secuencia funcione como señal.",
+              "Si al cabo de unos veinte minutos sigues despierto, levántate, mantén la luz "
+              "baja y haz algo aburrido hasta que vuelva el sueño. Quedarte en la cama "
+              "peleando le enseña al cuerpo que la cama es un sitio donde se pelea, y esa es "
+              "la única asociación que de verdad conviene proteger."],
+             []),
+            ("Qué aporta una sesión escrita",
+             ["Hacerlo de memoria significa que una parte de ti va ejecutando las "
+              "instrucciones, o sea, una parte de ti despierta. Que te guíe una voz elimina "
+              "ese trabajo: sigues en lugar de recordar, y por eso las sesiones guiadas "
+              "funcionan mejor a la hora de dormir que la autohipnosis de memoria.",
+              "Onira escribe la sesión en tu móvil a partir de lo que de verdad te mantiene "
+              "despierto: si escribes que no dejas de darle vueltas a una conversación, las "
+              "imágenes y las sugestiones se construyen sobre eso y no sobre una playa "
+              "genérica. El modelo se ejecuta en el dispositivo, así que nada de lo que "
+              "escribes se envía, y todo funciona sin conexión y con el móvil boca abajo."],
+             []),
+        ],
+        "faq": [
+            ("¿Cuánto se tarda en dormirse así?",
+             "La mayoría de quienes se llevan bien con el método se duermen dentro de la "
+             "escena y no al final de la cuenta, a menudo entre los quince y los "
+             "veinticinco minutos. Si sigues despierto al final de forma habitual, es una "
+             "señal para mirar las horas previas a acostarte, no para insistir en la cama."),
+            ("¿Es seguro hacer autohipnosis por la noche?",
+             "Para el mal dormir corriente, sí: es relajación guiada y lo peor que suele "
+             "pasar es seguir despierto. No es un tratamiento de un trastorno del sueño: un "
+             "insomnio persistente, una apnea o un insomnio con ánimo bajo son cosa de un "
+             "médico."),
+            ("¿Puedo usar una grabación en vez de hacerlo yo?",
+             "Sí, y para dormirse una grabación suele ser mejor: quita el trabajo de "
+             "recordar los pasos. Lo que una grabación no puede hacer es nombrar lo que te "
+             "preocupa esa noche, que es justo el hueco que llena una sesión escrita en el "
+             "momento."),
+        ],
+    },
+    "vs_meditation": {
+        "slug": "hipnosis-o-meditacion",
+        "nav": "Hipnosis o meditación",
+        "card": "Dos estados, dos objetivos — y cuál encaja con lo que buscas.",
+        "title": "Hipnosis o meditación: cuál elegir | Onira",
+        "desc": "Qué separa de verdad a la hipnosis guiada de la meditación, para qué sirve "
+                "cada una y cómo elegir para el sueño, la ansiedad o un hábito.",
+        "h1": "Hipnosis o meditación",
+        "lede": "Desde fuera se parecen — ojos cerrados, respiración lenta, una voz "
+                "tranquila — y no apuntan a lo mismo.",
+        "answer": "La meditación entrena la atención: practicas darte cuenta de adónde se ha "
+                  "ido la mente y volver, sin intentar cambiar lo que encuentras. La "
+                  "hipnosis usa un estado relajado y enfocado para ensayar algo concreto: "
+                  "dormir, mantenerte entero en una reunión, no alargar la mano hacia el "
+                  "cigarrillo. Si quieres una habilidad general, medita. Si quieres trabajar "
+                  "una cosa con nombre, una sesión de hipnosis es la herramienta directa.",
+        "sections": [
+            ("Qué cambia realmente",
+             ["Las dos prácticas producen un estado fisiológico parecido: respiración más "
+              "lenta, menos activación, atención estrechada. La diferencia es qué haces una "
+              "vez allí. Una meditación te devuelve una y otra vez a un ancla neutra y no le "
+              "pide nada al contenido de la mente. Una sesión de hipnosis toma ese mismo "
+              "estado y le mete sugestión: imágenes, frases y ensayos dirigidos a un "
+              "resultado.",
+              "Por eso también la hipnosis está estructurada y la meditación a menudo no. "
+              "Una sesión tiene un arco: una inducción que te instala, una profundización, "
+              "imágenes, las sugestiones, un anclaje para llevarte y una vuelta clara al "
+              "estado de vigilia. Cada parte existe para que funcione la siguiente."],
+             []),
+            ("Para qué sirve cada una",
+             ["Ninguna es mejor en abstracto. Responden a preguntas distintas, y la forma "
+              "honesta de elegir es partir de lo que quieres en el próximo mes, no de cuál "
+              "suena más seria."],
+             ["La meditación, para la relación general con tu atención: menos reactividad, "
+              "más espacio entre una emoción y lo que haces con ella. Rinde despacio y "
+              "ancho.",
+              "La hipnosis, para una diana concreta: dormirte, el miedo a volar del martes "
+              "que viene, los diez primeros minutos de una tarea que evitas, un hábito que "
+              "quieres interrumpir.",
+              "La meditación pide dejar de perseguir un resultado, que es justo lo que la "
+              "hace frustrante cuando tienes uno.",
+              "La hipnosis está hecha para un resultado, lo que la hace más fácil de empezar "
+              "y más fácil de sobrevender: ninguna sesión reescribe una vida de una vez."]),
+            ("¿Cuál está mejor respaldada?",
+             ["Las dos tienen literatura real y las dos arrastran más entusiasmo que pruebas "
+              "en los bordes. Los programas basados en mindfulness tienen el cuerpo clínico "
+              "más amplio, sobre todo en estrés, recaída depresiva y dolor crónico. La "
+              "hipnoterapia clínica tiene un expediente más estrecho pero genuino: el dolor "
+              "y el malestar durante un procedimiento médico son sus mejores resultados, con "
+              "efectos útiles en la conciliación del sueño y en el colon irritable.",
+              "Lo que ninguna puede reclamar es sustituir a un tratamiento. Son "
+              "complementos: cosas que ayudan junto a un seguimiento, no en su lugar."],
+             []),
+            ("No hace falta elegir",
+             ["Un patrón común y razonable: la meditación como práctica diaria y una sesión "
+              "de hipnosis para lo concreto que estorba esta semana. No compiten; meditar a "
+              "menudo incluso acelera la fase de instalación de una sesión.",
+              "Onira está del lado de la hipnosis. Eliges la diana, añades una frase sobre "
+              "lo que pasa de verdad, y un modelo que se ejecuta en el móvil escribe una "
+              "sesión alrededor de eso y la narra — sin cuenta, sin enviar nada y sin "
+              "imágenes genéricas."],
+             []),
+        ],
+        "faq": [
+            ("¿La hipnosis puede hacerme hacer algo que no quiero?",
+             "No. En autohipnosis sigues consciente y al mando de principio a fin, y una "
+             "sugestión que va contra lo que quieres sencillamente no prende. La hipnosis de "
+             "espectáculo es entretenimiento con voluntarios dispuestos a seguir el juego, y "
+             "no es lo que es una sesión terapéutica."),
+            ("¿Cuál es mejor para la ansiedad?",
+             "Para la ansiedad como patrón general, la meditación tiene mejores datos a "
+             "largo plazo. Para una situación ansiosa que puedas nombrar — un vuelo, una "
+             "presentación, una prueba — ensayarla en una sesión de hipnosis suele ser más "
+             "útil que quedarse con la respiración."),
+            ("¿La meditación guiada es lo mismo que la hipnosis?",
+             "Es lo que más se le acerca. Una meditación guiada que visualiza un resultado y "
+             "repite sugestiones hace casi todo lo que hace una sesión de hipnosis; la "
+             "etiqueta se diferencia más que la práctica."),
+        ],
+    },
+    "does_it_work": {
+        "slug": "funciona-la-autohipnosis",
+        "nav": "¿Funciona?",
+        "card": "Qué respaldan los datos, qué no, y a quién no le funciona.",
+        "title": "¿Funciona de verdad la autohipnosis? | Onira",
+        "desc": "Una mirada honesta a para qué sirve la autohipnosis, qué respaldan los "
+                "datos, a quién no le funciona y cómo comprobar si hace algo.",
+        "h1": "¿Funciona de verdad la autohipnosis?",
+        "lede": "Sí, para algunas cosas, de forma moderada, y no para todo el mundo — una "
+                "respuesta más sosa que la que suele dar cada bando.",
+        "answer": "La autohipnosis tiene datos decentes en la conciliación del sueño, en el "
+                  "dolor y el malestar durante un procedimiento médico, y en bajar la "
+                  "activación que alimenta la ansiedad en una situación concreta. Tiene "
+                  "datos flojos como tratamiento por sí sola de nada clínico, y alrededor de "
+                  "una persona de cada cuatro responde mal a la sugestión, use la técnica "
+                  "que use. Es una herramienta real de alcance estrecho, ni cura ni placebo.",
+        "sections": [
+            ("Para qué sirve",
+             ["Los resultados más claros son los menos espectaculares. Dormirse antes, pasar "
+              "un tratamiento dental o médico con menos malestar, rebajar un dolor, llegar a "
+              "un acontecimiento estresante identificado más tranquilo de lo que habrías "
+              "llegado. Todo eso comparte una forma: horizonte corto y un componente físico "
+              "que la relajación mueve de verdad.",
+              "El trabajo sobre hábitos — tabaco, uñas, los diez primeros minutos de una "
+              "tarea evitada — va un escalón por debajo. Las sesiones ayudan, sobre todo "
+              "como una parte de un plan y no como el plan, y el efecto viene de la "
+              "repetición, no de que una sesión suelta sea potente."],
+             []),
+            ("Qué no es",
+             ["No es psicoterapia, y no trata la depresión, ni un trastorno de ansiedad, ni "
+              "un estrés postraumático, ni un trastorno de la conducta alimentaria. No es "
+              "una forma de recuperar recuerdos olvidados: la sugestión vuelve la memoria "
+              "menos fiable, no más. No sustituye a un medicamento que te hayan recetado, y "
+              "ninguna sesión honesta dará a entender lo contrario.",
+              "Tampoco es rápida. El marketing de la hipnosis se apoya en sesiones únicas y "
+              "espectaculares; el patrón real es un efecto modesto que se acumula con uso "
+              "diario a lo largo de semanas."],
+             []),
+            ("Por qué no le funciona a todo el mundo",
+             ["La sugestionabilidad varía entre personas y es bastante estable a lo largo de "
+              "la vida. Alrededor de una de cada cuatro responde débilmente a la sugestión "
+              "hipnótica se le presente como se le presente, y más o menos la misma "
+              "proporción responde con fuerza. No es cuestión de inteligencia ni de fuerza "
+              "de voluntad, y no hay técnica que mueva a alguien de un grupo al otro de "
+              "forma fiable.",
+              "La consecuencia práctica conviene saberla antes de empezar: si tres o cuatro "
+              "intentos honestos no producen absolutamente nada, la conclusión razonable es "
+              "que esta no es tu herramienta, no que lo estés haciendo mal."],
+             []),
+            ("Cómo saber si hace algo",
+             ["Júzgalo por la diana, no por la sensación. Uno espera sentirse hipnotizado y "
+              "casi nunca ocurre: por dentro el estado no tiene nada de notable, más cerca "
+              "de estar absorto en un libro que de nada teatral. No sentir nada especial "
+              "durante una sesión dice muy poco sobre si funcionó.",
+              "Elige una sola cosa medible y síguela dos semanas: minutos hasta dormirte, "
+              "cigarrillos en el día, si empezaste la tarea o no. Si el número se mueve, "
+              "sigue; si no, para y prueba otra cosa. Es mejor prueba que cualquier relato "
+              "de lo hondo que llegaste."],
+             []),
+            ("Dónde encaja Onira",
+             ["Onira es una herramienta de relajación y autohipnosis, y deliberadamente no "
+              "se vende como más. Lo que cambia respecto a la oferta habitual es la "
+              "precisión: en lugar de una grabación hecha para todo el mundo, un modelo "
+              "dentro de tu móvil escribe la sesión alrededor del tema que eliges y de la "
+              "frase que escribes, y luego la narra en voz alta.",
+              "Todo se ejecuta en el dispositivo, así que lo que escribes sobre tu vida "
+              "nunca sale del móvil: no hay cuenta ni servidor que pudiera leerlo. Si estás "
+              "pasándolo mal de verdad, esa es una conversación para tener con una persona, "
+              "y ninguna aplicación es la respuesta correcta a eso."],
+             []),
+        ],
+        "faq": [
+            ("¿La autohipnosis no es solo efecto placebo?",
+             "La expectativa forma parte, como en buena parte de la medicina. Pero la "
+             "respuesta hipnótica aparece de formas que el placebo por sí solo no predice: "
+             "varía según la sugestionabilidad de la persona, y la neuroimagen encuentra "
+             "cambios de estado que la acompañan. El resumen justo: un efecto real y "
+             "modesto, con una parte de expectativa encima."),
+            ("¿Con qué frecuencia conviene hacer una sesión?",
+             "A diario, dos o tres semanas, si trabajas un hábito o el sueño. El efecto es "
+             "acumulativo, y el mejor predictor de sacar algo sigue siendo haberlo hecho de "
+             "verdad y de forma repetida."),
+            ("¿Se puede uno quedar atrapado en hipnosis?",
+             "No. Sin una voz que guíe, el estado simplemente se disuelve o se convierte en "
+             "sueño. Que una sesión termine con una vuelta clara al estado de vigilia es por "
+             "comodidad, no por seguridad."),
+        ],
+    },
+}
+
 LANGS = [EN, FR, ES]

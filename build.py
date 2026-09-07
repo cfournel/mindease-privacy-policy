@@ -20,7 +20,7 @@ import json
 import os
 import shutil
 
-from content import SITE, THEMES, LANGS
+from content import SITE, THEMES, GUIDES, LANGS
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 ORIGIN = SITE["origin"]
@@ -59,6 +59,11 @@ def home_url(lang):
 def theme_url(lang, key):
     prefix = "/%s" % lang["base"] if lang["base"] else ""
     return "%s/%s/%s/" % (prefix, lang["theme_dir"], lang["themes"][key]["slug"])
+
+
+def guide_url(lang, key):
+    prefix = "/%s" % lang["base"] if lang["base"] else ""
+    return "%s/%s/%s/" % (prefix, lang["guide_dir"], lang["guides"][key]["slug"])
 
 
 def privacy_url(lang):
@@ -236,6 +241,17 @@ def theme_cards(lang, exclude=None):
     return '<ul class="cards">%s</ul>\n' % "".join(lis)
 
 
+def guide_cards(lang, exclude=None):
+    lis = []
+    for key in guides_for(lang):
+        if key == exclude:
+            continue
+        g = lang["guides"][key]
+        lis.append('<li><a href="%s"><strong>%s</strong><span>%s</span></a></li>'
+                   % (guide_url(lang, key), esc(g["nav"]), esc(g["card"])))
+    return '<ul class="cards">%s</ul>\n' % "".join(lis)
+
+
 def write(url, markup):
     path = out_path(url)
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -256,9 +272,19 @@ def themes_for(lang):
     return [key for key in THEMES if key in lang["themes"]]
 
 
+def guides_for(lang):
+    """Guide keys published in this language, in the global GUIDES order."""
+    return [key for key in GUIDES if key in lang["guides"]]
+
+
 def langs_with(key):
     """Languages that publish a given theme."""
     return [l for l in LANGS if key in l["themes"]]
+
+
+def langs_with_guide(key):
+    """Languages that publish a given guide."""
+    return [l for l in LANGS if key in l["guides"]]
 
 
 def alternates_home():
@@ -274,17 +300,24 @@ def alternates_theme(key):
     return [(l["code"], theme_url(l, key)) for l in langs_with(key)]
 
 
-def nav_langs(key=None):
+def alternates_guide(key):
+    """hreflang set of a guide — same rule as a theme: only where it is published."""
+    return [(l["code"], guide_url(l, key)) for l in langs_with_guide(key)]
+
+
+def nav_langs(key=None, guide=None):
     """Language switcher targets — always every language.
 
     Distinct from the hreflang set: a reader on an English-only theme page must
     still be able to reach the French site, so a language that lacks the theme
-    falls back to its home page.
+    (or the guide) falls back to its home page.
     """
     out = []
     for l in LANGS:
         if key and key in l["themes"]:
             out.append((l["code"], theme_url(l, key)))
+        elif guide and guide in l["guides"]:
+            out.append((l["code"], guide_url(l, guide)))
         else:
             out.append((l["code"], home_url(l)))
     return out
@@ -321,6 +354,8 @@ def build_home(lang):
     body.append(screens(lang))
     body.append("<h2>%s</h2>\n" % esc(h["themes_title"]))
     body.append(theme_cards(lang))
+    body.append("<h2>%s</h2>\n" % esc(lang["ui"]["guides_title"]))
+    body.append(guide_cards(lang))
     body.append(privacy_and_safety(lang))
     markup = (head(lang, h["title"], h["desc"], url, alts, [site_ld, app_ld])
               + header(lang, alts, h["title"]) + "".join(body) + footer(lang))
@@ -371,9 +406,87 @@ def build_theme(lang, key):
         "".join("<h3>%s</h3><p>%s</p>" % (esc(q), esc(a)) for q, a in t["faq"])))
     body.append(privacy_and_safety(lang))
     body.append("<h2>%s</h2>\n%s" % (esc(ui["related_title"]), theme_cards(lang, exclude=key)))
+    body.append("<h2>%s</h2>\n%s" % (esc(ui["guides_title"]), guide_cards(lang)))
 
     markup = (head(lang, t["title"], t["desc"], url, alts, [crumbs_ld, faq_ld])
               + header(lang, nav_langs(key), t["title"]) + "".join(body) + footer(lang))
+    return write(url, markup)
+
+
+def build_guide(lang, key):
+    """A question page: the direct answer first, then the reasoning, then the app.
+
+    Ordering is the whole point of these pages. Someone arriving from a search
+    has a question, not an intent to install; answering it in the first screen is
+    what earns the rest of the page, and the CTA sits after the method rather
+    than in front of it.
+    """
+    g = lang["guides"][key]
+    ui = lang["ui"]
+    url = guide_url(lang, key)
+    alts = alternates_guide(key)
+
+    faq_ld = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": lang["code"],
+        "mainEntity": [
+            {"@type": "Question", "name": q,
+             "acceptedAnswer": {"@type": "Answer", "text": a}}
+            for q, a in g["faq"]
+        ],
+    }
+    crumbs_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": ui["home_crumb"],
+             "item": ORIGIN + home_url(lang)},
+            {"@type": "ListItem", "position": 2, "name": g["nav"],
+             "item": ORIGIN + url},
+        ],
+    }
+    # The lede answers the headline question in one paragraph, which is the shape
+    # a featured snippet is picked from — hence Article rather than a bare page,
+    # and hence the answer block sitting above every <h2>.
+    article_ld = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": g["h1"],
+        "description": g["desc"],
+        "inLanguage": lang["code"],
+        "mainEntityOfPage": ORIGIN + url,
+        "author": {"@type": "Organization", "name": "Onira", "url": ORIGIN + "/"},
+        "publisher": {"@type": "Organization", "name": "Onira", "url": ORIGIN + "/"},
+        "dateModified": SITE["updated"],
+    }
+
+    body = ['<p class="crumbs"><a href="%s">%s</a> &rsaquo; %s</p>\n'
+            % (home_url(lang), esc(ui["home_crumb"]), esc(g["nav"]))]
+    body.append("<h1>%s</h1>\n" % esc(g["h1"]))
+    body.append('<p class="lede">%s</p>\n' % esc(g["lede"]))
+    body.append('<div class="callout"><p><strong>%s</strong> %s</p></div>\n'
+                % (esc(ui["guide_answer_title"]), esc(g["answer"])))
+    for title, paras, bullets in g["sections"]:
+        body.append("<h2>%s</h2>\n" % esc(title))
+        body += ["<p>%s</p>\n" % esc(t) for t in paras]
+        if bullets:
+            body.append("<ol class=\"steps\">%s</ol>\n"
+                        % "".join("<li>%s</li>" % esc(b) for b in bullets))
+    body.append("<h2>%s</h2>\n" % esc(ui["guide_cta_title"]))
+    body.append(screens(lang, only={"session"}))
+    body.append(cta(lang))
+    body.append('<h2>%s</h2>\n<div class="faq">%s</div>\n' % (
+        esc(ui["faq_title"]),
+        "".join("<h3>%s</h3><p>%s</p>" % (esc(q), esc(a)) for q, a in g["faq"])))
+    body.append(privacy_and_safety(lang))
+    body.append("<h2>%s</h2>\n%s" % (esc(ui["works_title"]), theme_cards(lang)))
+    related = guide_cards(lang, exclude=key)
+    if "<li>" in related:
+        body.append("<h2>%s</h2>\n%s" % (esc(ui["guides_title"]), related))
+
+    markup = (head(lang, g["title"], g["desc"], url, alts, [crumbs_ld, article_ld, faq_ld])
+              + header(lang, nav_langs(guide=key), g["title"]) + "".join(body) + footer(lang))
     return write(url, markup)
 
 
@@ -469,6 +582,9 @@ def build_sitemap():
     for key in THEMES:
         for lang in langs_with(key):
             entries.append((theme_url(lang, key), alternates_theme(key), "0.8"))
+    for key in GUIDES:
+        for lang in langs_with_guide(key):
+            entries.append((guide_url(lang, key), alternates_guide(key), "0.7"))
     entries.append(("/privacy/", [("en", "/privacy/")], "0.3"))
 
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
@@ -502,8 +618,10 @@ def build_robots():
 def clean():
     """Drop generated language/theme trees so renamed slugs don't leave orphans."""
     for lang in LANGS:
-        for d in filter(None, [lang["base"], os.path.join(lang["base"], lang["theme_dir"])
-                               if lang["base"] else lang["theme_dir"]]):
+        subdirs = [lang["theme_dir"], lang["guide_dir"]]
+        for d in filter(None, [lang["base"]] + [
+                os.path.join(lang["base"], sub) if lang["base"] else sub
+                for sub in subdirs]):
             target = os.path.join(ROOT, d)
             if os.path.isdir(target):
                 shutil.rmtree(target)
@@ -527,6 +645,8 @@ def main():
         written.append(build_home(lang))
         for key in themes_for(lang):
             written.append(build_theme(lang, key))
+        for key in guides_for(lang):
+            written.append(build_guide(lang, key))
     written.append(build_privacy())
     written.append(build_404())
     written.append(build_sitemap())
