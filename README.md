@@ -22,6 +22,12 @@ app's website in the Play Console store listing (`onirahypno.com`), listing whic
 networks are authorized to sell this app's inventory. Without it, Play Console flags
 the app as unable to validate and AdMob fill/eCPM degrades.
 
+This depends on the Play Console store listing having a **Website** field set to
+this domain (Store presence > Store settings > Contact details) — AdMob's crawler
+reads that field to know where to look. It was blank when this was first set up,
+which failed validation with "no developer website found" even though the file was
+live; if validation ever fails again, check that field before re-checking the file.
+
 Content is one line per authorized network; today that's just Google's own:
 
 ```
