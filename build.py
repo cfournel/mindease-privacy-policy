@@ -5,7 +5,7 @@
     python3 build.py
 
 Writes the whole site (home + theme pages per language, privacy policy,
-sitemap, robots.txt, 404) into the repo root from the copy in `content.py`.
+sitemap, robots.txt, 404, llms.txt, WebMCP tools) into the repo root from the copy in `content.py`.
 Generated files are committed — GitHub Pages serves them as-is, there is no
 build step on the Pages side.
 
@@ -116,7 +116,8 @@ def head(lang, title, desc, url, alternates, jsonld):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/site.css">%(blocks)s
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/webmcp.js" defer></script>%(blocks)s
 </head>
 <body>
 """ % {
@@ -615,6 +616,176 @@ def build_robots():
     return path
 
 
+APP_SUMMARY = ("Onira is a free Android app that writes a personal self-hypnosis session "
+               "with an AI model running entirely on the phone, then narrates it aloud. "
+               "Nothing the user types or receives leaves the device.")
+
+APP_NOTES = [
+    "Onira is a relaxation and self-hypnosis tool, not therapy, medical or psychiatric "
+    "advice, and not a substitute for professional care or emergency services.",
+    "Free, no account, no subscription; a one-time purchase removes ads. Sessions "
+    "are available in English, French and Spanish. Not every theme or guide is "
+    "published in every language: each page exists where people search for it.",
+]
+
+PRIVACY_SUMMARY = ("Session generation runs on-device; inputs and scripts are never "
+                   "uploaded. Ads (Google AdMob, unless removed), Play Billing purchases "
+                   "and anonymous 1-5 star session ratings (Firebase) are the only data "
+                   "that leaves the phone. No account exists, so uninstalling deletes "
+                   "everything.")
+
+
+def site_index():
+    """Every page an agent may be pointed at, per language, from content.py."""
+    out = {}
+    for lang in LANGS:
+        out[lang["code"]] = {
+            "language": lang["name"],
+            "home": home_url(lang),
+            "themes": [{"name": lang["themes"][k]["nav"], "summary": lang["themes"][k]["card"],
+                        "description": lang["themes"][k]["desc"], "url": theme_url(lang, k)}
+                       for k in themes_for(lang)],
+            "guides": [{"name": lang["guides"][k]["nav"], "summary": lang["guides"][k]["card"],
+                        "description": lang["guides"][k]["desc"], "url": guide_url(lang, k)}
+                       for k in guides_for(lang)],
+        }
+    return out
+
+
+def build_llms_txt():
+    """/llms.txt, in the llmstxt.org shape: H1, blockquote summary, free notes,
+    then H2 sections of `- [name](url): notes` links, with `Optional` last."""
+    index = site_index()
+    out = ["# Onira", "", "> " + APP_SUMMARY, ""]
+    out += [n + "\n" for n in APP_NOTES]
+    out += ["## App", "",
+            "- [Onira on Google Play](%s): install page; Android, free with ads" % SITE["play"],
+            "- [Privacy policy](%s/privacy/): %s" % (ORIGIN, PRIVACY_SUMMARY),
+            "- [Home page](%s/): what the app does and how a session is built" % ORIGIN,
+            ""]
+    for code, entry in index.items():
+        out += ["## Session themes (%s)" % entry["language"], ""]
+        out += ["- [%s](%s%s): %s" % (t["name"], ORIGIN, t["url"], t["description"])
+                for t in entry["themes"]]
+        out.append("")
+        if entry["guides"]:
+            out += ["## Guides (%s)" % entry["language"], ""]
+            out += ["- [%s](%s%s): %s" % (g["name"], ORIGIN, g["url"], g["description"])
+                    for g in entry["guides"]]
+            out.append("")
+    out += ["## Optional", ""]
+    out += ["- [Home page (%s)](%s%s)" % (e["language"], ORIGIN, e["home"])
+            for c, e in index.items() if e["home"] != "/"]
+    out += ["- [Sitemap](%s/sitemap.xml): every page with its hreflang alternates" % ORIGIN,
+            "- [Support](mailto:%s): contact address" % SITE["email"]]
+    path = os.path.join(ROOT, "llms.txt")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(out) + "\n")
+    return path
+
+
+def webmcp_tools(codes):
+    """WebMCP tool declarations. Schemas live here as data so they are static JSON
+    Schema; the script only attaches an `execute` per name."""
+    language = {"type": "string", "enum": codes,
+                "description": "Language code; defaults to the current page's language."}
+    return [
+        {"name": "get_app_info",
+         "description": "What Onira is, its price, platform, install link, privacy "
+                        "summary and support contact.",
+         "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+         "annotations": {"readOnlyHint": True}},
+        {"name": "list_session_themes",
+         "description": "List the hypnosis session themes (sleep, anxiety, stress, ...) "
+                        "published in a language, with a summary and page URL for each.",
+         "inputSchema": {"type": "object", "properties": {"language": language},
+                         "additionalProperties": False},
+         "annotations": {"readOnlyHint": True}},
+        {"name": "list_guides",
+         "description": "List the guide pages that answer common questions about "
+                        "self-hypnosis in a language, with a summary and page URL for each.",
+         "inputSchema": {"type": "object", "properties": {"language": language},
+                         "additionalProperties": False},
+         "annotations": {"readOnlyHint": True}},
+        {"name": "open_page",
+         "description": "Navigate this tab to a page of onirahypno.com. Only paths "
+                        "returned by list_session_themes, list_guides or get_app_info "
+                        "are accepted.",
+         "inputSchema": {"type": "object",
+                         "properties": {"path": {"type": "string",
+                                                 "description": "Site path, e.g. /hypnosis/sleep/"}},
+                         "required": ["path"], "additionalProperties": False}},
+    ]
+
+
+WEBMCP_JS = """// Generated by build.py from content.py; do not edit.
+// WebMCP tools so in-browser AI agents can read the site without scraping it.
+(function () {
+  var mc = navigator.modelContext;
+  if (!mc) return;
+  var DATA = __DATA__;
+
+  function reply(value) {
+    return {content: [{type: "text", text: JSON.stringify(value)}]};
+  }
+  function lang(input) {
+    var code = (input && input.language) || document.documentElement.lang;
+    return DATA.index[code] ? code : "en";
+  }
+  var handlers = {
+    get_app_info: function () { return reply(DATA.app); },
+    list_session_themes: function (input) {
+      var l = lang(input);
+      return reply({language: l, home: DATA.index[l].home, themes: DATA.index[l].themes});
+    },
+    list_guides: function (input) {
+      var l = lang(input);
+      return reply({language: l, guides: DATA.index[l].guides});
+    },
+    open_page: function (input) {
+      var path = input && input.path;
+      if (DATA.pages.indexOf(path) === -1) {
+        return reply({error: "Unknown path", path: path});
+      }
+      setTimeout(function () { location.assign(path); }, 0);
+      return reply({navigating_to: DATA.origin + path});
+    }
+  };
+  var tools = DATA.tools.map(function (t) {
+    return Object.assign({}, t, {execute: handlers[t.name]});
+  });
+  if (typeof mc.registerTool === "function") {
+    tools.forEach(function (t) { try { mc.registerTool(t); } catch (e) {} });
+  } else if (typeof mc.provideContext === "function") {
+    mc.provideContext({tools: tools});
+  }
+})();
+"""
+
+
+def build_webmcp():
+    index = site_index()
+    pages = ["/privacy/"]
+    for entry in index.values():
+        pages += [entry["home"]] + [p["url"] for p in entry["themes"] + entry["guides"]]
+    data = {
+        "origin": ORIGIN,
+        "app": {"name": "Onira", "summary": APP_SUMMARY, "notes": APP_NOTES,
+                "platform": "Android", "price": "Free; one-time purchase removes ads",
+                "install_url": SITE["play"], "privacy": PRIVACY_SUMMARY,
+                "privacy_url": "/privacy/", "support_email": SITE["email"],
+                "languages": {c: e["language"] for c, e in index.items()},
+                "homes": {c: e["home"] for c, e in index.items()}},
+        "index": index,
+        "pages": pages,
+        "tools": webmcp_tools(list(index)),
+    }
+    path = os.path.join(ROOT, "assets", "webmcp.js")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(WEBMCP_JS.replace("__DATA__", json.dumps(data, ensure_ascii=False)))
+    return path
+
+
 def clean():
     """Drop generated language/theme trees so renamed slugs don't leave orphans."""
     for lang in LANGS:
@@ -651,6 +822,8 @@ def main():
     written.append(build_404())
     written.append(build_sitemap())
     written.append(build_robots())
+    written.append(build_llms_txt())
+    written.append(build_webmcp())
     for path in written:
         print(os.path.relpath(path, ROOT))
     print("\n%d files written" % len(written))

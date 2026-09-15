@@ -58,6 +58,8 @@ assets/favicon-{16,32}.png     Raster fallbacks, rendered from favicon.svg
 assets/apple-touch-icon.png    180px, home-screen icon
 favicon.ico                    Root fallback; without it browsers 404 and log it
 sitemap.xml  robots.txt  404.html
+llms.txt                       Site summary + page index for AI agents (see "AI agents")
+assets/webmcp.js               WebMCP tools, loaded on every page (see "AI agents")
 app-ads.txt                    AdMob authorized-sellers declaration (static, hand-edited —
                                see "AdMob's app-ads.txt requirement" below)
 ```
@@ -206,6 +208,25 @@ get a 404 and log a console error, which costs a Lighthouse best-practices point
 - After a content change, resubmit `sitemap.xml` in Google Search Console.
 - No analytics, no third-party scripts, no cookies — deliberately, so the site
   matches the privacy claim the app makes.
+
+## AI agents: llms.txt and WebMCP
+
+Two generated surfaces let AI agents read the site without scraping it:
+
+- **`/llms.txt`** follows [llmstxt.org](https://llmstxt.org/): an H1, a blockquote
+  summary, notes (not medical treatment, languages), then H2 link lists — app and
+  privacy, themes and guides per language, `Optional` last.
+- **`/assets/webmcp.js`** registers [WebMCP](https://github.com/webmachinelearning/webmcp)
+  tools through `navigator.modelContext` (`registerTool`, falling back to
+  `provideContext`) and does nothing in browsers without it: `get_app_info`,
+  `list_session_themes`, `list_guides` (read-only) and `open_page`, which only
+  navigates to paths the build produced. The tool schemas are Python data in
+  `webmcp_tools()`, so they are static JSON Schema rather than built in JS.
+
+The site has no `<form>`, so audit tools report WebMCP form coverage as "not rated";
+that is expected, not a gap. The script is first-party and deferred, so the "no
+third-party scripts" rule below still holds. `audit.py` fails if either file drifts
+from the build.
 
 ## Health and safety claims
 

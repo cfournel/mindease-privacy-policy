@@ -342,6 +342,53 @@ def check_sitemap(pages):
             fail("/robots.txt", "disallows the whole site")
 
 
+def check_agents(pages):
+    """llms.txt and the WebMCP tools: the two surfaces AI agents read instead of
+    scraping pages. Both are generated, so a stale one means build.py was skipped."""
+    llms = os.path.join(ROOT, "llms.txt")
+    if not os.path.exists(llms):
+        fail("/llms.txt", "missing")
+    else:
+        body = open(llms, encoding="utf-8").read()
+        if not body.startswith("# "):
+            fail("/llms.txt", "does not open with an H1")
+        if not re.search(r"^> \S", body, re.M):
+            fail("/llms.txt", "no blockquote summary")
+        for url in re.findall(r"\]\((%s[^)]*)\)" % re.escape(ORIGIN), body):
+            path = url[len(ORIGIN):]
+            if path.endswith("/") and path not in pages:
+                fail("/llms.txt", "links to %s, which is not built" % path)
+        listed = set(re.findall(r"\]\(%s(/[^)]*)\)" % re.escape(ORIGIN), body))
+        for path in pages:
+            if path not in listed:
+                fail("/llms.txt", "does not list %s" % path)
+
+    script = os.path.join(ROOT, "assets", "webmcp.js")
+    if not os.path.exists(script):
+        fail("/assets/webmcp.js", "missing")
+        return
+    m = re.search(r"var DATA = (.*);\n", open(script, encoding="utf-8").read())
+    try:
+        data = json.loads(m.group(1))
+    except (AttributeError, ValueError) as exc:
+        fail("/assets/webmcp.js", "tool data is not valid JSON: %s" % exc)
+        return
+    for tool in data["tools"]:
+        schema = tool.get("inputSchema", {})
+        if not tool.get("name") or not tool.get("description"):
+            fail("/assets/webmcp.js", "tool without name or description")
+        if schema.get("type") != "object" or "properties" not in schema:
+            fail("/assets/webmcp.js", "%s: inputSchema is not an object schema" % tool["name"])
+        for req in schema.get("required", []):
+            if req not in schema["properties"]:
+                fail("/assets/webmcp.js", "%s: requires undeclared %s" % (tool["name"], req))
+    if set(data["pages"]) != set(pages):
+        fail("/assets/webmcp.js", "page list out of step with the build — rerun build.py")
+    for path, f in pages.items():
+        if '<script src="/assets/webmcp.js" defer></script>' not in open(f, encoding="utf-8").read():
+            fail(path, "does not load /assets/webmcp.js")
+
+
 # ------------------------------------------------------------- lighthouse ----
 
 CATEGORIES = ["performance", "accessibility", "best-practices", "seo"]
@@ -437,6 +484,7 @@ def main():
     check_orphans(pages)
     check_guides(pages)
     check_sitemap(pages)
+    check_agents(pages)
 
     if args.lighthouse:
         targets = sorted(pages) if args.all else sample_paths(pages)

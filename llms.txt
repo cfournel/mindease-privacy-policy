@@ -1,0 +1,78 @@
+# Onira
+
+> Onira is a free Android app that writes a personal self-hypnosis session with an AI model running entirely on the phone, then narrates it aloud. Nothing the user types or receives leaves the device.
+
+Onira is a relaxation and self-hypnosis tool, not therapy, medical or psychiatric advice, and not a substitute for professional care or emergency services.
+
+Free, no account, no subscription; a one-time purchase removes ads. Sessions are available in English, French and Spanish. Not every theme or guide is published in every language: each page exists where people search for it.
+
+## App
+
+- [Onira on Google Play](https://play.google.com/store/apps/details?id=com.oytaub.mindease): install page; Android, free with ads
+- [Privacy policy](https://onirahypno.com/privacy/): Session generation runs on-device; inputs and scripts are never uploaded. Ads (Google AdMob, unless removed), Play Billing purchases and anonymous 1-5 star session ratings (Firebase) are the only data that leaves the phone. No account exists, so uninstalling deletes everything.
+- [Home page](https://onirahypno.com/): what the app does and how a session is built
+
+## Session themes (English)
+
+- [Anxiety](https://onirahypno.com/hypnosis/anxiety/): Guided self-hypnosis for anxiety, written on your phone around what you are actually anxious about, and narrated aloud. Private, free, no subscription.
+- [Sleep](https://onirahypno.com/hypnosis/sleep/): Guided sleep hypnosis written on your phone around what is keeping you awake, and narrated aloud. Runs offline, nothing leaves your device.
+- [Confidence](https://onirahypno.com/hypnosis/confidence/): Guided self-hypnosis for confidence, written on your phone around the situation you actually face, and narrated aloud. Private and free.
+- [Stress](https://onirahypno.com/hypnosis/stress/): Guided self-hypnosis for stress, written on your phone around the pressure you are actually under, and narrated aloud. Offline and private.
+- [Quitting smoking](https://onirahypno.com/hypnosis/quit-smoking/): Guided self-hypnosis to support quitting smoking, written on your phone around your own triggers and reasons, and narrated aloud. Private and free.
+- [Focus](https://onirahypno.com/hypnosis/focus/): Guided self-hypnosis for focus, written on your phone around the work you are about to do, and narrated aloud. Runs offline, nothing is uploaded.
+- [Weight](https://onirahypno.com/hypnosis/weight-loss/): Guided self-hypnosis for weight and eating habits, written on your phone around your own patterns, and narrated aloud. Private, free, no subscription.
+- [Fear](https://onirahypno.com/hypnosis/fear-and-phobias/): Guided self-hypnosis for fear of flying, driving or heights, written on your phone around the situation you actually face. Private, free, offline.
+- [Memory](https://onirahypno.com/hypnosis/memory-and-learning/): Guided self-hypnosis for studying, recall and language learning, written on your phone around what you are learning. Free, private, works offline.
+- [Motivation](https://onirahypno.com/hypnosis/motivation-and-energy/): Guided self-hypnosis for procrastination, low energy and getting started, written on your phone around the task you are avoiding. Free and private.
+- [Nervous habits](https://onirahypno.com/hypnosis/nervous-habits/): Guided self-hypnosis for nail biting, teeth grinding and jaw clenching, written on your phone around your own trigger. Private, free, offline.
+
+## Guides (English)
+
+- [Falling asleep](https://onirahypno.com/guides/how-to-fall-asleep-with-self-hypnosis/): A step-by-step self-hypnosis method for falling asleep when your mind will not stop, and what to do when it does not work the first time.
+- [Hypnosis vs meditation](https://onirahypno.com/guides/hypnosis-vs-meditation/): What actually separates guided hypnosis from meditation, what each one is good at, and how to pick between them for sleep, anxiety or a habit.
+- [Does it work?](https://onirahypno.com/guides/does-self-hypnosis-work/): An honest look at what self-hypnosis is good for, what the evidence supports, who it does not work for, and how to tell it is doing something.
+
+## Session themes (Français)
+
+- [Anxiété](https://onirahypno.com/fr/hypnose/anxiete/): Auto-hypnose guidée contre l'anxiété, écrite sur votre téléphone à partir de ce qui vous inquiète vraiment, et narrée à voix haute. Privée et gratuite.
+- [Sommeil](https://onirahypno.com/fr/hypnose/sommeil/): Hypnose guidée pour dormir, écrite sur votre téléphone à partir de ce qui vous tient éveillé, et narrée à voix haute. Fonctionne entièrement hors ligne.
+- [Confiance en soi](https://onirahypno.com/fr/hypnose/confiance-en-soi/): Auto-hypnose guidée pour la confiance en soi, écrite sur votre téléphone à partir de la situation que vous affrontez, et narrée à voix haute. Gratuite.
+- [Stress](https://onirahypno.com/fr/hypnose/stress/): Auto-hypnose guidée contre le stress, écrite sur votre téléphone à partir de la pression que vous vivez, et narrée à voix haute. Hors ligne et confidentielle.
+- [Arrêt du tabac](https://onirahypno.com/fr/hypnose/arret-du-tabac/): Auto-hypnose guidée pour accompagner l'arrêt du tabac, écrite sur votre téléphone à partir de vos déclencheurs et de vos raisons, et narrée à voix haute.
+- [Concentration](https://onirahypno.com/fr/hypnose/concentration/): Auto-hypnose guidée pour la concentration, écrite sur votre téléphone à partir du travail qui vous attend, et narrée à voix haute. Fonctionne hors ligne.
+- [Poids](https://onirahypno.com/fr/hypnose/perte-de-poids/): Auto-hypnose guidée pour le poids et les habitudes alimentaires, écrite sur votre téléphone à partir de vos propres schémas, et narrée à voix haute.
+- [Peurs et phobies](https://onirahypno.com/fr/hypnose/peurs-et-phobies/): Hypnose guidée contre la peur de l'avion, de conduire ou du vide, écrite sur votre téléphone à partir de la situation que vous affrontez. Hors ligne.
+- [Tourner la page](https://onirahypno.com/fr/hypnose/oublier-une-personne/): Hypnose guidée pour tourner la page après une rupture, écrite sur votre téléphone à partir de ce qui vous revient en tête. Gratuite et hors ligne.
+- [Motivation](https://onirahypno.com/fr/hypnose/motivation-et-energie/): Hypnose guidée contre la procrastination et les coups de fatigue, écrite sur votre téléphone à partir de la tâche que vous évitez. Gratuite, hors ligne.
+
+## Guides (Français)
+
+- [S'endormir](https://onirahypno.com/fr/guides/s-endormir-avec-l-auto-hypnose/): Une méthode d'auto-hypnose étape par étape pour s'endormir quand la tête tourne, et quoi faire quand ça ne marche pas du premier coup.
+- [Hypnose ou méditation](https://onirahypno.com/fr/guides/hypnose-ou-meditation/): Ce qui sépare vraiment l'hypnose guidée de la méditation, ce que chacune sait faire, et comment choisir pour le sommeil, l'anxiété ou une habitude.
+- [Est-ce que ça marche ?](https://onirahypno.com/fr/guides/l-auto-hypnose-marche-t-elle/): Un point honnête sur ce que l'auto-hypnose sait faire, ce que les données soutiennent, pour qui elle ne marche pas, et comment le vérifier.
+
+## Session themes (Español)
+
+- [Ansiedad](https://onirahypno.com/es/hipnosis/ansiedad/): Autohipnosis guiada para la ansiedad, escrita en tu teléfono a partir de lo que realmente te preocupa y narrada en voz alta. Privada, gratis, sin suscripción.
+- [Sueño](https://onirahypno.com/es/hipnosis/sueno/): Hipnosis guiada para dormir, escrita en tu teléfono a partir de lo que te mantiene despierto y narrada en voz alta. Funciona sin conexión.
+- [Confianza](https://onirahypno.com/es/hipnosis/confianza-en-uno-mismo/): Autohipnosis guiada para la confianza, escrita en tu teléfono a partir de la situación que tienes delante y narrada en voz alta. Privada y gratuita.
+- [Estrés](https://onirahypno.com/es/hipnosis/estres/): Autohipnosis guiada para el estrés, escrita en tu teléfono a partir de la presión que estás viviendo y narrada en voz alta. Sin conexión y privada.
+- [Dejar de fumar](https://onirahypno.com/es/hipnosis/dejar-de-fumar/): Autohipnosis guiada para acompañar el proceso de dejar de fumar, escrita en tu teléfono a partir de tus propios detonantes y motivos, y narrada en voz alta.
+- [Concentración](https://onirahypno.com/es/hipnosis/concentracion/): Autohipnosis guiada para la concentración, escrita en tu teléfono a partir del trabajo que tienes por delante y narrada en voz alta. Funciona sin conexión.
+- [Peso](https://onirahypno.com/es/hipnosis/perdida-de-peso/): Autohipnosis guiada para el peso y los hábitos alimentarios, escrita en tu teléfono a partir de tus propios patrones y narrada en voz alta.
+- [Miedos y fobias](https://onirahypno.com/es/hipnosis/miedos-y-fobias/): Hipnosis guiada para el miedo a volar, a conducir o a las alturas, escrita en tu móvil a partir de la situación que afrontas. Gratis y sin conexión.
+- [Pasar página](https://onirahypno.com/es/hipnosis/olvidar-a-alguien/): Hipnosis guiada para pasar página tras una ruptura, escrita en tu móvil a partir de lo que se te repite en la cabeza. Gratis y sin conexión.
+- [Memoria](https://onirahypno.com/es/hipnosis/memoria-y-aprendizaje/): Hipnosis guiada para estudiar, memorizar y aprender idiomas, escrita en tu móvil a partir de lo que estás aprendiendo. Gratis y sin conexión.
+
+## Guides (Español)
+
+- [Dormirse](https://onirahypno.com/es/guias/dormirse-con-autohipnosis/): Un método de autohipnosis paso a paso para dormirse cuando la cabeza no para, y qué hacer cuando no funciona a la primera.
+- [Hipnosis o meditación](https://onirahypno.com/es/guias/hipnosis-o-meditacion/): Qué separa de verdad a la hipnosis guiada de la meditación, para qué sirve cada una y cómo elegir para el sueño, la ansiedad o un hábito.
+- [¿Funciona?](https://onirahypno.com/es/guias/funciona-la-autohipnosis/): Una mirada honesta a para qué sirve la autohipnosis, qué respaldan los datos, a quién no le funciona y cómo comprobar si hace algo.
+
+## Optional
+
+- [Home page (Français)](https://onirahypno.com/fr/)
+- [Home page (Español)](https://onirahypno.com/es/)
+- [Sitemap](https://onirahypno.com/sitemap.xml): every page with its hreflang alternates
+- [Support](mailto:support@onirahypno.com): contact address
