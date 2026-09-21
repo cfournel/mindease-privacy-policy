@@ -2070,7 +2070,8 @@ ES = {
 # hreflang set, the slugs are not, and a guide only has to exist where the
 # question is actually asked. The order here is the order of the nav cards and
 # the sitemap.
-GUIDES = ["fall_asleep", "vs_meditation", "does_it_work", "street_hypnosis"]
+GUIDES = ["fall_asleep", "vs_meditation", "does_it_work", "street_hypnosis",
+          "is_it_safe", "learn_self_hypnosis"]
 
 EN["guide_dir"] = "guides"
 EN["ui"]["guides_title"] = "Questions people ask"
@@ -2441,6 +2442,224 @@ EN["guides"] = {
              "Yes, in almost every case. Suggested amnesia is a temporary effect in "
              "suggestible people, and it wears off. Waking up with a blank stretch of "
              "missing life is a film convention."),
+        ],
+    },
+    "is_it_safe": {
+        "slug": "is-self-hypnosis-safe",
+        "nav": "Is it safe?",
+        "card": "Safe for most people, with a short list of real exceptions.",
+        "title": "Is Self-Hypnosis Safe? | Onira",
+        "desc": "The honest risks of self-hypnosis, who should skip it, and the situations "
+                "where it needs a doctor first — pregnancy, epilepsy, children and more.",
+        "h1": "Is self-hypnosis safe?",
+        "lede": "For most people, yes — and the real risks are duller and more specific "
+                "than the ones people worry about.",
+        "answer": "Self-hypnosis is safe for most healthy adults. You cannot get stuck in "
+                  "it, lose control, or be made to do something against your will — those "
+                  "are film conventions. The genuine cautions are narrower: never listen "
+                  "while driving or operating anything, treat it as a complement rather "
+                  "than a replacement for prescribed care, and talk to a doctor first if "
+                  "you live with psychosis, a dissociative disorder, bipolar disorder or "
+                  "PTSD. For children, epilepsy and pregnancy the answer is usually yes "
+                  "with supervision, which is worth asking about rather than assuming.",
+        "sections": [
+            ["The risks people worry about, and what is actually true",
+             ["Almost every fear about hypnosis comes from fiction, so it is worth "
+              "clearing them out before the real ones:"],
+             ["**Getting stuck.** Not possible. Without a voice guiding you the state "
+              "simply fades, or turns into ordinary sleep. The deliberate return to "
+              "alertness at the end of a session is for comfort, not rescue.",
+              "**Losing control.** Suggestion needs your cooperation. You stay aware, you "
+              "remember it, and you decline anything that crosses your own lines — which "
+              "is exactly why stage shows ask for volunteers.",
+              "**Being reprogrammed without noticing.** Nothing is installed. What "
+              "repetition changes is a habit of response, slowly, and only in a direction "
+              "you were already pointed.",
+              "**Weakening your mind.** There is no evidence that ordinary relaxation and "
+              "suggestion harm anyone's judgement, attention or willpower."]],
+            ["The risks that are real",
+             ["They are less dramatic, and mostly about context rather than the state "
+              "itself."],
+             ["**Doing it while doing something else.** Never with headphones on while "
+              "driving, cycling, cooking or minding a child. This is the most likely way "
+              "to come to harm, and it is entirely avoidable.",
+              "**Using it instead of treatment.** A session that eases pain or anxiety can "
+              "make it tempting to skip an appointment or reduce a prescription. That is "
+              "the decision to be most careful about, and it belongs to your doctor.",
+              "**Unexpected distress.** Relaxing deeply can let a feeling surface that you "
+              "were holding down — grief, anger, a memory. For most people this passes; if "
+              "a session reliably leaves you worse, stop and talk to someone qualified.",
+              "**Memory.** Suggestion makes recall less reliable, not more. Anything that "
+              "offers to recover forgotten events is doing something the evidence does not "
+              "support."]],
+            ["When to ask a doctor first",
+             ["None of these are absolute bans, and most people in these situations use "
+              "relaxation tools without trouble. They are the cases where a professional "
+              "who knows your history should weigh in before an app does."],
+             ["**Psychosis or schizophrenia** — relaxation and suggestion are not "
+              "recommended without clinical supervision.",
+              "**Dissociative disorders or PTSD** — deep relaxation can trigger "
+              "dissociation or intrusive memories. Trauma work belongs with a trained "
+              "clinician.",
+              "**Bipolar disorder** — generally fine when stable; worth discussing before "
+              "using it during an episode.",
+              "**Epilepsy** — audio relaxation is not a known seizure trigger, but "
+              "conditions differ enough that it is a fair question for your neurologist.",
+              "**Pregnancy** — usually fine, and hypnosis for birth preparation is well "
+              "established. Mention it at an appointment rather than guessing.",
+              "**Children** — self-hypnosis can suit older children with adult guidance. "
+              "Onira is written for adults and is not designed for young children."]],
+            ["Is it safe for anxiety specifically?",
+             ["For everyday anxiety, yes, and it is one of the things guided relaxation is "
+              "best at — lowering the physical arousal that feeds the thinking. The "
+              "distinction that matters is between everyday anxiety and an anxiety "
+              "disorder: the first is a reasonable target for a relaxation tool, the "
+              "second is a reasonable target for treatment, and using the tool alongside "
+              "that treatment is fine.",
+              "One practical note: if listening at bedtime makes you more alert rather "
+              "than less, that is common and not a warning sign. A session written for "
+              "sleep ends differently from one written for calm."],
+             []],
+            ["Where Onira fits",
+             ["Onira writes self-hypnosis sessions on your phone and narrates them aloud, "
+              "for sleep, anxiety, confidence, habits and the rest. Every session ends by "
+              "bringing you back fully alert, and every theme page carries the same line "
+              "this guide does: it is a relaxation tool, not therapy and not medical "
+              "advice.",
+              "It is free, runs offline, and nothing you type leaves the device — which "
+              "also means nobody is profiling what you were anxious about."],
+             []],
+        ],
+        "faq": [
+            ("Can self-hypnosis make my mental health worse?",
+             "It is unlikely for most people, and possible in specific conditions — "
+             "psychosis, dissociative disorders, and trauma when approached directly. If "
+             "you live with any of those, make it a question for your clinician rather "
+             "than an experiment."),
+            ("Is it safe to listen every night?",
+             "Yes. Daily use is how the effect accumulates, and there is no known "
+             "downside to it. The usual limit is practical: a session that keeps you up "
+             "reading the screen is worse than the sleep you were after."),
+            ("Can I get addicted to it?",
+             "No, in the dependence sense. People do get attached to a routine that works, "
+             "which is ordinary rather than a problem — unless it is replacing care you "
+             "actually need."),
+            ("Is it safe for kids?",
+             "With adult guidance and age-appropriate material, often yes; relaxation is "
+             "used with children in clinical settings. Onira is written for adults, so it "
+             "is not the right tool for a young child."),
+            ("What should I do if a session upsets me?",
+             "End it, open your eyes and come back to the room — that is always available "
+             "and nothing keeps you under. If it happens more than once, treat it as a "
+             "signal to work with a person rather than an app."),
+        ],
+    },
+    "learn_self_hypnosis": {
+        "slug": "how-to-learn-self-hypnosis",
+        "nav": "Learning it",
+        "card": "What to practise, in what order, and how long it really takes.",
+        "title": "How to Learn Self-Hypnosis | Onira",
+        "desc": "A realistic way to learn self-hypnosis on your own: what to practise "
+                "first, how long it takes, what going under feels like, and when to stop.",
+        "h1": "How to learn self-hypnosis",
+        "lede": "It is a skill with a short syllabus and a slow first fortnight — here is "
+                "the order that works and the part everyone gets wrong.",
+        "answer": "You can learn self-hypnosis on your own, and most people who get "
+                  "anywhere do it in the same order: relax the body deliberately, narrow "
+                  "attention onto one thing, then give yourself a specific suggestion and "
+                  "repeat it nightly for two or three weeks. Expect the state to feel "
+                  "unremarkable — absorbed, like a good book, not unconscious — and judge "
+                  "it by whether the target moves, not by how deep it felt. A guided "
+                  "recording is the easiest way to start, because reading instructions to "
+                  "yourself competes with the relaxing.",
+        "sections": [
+            ["The order that works",
+             ["The pieces are simple. Doing them in this order is what stops the first "
+              "week feeling like nothing is happening."],
+             ["**Set the situation up.** Somewhere you will not be interrupted, phone "
+              "silenced, lying down or sitting back. Deciding to check something halfway "
+              "through is what ends most early attempts.",
+              "**Relax on purpose, in stages.** Hands, jaw, shoulders, breathing — "
+              "longer out than in. This is the part people skip, and it is the part that "
+              "makes the rest possible.",
+              "**Narrow your attention.** A slow count down from twenty, a single image, "
+              "the feeling of your own breathing. One thing, held loosely.",
+              "**Give one suggestion, in the present and in the positive.** Not \"I will "
+              "not panic\" but \"my breathing stays slow and I stay steady\". Rehearse it "
+              "as a scene, in detail, rather than repeating it as a phrase.",
+              "**Come back deliberately.** Count up, open your eyes, be fully alert. This "
+              "matters for the habit, not for safety."]],
+            ["What it actually feels like",
+             ["This is where most people conclude they cannot do it. The expectation is "
+              "something dramatic — a threshold, a click, a sense of going under. The real "
+              "thing is closer to being absorbed in a film: the room recedes a bit, time "
+              "gets unreliable, and you could stop at any moment but do not particularly "
+              "want to.",
+              "Which means feeling nothing special says very little. Judge the fortnight "
+              "on the target instead: minutes to fall asleep, whether you started the "
+              "avoided task, how a stressful hour went. If the number moves, it is "
+              "working, whatever it felt like."],
+             []],
+            ["How long it takes",
+             ["The first sessions are for learning the shape, not for results. A fair "
+              "expectation is that relaxing gets noticeably easier within a week, and that "
+              "anything you are actually aiming at takes two to three weeks of near-daily "
+              "practice to shift.",
+              "Responsiveness also varies between people and is fairly stable over a "
+              "lifetime — roughly one in four respond strongly, about as many barely "
+              "respond at all. If three or four honest attempts do nothing whatsoever, the "
+              "reasonable conclusion is that this is not your tool, not that you need to "
+              "try harder."],
+             []],
+            ["Can you learn it from a book, or on your own?",
+             ["On your own, yes — it is one of the few things in this field that genuinely "
+              "does not need a practitioner. From a book, partly: books are good for "
+              "understanding what you are doing and poor as a live guide, because reading "
+              "instructions to yourself is the opposite of narrowing your attention.",
+              "That is the practical argument for a recording. Something else holds the "
+              "structure and the pacing while you do the only part that cannot be "
+              "delegated, which is letting it work. Once the shape is familiar, doing it "
+              "unaided gets much easier."],
+             []],
+            ["Learning self-hypnosis is not learning to hypnotise people",
+             ["Worth separating, because the searches run together. Hypnotising someone "
+              "else is a performance and an interpersonal skill, with consent and "
+              "calibration to learn, and it is taught in courses. Self-hypnosis is a "
+              "private routine aimed at one of your own problems.",
+              "Being good at the second tells you almost nothing about the first, and the "
+              "reverse is also true."],
+             []],
+            ["Where Onira fits",
+             ["Onira writes the session for you and narrates it aloud: you pick a theme "
+              "and, if you want, type a sentence about what is actually going on. That "
+              "removes the two things beginners struggle with — holding the structure, and "
+              "finding the words for a suggestion that fits your situation.",
+              "It is free, works offline, and nothing you type leaves your phone. If you "
+              "later want to run sessions in your head without it, that is a fine outcome "
+              "and the app will have done its job."],
+             []],
+        ],
+        "faq": [
+            ("How long should a session be?",
+             "Fifteen to thirty minutes suits most purposes. Shorter works once the skill "
+             "is familiar; much longer mostly adds drifting off, which is fine if sleep "
+             "was the point and wasted otherwise."),
+            ("What time of day is best?",
+             "Whenever you can be uninterrupted, with one caveat: sessions aimed at "
+             "anything other than sleep end by returning you to full alertness, so "
+             "bedtime is not automatically the right slot."),
+            ("Do I need to write my own script?",
+             "No, and writing one while trying to relax is the classic beginner trap. "
+             "Start with something that narrates for you, and write your own later if you "
+             "find you want to."),
+            ("Can I learn it if my mind never stops?",
+             "That is the normal starting condition, not a disqualification. The "
+             "staged physical relaxation exists precisely because a racing mind will not "
+             "narrow on command — the body goes first and the mind follows."),
+            ("Is self-hypnosis the same as meditation?",
+             "Related but aimed differently. Meditation trains a general relationship with "
+             "your attention; self-hypnosis points that attention at one specific target. "
+             "The practice overlaps, the intent does not."),
         ],
     },
 }
