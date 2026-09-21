@@ -25,7 +25,8 @@ SITE = {
 # having where people actually look for it. `build.py` derives each theme's
 # hreflang set from the languages that publish it.
 THEMES = ["anxiety", "sleep", "confidence", "stress", "smoking", "focus", "weight",
-          "fear", "letting_go", "learning", "motivation", "habits"]
+          "fear", "letting_go", "learning", "motivation", "habits",
+          "pain", "ibs", "emotional_recovery"]
 
 # ---------------------------------------------------------------- English ----
 
@@ -565,6 +566,146 @@ EN = {
                  "treatment for them."),
             ],
         },
+        "pain": {
+            "slug": "pain",
+            "nav": "Pain",
+            "card": "Ease the bracing and the dread that make pain louder.",
+            "title": "Self-Hypnosis for Pain — Written for You | Onira",
+            "desc": "Guided self-hypnosis alongside your treatment: less bracing, less dread of the "
+                    "next flare, easier nights. A comfort tool, not a cure. Offline and private.",
+            "h1": "Self-hypnosis for living with pain",
+            "lede": "A session for the parts of pain that are not the injury itself — the bracing, the "
+                    "dread of the next flare, and the nights it takes from you.",
+            "why_title": "What hypnosis can and cannot do about pain",
+            "why": [
+                "Pain is never only a signal from the body. How much of your attention it holds, how "
+                "tightly you brace around it, how much you dread the next episode — all of that changes "
+                "how loud it gets. Those are the parts a guided session can reach, and they are often "
+                "the difference between a difficult day and an impossible one.",
+                "What it does not do is remove the cause. This theme is written as a companion to your "
+                "treatment, never a replacement for it, and it is not a reason to skip an appointment "
+                "or change what you have been prescribed. Pain that is new, worsening or unexplained "
+                "belongs with a doctor first.",
+            ],
+            "works_on": [
+                "The guarding and muscle tension that build up around a painful area.",
+                "Falling asleep when pain keeps pulling your attention back.",
+                "The anticipation of the next flare, which tightens everything before it arrives.",
+                "Where pain sits in the day — at the edge of your attention rather than the centre of it.",
+            ],
+            "expect": "Sessions run 15 to 30 minutes and end by bringing you back alert. What people "
+                      "describe is usually partial and temporary — turning the volume down rather than "
+                      "off — and it tends to come with repetition rather than from one session.",
+            "faq": [
+                ("Can hypnosis cure my pain?",
+                 "No, and anything that tells you otherwise is selling something. Relaxation and "
+                 "suggestion are widely used alongside medical care to make pain easier to live with. "
+                 "Onira is a relaxation tool in that sense — a complement, not a treatment."),
+                ("Will I still feel the pain?",
+                 "Most likely yes. The realistic aim is that it takes up less of you: less tension "
+                 "around it, less dread before it, more room for the rest of the day."),
+                ("Is it safe with my medication?",
+                 "A session does not interact with anything you take. What matters is that you never "
+                 "reduce or stop a prescribed treatment because a session helped — that decision "
+                 "belongs to whoever prescribed it."),
+                ("What about migraine?",
+                 "The tension and anticipation around an attack are reachable; the attack itself is a "
+                 "neurological event and a medical matter. Do not use a session as a substitute for "
+                 "treatment that works for you."),
+            ],
+        },
+        "ibs": {
+            "slug": "ibs",
+            "nav": "IBS",
+            "card": "Calm the gut-brain loop that keeps flare-ups going.",
+            "title": "Self-Hypnosis for IBS — Written for You | Onira",
+            "desc": "Guided self-hypnosis for the stress side of IBS: calmer gut, less anticipation, "
+                    "easier days. A relaxation tool alongside your care, not a treatment.",
+            "h1": "Self-hypnosis for IBS",
+            "lede": "A session for the loop where stress worsens symptoms and symptoms feed stress — the "
+                    "part of IBS that responds to calm.",
+            "why_title": "Why relaxation reaches the gut",
+            "why": [
+                "The gut and the nervous system are in constant conversation, which is why a stressful "
+                "week shows up in your digestion and why the fear of a flare-up in the wrong place can "
+                "bring one on. Guided relaxation works on that axis directly: it lowers the alert state "
+                "that keeps the loop running.",
+                "Worth being precise, because the distinction matters: gut-directed hypnotherapy is an "
+                "established option in IBS care, recommended in clinical guidance when other approaches "
+                "have not worked — but it is a structured course delivered by a trained therapist. "
+                "Onira is not that course. It is a relaxation tool that works on the same stress axis, "
+                "and it sits alongside your care rather than replacing it.",
+            ],
+            "works_on": [
+                "The anticipation — planning a day around where the toilets are, and what that costs you.",
+                "Abdominal tension and shallow, held breathing during a flare.",
+                "Sleep, which suffers in both directions when symptoms are active.",
+                "A specific situation, if you name it: a long journey, a restaurant, a day at the office.",
+            ],
+            "expect": "Sessions run 15 to 30 minutes. Digestive symptoms respond slowly, so judge this "
+                      "over weeks of regular use rather than by how one session went.",
+            "faq": [
+                ("Is this the same as gut-directed hypnotherapy?",
+                 "No. That is a structured programme with a trained therapist, usually several sessions "
+                 "over a couple of months. Onira writes relaxation sessions around what you describe. "
+                 "If you want the clinical protocol, ask your doctor for a referral."),
+                ("Should I get diagnosed first?",
+                 "Yes. Digestive symptoms have many causes and some need investigating — bleeding, "
+                 "unexplained weight loss and a change in your normal pattern all need a doctor, not "
+                 "an app."),
+                ("Can I use it during a flare-up?",
+                 "You can, and many people do. Sit or lie somewhere you will not be interrupted, and "
+                 "treat it as easing the tension around the episode rather than stopping it."),
+            ],
+        },
+        "emotional_recovery": {
+            "slug": "emotional-recovery",
+            "nav": "Emotional recovery",
+            "card": "Settle after something hard, without reliving it.",
+            "title": "Self-Hypnosis for Emotional Recovery | Onira",
+            "desc": "Guided self-hypnosis for the aftermath of a hard time: calmer nights, less "
+                    "rumination, steadier days. A relaxation tool, not trauma therapy.",
+            "h1": "Self-hypnosis for emotional recovery",
+            "lede": "A session for the aftermath — when the hard thing has passed but your sleep, your "
+                    "nerves and your attention have not caught up yet.",
+            "why_title": "Calming the aftermath, not reopening it",
+            "why": [
+                "After something difficult, the body often stays braced long after the event is over. "
+                "It shows up as broken sleep, a short fuse, thoughts that circle back at night, a "
+                "startle response that has not settled. Those are ordinary aftershocks, and they "
+                "respond well to deliberate calm.",
+                "These sessions are written to settle that state, not to go back into what caused it. "
+                "They will not ask you to revisit a memory or describe what happened. That kind of "
+                "work is real, it helps, and it is done with a trained professional who can stay with "
+                "you through it — not alone with a phone.",
+            ],
+            "works_on": [
+                "Sleep that broke after a difficult period and has not come back.",
+                "Rumination at night — the same scene replaying without resolution.",
+                "A body that stays on alert: tight chest, clenched jaw, jumping at small things.",
+                "Getting through ordinary days while something heavy is still settling.",
+            ],
+            "expect": "Sessions run 15 to 30 minutes and always end by bringing you fully alert. If a "
+                      "session ever leaves you more distressed rather than calmer, stop using it and "
+                      "talk to someone qualified.",
+            "faq": [
+                ("Can this treat trauma or PTSD?",
+                 "No, and it is not written to try. Flashbacks, nightmares, dissociation or avoidance "
+                 "that shapes your life are treatable — by a clinician trained in trauma. Onira is a "
+                 "relaxation tool for the aftermath, used alongside that kind of help if you have it."),
+                ("Will a session make me remember things?",
+                 "It is not designed to, and it will not ask you to go looking. Hypnosis is also not a "
+                 "reliable way to recover memories — a well-known finding, and one reason this theme "
+                 "stays on calming the present rather than digging into the past."),
+                ("What if I start feeling worse during a session?",
+                 "End it, open your eyes, and come back to the room. That reaction is a signal to work "
+                 "with a person rather than an app, and it is worth taking seriously rather than "
+                 "pushing through."),
+                ("Is grief the same thing?",
+                 "Close enough that the theme suits it. Sessions can steady the days and the nights; "
+                 "they will not shorten grief, and they are not meant to."),
+            ],
+        },
     },
 }
 
@@ -1074,6 +1215,152 @@ FR = {
                  "répéter la séance elle-même, et c'est ainsi que le thème est écrit."),
             ],
         },
+        "pain": {
+            "slug": "douleur",
+            "nav": "Douleur",
+            "card": "Desserrer la crispation et l'appréhension qui amplifient la douleur.",
+            "title": "Auto-hypnose et douleur — écrite pour vous | Onira",
+            "desc": "Auto-hypnose guidée en complément de votre traitement : moins de crispation, "
+                    "moins d'appréhension, des nuits plus simples. Un confort, pas une cure.",
+            "h1": "Auto-hypnose pour vivre avec la douleur",
+            "lede": "Une séance pour ce qui, dans la douleur, n'est pas la lésion elle-même : la "
+                    "crispation, l'appréhension de la prochaine crise, et les nuits qu'elle prend.",
+            "why_title": "Ce que l'hypnose peut et ne peut pas faire sur la douleur",
+            "why": [
+                "Une douleur n'est jamais seulement un signal du corps. La place qu'elle prend dans "
+                "l'attention, la tension avec laquelle on se protège autour d'elle, la crainte de la "
+                "prochaine crise : tout cela change son intensité vécue. Ce sont ces parties-là qu'une "
+                "séance guidée peut atteindre, et c'est souvent ce qui sépare une journée difficile "
+                "d'une journée impossible.",
+                "Ce qu'elle ne fait pas, c'est supprimer la cause. Ce thème est écrit comme un "
+                "accompagnement de votre traitement, jamais comme un remplacement, et il n'est pas une "
+                "raison de sauter un rendez-vous ou de modifier une prescription. Une douleur nouvelle, "
+                "qui s'aggrave ou qui reste inexpliquée relève d'abord d'un médecin.",
+            ],
+            "works_on": [
+                "La protection réflexe et les tensions musculaires qui s'installent autour d'une zone douloureuse.",
+                "L'endormissement quand la douleur ramène sans cesse l'attention vers elle.",
+                "L'anticipation de la prochaine crise, qui crispe tout avant même qu'elle arrive.",
+                "La place de la douleur dans la journée : en bordure de l'attention plutôt qu'au centre.",
+            ],
+            "expect": "Les séances durent 15 à 30 minutes et se terminent en état de veille. Ce que les "
+                      "gens décrivent est le plus souvent partiel et temporaire — baisser le volume "
+                      "plutôt que l'éteindre — et cela vient avec la répétition, pas en une fois.",
+            "faq": [
+                ("L'hypnose peut-elle guérir ma douleur ?",
+                 "Non, et tout ce qui prétend le contraire vous vend quelque chose. La relaxation et la "
+                 "suggestion sont couramment utilisées en accompagnement d'un suivi médical pour rendre "
+                 "la douleur plus vivable. Onira est un outil de relaxation en ce sens : un complément, "
+                 "pas un traitement."),
+                ("Vais-je quand même la sentir ?",
+                 "Très probablement oui. L'objectif réaliste est qu'elle prenne moins de place : moins "
+                 "de tension autour, moins d'appréhension avant, plus de place pour le reste."),
+                ("Est-ce compatible avec mes médicaments ?",
+                 "Une séance n'interagit avec rien de ce que vous prenez. Ce qui compte, c'est de ne "
+                 "jamais diminuer ni arrêter un traitement prescrit parce qu'une séance a soulagé : "
+                 "cette décision appartient à celui qui l'a prescrit."),
+                ("Et pour la migraine ?",
+                 "La tension et l'anticipation autour de la crise sont accessibles ; la crise elle-même "
+                 "est un phénomène neurologique et une affaire médicale. N'utilisez pas une séance à la "
+                 "place d'un traitement qui fonctionne pour vous."),
+            ],
+        },
+        "ibs": {
+            "slug": "syndrome-intestin-irritable",
+            "nav": "Intestin irritable",
+            "card": "Apaiser la boucle intestin-cerveau qui entretient les crises.",
+            "title": "Auto-hypnose et syndrome de l'intestin irritable | Onira",
+            "desc": "Auto-hypnose guidée sur le versant stress du SII : ventre plus calme, moins "
+                    "d'anticipation, journées plus simples. Un complément, pas un traitement.",
+            "h1": "Auto-hypnose et syndrome de l'intestin irritable",
+            "lede": "Une séance pour la boucle où le stress aggrave les symptômes et où les symptômes "
+                    "nourrissent le stress — la part du SII qui répond au calme.",
+            "why_title": "Pourquoi la relaxation atteint l'intestin",
+            "why": [
+                "L'intestin et le système nerveux dialoguent en permanence. C'est pour cela qu'une "
+                "semaine tendue se lit dans la digestion, et que la peur d'une crise au mauvais moment "
+                "suffit parfois à la déclencher. La relaxation guidée agit directement sur cet axe : "
+                "elle fait baisser l'état d'alerte qui entretient la boucle.",
+                "Soyons précis, car la distinction compte : l'hypnothérapie dirigée vers l'intestin est "
+                "une option reconnue dans la prise en charge du SII, recommandée par les "
+                "recommandations cliniques lorsque d'autres approches n'ont pas suffi — mais c'est un "
+                "protocole structuré, mené par un thérapeute formé. Onira n'est pas ce protocole. C'est "
+                "un outil de relaxation qui travaille sur le même axe du stress, en accompagnement de "
+                "votre suivi et non à sa place.",
+            ],
+            "works_on": [
+                "L'anticipation : organiser sa journée autour des toilettes, et ce que cela coûte.",
+                "Les tensions abdominales et la respiration bloquée pendant une crise.",
+                "Le sommeil, qui souffre dans les deux sens quand les symptômes sont actifs.",
+                "Une situation précise, si vous la nommez : un long trajet, un restaurant, une journée au bureau.",
+            ],
+            "expect": "Les séances durent 15 à 30 minutes. Les symptômes digestifs évoluent lentement : "
+                      "jugez sur plusieurs semaines d'usage régulier, pas sur une séance.",
+            "faq": [
+                ("Est-ce la même chose que l'hypnothérapie dirigée vers l'intestin ?",
+                 "Non. Celle-ci est un programme structuré avec un thérapeute formé, en général "
+                 "plusieurs séances sur deux ou trois mois. Onira écrit des séances de relaxation à "
+                 "partir de ce que vous décrivez. Si vous voulez le protocole clinique, demandez une "
+                 "orientation à votre médecin."),
+                ("Faut-il un diagnostic d'abord ?",
+                 "Oui. Des symptômes digestifs ont de nombreuses causes et certaines doivent être "
+                 "explorées : saignements, perte de poids inexpliquée, changement durable du transit "
+                 "habituel relèvent d'un médecin, pas d'une application."),
+                ("Puis-je l'utiliser pendant une crise ?",
+                 "Oui, et beaucoup le font. Installez-vous là où personne ne vous dérangera, et voyez-le "
+                 "comme un moyen de desserrer la tension autour de l'épisode plutôt que de l'arrêter."),
+            ],
+        },
+        "emotional_recovery": {
+            "slug": "apaisement-emotionnel",
+            "nav": "Apaisement",
+            "card": "Se reposer après un moment dur, sans le revivre.",
+            "title": "Auto-hypnose et apaisement émotionnel | Onira",
+            "desc": "Auto-hypnose guidée pour l'après-coup : nuits plus calmes, moins de ruminations, "
+                    "journées plus stables. Un outil de relaxation, pas une thérapie du trauma.",
+            "h1": "Auto-hypnose pour l'apaisement émotionnel",
+            "lede": "Une séance pour l'après-coup : quand l'épreuve est passée mais que le sommeil, les "
+                    "nerfs et l'attention n'ont pas encore suivi.",
+            "why_title": "Apaiser l'après-coup, sans le rouvrir",
+            "why": [
+                "Après quelque chose de difficile, le corps reste souvent en tension longtemps après "
+                "l'événement. Cela se traduit par un sommeil haché, de l'irritabilité, des pensées qui "
+                "reviennent en boucle le soir, des sursauts qui ne se calment pas. Ce sont des "
+                "répliques ordinaires, et elles répondent bien à un calme délibéré.",
+                "Ces séances sont écrites pour apaiser cet état, pas pour retourner dans ce qui l'a "
+                "causé. Elles ne vous demanderont pas de revisiter un souvenir ni de raconter ce qui "
+                "s'est passé. Ce travail-là existe, il aide, et il se fait avec un professionnel formé "
+                "qui peut vous accompagner pendant — pas seul avec un téléphone.",
+            ],
+            "works_on": [
+                "Un sommeil qui s'est cassé après une période difficile et n'est pas revenu.",
+                "Les ruminations du soir : la même scène qui repasse sans se résoudre.",
+                "Un corps qui reste en alerte : poitrine serrée, mâchoire crispée, sursauts au moindre bruit.",
+                "Traverser des journées ordinaires pendant que quelque chose de lourd se dépose encore.",
+            ],
+            "expect": "Les séances durent 15 à 30 minutes et se terminent toujours par un retour complet "
+                      "à l'état de veille. Si une séance vous laisse plus en détresse qu'apaisé, "
+                      "arrêtez de l'utiliser et parlez-en à quelqu'un de qualifié.",
+            "faq": [
+                ("Cela peut-il traiter un trauma ou un état de stress post-traumatique ?",
+                 "Non, et ce n'est pas écrit pour essayer. Les reviviscences, les cauchemars, la "
+                 "dissociation ou un évitement qui organise votre vie se soignent — auprès d'un "
+                 "clinicien formé au psychotraumatisme. Onira est un outil de relaxation pour "
+                 "l'après-coup, à utiliser à côté de cette aide si vous l'avez."),
+                ("Une séance va-t-elle me faire remonter des souvenirs ?",
+                 "Ce n'est pas sa conception, et elle ne vous invitera pas à aller en chercher. "
+                 "L'hypnose n'est d'ailleurs pas un moyen fiable de retrouver des souvenirs — un "
+                 "résultat bien établi, et l'une des raisons pour lesquelles ce thème reste sur "
+                 "l'apaisement du présent plutôt que sur l'exploration du passé."),
+                ("Et si je me sens moins bien pendant une séance ?",
+                 "Arrêtez, ouvrez les yeux, revenez dans la pièce. Cette réaction est un signal qu'il "
+                 "vaut mieux travailler avec une personne qu'avec une application, et elle mérite "
+                 "d'être prise au sérieux plutôt que forcée."),
+                ("Le deuil, est-ce la même chose ?",
+                 "Assez proche pour que le thème convienne. Les séances peuvent stabiliser les journées "
+                 "et les nuits ; elles ne raccourciront pas un deuil, et ce n'est pas leur rôle."),
+            ],
+        },
     },
 }
 
@@ -1575,6 +1862,150 @@ ES = {
                 ("¿Sirve para aprender inglés?",
                  "Sobre todo para la parte de confianza. Las sesiones ensayan hablar sin frenarse, "
                  "que es lo que suele bloquear un idioma que ya conoces a medias."),
+            ],
+        },
+        "pain": {
+            "slug": "dolor",
+            "nav": "Dolor",
+            "card": "Aflojar la tensión y el temor que hacen el dolor más ruidoso.",
+            "title": "Autohipnosis y dolor — escrita para ti | Onira",
+            "desc": "Autohipnosis guiada junto a tu tratamiento: menos tensión, menos temor a la "
+                    "próxima crisis, noches más llevaderas. Una herramienta de alivio, no una cura.",
+            "h1": "Autohipnosis para convivir con el dolor",
+            "lede": "Una sesión para lo que en el dolor no es la lesión: la tensión con que te "
+                    "proteges, el temor a la próxima crisis y las noches que te quita.",
+            "why_title": "Qué puede y qué no puede hacer la hipnosis con el dolor",
+            "why": [
+                "El dolor nunca es solo una señal del cuerpo. Cuánta atención ocupa, con cuánta tensión "
+                "te proteges a su alrededor, cuánto temes el próximo episodio: todo eso cambia su "
+                "intensidad vivida. Son esas partes las que una sesión guiada puede alcanzar, y suelen "
+                "marcar la diferencia entre un día difícil y un día imposible.",
+                "Lo que no hace es eliminar la causa. Este tema está escrito como acompañamiento de tu "
+                "tratamiento, nunca como sustituto, y no es motivo para saltarte una cita ni cambiar lo "
+                "que te han recetado. Un dolor nuevo, que empeora o sin explicación es primero cosa de "
+                "un médico.",
+            ],
+            "works_on": [
+                "La protección refleja y la tensión muscular que se acumulan alrededor de una zona dolorida.",
+                "Conciliar el sueño cuando el dolor devuelve la atención una y otra vez.",
+                "La anticipación de la próxima crisis, que lo tensa todo antes de que llegue.",
+                "El lugar del dolor en el día: en el borde de la atención en vez de en el centro.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos y terminan devolviéndote al estado de "
+                      "alerta. Lo que la gente describe suele ser parcial y temporal — bajar el volumen, "
+                      "no apagarlo — y llega con la repetición, no de una vez.",
+            "faq": [
+                ("¿La hipnosis puede curar mi dolor?",
+                 "No, y lo que afirme lo contrario te está vendiendo algo. La relajación y la sugestión "
+                 "se usan habitualmente junto a la atención médica para hacer el dolor más llevadero. "
+                 "Onira es una herramienta de relajación en ese sentido: un complemento, no un "
+                 "tratamiento."),
+                ("¿Lo seguiré sintiendo?",
+                 "Lo más probable es que sí. El objetivo realista es que ocupe menos: menos tensión "
+                 "alrededor, menos temor antes, más sitio para el resto del día."),
+                ("¿Es compatible con mi medicación?",
+                 "Una sesión no interactúa con nada de lo que tomas. Lo importante es que nunca "
+                 "reduzcas ni dejes un tratamiento recetado porque una sesión te alivió: esa decisión "
+                 "es de quien te lo recetó."),
+                ("¿Y para la migraña?",
+                 "La tensión y la anticipación alrededor de la crisis sí son alcanzables; la crisis en "
+                 "sí es un fenómeno neurológico y un asunto médico. No uses una sesión en lugar de un "
+                 "tratamiento que te funciona."),
+            ],
+        },
+        "ibs": {
+            "slug": "intestino-irritable",
+            "nav": "Intestino irritable",
+            "card": "Calmar el bucle intestino-cerebro que mantiene los brotes.",
+            "title": "Autohipnosis y síndrome de intestino irritable | Onira",
+            "desc": "Autohipnosis guiada para la parte de estrés del SII: vientre más calmado, menos "
+                    "anticipación, días más llevaderos. Un complemento, no un tratamiento.",
+            "h1": "Autohipnosis y síndrome de intestino irritable",
+            "lede": "Una sesión para el bucle en el que el estrés agrava los síntomas y los síntomas "
+                    "alimentan el estrés — la parte del SII que responde a la calma.",
+            "why_title": "Por qué la relajación llega al intestino",
+            "why": [
+                "El intestino y el sistema nervioso hablan sin parar. Por eso una semana tensa se nota "
+                "en la digestión, y por eso el miedo a un brote en el peor momento basta a veces para "
+                "provocarlo. La relajación guiada actúa justo sobre ese eje: baja el estado de alerta "
+                "que mantiene el bucle en marcha.",
+                "Conviene ser preciso, porque la distinción importa: la hipnoterapia dirigida al "
+                "intestino es una opción reconocida en el manejo del SII, recomendada por las guías "
+                "clínicas cuando otros enfoques no han bastado — pero es un programa estructurado "
+                "impartido por un terapeuta formado. Onira no es ese programa. Es una herramienta de "
+                "relajación que trabaja sobre el mismo eje del estrés, al lado de tu seguimiento y no "
+                "en su lugar.",
+            ],
+            "works_on": [
+                "La anticipación: organizar el día según dónde están los baños, y lo que eso cuesta.",
+                "La tensión abdominal y la respiración contenida durante un brote.",
+                "El sueño, que sufre en ambos sentidos cuando los síntomas están activos.",
+                "Una situación concreta, si la escribes: un viaje largo, un restaurante, un día en la oficina.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos. Los síntomas digestivos cambian "
+                      "despacio: júzgalo por varias semanas de uso regular, no por una sesión.",
+            "faq": [
+                ("¿Es lo mismo que la hipnoterapia dirigida al intestino?",
+                 "No. Esa es un programa estructurado con un terapeuta formado, normalmente varias "
+                 "sesiones a lo largo de dos o tres meses. Onira escribe sesiones de relajación a "
+                 "partir de lo que le cuentas. Si quieres el protocolo clínico, pide a tu médico que "
+                 "te derive."),
+                ("¿Hace falta un diagnóstico primero?",
+                 "Sí. Los síntomas digestivos tienen muchas causas y algunas hay que estudiarlas: "
+                 "sangrado, pérdida de peso sin explicación o un cambio duradero en tu ritmo habitual "
+                 "son cosa de un médico, no de una aplicación."),
+                ("¿Puedo usarla durante un brote?",
+                 "Sí, y mucha gente lo hace. Ponte donde nadie te interrumpa y tómalo como aflojar la "
+                 "tensión alrededor del episodio, no como detenerlo."),
+            ],
+        },
+        "emotional_recovery": {
+            "slug": "calma-emocional",
+            "nav": "Calma emocional",
+            "card": "Reposar después de algo duro, sin volver a vivirlo.",
+            "title": "Autohipnosis y calma emocional | Onira",
+            "desc": "Autohipnosis guiada para después del golpe: noches más tranquilas, menos rumiación, "
+                    "días más estables. Una herramienta de relajación, no terapia de trauma.",
+            "h1": "Autohipnosis para la calma emocional",
+            "lede": "Una sesión para el después: cuando lo duro ya pasó pero el sueño, los nervios y la "
+                    "atención todavía no lo han alcanzado.",
+            "why_title": "Calmar el después, sin reabrirlo",
+            "why": [
+                "Después de algo difícil, el cuerpo suele quedarse en tensión mucho después del "
+                "acontecimiento. Se nota en un sueño roto, en la irritabilidad, en pensamientos que "
+                "vuelven en bucle por la noche, en sobresaltos que no se apagan. Son réplicas "
+                "corrientes, y responden bien a una calma deliberada.",
+                "Estas sesiones están escritas para calmar ese estado, no para volver a lo que lo "
+                "causó. No te pedirán revisitar un recuerdo ni contar lo que pasó. Ese trabajo existe, "
+                "ayuda, y se hace con un profesional formado que puede acompañarte mientras dura — no "
+                "a solas con un teléfono.",
+            ],
+            "works_on": [
+                "Un sueño que se rompió tras una época difícil y no ha vuelto.",
+                "La rumiación nocturna: la misma escena repitiéndose sin resolverse.",
+                "Un cuerpo en alerta: pecho apretado, mandíbula tensa, sobresaltos por nada.",
+                "Atravesar días normales mientras algo pesado todavía se asienta.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos y terminan siempre con una vuelta "
+                      "completa al estado de alerta. Si una sesión te deja con más angustia en vez de "
+                      "más calma, deja de usarla y háblalo con alguien cualificado.",
+            "faq": [
+                ("¿Esto trata el trauma o el estrés postraumático?",
+                 "No, y no está escrito para intentarlo. Las reviviscencias, las pesadillas, la "
+                 "disociación o una evitación que organiza tu vida tienen tratamiento — con un "
+                 "clínico formado en trauma. Onira es una herramienta de relajación para el después, "
+                 "para usar junto a esa ayuda si la tienes."),
+                ("¿Una sesión me hará recordar cosas?",
+                 "No es su diseño, y no te invitará a ir a buscarlas. La hipnosis tampoco es una forma "
+                 "fiable de recuperar recuerdos — un resultado bien establecido, y una de las razones "
+                 "por las que este tema se queda en calmar el presente en vez de hurgar en el pasado."),
+                ("¿Y si me siento peor durante una sesión?",
+                 "Párala, abre los ojos, vuelve a la habitación. Esa reacción es una señal de que "
+                 "conviene trabajar con una persona y no con una aplicación, y merece tomarse en "
+                 "serio en vez de forzarla."),
+                ("¿El duelo es lo mismo?",
+                 "Lo bastante parecido como para que el tema sirva. Las sesiones pueden estabilizar los "
+                 "días y las noches; no acortarán un duelo, y no es su función."),
             ],
         },
     },

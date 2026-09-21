@@ -300,6 +300,87 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://onirahypno.com/hypnosis/pain/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/pain/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/douleur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/dolor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/pain/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/fr/hypnose/douleur/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/pain/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/douleur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/dolor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/pain/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/es/hipnosis/dolor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/pain/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/douleur/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/dolor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/pain/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/hypnosis/ibs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/ibs/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/syndrome-intestin-irritable/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/intestino-irritable/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/ibs/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/fr/hypnose/syndrome-intestin-irritable/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/ibs/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/syndrome-intestin-irritable/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/intestino-irritable/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/ibs/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/es/hipnosis/intestino-irritable/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/ibs/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/syndrome-intestin-irritable/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/intestino-irritable/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/ibs/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/hypnosis/emotional-recovery/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/emotional-recovery/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/apaisement-emotionnel/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/calma-emocional/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/emotional-recovery/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/fr/hypnose/apaisement-emotionnel/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/emotional-recovery/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/apaisement-emotionnel/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/calma-emocional/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/emotional-recovery/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://onirahypno.com/es/hipnosis/calma-emocional/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/hypnosis/emotional-recovery/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/hypnose/apaisement-emotionnel/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://onirahypno.com/es/hipnosis/calma-emocional/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onirahypno.com/hypnosis/emotional-recovery/"/>
+    <lastmod>2026-08-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://onirahypno.com/guides/how-to-fall-asleep-with-self-hypnosis/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://onirahypno.com/guides/how-to-fall-asleep-with-self-hypnosis/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://onirahypno.com/fr/guides/s-endormir-avec-l-auto-hypnose/"/>
