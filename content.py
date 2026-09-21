@@ -26,7 +26,7 @@ SITE = {
 # hreflang set from the languages that publish it.
 THEMES = ["anxiety", "sleep", "confidence", "stress", "smoking", "focus", "weight",
           "fear", "letting_go", "learning", "motivation", "habits",
-          "pain", "ibs", "emotional_recovery"]
+          "pain", "ibs", "emotional_recovery", "mental_reset"]
 
 # ---------------------------------------------------------------- English ----
 
@@ -2006,6 +2006,53 @@ ES = {
                 ("¿El duelo es lo mismo?",
                  "Lo bastante parecido como para que el tema sirva. Las sesiones pueden estabilizar los "
                  "días y las noches; no acortarán un duelo, y no es su función."),
+            ],
+        },
+        "mental_reset": {
+            "slug": "reprogramar-la-mente",
+            "nav": "Reprogramar la mente",
+            "card": "Calmar la mente y ensayar otra forma de reaccionar.",
+            "title": "Autohipnosis para reprogramar tu mente | Onira",
+            "desc": "Autohipnosis guiada para calmar la mente y ensayar respuestas nuevas ante lo que "
+                    "siempre te dispara. Escrita en tu teléfono, privada y sin conexión.",
+            "h1": "Autohipnosis para reprogramar tu mente",
+            "lede": "Una sesión para lo que se repite solo: la reacción automática, el pensamiento de "
+                    "siempre, el bucle que ya conoces de memoria.",
+            "why_title": "Qué significa de verdad \"reprogramar\"",
+            "why": [
+                "La palabra sugiere abrir la cabeza y cambiar una línea de código. No funciona así, y "
+                "vale la pena decirlo: lo que cambia con la repetición no es un programa sino una "
+                "costumbre mental — la respuesta que aparece primero, antes de que decidas nada.",
+                "Ahí es donde una sesión guiada tiene sentido. Primero baja el ruido, porque una mente "
+                "acelerada no ensaya nada; después te hace recorrer la escena de siempre con otra "
+                "reacción, con calma y en detalle. Ensayada varias veces, esa versión empieza a llegar "
+                "antes que la automática. Es lento y es repetición, no un interruptor.",
+            ],
+            "works_on": [
+                "Calmar una mente que no para — el paso previo, sin el cual lo demás no sirve.",
+                "La reacción automática ante algo concreto: una crítica, un atasco, un mensaje que no llega.",
+                "El diálogo interno que ya sabes de memoria, ensayado en una versión más justa.",
+                "Una escena que puedes nombrar: una reunión, una conversación pendiente, una rutina que quieres cambiar.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos y terminan devolviéndote al estado de "
+                      "alerta. Lo que se nota primero es la calma; el cambio de reacción llega con "
+                      "semanas de repetición, no con una sesión.",
+            "faq": [
+                ("¿De verdad se puede reprogramar la mente?",
+                 "No como un ordenador, y desconfía de quien lo prometa. Lo que sí se puede es ensayar "
+                 "una respuesta distinta hasta que aparezca sola, que es como cambia cualquier "
+                 "costumbre. Onira está escrita para ese ensayo, no para un borrado y reinstalación."),
+                ("¿En cuánto tiempo se nota?",
+                 "La parte de calma, casi enseguida. La parte de reacción, con repetición regular — "
+                 "piensa en semanas de uso frecuente y en una escena concreta cada vez, no en un "
+                 "propósito general."),
+                ("¿Es lo mismo que las afirmaciones?",
+                 "Se parecen en la superficie y se diferencian en el estado. Repetir una frase con la "
+                 "cabeza acelerada rebota; la sesión primero baja ese ruido y luego trabaja la escena "
+                 "entera, no una frase suelta."),
+                ("¿Sirve para calmar la mente antes de dormir?",
+                 "Sí, aunque la sesión termina devolviéndote al estado de alerta. Si lo que buscas es "
+                 "dormirte, el tema de sueño está escrito justo para eso."),
             ],
         },
     },
