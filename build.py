@@ -15,10 +15,13 @@ per page, so adding a language or a theme cannot silently produce a half-linked
 page. Rerun after any edit to `content.py`; `git status` shows what changed.
 """
 
+import datetime
 import html
 import json
 import os
+import re
 import shutil
+import subprocess
 
 from content import SITE, THEMES, GUIDES, LANGS
 
@@ -271,8 +274,74 @@ def guide_cards(lang, exclude=None):
     return '<ul class="cards">%s</ul>\n' % "".join(lis)
 
 
+# ----------------------------------------------------------------- dates ----
+#
+# Every URL used to carry SITE["updated"] as its <lastmod>, which meant a
+# freshly published page announced itself to Google as unchanged since whenever
+# that constant was last touched -- the opposite of the signal a new page needs,
+# and the reason resubmitting the sitemap by hand never helped.
+#
+# The date is now per page and derived from git: if what we just generated
+# differs from the committed copy, the page changed today; otherwise it keeps
+# the date of the last commit that touched it. Pages that did not change keep
+# their old date, so "everything changed" is never claimed.
+#
+# The dateModified inside a guide's JSON-LD is part of the page, so it is
+# rendered as LASTMOD_TOKEN and both sides are normalised before comparison --
+# otherwise the page would differ from itself on every build.
+
+LASTMOD_TOKEN = "@@LASTMOD@@"
+LASTMOD = {}
+_TODAY = datetime.date.today().isoformat()
+_DATEMOD_RE = re.compile(r'("dateModified":\s*")[^"]*(")')
+
+
+def _git(*args):
+    """Run git in the repo, or return None outside one / on any failure."""
+    try:
+        out = subprocess.run(("git",) + args, cwd=ROOT, stdout=subprocess.PIPE,
+                             stderr=subprocess.DEVNULL, check=True)
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    return out.stdout.decode("utf-8", "replace")
+
+
+def _normalise(markup):
+    return _DATEMOD_RE.sub(r"\1" + LASTMOD_TOKEN + r"\2", markup)
+
+
+def in_git_repo():
+    """Cached: is this checkout a git repo at all?"""
+    if not hasattr(in_git_repo, "_answer"):
+        in_git_repo._answer = _git("rev-parse", "--git-dir") is not None
+    return in_git_repo._answer
+
+
+def page_lastmod(relpath, markup):
+    """The date this page last actually changed, as an ISO string.
+
+    Outside a git checkout there is nothing to compare against, so the old
+    frozen constant is all we have. Inside one, a page missing from HEAD is a
+    page being published right now -- which must read as today, not as the
+    constant, since that is the whole case this exists for.
+    """
+    if not in_git_repo():
+        return SITE["updated"]
+    committed = _git("show", "HEAD:" + relpath)
+    if committed is None:
+        return _TODAY                   # not in HEAD yet: brand new page
+    if _normalise(committed) != _normalise(markup):
+        return _TODAY                   # content changed in this build
+    logged = _git("log", "-1", "--format=%cs", "--", relpath)
+    return (logged or "").strip() or _TODAY
+
+
 def write(url, markup):
     path = out_path(url)
+    relpath = os.path.relpath(path, ROOT)
+    stamp = page_lastmod(relpath, markup)
+    LASTMOD[url] = stamp
+    markup = markup.replace(LASTMOD_TOKEN, stamp)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(markup)
@@ -477,7 +546,7 @@ def build_guide(lang, key):
         "mainEntityOfPage": ORIGIN + url,
         "author": {"@type": "Organization", "name": "Onira", "url": ORIGIN + "/"},
         "publisher": {"@type": "Organization", "name": "Onira", "url": ORIGIN + "/"},
-        "dateModified": SITE["updated"],
+        "dateModified": LASTMOD_TOKEN,
     }
 
     body = ['<p class="crumbs"><a href="%s">%s</a> &rsaquo; %s</p>\n'
@@ -617,7 +686,8 @@ def build_sitemap():
                        % (code, ORIGIN, path))
         out.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s"/>'
                    % (ORIGIN, alts[0][1]))
-        out.append("    <lastmod>%s</lastmod>" % SITE["updated"])
+        out.append("    <lastmod>%s</lastmod>"
+                   % LASTMOD.get(url, SITE["updated"]))
         out.append("    <priority>%s</priority>" % priority)
         out.append("  </url>")
     out.append("</urlset>")
@@ -827,7 +897,99 @@ def build_favicon_svg():
     return path
 
 
+# ------------------------------------------------------------ validation ----
+#
+# content.py is hand-written nested data, and the shapes that go wrong are
+# always the same: a guide section written as [heading, paragraphs] with the
+# bullet list left off, or an FAQ pair that grew a third element. Unchecked,
+# that surfaces as "ValueError: not enough values to unpack" from deep inside a
+# template, naming nothing -- and because it fires mid-run, it leaves the tree
+# half regenerated, which then makes audit.py report hundreds of failures that
+# are all downstream of the one real problem.
+#
+# So: check every shape first, name the exact entry, and write nothing until it
+# all passes.
+
+THEME_KEYS = ("slug", "nav", "card", "title", "desc", "h1", "lede",
+              "why_title", "why", "works_on", "expect", "faq")
+GUIDE_KEYS = ("slug", "nav", "card", "title", "desc", "h1", "lede", "answer",
+              "sections", "faq")
+
+
+def _strings(value, where, problems):
+    if not isinstance(value, (list, tuple)):
+        problems.append("%s: expected a list, got %s" % (where, type(value).__name__))
+        return
+    for i, item in enumerate(value):
+        if not isinstance(item, str):
+            problems.append("%s[%d]: expected a string, got %s"
+                            % (where, i, type(item).__name__))
+
+
+def _faq(entries, where, problems):
+    if not isinstance(entries, (list, tuple)):
+        problems.append("%s: expected a list of (question, answer) pairs" % where)
+        return
+    for i, pair in enumerate(entries):
+        if not isinstance(pair, (list, tuple)) or len(pair) != 2:
+            problems.append("%s[%d]: expected (question, answer), got %d element(s)"
+                            % (where, i, len(pair) if hasattr(pair, "__len__") else 1))
+
+
+def validate_content():
+    """Fail loudly, and by name, before a single file is written."""
+    problems = []
+
+    for lang in LANGS:
+        code = lang["code"]
+
+        for key, theme in lang.get("themes", {}).items():
+            where = "%s theme %r" % (code, key)
+            if key not in THEMES:
+                problems.append("%s: not listed in THEMES" % where)
+            for field in THEME_KEYS:
+                if field not in theme:
+                    problems.append("%s: missing %r" % (where, field))
+            _strings(theme.get("why", []), where + " why", problems)
+            _strings(theme.get("works_on", []), where + " works_on", problems)
+            _faq(theme.get("faq", []), where + " faq", problems)
+
+        for key, guide in lang.get("guides", {}).items():
+            where = "%s guide %r" % (code, key)
+            if key not in GUIDES:
+                problems.append("%s: not listed in GUIDES" % where)
+            for field in GUIDE_KEYS:
+                if field not in guide:
+                    problems.append("%s: missing %r" % (where, field))
+            sections = guide.get("sections", [])
+            if not isinstance(sections, (list, tuple)):
+                problems.append("%s sections: expected a list" % where)
+                continue
+            for i, section in enumerate(sections):
+                label = "%s section %d" % (where, i)
+                if not isinstance(section, (list, tuple)) or len(section) != 3:
+                    got = len(section) if hasattr(section, "__len__") else 1
+                    heading = section[0] if got else "?"
+                    problems.append(
+                        "%s (%r): expected [heading, paragraphs, bullets] -- got %d "
+                        "element(s). An empty bullet list is written []." 
+                        % (label, heading, got))
+                    continue
+                if not isinstance(section[0], str):
+                    problems.append("%s: heading must be a string" % label)
+                _strings(section[1], label + " paragraphs", problems)
+                _strings(section[2], label + " bullets", problems)
+            _faq(guide.get("faq", []), where + " faq", problems)
+
+    if problems:
+        print("content.py is malformed -- nothing was written:\n")
+        for problem in problems:
+            print("  " + problem)
+        raise SystemExit(1)
+
+
 def main():
+    validate_content()
     clean()
     written = [build_favicon_svg()]
     for lang in LANGS:
