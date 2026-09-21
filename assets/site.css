@@ -141,3 +141,8 @@ li { margin: .45rem 0; }
 }
 .site-foot ul { list-style: none; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; margin: 0 0 .8rem; }
 .site-foot li { margin: 0; }
+.site-foot .badges {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .75rem;
+  margin: 1.25rem 0 0;
+}
+.site-foot .badges img { max-width: 100%; height: auto; vertical-align: middle; }

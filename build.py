@@ -153,6 +153,24 @@ def header(lang, alternates, title):
     )
 
 
+def badges():
+    """Reciprocal directory badges, in every footer.
+
+    Every <img> carries its displayed width/height and loads lazily, for the
+    same reason the screenshots do: the footer must not reflow as they arrive,
+    and none of them may become the LCP element.
+    """
+    if not SITE.get("badges"):
+        return ""
+    links = " ".join(
+        '<a href="%s" target="_blank" rel="noopener noreferrer">'
+        '<img src="%s" alt="%s" width="%d" height="%d" loading="lazy" '
+        'decoding="async"></a>'
+        % (esc(b["href"]), esc(b["src"]), esc(b["alt"]), b["width"], b["height"])
+        for b in SITE["badges"])
+    return '\n  <p class="badges">%s</p>' % links
+
+
 def footer(lang):
     ui = lang["ui"]
     items = "".join("<li>%s</li>" % i for i in [
@@ -163,11 +181,11 @@ def footer(lang):
     return """</main>
 <footer class="site-foot"><div class="wrap">
   <ul>%s</ul>
-  <p>%s</p>
+  <p>%s</p>%s
 </div></footer>
 </body>
 </html>
-""" % (items, esc(lang["ui"]["foot_tag"]))
+""" % (items, esc(lang["ui"]["foot_tag"]), badges())
 
 
 def cta(lang):

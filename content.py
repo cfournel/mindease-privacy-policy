@@ -18,6 +18,29 @@ SITE = {
     # domain property covers every subdomain and both schemes, and cannot be lost
     # by a template change).
     "search_console": "",
+    # Directory and launch-site badges, rendered in every page footer by
+    # build.py. They are reciprocal links: those sites link here, these link
+    # back. Intrinsic width/height are the DISPLAYED size, so the footer never
+    # reflows as they load (the PeerPush artwork is 680x130 and is shown at
+    # half). Remote images by necessity -- PeerPush's badge shows a live
+    # rating, and a self-hosted copy would freeze it.
+    "badges": [
+        {"href": "https://www.producthunt.com/products/onira-self-hypnosis"
+                 "?embed=true&utm_source=badge-featured&utm_medium=badge"
+                 "&utm_campaign=badge-onira-self-hypnosis",
+         "src": "https://api.producthunt.com/widgets/embed-image/v1/featured.svg"
+                "?post_id=1244605&theme=light&t=1789720917170",
+         "alt": "Onira - Self-Hypnosis on Product Hunt",
+         "width": 250, "height": 54},
+        {"href": "https://peerpush.com/p/onira",
+         "src": "https://peerpush.com/p/onira/rating-badge.png",
+         "alt": "Onira rating on PeerPush",
+         "width": 340, "height": 65},
+        {"href": "https://smolhunt.com/projects/onira-self-hypnosis?utm_source=badge",
+         "src": "https://smolhunt.com/smolhunt/images/badges/featured-on-light.svg",
+         "alt": "Featured on Smol Hunt",
+         "width": 150, "height": 44},
+    ],
 }
 
 # Order used for nav cards and the sitemap. A theme does not have to exist in
