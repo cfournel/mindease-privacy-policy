@@ -2070,7 +2070,7 @@ ES = {
 # hreflang set, the slugs are not, and a guide only has to exist where the
 # question is actually asked. The order here is the order of the nav cards and
 # the sitemap.
-GUIDES = ["fall_asleep", "vs_meditation", "does_it_work"]
+GUIDES = ["fall_asleep", "vs_meditation", "does_it_work", "street_hypnosis"]
 
 EN["guide_dir"] = "guides"
 EN["ui"]["guides_title"] = "Questions people ask"
@@ -2327,6 +2327,120 @@ EN["guides"] = {
              "No. Without a voice guiding you, the state simply fades or turns into sleep. "
              "A session that ends properly includes a deliberate return to full alertness "
              "for comfort, not for safety."),
+        ],
+    },
+    "street_hypnosis": {
+        "slug": "how-street-hypnosis-works",
+        "nav": "Street hypnosis",
+        "card": "Real, not mind control — and the same mechanism works on yourself.",
+        "title": "How Street Hypnosis Works (And Is It Real?) | Onira",
+        "desc": "What is really happening in street hypnosis: the stiff arm, the "
+                "handshake, why it works on some people and not others, and "
+                "whether it is legal.",
+        "h1": "How street hypnosis works",
+        "lede": "The stiff arm, the frozen handshake, the volunteer who forgets their own "
+                "name — what is going on there, and how much of it is real.",
+        "answer": "Street hypnosis is real, and it is not mind control. What the hypnotist "
+                  "uses is suggestion, expectation and the volunteer's own willingness to "
+                  "go along with the frame — plus a quick screening step that finds the "
+                  "people who respond strongly, because roughly one person in four does. "
+                  "Nobody is controlled, nobody loses their memory of it, and nobody does "
+                  "anything they would genuinely refuse. The same mechanism, minus the "
+                  "theatre, is what self-hypnosis uses when you direct it at yourself.",
+        "sections": [
+            ["What is actually happening",
+             ["Hypnosis is focused attention plus suggestion. Narrow someone's attention "
+              "hard enough, give them a clear expectation of what is about to happen, and "
+              "suggestions start being acted on before the usual critical checking gets "
+              "involved. That is the whole mechanism, on a street corner or in a session.",
+              "The street version adds two things a recorded session cannot. First, a "
+              "person who is socially committed: they stopped, they agreed, people are "
+              "watching, and backing out now would be its own small embarrassment. Second, "
+              "selection — the hypnotist tries several people and keeps the ones who "
+              "respond, which is why the clips you see are all successes."],
+             []],
+            ["The stiff arm and the frozen handshake",
+             ["The set pieces are less mysterious than they look, and each one has a job:"],
+             ["**Suggestibility tests** — the stiff arm that will not bend, hands stuck "
+              "together, eyelids that will not open. These come first because they tell "
+              "the hypnotist how responsive someone is before anything bigger is tried.",
+              "**Convincers** — the same tests, doing a second job. Feeling your own arm "
+              "refuse to bend is far more persuasive than being told it will, and that "
+              "belief makes the next suggestion land harder.",
+              "**Pattern interrupt** — the handshake induction. An automatic social action "
+              "is started and then broken mid-way, leaving a half-second of blankness, and "
+              "a clear instruction is dropped into it. It is surprise used as a doorway, "
+              "not a magic word.",
+              "**Compliance and rapport** — the unglamorous ingredient. The volunteer wants "
+              "this to work. That is not cheating; wanting it is part of how suggestion "
+              "works at all."]],
+            ["Is it real, or are they actors?",
+             ["Mostly real, with the caveat that you are watching an edit. Responsiveness "
+              "to hypnotic suggestion varies between people and is fairly stable across a "
+              "lifetime: around one in four people respond strongly, about the same "
+              "proportion barely respond at all, and the rest sit in between. A street "
+              "hypnotist finds the first group and films them.",
+              "What is not real is the loss of self. Volunteers stay aware throughout, "
+              "remember it afterwards, and can stop whenever they decide to. The dramatic "
+              "part — someone unable to recall their name for ten seconds — is a temporary "
+              "suggestion someone is going along with, not an off switch."],
+             []],
+            ["Is hypnosis illegal?",
+             ["Doing it is generally legal, and performing it in public is what gets "
+              "regulated rather than the thing itself. The United Kingdom is the clearest "
+              "example: the Hypnotism Act 1952 requires a licence from the local authority "
+              "before hypnotism is performed as public entertainment. Elsewhere the rules "
+              "vary by country and sometimes by city, and some places restrict who may use "
+              "hypnosis in a clinical context.",
+              "The part that matters more than licensing is consent. Hypnotising a stranger "
+              "who has not clearly agreed is not a prank, and \"they said yes after I "
+              "started\" is not agreement. If you try any of this, ask first, take no for "
+              "an answer, and leave anyone who seems distressed alone."],
+             []],
+            ["What it means if you want to try it on yourself",
+             ["Here is the part the videos bury: the mechanism does not need an audience, a "
+              "stranger, or a handshake. Attention, expectation and suggestion are the "
+              "working parts, and all three are available when you are the one giving the "
+              "instructions. What you lose is the spectacle. What you gain is that you can "
+              "point it at something you actually want — sleep, a fear, a habit, the hour "
+              "before a difficult conversation.",
+              "It is also slower and duller than a street clip, and honest about it: the "
+              "effect comes from repetition over weeks, not from one dramatic moment. If "
+              "you are in the quarter of people who respond strongly, you will notice "
+              "quickly. If three or four honest attempts do nothing, this is probably not "
+              "your tool."],
+             []],
+            ["Where Onira fits",
+             ["Onira writes self-hypnosis sessions on your phone and narrates them aloud — "
+              "you pick a theme, optionally say what is actually going on, and a model "
+              "running on the device writes the script and speaks it. It is the self-"
+              "directed side of what you have been watching, aimed at sleep, anxiety, "
+              "confidence, habits and the rest.",
+              "It does not teach street hypnosis and will not make you a hypnotist. It is "
+              "free, works offline, and nothing you type leaves the phone."],
+             []],
+        ],
+        "faq": [
+            ("Can someone hypnotise me against my will?",
+             "No. Suggestion needs your cooperation, and that is why street hypnotists ask "
+             "for volunteers rather than picking targets. Someone who does not want to "
+             "participate simply does not respond."),
+            ("Will I do something embarrassing?",
+             "Not something you genuinely object to. People under suggestion decline things "
+             "that cross their own lines, which is well documented and also why stage shows "
+             "stick to harmless material. The risk at a show is social, not psychological."),
+            ("Is the stiff arm proof that someone is hypnotised?",
+             "No — it is a suggestibility test. It shows how readily someone accepts a "
+             "suggestion, which is useful information, but it is a step before anything "
+             "resembling a hypnotic state, not evidence of one."),
+            ("Can I learn street hypnosis from Onira?",
+             "No, and it is worth being straight about it. Onira writes self-hypnosis "
+             "sessions for you to listen to; it does not teach you to hypnotise other "
+             "people. If that is what you are after, you want a course, not this app."),
+            ("Do people remember what happened?",
+             "Yes, in almost every case. Suggested amnesia is a temporary effect in "
+             "suggestible people, and it wears off. Waking up with a blank stretch of "
+             "missing life is a film convention."),
         ],
     },
 }
