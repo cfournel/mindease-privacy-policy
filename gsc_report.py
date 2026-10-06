@@ -7,14 +7,13 @@ Needs Application Default Credentials with the webmasters.readonly scope:
 and a project with the Search Console API enabled (GSC_QUOTA_PROJECT, default below).
 
 Usage: python3 gsc_report.py [--days 28] [--no-inspect] [--email ADDRESS]
---email also needs the gmail.send scope on the ADC login and the Gmail API enabled on
-the quota project; the mail is sent from the logged-in account. The report is saved to
+--email sends it through Gmail SMTP; credentials in ~/.config/gsc-report.env, see
+send_mail(). The report is saved to
 ~/gsc-reports/YYYY-MM-DD.md either way.
 Check monthly: nothing on this site moves in days (see marketing/BACKLINKS.md).
 """
 import argparse
 import collections
-import base64
 import contextlib
 import datetime
 import email.message
@@ -22,6 +21,7 @@ import io
 import json
 import os
 import re
+import smtplib
 import subprocess
 import urllib.request
 
@@ -73,11 +73,24 @@ def indexation():
 
 
 def send_mail(to, subject, body):
+    """Gmail SMTP with an app password: gcloud's OAuth client is blocked for gmail.send.
+
+    Credentials live outside the repo, in ~/.config/gsc-report.env (chmod 600):
+        GMAIL_USER=you@gmail.com
+        GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
+    """
+    env = {}
+    with open(os.path.expanduser("~/.config/gsc-report.env")) as f:
+        for line in f:
+            if "=" in line and not line.lstrip().startswith("#"):
+                k, v = line.strip().split("=", 1)
+                env[k] = v.strip().strip("\"'")
     msg = email.message.EmailMessage()
-    msg["To"], msg["Subject"] = to, subject
+    msg["From"], msg["To"], msg["Subject"] = env["GMAIL_USER"], to, subject
     msg.set_content(body)
-    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
-    call("https://gmail.googleapis.com/gmail/v1/users/me/messages/send", {"raw": raw})
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        smtp.login(env["GMAIL_USER"], env["GMAIL_APP_PASSWORD"].replace(" ", ""))
+        smtp.send_message(msg)
 
 
 def main():
