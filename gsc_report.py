@@ -6,12 +6,19 @@ Needs Application Default Credentials with the webmasters.readonly scope:
         --scopes=https://www.googleapis.com/auth/webmasters.readonly,https://www.googleapis.com/auth/cloud-platform
 and a project with the Search Console API enabled (GSC_QUOTA_PROJECT, default below).
 
-Usage: python3 gsc_report.py [--days 28] [--no-inspect]
+Usage: python3 gsc_report.py [--days 28] [--no-inspect] [--email ADDRESS]
+--email also needs the gmail.send scope on the ADC login and the Gmail API enabled on
+the quota project; the mail is sent from the logged-in account. The report is saved to
+~/gsc-reports/YYYY-MM-DD.md either way.
 Check monthly: nothing on this site moves in days (see marketing/BACKLINKS.md).
 """
 import argparse
 import collections
+import base64
+import contextlib
 import datetime
+import email.message
+import io
 import json
 import os
 import re
@@ -65,11 +72,34 @@ def indexation():
     return len(urls), states, missing
 
 
+def send_mail(to, subject, body):
+    msg = email.message.EmailMessage()
+    msg["To"], msg["Subject"] = to, subject
+    msg.set_content(body)
+    raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+    call("https://gmail.googleapis.com/gmail/v1/users/me/messages/send", {"raw": raw})
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--email", help="send the report to this address")
     ap.add_argument("--days", type=int, default=28)
     ap.add_argument("--no-inspect", action="store_true")
     a = ap.parse_args()
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        report(a)
+    text = buf.getvalue()
+    print(text)
+    outdir = os.path.expanduser("~/gsc-reports")
+    os.makedirs(outdir, exist_ok=True)
+    with open(os.path.join(outdir, "%s.md" % datetime.date.today()), "w") as f:
+        f.write(text)
+    if a.email:
+        send_mail(a.email, "onirahypno.com Search Console, %s" % datetime.date.today(), text)
+
+
+def report(a):
     # Search Console data lags ~2 days.
     end = datetime.date.today() - datetime.timedelta(days=2)
     start = end - datetime.timedelta(days=a.days - 1)
