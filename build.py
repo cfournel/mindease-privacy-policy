@@ -22,6 +22,7 @@ import os
 import re
 import shutil
 import subprocess
+import urllib.parse
 
 from content import SITE, THEMES, GUIDES, LANGS
 
@@ -54,6 +55,23 @@ FAVICON_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">'
 
 
 # ------------------------------------------------------------------ paths ----
+
+_PAGE = "site"
+
+
+def play_url(slot):
+    """Play listing link tagged for Play Console's acquisition report.
+
+    Play reads utm_* only from the `referrer` parameter. The campaign names the
+    page ("fr-home", "en-sleep", "guide-en-does-self-hypnosis-work"), the content
+    names the slot on it (header, footer, cta), so the report says which page and
+    which button an install came from. JSON-LD keeps the bare URL.
+    """
+    ref = urllib.parse.urlencode({
+        "utm_source": "onirahypno.com", "utm_medium": "site",
+        "utm_campaign": _PAGE, "utm_content": slot})
+    return "%s&referrer=%s" % (SITE["play"], urllib.parse.quote(ref, safe=""))
+
 
 def home_url(lang):
     return "/" if not lang["base"] else "/%s/" % lang["base"]
@@ -152,7 +170,7 @@ def header(lang, alternates, title):
 <main class="wrap">
 """ % (
         home_url(lang), MARK, esc(title), esc(lang["ui"]["langs_label"]), langs,
-        SITE["play"], esc(lang["ui"]["head_cta"]),
+        esc(play_url("header")), esc(lang["ui"]["head_cta"]),
     )
 
 
@@ -179,7 +197,7 @@ def footer(lang):
     items = "".join("<li>%s</li>" % i for i in [
         '<a href="%s">%s</a>' % (home_url(lang), esc(ui["home_crumb"])),
         '<a href="%s">%s</a>' % (privacy_url(lang), esc(ui["foot_privacy"])),
-        '<a href="%s" rel="noopener">%s</a>' % (SITE["play"], esc(ui["foot_play"])),
+        '<a href="%s" rel="noopener">%s</a>' % (esc(play_url("footer")), esc(ui["foot_play"])),
     ])
     return """</main>
 <footer class="site-foot"><div class="wrap">
@@ -203,7 +221,7 @@ def cta(lang):
             '<img src="/assets/badges/%s.png" width="216" height="84" '
             'alt="%s" loading="lazy" decoding="async"></a></p>\n'
             '<p class="muted">%s</p>\n'
-            % (SITE["play"], lang["code"], esc(ui["badge_alt"]), esc(ui["cta_note"])))
+            % (esc(play_url("cta")), lang["code"], esc(ui["badge_alt"]), esc(ui["cta_note"])))
 
 
 def how_it_works(lang):
@@ -412,6 +430,8 @@ def nav_langs(key=None, guide=None):
 
 
 def build_home(lang):
+    global _PAGE
+    _PAGE = "%s-home" % lang["code"]
     h = lang["home"]
     url = home_url(lang)
     alts = alternates_home()
@@ -451,6 +471,8 @@ def build_home(lang):
 
 
 def build_theme(lang, key):
+    global _PAGE
+    _PAGE = "%s-%s" % (lang["code"], key)
     t = lang["themes"][key]
     ui = lang["ui"]
     url = theme_url(lang, key)
@@ -509,6 +531,8 @@ def build_guide(lang, key):
     what earns the rest of the page, and the CTA sits after the method rather
     than in front of it.
     """
+    global _PAGE
+    _PAGE = "guide-%s-%s" % (lang["code"], key)
     g = lang["guides"][key]
     ui = lang["ui"]
     url = guide_url(lang, key)
@@ -636,6 +660,8 @@ minimum age of digital consent in your jurisdiction).</p>
 
 
 def build_privacy():
+    global _PAGE
+    _PAGE = "privacy"
     en = LANGS[0]
     url = "/privacy/"
     alts = [(en["code"], url)]
@@ -649,6 +675,8 @@ def build_privacy():
 
 
 def build_404():
+    global _PAGE
+    _PAGE = "404"
     en = LANGS[0]
     body = ("<h1>Page not found</h1>\n"
             '<p class="lede">That page does not exist. Start from the home page, or pick a '

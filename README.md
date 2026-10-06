@@ -206,6 +206,9 @@ get a 404 and log a console error, which costs a Lighthouse best-practices point
 - Every page declares a canonical URL and a full reciprocal `hreflang` set including
   `x-default` (English). The sitemap repeats the alternates per URL.
 - After a content change, resubmit `sitemap.xml` in Google Search Console.
+- Every Play link carries `referrer=utm_source=onirahypno.com&utm_medium=site&utm_campaign=<page>&utm_content=<header|footer|cta>`
+  (`play_url()` in `build.py`), so Play Console > Store listing acquisition shows which page and button
+  an install came from. This is a URL parameter, not a script: nothing runs on the site.
 - No analytics, no third-party scripts, no cookies — deliberately, so the site
   matches the privacy claim the app makes.
 
