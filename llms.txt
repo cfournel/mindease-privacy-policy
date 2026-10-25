@@ -15,12 +15,12 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 ## Session themes (English)
 
 - [Anxiety](https://onirahypno.com/hypnosis/anxiety/): Guided self-hypnosis for anxiety, written on your phone around what you are actually anxious about, and narrated aloud. Private, free, no subscription.
-- [Sleep](https://onirahypno.com/hypnosis/sleep/): Guided sleep hypnosis written on your phone around what is keeping you awake, and narrated aloud. Runs offline, nothing leaves your device.
+- [Sleep](https://onirahypno.com/hypnosis/sleep/): Self-hypnotherapy for sleep, written on your phone around what is keeping you awake and narrated aloud. Runs offline, nothing leaves your device.
 - [Confidence](https://onirahypno.com/hypnosis/confidence/): Guided self-hypnosis for confidence, written on your phone around the situation you actually face, and narrated aloud. Private and free.
 - [Stress](https://onirahypno.com/hypnosis/stress/): Guided self-hypnosis for stress, written on your phone around the pressure you are actually under, and narrated aloud. Offline and private.
 - [Quitting smoking](https://onirahypno.com/hypnosis/quit-smoking/): Guided self-hypnosis to support quitting smoking, written on your phone around your own triggers and reasons, and narrated aloud. Private and free.
 - [Focus](https://onirahypno.com/hypnosis/focus/): Guided self-hypnosis for focus, written on your phone around the work you are about to do, and narrated aloud. Runs offline, nothing is uploaded.
-- [Weight](https://onirahypno.com/hypnosis/weight-loss/): Guided self-hypnosis for weight and eating habits, written on your phone around your own patterns, and narrated aloud. Private, free, no subscription.
+- [Weight](https://onirahypno.com/hypnosis/weight-loss/): Self-hypnotherapy for weight loss and eating habits, written on your phone around your own patterns and narrated aloud. Private, free, no subscription.
 - [Fear](https://onirahypno.com/hypnosis/fear-and-phobias/): Guided self-hypnosis for fear of flying, driving or heights, written on your phone around the situation you actually face. Private, free, offline.
 - [Memory](https://onirahypno.com/hypnosis/memory-and-learning/): Guided self-hypnosis for studying, recall and language learning, written on your phone around what you are learning. Free, private, works offline.
 - [Motivation](https://onirahypno.com/hypnosis/motivation-and-energy/): Guided self-hypnosis for procrastination, low energy and getting started, written on your phone around the task you are avoiding. Free and private.
@@ -49,7 +49,9 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Poids](https://onirahypno.com/fr/hypnose/perte-de-poids/): Auto-hypnose guidée pour le poids et les habitudes alimentaires, écrite sur votre téléphone à partir de vos propres schémas, et narrée à voix haute.
 - [Peurs et phobies](https://onirahypno.com/fr/hypnose/peurs-et-phobies/): Hypnose guidée contre la peur de l'avion, de conduire ou du vide, écrite sur votre téléphone à partir de la situation que vous affrontez. Hors ligne.
 - [Tourner la page](https://onirahypno.com/fr/hypnose/oublier-une-personne/): Hypnose guidée pour tourner la page après une rupture, écrite sur votre téléphone à partir de ce qui vous revient en tête. Gratuite et hors ligne.
+- [Mémoire](https://onirahypno.com/fr/hypnose/memoire-et-apprentissage/): Auto-hypnose guidée pour réviser, retenir et apprendre une langue, écrite sur votre téléphone autour de ce que vous apprenez. Gratuite, privée, hors ligne.
 - [Motivation](https://onirahypno.com/fr/hypnose/motivation-et-energie/): Hypnose guidée contre la procrastination et les coups de fatigue, écrite sur votre téléphone à partir de la tâche que vous évitez. Gratuite, hors ligne.
+- [Habitudes nerveuses](https://onirahypno.com/fr/hypnose/habitudes-nerveuses/): Auto-hypnose guidée contre les ongles rongés, les dents serrées et la mâchoire contractée, écrite sur votre téléphone autour de votre déclencheur. Gratuite.
 - [Douleur](https://onirahypno.com/fr/hypnose/douleur/): Auto-hypnose guidée en complément de votre traitement : moins de crispation, moins d'appréhension, des nuits plus simples. Un confort, pas une cure.
 - [Intestin irritable](https://onirahypno.com/fr/hypnose/syndrome-intestin-irritable/): Auto-hypnose guidée sur le versant stress du SII : ventre plus calme, moins d'anticipation, journées plus simples. Un complément, pas un traitement.
 - [Apaisement](https://onirahypno.com/fr/hypnose/apaisement-emotionnel/): Auto-hypnose guidée pour l'après-coup : nuits plus calmes, moins de ruminations, journées plus stables. Un outil de relaxation, pas une thérapie du trauma.
@@ -59,6 +61,9 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [S'endormir](https://onirahypno.com/fr/guides/s-endormir-avec-l-auto-hypnose/): Une méthode d'auto-hypnose étape par étape pour s'endormir quand la tête tourne, et quoi faire quand ça ne marche pas du premier coup.
 - [Hypnose ou méditation](https://onirahypno.com/fr/guides/hypnose-ou-meditation/): Ce qui sépare vraiment l'hypnose guidée de la méditation, ce que chacune sait faire, et comment choisir pour le sommeil, l'anxiété ou une habitude.
 - [Est-ce que ça marche ?](https://onirahypno.com/fr/guides/l-auto-hypnose-marche-t-elle/): Un point honnête sur ce que l'auto-hypnose sait faire, ce que les données soutiennent, pour qui elle ne marche pas, et comment le vérifier.
+- [Hypnose de rue](https://onirahypno.com/fr/guides/comment-fonctionne-l-hypnose-de-rue/): Ce qui se passe vraiment dans l'hypnose de rue : le bras raide, la poignée de main, pourquoi ça marche sur certains et pas sur d'autres, et ce que dit la loi.
+- [Est-ce sans danger ?](https://onirahypno.com/fr/guides/l-auto-hypnose-est-elle-sans-danger/): Les vrais risques de l'auto-hypnose, qui doit s'en abstenir, et les situations où il faut un avis médical d'abord — grossesse, épilepsie, enfants et plus.
+- [Apprendre](https://onirahypno.com/fr/guides/apprendre-l-auto-hypnose/): Une façon réaliste d'apprendre l'auto-hypnose seul : quoi pratiquer d'abord, combien de temps cela prend, ce que l'on ressent, et quand s'arrêter.
 
 ## Session themes (Español)
 
@@ -72,6 +77,8 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Miedos y fobias](https://onirahypno.com/es/hipnosis/miedos-y-fobias/): Hipnosis guiada para el miedo a volar, a conducir o a las alturas, escrita en tu móvil a partir de la situación que afrontas. Gratis y sin conexión.
 - [Pasar página](https://onirahypno.com/es/hipnosis/olvidar-a-alguien/): Hipnosis guiada para pasar página tras una ruptura, escrita en tu móvil a partir de lo que se te repite en la cabeza. Gratis y sin conexión.
 - [Memoria](https://onirahypno.com/es/hipnosis/memoria-y-aprendizaje/): Hipnosis guiada para estudiar, memorizar y aprender idiomas, escrita en tu móvil a partir de lo que estás aprendiendo. Gratis y sin conexión.
+- [Motivación](https://onirahypno.com/es/hipnosis/motivacion-y-energia/): Autohipnosis guiada contra la procrastinación y la falta de energía, escrita en tu teléfono alrededor de la tarea que evitas. Gratis, privada y sin conexión.
+- [Hábitos nerviosos](https://onirahypno.com/es/hipnosis/habitos-nerviosos/): Autohipnosis guiada para morderse las uñas, apretar los dientes y la mandíbula, escrita en tu teléfono alrededor de tu desencadenante. Privada, gratis.
 - [Dolor](https://onirahypno.com/es/hipnosis/dolor/): Autohipnosis guiada junto a tu tratamiento: menos tensión, menos temor a la próxima crisis, noches más llevaderas. Una herramienta de alivio, no una cura.
 - [Intestino irritable](https://onirahypno.com/es/hipnosis/intestino-irritable/): Autohipnosis guiada para la parte de estrés del SII: vientre más calmado, menos anticipación, días más llevaderos. Un complemento, no un tratamiento.
 - [Calma emocional](https://onirahypno.com/es/hipnosis/calma-emocional/): Autohipnosis guiada para después del golpe: noches más tranquilas, menos rumiación, días más estables. Una herramienta de relajación, no terapia de trauma.
@@ -82,6 +89,9 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Dormirse](https://onirahypno.com/es/guias/dormirse-con-autohipnosis/): Un método de autohipnosis paso a paso para dormirse cuando la cabeza no para, y qué hacer cuando no funciona a la primera.
 - [Hipnosis o meditación](https://onirahypno.com/es/guias/hipnosis-o-meditacion/): Qué separa de verdad a la hipnosis guiada de la meditación, para qué sirve cada una y cómo elegir para el sueño, la ansiedad o un hábito.
 - [¿Funciona?](https://onirahypno.com/es/guias/funciona-la-autohipnosis/): Una mirada honesta a para qué sirve la autohipnosis, qué respaldan los datos, a quién no le funciona y cómo comprobar si hace algo.
+- [Hipnosis callejera](https://onirahypno.com/es/guias/como-funciona-la-hipnosis-callejera/): Qué ocurre de verdad en la hipnosis callejera: el brazo rígido, el apretón de manos, por qué funciona con unos y con otros no, y qué dice la ley.
+- [¿Es segura?](https://onirahypno.com/es/guias/es-segura-la-autohipnosis/): Los riesgos reales de la autohipnosis, quién debería evitarla y las situaciones en que conviene consultar a un médico antes: embarazo, epilepsia, niños y más.
+- [Aprenderla](https://onirahypno.com/es/guias/aprender-autohipnosis/): Una forma realista de aprender autohipnosis por tu cuenta: qué practicar primero, cuánto tarda, qué se siente y cuándo parar.
 
 ## Optional
 

@@ -132,7 +132,11 @@ def head(lang, title, desc, url, alternates, jsonld):
 <meta property="og:title" content="%(title)s">
 <meta property="og:description" content="%(desc)s">
 <meta property="og:url" content="%(origin)s%(url)s">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="%(origin)s/assets/og.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="%(origin)s/assets/og.png">
 <meta name="theme-color" content="#5E7F6A">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
@@ -446,6 +450,9 @@ def build_home(lang):
         "inLanguage": lang["code"],
         "installUrl": SITE["play"],
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "screenshot": [ORIGIN + "/assets/screens/%s.webp" % n
+                       for n in ("home", "session", "favorites")],
+        "featureList": lang["ui"]["features"],
     }
     site_ld = {
         "@context": "https://schema.org",

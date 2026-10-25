@@ -91,6 +91,7 @@ EN = {
         "foot_play": "Google Play",
         "head_cta": "Get the app",
         "langs_label": "Language",
+        "features": ["Writes a personal self-hypnosis session around what you type", "Narrated aloud, 15 to 30 minutes", "Runs fully offline, nothing leaves the device", "Themes for sleep, anxiety, stress, confidence and more", "Free, no account"],
         "screens_title": "Inside the app",
         # (asset key, alt text, caption). "privacy" resolves to the localised file.
         "screens": [
@@ -173,8 +174,8 @@ EN = {
             "nav": "Sleep",
             "card": "Wind down a busy mind and let sleep arrive on its own.",
             "title": "Self-Hypnosis for Sleep — A Session Written for You | Onira",
-            "desc": "Guided sleep hypnosis written on your phone around what is keeping you awake, "
-                    "and narrated aloud. Runs offline, nothing leaves your device.",
+            "desc": "Self-hypnotherapy for sleep, written on your phone around what is keeping you "
+                    "awake and narrated aloud. Runs offline, nothing leaves your device.",
             "h1": "Self-hypnosis for sleep",
             "lede": "A slow, low-stimulation session for the moment you are in bed and your mind will "
                     "not stop working.",
@@ -376,8 +377,8 @@ EN = {
             "nav": "Weight",
             "card": "Work on habits and the relationship with food, not on rules.",
             "title": "Self-Hypnosis for Weight Loss and Eating Habits | Onira",
-            "desc": "Guided self-hypnosis for weight and eating habits, written on your phone around "
-                    "your own patterns, and narrated aloud. Private, free, no subscription.",
+            "desc": "Self-hypnotherapy for weight loss and eating habits, written on your phone around "
+                    "your own patterns and narrated aloud. Private, free, no subscription.",
             "h1": "Self-hypnosis for weight and eating habits",
             "lede": "A session about the moments around eating — the evening, the boredom, the reward — "
                     "rather than about what you are allowed to eat.",
@@ -410,6 +411,8 @@ EN = {
                 ("What if I have a history of disordered eating?",
                  "Please speak to a clinician rather than using a self-help tool. Onira is not designed "
                  "for eating disorders and will redirect content that heads that way."),
+                ("How can I hypnotize myself to eat less?",
+                 "You do not suppress appetite; you rehearse the moments around eating — the evening snack, the boredom, the reward — so the automatic reach loosens. A session written around your own pattern, repeated for a few weeks, is the realistic version. It is a relaxation tool, not a diet or a treatment."),
             ],
         },
         "fear": {
@@ -772,6 +775,7 @@ FR = {
         "foot_play": "Google Play",
         "head_cta": "Obtenir l'app",
         "langs_label": "Langue",
+        "features": ["Écrit une séance d'auto-hypnose personnelle à partir de ce que vous saisissez", "Narrée à voix haute, 15 à 30 minutes", "Fonctionne entièrement hors ligne, rien ne quitte l'appareil", "Thèmes sommeil, anxiété, stress, confiance en soi et plus", "Gratuit, sans compte"],
         "screens_title": "Dans l'application",
         "screens": [
             ("home", "L'accueil d'Onira : choix du thème et champ de texte libre",
@@ -1427,6 +1431,7 @@ ES = {
         "foot_play": "Google Play",
         "head_cta": "Obtener la app",
         "langs_label": "Idioma",
+        "features": ["Escribe una sesión de autohipnosis personal a partir de lo que escribes", "Narrada en voz alta, de 15 a 30 minutos", "Funciona sin conexión, nada sale del dispositivo", "Temas de sueño, ansiedad, estrés, confianza y más", "Gratis, sin cuenta"],
         "screens_title": "Dentro de la app",
         "screens": [
             ("home", "La pantalla de inicio de Onira: temas y campo de texto libre",
@@ -1749,6 +1754,8 @@ ES = {
                 ("¿Y si tengo antecedentes de trastorno alimentario?",
                  "Habla con un profesional en lugar de usar una herramienta de autoayuda. Onira no está "
                  "diseñada para los TCA y redirige el contenido que va en esa dirección."),
+                ("¿Sirve la hipnosis para no tener hambre?",
+                 "Puede ayudar con el hambre ligada al hábito, al aburrimiento o a la noche, que es de lo que trata la sesión; no sustituye una pauta de nutrición ni cambia el hambre fisiológica. Es una herramienta de relajación, no un tratamiento para el peso."),
             ],
         },
         "fear": {
@@ -2183,13 +2190,15 @@ EN["guides"] = {
              "of remembering the steps. What a recording cannot do is mention the thing you "
              "are actually turning over, which is the gap a session written in the moment "
              "fills."),
+            ("Can hypnotherapy help me get to sleep?",
+             "Hypnotherapy has a modest but genuine record for sleep onset, which is why a self-hypnosis session is a reasonable thing to try on a night your mind will not stop. It is a relaxation tool rather than treatment: if sleeplessness lasts weeks, see a doctor as well as using it."),
         ],
     },
     "vs_meditation": {
         "slug": "hypnosis-vs-meditation",
         "nav": "Hypnosis vs meditation",
         "card": "Two states, two aims — and which one fits what you want tonight.",
-        "title": "Hypnosis vs Meditation: Which to Use | Onira",
+        "title": "Hypnosis vs Meditation: Difference and Which to Use | Onira",
         "desc": "What actually separates guided hypnosis from meditation, what each one is "
                 "good at, and how to pick between them for sleep, anxiety or a habit.",
         "h1": "Hypnosis vs meditation",
@@ -2264,6 +2273,8 @@ EN["guides"] = {
              "It is the nearest thing. A guided meditation that visualises an outcome and "
              "repeats suggestions is doing most of what a hypnosis session does; the label "
              "differs more than the practice."),
+            ("What is the difference between hypnosis and meditation?",
+             "Meditation trains attention in general and does not try to change what it finds; hypnosis uses the same calm, focused state to rehearse one specific target, such as sleep or a habit. The physiology is similar, the intent is not. For a broad skill, meditate; for one named thing, hypnosis is more direct."),
         ],
     },
     "does_it_work": {
@@ -2351,6 +2362,8 @@ EN["guides"] = {
              "No. Without a voice guiding you, the state simply fades or turns into sleep. "
              "A session that ends properly includes a deliberate return to full alertness "
              "for comfort, not for safety."),
+            ("Does self-hypnosis still work if I fall asleep during it?",
+             "Yes, and it is usually fine. If the session is for sleep, drifting off is the goal. If it is for something else, the suggestions heard before you dozed still count, though you may take in less of the later ones; if it keeps happening, move the session earlier in the evening or sit up rather than lie down."),
         ],
     },
     "street_hypnosis": {
@@ -2581,10 +2594,10 @@ EN["guides"] = {
         "slug": "how-to-learn-self-hypnosis",
         "nav": "Learning it",
         "card": "What to practise, in what order, and how long it really takes.",
-        "title": "How to Learn Self-Hypnosis | Onira",
+        "title": "Self-Hypnosis for Beginners: How to Learn It | Onira",
         "desc": "A realistic way to learn self-hypnosis on your own: what to practise "
                 "first, how long it takes, what going under feels like, and when to stop.",
-        "h1": "How to learn self-hypnosis",
+        "h1": "Self-hypnosis for beginners: how to learn it",
         "lede": "It is a skill with a short syllabus and a slow first fortnight — here is "
                 "the order that works and the part everyone gets wrong.",
         "answer": "You can learn self-hypnosis on your own, and most people who get "
@@ -2784,7 +2797,7 @@ FR["guides"] = {
         "slug": "hypnose-ou-meditation",
         "nav": "Hypnose ou méditation",
         "card": "Deux états, deux objectifs — et lequel correspond à ce que vous cherchez.",
-        "title": "Hypnose ou méditation : laquelle choisir ? | Onira",
+        "title": "Hypnose et méditation : quelle différence ? | Onira",
         "desc": "Ce qui sépare vraiment l'hypnose guidée de la méditation, ce que chacune "
                 "sait faire, et comment choisir pour le sommeil, l'anxiété ou une habitude.",
         "h1": "Hypnose ou méditation",
@@ -2862,6 +2875,8 @@ FR["guides"] = {
              "C'est ce qui s'en rapproche le plus. Une méditation guidée qui visualise un "
              "résultat et répète des suggestions fait l'essentiel de ce que fait une séance "
              "d'hypnose ; l'étiquette diffère plus que la pratique."),
+            ("Quelle est la différence entre hypnose et méditation ?",
+             "La méditation entraîne l'attention en général et ne cherche pas à changer ce qu'elle trouve ; l'hypnose utilise un état de calme et de focalisation pour répéter un objectif précis, comme dormir ou arrêter une habitude. L'état physiologique se ressemble, l'intention non. Pour une compétence large, méditez ; pour une chose nommée, l'hypnose est plus directe."),
         ],
     },
     "does_it_work": {
@@ -3051,7 +3066,7 @@ ES["guides"] = {
         "slug": "hipnosis-o-meditacion",
         "nav": "Hipnosis o meditación",
         "card": "Dos estados, dos objetivos — y cuál encaja con lo que buscas.",
-        "title": "Hipnosis o meditación: cuál elegir | Onira",
+        "title": "Hipnosis y meditación: diferencias y cuál elegir | Onira",
         "desc": "Qué separa de verdad a la hipnosis guiada de la meditación, para qué sirve "
                 "cada una y cómo elegir para el sueño, la ansiedad o un hábito.",
         "h1": "Hipnosis o meditación",
@@ -3125,6 +3140,8 @@ ES["guides"] = {
              "Es lo que más se le acerca. Una meditación guiada que visualiza un resultado y "
              "repite sugestiones hace casi todo lo que hace una sesión de hipnosis; la "
              "etiqueta se diferencia más que la práctica."),
+            ("¿Cuál es la diferencia entre hipnosis y meditación?",
+             "La meditación entrena la atención en general y no pretende cambiar lo que encuentra; la hipnosis usa un estado de calma y foco para ensayar un objetivo concreto, como dormir o dejar un hábito. El estado fisiológico se parece, la intención no. Para una habilidad amplia, medita; para una cosa con nombre, la hipnosis es más directa."),
         ],
     },
     "does_it_work": {
@@ -3215,6 +3232,832 @@ ES["guides"] = {
              "comodidad, no por seguridad."),
         ],
     },
+}
+
+FR["guides"]["street_hypnosis"] = {
+    "slug": "comment-fonctionne-l-hypnose-de-rue",
+    "nav": "Hypnose de rue",
+    "card": "Réelle, mais pas du contrôle mental — et le même mécanisme agit sur soi.",
+    "title": "Hypnose de rue : comment ça marche, est-ce réel ? | Onira",
+    "desc": "Ce qui se passe vraiment dans l'hypnose de rue : le bras raide, la poignée "
+            "de main, pourquoi ça marche sur certains et pas sur d'autres, et ce que dit la loi.",
+    "h1": "Comment fonctionne l'hypnose de rue",
+    "lede": "Le bras raide, la poignée de main figée, le volontaire qui oublie son propre "
+            "prénom — ce qui se passe vraiment, et ce qui est réel.",
+    "answer": "L'hypnose de rue est réelle, et ce n'est pas du contrôle mental. "
+              "L'hypnotiseur s'appuie sur la suggestion, l'attente et la volonté du "
+              "volontaire de jouer le jeu — plus un tri rapide qui repère ceux qui "
+              "répondent fortement, soit environ une personne sur quatre. Personne n'est "
+              "contrôlé, personne n'en perd le souvenir, et personne ne fait ce qu'il "
+              "refuserait vraiment. Le même mécanisme, sans le théâtre, est celui de "
+              "l'auto-hypnose quand vous le dirigez vers vous-même.",
+    "sections": [
+        ["Ce qui se passe réellement",
+         ["L'hypnose, c'est de l'attention focalisée plus de la suggestion. Rétrécissez "
+          "assez l'attention de quelqu'un, donnez-lui une attente claire de ce qui va "
+          "arriver, et les suggestions sont suivies avant que le contrôle critique habituel "
+          "n'intervienne. C'est tout le mécanisme, au coin d'une rue comme en séance.",
+          "La version de rue ajoute deux choses qu'un enregistrement ne peut pas offrir. "
+          "D'abord une personne engagée socialement : elle s'est arrêtée, elle a accepté, "
+          "on la regarde, et reculer serait gênant. Ensuite la sélection — l'hypnotiseur "
+          "essaie plusieurs personnes et garde celles qui répondent, ce qui explique que "
+          "les vidéos ne montrent que des réussites."],
+         []],
+        ["Le bras raide et la poignée de main figée",
+         ["Les numéros classiques sont moins mystérieux qu'ils n'en ont l'air, et chacun "
+          "a une fonction :"],
+         ["**Tests de suggestibilité** — le bras qui ne plie plus, les mains collées, les "
+          "paupières qui ne s'ouvrent pas. Ils viennent en premier car ils indiquent à "
+          "l'hypnotiseur la réceptivité de la personne avant de tenter plus grand.",
+          "**Convaincants** — les mêmes tests, avec un second rôle. Sentir son propre bras "
+          "refuser de plier est bien plus persuasif que de se l'entendre annoncer, et cette "
+          "croyance renforce la suggestion suivante.",
+          "**Interruption de schéma** — l'induction par la poignée de main. Un geste social "
+          "automatique est lancé puis interrompu, laissant une demi-seconde de vide, dans "
+          "laquelle on glisse une consigne claire. C'est la surprise utilisée comme une "
+          "porte, pas un mot magique.",
+          "**Adhésion et rapport** — l'ingrédient le moins glamour. Le volontaire veut que "
+          "ça marche. Ce n'est pas de la triche : le vouloir fait partie du fonctionnement "
+          "même de la suggestion."]],
+        ["Est-ce réel, ou ce sont des acteurs ?",
+         ["Surtout réel, avec la réserve que vous regardez un montage. La réceptivité à la "
+          "suggestion hypnotique varie d'une personne à l'autre et reste assez stable au fil "
+          "de la vie : environ une personne sur quatre répond fortement, à peu près autant "
+          "répondent à peine, et les autres se situent entre les deux. L'hypnotiseur de rue "
+          "trouve le premier groupe et le filme.",
+          "Ce qui n'est pas réel, c'est la perte de soi. Les volontaires restent conscients, "
+          "s'en souviennent ensuite, et peuvent arrêter quand ils le décident. Le moment "
+          "spectaculaire — quelqu'un incapable de retrouver son nom pendant dix secondes — "
+          "est une suggestion temporaire à laquelle on se prête, pas un interrupteur."],
+         []],
+        ["L'hypnose est-elle illégale ?",
+         ["La pratiquer est en général légal ; c'est la représentation publique qui est "
+          "encadrée, pas la chose elle-même. Le Royaume-Uni est l'exemple le plus net : le "
+          "Hypnotism Act de 1952 exige une licence de la collectivité locale avant toute "
+          "hypnose donnée en spectacle. Ailleurs, les règles varient selon le pays, parfois "
+          "la ville, et certains endroits limitent qui peut utiliser l'hypnose en contexte "
+          "clinique.",
+          "Plus important que la licence, il y a le consentement. Hypnotiser un inconnu qui "
+          "n'a pas clairement accepté n'est pas une blague, et « il a dit oui après que j'ai "
+          "commencé » n'est pas un accord. Si vous essayez, demandez d'abord, acceptez un "
+          "non, et laissez tranquille toute personne qui semble mal à l'aise."],
+         []],
+        ["Ce que cela signifie si vous voulez essayer sur vous",
+         ["Voici ce que les vidéos cachent : le mécanisme n'a besoin ni de public, ni "
+          "d'inconnu, ni de poignée de main. L'attention, l'attente et la suggestion sont "
+          "les pièces qui travaillent, et les trois sont disponibles quand c'est vous qui "
+          "donnez les consignes. Vous perdez le spectacle. Vous gagnez de pouvoir viser "
+          "quelque chose que vous voulez vraiment — le sommeil, une peur, une habitude, "
+          "l'heure avant une conversation difficile.",
+          "C'est aussi plus lent et plus terne qu'un extrait de rue, et il faut le dire : "
+          "l'effet vient de la répétition sur des semaines, pas d'un moment spectaculaire. "
+          "Si vous faites partie du quart qui répond fortement, vous le remarquerez vite. "
+          "Si trois ou quatre essais sérieux ne donnent rien, ce n'est probablement pas "
+          "votre outil."],
+         []],
+        ["Où se situe Onira",
+         ["Onira écrit des séances d'auto-hypnose sur votre téléphone et les narre à voix "
+          "haute : vous choisissez un thème, vous précisez, si vous voulez, ce qui se passe "
+          "vraiment, et un modèle qui tourne sur l'appareil écrit le script et le dit. "
+          "C'est le versant autodirigé de ce que vous venez de regarder, tourné vers le "
+          "sommeil, l'anxiété, la confiance, les habitudes et le reste.",
+          "Onira n'enseigne pas l'hypnose de rue et ne fera pas de vous un hypnotiseur. "
+          "L'app est gratuite, fonctionne hors ligne, et rien de ce que vous écrivez ne "
+          "quitte le téléphone."],
+         []],
+    ],
+    "faq": [
+        ("Quelqu'un peut-il m'hypnotiser contre mon gré ?",
+         "Non. La suggestion exige votre coopération, et c'est pourquoi les hypnotiseurs de "
+         "rue demandent des volontaires au lieu de choisir des cibles. Qui ne veut pas "
+         "participer ne répond tout simplement pas."),
+        ("Vais-je faire quelque chose de gênant ?",
+         "Rien que vous refusiez vraiment. Sous suggestion, on décline ce qui franchit ses "
+         "propres limites, c'est bien documenté et c'est aussi pourquoi les spectacles "
+         "restent sur des choses inoffensives. Le risque est social, pas psychologique."),
+        ("Le bras raide prouve-t-il qu'on est hypnotisé ?",
+         "Non — c'est un test de suggestibilité. Il montre la facilité avec laquelle on "
+         "accepte une suggestion, une information utile, mais c'est une étape avant tout "
+         "état hypnotique, pas une preuve de celui-ci."),
+        ("Puis-je apprendre l'hypnose de rue avec Onira ?",
+         "Non, autant être franc. Onira écrit des séances d'auto-hypnose à écouter ; elle ne "
+         "vous apprend pas à hypnotiser les autres. Si c'est ce que vous cherchez, il vous "
+         "faut une formation, pas cette app."),
+        ("Les gens se souviennent-ils de ce qui s'est passé ?",
+         "Oui, presque toujours. L'amnésie suggérée est un effet temporaire chez les "
+         "personnes suggestibles, et elle s'estompe. Se réveiller avec un trou dans sa vie "
+         "est une convention de cinéma."),
+    ],
+}
+FR["guides"]["is_it_safe"] = {
+    "slug": "l-auto-hypnose-est-elle-sans-danger",
+    "nav": "Est-ce sans danger ?",
+    "card": "Sans danger pour la plupart, avec une courte liste d'exceptions réelles.",
+    "title": "L'auto-hypnose est-elle dangereuse ? | Onira",
+    "desc": "Les vrais risques de l'auto-hypnose, qui doit s'en abstenir, et les situations "
+            "où il faut un avis médical d'abord — grossesse, épilepsie, enfants et plus.",
+    "h1": "L'auto-hypnose est-elle sans danger ?",
+    "lede": "Pour la plupart des gens, oui — et les vrais risques sont plus ternes et plus "
+            "précis que ceux dont on s'inquiète.",
+    "answer": "L'auto-hypnose est sans danger pour la plupart des adultes en bonne santé. "
+              "On ne peut pas rester coincé dedans, perdre le contrôle ou être poussé à "
+              "faire ce qu'on refuse — ce sont des conventions de cinéma. Les vraies "
+              "précautions sont plus étroites : ne jamais écouter en conduisant ou en "
+              "utilisant une machine, la traiter comme un complément et non un remplacement "
+              "d'un soin prescrit, et demander l'avis d'un médecin d'abord en cas de "
+              "psychose, de trouble dissociatif, de trouble bipolaire ou de TSPT. Pour les "
+              "enfants, l'épilepsie et la grossesse, la réponse est souvent oui avec "
+              "accompagnement : à demander plutôt qu'à supposer.",
+    "sections": [
+        ["Les risques dont on s'inquiète, et ce qui est vrai",
+         ["Presque toutes les craintes viennent de la fiction ; autant les écarter avant "
+          "les vraies :"],
+         ["**Rester coincé.** Impossible. Sans voix pour vous guider, l'état s'estompe ou "
+          "devient un sommeil ordinaire. Le retour à l'alerte en fin de séance est là pour "
+          "le confort, pas pour un sauvetage.",
+          "**Perdre le contrôle.** La suggestion demande votre coopération. Vous restez "
+          "conscient, vous vous en souvenez, et vous refusez ce qui franchit vos limites — "
+          "c'est exactement pourquoi les spectacles demandent des volontaires.",
+          "**Être reprogrammé sans s'en rendre compte.** Rien n'est installé. Ce que la "
+          "répétition modifie, c'est une habitude de réponse, lentement, et seulement dans "
+          "une direction où vous alliez déjà.",
+          "**Affaiblir son esprit.** Rien ne montre que la relaxation et la suggestion "
+          "ordinaires nuisent au jugement, à l'attention ou à la volonté."]],
+        ["Les risques qui sont réels",
+         ["Ils sont moins spectaculaires, et tiennent surtout au contexte plus qu'à "
+          "l'état lui-même."],
+         ["**La pratiquer en faisant autre chose.** Jamais avec un casque en conduisant, à "
+          "vélo, en cuisinant ou en gardant un enfant. C'est la façon la plus probable de "
+          "se faire du mal, et elle est entièrement évitable.",
+          "**L'utiliser à la place d'un traitement.** Une séance qui apaise la douleur ou "
+          "l'anxiété peut donner envie de sauter un rendez-vous ou de réduire une "
+          "ordonnance. C'est la décision la plus délicate, et elle revient à votre médecin.",
+          "**Une détresse inattendue.** Se détendre profondément peut laisser remonter une "
+          "émotion retenue — chagrin, colère, souvenir. Pour la plupart cela passe ; si une "
+          "séance vous laisse régulièrement plus mal, arrêtez et parlez à un professionnel.",
+          "**La mémoire.** La suggestion rend le souvenir moins fiable, pas plus. Tout ce "
+          "qui promet de retrouver des événements oubliés fait quelque chose que les "
+          "preuves ne soutiennent pas."]],
+        ["Quand demander d'abord l'avis d'un médecin",
+         ["Aucun de ces cas n'est une interdiction absolue, et la plupart des personnes "
+          "concernées utilisent des outils de relaxation sans problème. Ce sont les cas où "
+          "un professionnel qui connaît votre histoire doit se prononcer avant une app."],
+         ["**Psychose ou schizophrénie** — relaxation et suggestion déconseillées sans "
+          "suivi clinique.",
+          "**Troubles dissociatifs ou TSPT** — la relaxation profonde peut déclencher une "
+          "dissociation ou des souvenirs intrusifs. Le travail sur le trauma appartient à "
+          "un clinicien formé.",
+          "**Trouble bipolaire** — en général sans problème quand il est stable ; à discuter "
+          "avant de l'utiliser pendant un épisode.",
+          "**Épilepsie** — la relaxation audio n'est pas un déclencheur connu de crise, mais "
+          "les situations diffèrent assez pour en parler à votre neurologue.",
+          "**Grossesse** — en général sans problème, et l'hypnose de préparation à la "
+          "naissance est bien établie. Mentionnez-le lors d'un rendez-vous plutôt que de "
+          "deviner.",
+          "**Enfants** — l'auto-hypnose peut convenir à des enfants plus grands avec un "
+          "adulte. Onira est écrite pour les adultes et n'est pas conçue pour les jeunes "
+          "enfants."]],
+        ["Est-ce sûr pour l'anxiété en particulier ?",
+         ["Pour l'anxiété du quotidien, oui, et c'est l'une des choses que la relaxation "
+          "guidée fait le mieux — baisser l'activation physique qui nourrit les pensées. La "
+          "distinction qui compte est entre l'anxiété ordinaire et un trouble anxieux : la "
+          "première est une cible raisonnable pour un outil de relaxation, la seconde pour "
+          "un traitement, et utiliser l'outil en complément de ce traitement est tout à fait "
+          "acceptable.",
+          "Une remarque pratique : si écouter au coucher vous rend plus alerte au lieu de "
+          "moins, c'est courant et ce n'est pas un signe d'alerte. Une séance écrite pour "
+          "le sommeil ne se termine pas comme une séance pour le calme."],
+         []],
+        ["Où se situe Onira",
+         ["Onira écrit des séances d'auto-hypnose sur votre téléphone et les narre à voix "
+          "haute, pour le sommeil, l'anxiété, la confiance, les habitudes et le reste. "
+          "Chaque séance se termine par un retour complet à l'état d'alerte, et chaque page "
+          "de thème porte la même mention que ce guide : c'est un outil de relaxation, pas "
+          "une thérapie ni un avis médical.",
+          "L'app est gratuite, fonctionne hors ligne, et rien de ce que vous écrivez ne "
+          "quitte l'appareil — ce qui signifie aussi que personne ne dresse le profil de ce "
+          "qui vous inquiétait."],
+         []],
+    ],
+    "faq": [
+        ("L'auto-hypnose peut-elle aggraver ma santé mentale ?",
+         "C'est peu probable pour la plupart des gens, et possible dans des situations "
+         "précises — psychose, troubles dissociatifs, et trauma abordé de front. Si vous "
+         "êtes concerné, faites-en une question pour votre clinicien plutôt qu'une "
+         "expérience."),
+        ("Est-ce sans danger d'écouter chaque soir ?",
+         "Oui. L'usage quotidien est ce qui fait s'accumuler l'effet, et on ne lui connaît "
+         "aucun inconvénient. La limite est pratique : une séance qui vous garde devant "
+         "l'écran est pire que le sommeil que vous cherchiez."),
+        ("Peut-on en devenir dépendant ?",
+         "Non, au sens d'une dépendance. On s'attache à une routine qui marche, ce qui est "
+         "ordinaire — sauf si elle remplace un soin dont vous avez réellement besoin."),
+        ("Est-ce sûr pour les enfants ?",
+         "Avec un adulte et un contenu adapté à l'âge, souvent oui ; la relaxation est "
+         "utilisée avec des enfants en milieu clinique. Onira est écrite pour les adultes, "
+         "ce n'est donc pas l'outil pour un jeune enfant."),
+        ("Que faire si une séance me bouleverse ?",
+         "L'arrêter, ouvrir les yeux et revenir dans la pièce — c'est toujours possible et "
+         "rien ne vous retient. Si cela se reproduit, voyez-y le signe qu'il vaut mieux "
+         "travailler avec une personne qu'avec une app."),
+    ],
+}
+FR["guides"]["learn_self_hypnosis"] = {
+    "slug": "apprendre-l-auto-hypnose",
+    "nav": "Apprendre",
+    "card": "Quoi pratiquer, dans quel ordre, et combien de temps ça prend vraiment.",
+    "title": "Auto-hypnose pour débutants : comment apprendre | Onira",
+    "desc": "Une façon réaliste d'apprendre l'auto-hypnose seul : quoi pratiquer d'abord, "
+            "combien de temps cela prend, ce que l'on ressent, et quand s'arrêter.",
+    "h1": "Auto-hypnose pour débutants : comment l'apprendre",
+    "lede": "C'est une compétence au programme court et aux deux premières semaines lentes "
+            "— voici l'ordre qui marche et ce que tout le monde rate.",
+    "answer": "On peut apprendre l'auto-hypnose seul, et ceux qui y arrivent suivent presque "
+              "tous le même ordre : détendre le corps volontairement, resserrer l'attention "
+              "sur une seule chose, puis se donner une suggestion précise et la répéter "
+              "chaque soir pendant deux ou trois semaines. Attendez-vous à un état banal — "
+              "absorbé comme devant un bon livre, pas inconscient — et jugez-le à ce que "
+              "la cible bouge, pas à la profondeur ressentie. Un enregistrement guidé est la "
+              "façon la plus simple de commencer, car se lire les consignes à soi-même "
+              "gêne la détente.",
+    "sections": [
+        ["L'ordre qui marche",
+         ["Les éléments sont simples. Les faire dans cet ordre évite que la première "
+          "semaine donne l'impression que rien ne se passe."],
+         ["**Préparer le cadre.** Un endroit sans interruption, téléphone en silencieux, "
+          "allongé ou adossé. Décider de vérifier quelque chose en cours de route met fin à "
+          "la plupart des premiers essais.",
+          "**Se détendre exprès, par étapes.** Mains, mâchoire, épaules, respiration — plus "
+          "longue à l'expiration. Beaucoup sautent cette étape, et c'est elle qui rend le "
+          "reste possible.",
+          "**Resserrer l'attention.** Un compte à rebours lent depuis vingt, une image "
+          "unique, la sensation de sa propre respiration. Une seule chose, tenue sans "
+          "effort.",
+          "**Donner une seule suggestion, au présent et en positif.** Pas « je ne paniquerai "
+          "pas » mais « ma respiration reste lente et je reste stable ». La répéter comme "
+          "une scène, en détail, plutôt que comme une phrase.",
+          "**Revenir volontairement.** Compter jusqu'à vingt, ouvrir les yeux, être "
+          "pleinement alerte. Cela compte pour l'habitude, pas pour la sécurité."]],
+        ["Ce que l'on ressent vraiment",
+         ["C'est là que la plupart concluent qu'ils en sont incapables. On attend quelque "
+          "chose de spectaculaire — un seuil, un déclic, la sensation de sombrer. Le réel "
+          "ressemble plutôt à être absorbé par un film : la pièce s'efface un peu, le temps "
+          "devient flou, et l'on pourrait s'arrêter à tout moment sans en avoir envie.",
+          "Donc ne rien ressentir de spécial ne dit pas grand-chose. Jugez plutôt les deux "
+          "semaines sur la cible : minutes pour s'endormir, tâche évitée enfin commencée, "
+          "déroulé d'une heure stressante. Si le chiffre bouge, ça marche, quelle que soit "
+          "la sensation."],
+         []],
+        ["Combien de temps cela prend",
+         ["Les premières séances servent à apprendre la forme, pas à obtenir un résultat. "
+          "On peut raisonnablement s'attendre à ce que se détendre devienne nettement plus "
+          "facile en une semaine, et à ce que la cible visée demande deux à trois semaines "
+          "de pratique quasi quotidienne.",
+          "La réceptivité varie aussi d'une personne à l'autre et reste assez stable toute "
+          "la vie — environ une personne sur quatre répond fortement, autant à peine. Si "
+          "trois ou quatre essais sérieux ne donnent strictement rien, la conclusion "
+          "raisonnable est que ce n'est pas votre outil, pas qu'il faut essayer plus fort."],
+         []],
+        ["Peut-on apprendre seul, ou dans un livre ?",
+         ["Seul, oui — c'est l'une des rares choses de ce domaine qui ne demande vraiment "
+          "pas de praticien. Dans un livre, en partie : les livres aident à comprendre ce "
+          "qu'on fait mais guident mal en direct, car se lire les consignes est le contraire "
+          "de resserrer l'attention.",
+          "C'est l'argument pratique pour un enregistrement. Quelque chose d'autre tient la "
+          "structure et le rythme pendant que vous faites la seule part non déléguable : "
+          "laisser faire. Une fois la forme familière, s'en passer devient bien plus facile."],
+         []],
+        ["Apprendre l'auto-hypnose, ce n'est pas apprendre à hypnotiser",
+         ["À distinguer, car les recherches se mélangent. Hypnotiser quelqu'un d'autre est "
+          "une performance et une compétence relationnelle, avec le consentement et "
+          "l'ajustement à apprendre, et cela s'enseigne en formation. L'auto-hypnose est une "
+          "routine privée tournée vers l'un de vos propres problèmes.",
+          "Être bon dans la seconde ne dit presque rien de la première, et inversement."],
+         []],
+        ["Où se situe Onira",
+         ["Onira écrit la séance pour vous et la narre à voix haute : vous choisissez un "
+          "thème et, si vous voulez, tapez une phrase sur ce qui se passe vraiment. Cela "
+          "supprime les deux difficultés des débutants — tenir la structure, et trouver les "
+          "mots d'une suggestion adaptée à votre situation.",
+          "L'app est gratuite, fonctionne hors ligne, et rien de ce que vous écrivez ne "
+          "quitte votre téléphone. Si vous voulez ensuite faire vos séances de tête sans "
+          "elle, c'est un bon résultat et l'app aura fait son travail."],
+         []],
+    ],
+    "faq": [
+        ("Quelle durée pour une séance ?",
+         "Quinze à trente minutes conviennent à la plupart des usages. Plus court marche "
+         "une fois la compétence acquise ; beaucoup plus long ajoute surtout de la somnolence, "
+         "utile si le sommeil était le but, perdue sinon."),
+        ("Quel moment de la journée est le meilleur ?",
+         "Celui où vous ne serez pas dérangé, avec une réserve : les séances qui ne visent "
+         "pas le sommeil se terminent par un retour à l'alerte, donc le coucher n'est pas "
+         "toujours le bon créneau."),
+        ("Dois-je écrire mon propre script ?",
+         "Non, et en écrire un en essayant de se détendre est le piège classique du "
+         "débutant. Commencez avec quelque chose qui narre pour vous, et écrivez le vôtre "
+         "plus tard si l'envie vient."),
+        ("Puis-je apprendre si mon esprit ne s'arrête jamais ?",
+         "C'est la situation de départ normale, pas une disqualification. La relaxation "
+         "physique par étapes existe justement parce qu'un esprit emballé ne se resserre "
+         "pas sur commande — le corps passe d'abord et l'esprit suit."),
+        ("L'auto-hypnose, est-ce la même chose que la méditation ?",
+         "Proche, mais orientée autrement. La méditation entraîne un rapport général à "
+         "l'attention ; l'auto-hypnose dirige cette attention vers une cible précise. La "
+         "pratique se recoupe, l'intention non."),
+    ],
+}
+
+ES["guides"]["street_hypnosis"] = {
+    "slug": "como-funciona-la-hipnosis-callejera",
+    "nav": "Hipnosis callejera",
+    "card": "Real, pero no es control mental — y el mismo mecanismo funciona contigo.",
+    "title": "Cómo funciona la hipnosis callejera (¿es real?) | Onira",
+    "desc": "Qué ocurre de verdad en la hipnosis callejera: el brazo rígido, el apretón de "
+            "manos, por qué funciona con unos y con otros no, y qué dice la ley.",
+    "h1": "Cómo funciona la hipnosis callejera",
+    "lede": "El brazo rígido, el apretón de manos congelado, el voluntario que olvida su "
+            "propio nombre — qué pasa ahí y cuánto es real.",
+    "answer": "La hipnosis callejera es real, y no es control mental. El hipnotizador usa "
+              "sugestión, expectativa y la disposición del voluntario a seguir el juego — "
+              "más un filtro rápido que encuentra a quienes responden con fuerza, más o "
+              "menos una de cada cuatro personas. Nadie es controlado, nadie pierde el "
+              "recuerdo y nadie hace algo que rechazaría de verdad. El mismo mecanismo, "
+              "sin el teatro, es el que usa la autohipnosis cuando lo diriges hacia ti.",
+    "sections": [
+        ["Qué ocurre realmente",
+         ["La hipnosis es atención enfocada más sugestión. Si estrechas lo bastante la "
+          "atención de alguien y le das una expectativa clara de lo que va a pasar, las "
+          "sugestiones se cumplen antes de que intervenga el filtro crítico habitual. Ese "
+          "es todo el mecanismo, en una esquina o en una sesión.",
+          "La versión callejera añade dos cosas que una grabación no puede dar. Primero, "
+          "una persona comprometida socialmente: se paró, aceptó, la miran, y echarse atrás "
+          "sería incómodo. Segundo, la selección — el hipnotizador prueba con varias "
+          "personas y se queda con las que responden, por eso los vídeos son todo éxitos."],
+         []],
+        ["El brazo rígido y el apretón de manos congelado",
+         ["Los números clásicos son menos misteriosos de lo que parecen, y cada uno tiene "
+          "una función:"],
+         ["**Pruebas de sugestionabilidad** — el brazo que no se dobla, las manos pegadas, "
+          "los párpados que no se abren. Van primero porque dicen al hipnotizador cuánto "
+          "responde alguien antes de intentar algo mayor.",
+          "**Convencedores** — las mismas pruebas, con un segundo trabajo. Sentir que tu "
+          "propio brazo se niega a doblarse convence mucho más que oírlo anunciar, y esa "
+          "creencia refuerza la siguiente sugestión.",
+          "**Interrupción de patrón** — la inducción del apretón de manos. Se inicia una "
+          "acción social automática y se corta a la mitad, dejando medio segundo en blanco "
+          "en el que se cuela una instrucción clara. Es la sorpresa usada como puerta, no "
+          "una palabra mágica.",
+          "**Colaboración y rapport** — el ingrediente menos vistoso. El voluntario quiere "
+          "que funcione. No es trampa: quererlo es parte de cómo funciona la sugestión."]],
+        ["¿Es real o son actores?",
+         ["Sobre todo real, con la salvedad de que estás viendo un montaje. La respuesta a "
+          "la sugestión hipnótica varía entre personas y es bastante estable a lo largo de "
+          "la vida: una de cada cuatro responde con fuerza, otra proporción parecida casi "
+          "no responde y el resto está en medio. El hipnotizador callejero encuentra al "
+          "primer grupo y lo graba.",
+          "Lo que no es real es la pérdida de uno mismo. Los voluntarios siguen conscientes, "
+          "lo recuerdan después y pueden parar cuando decidan. La parte dramática — alguien "
+          "incapaz de recordar su nombre diez segundos — es una sugestión temporal a la "
+          "que se presta, no un interruptor."],
+         []],
+        ["¿Es ilegal la hipnosis?",
+         ["Practicarla es en general legal; lo que se regula es hacerla en público como "
+          "espectáculo, no la técnica. El Reino Unido es el ejemplo más claro: la "
+          "Hypnotism Act de 1952 exige una licencia municipal para hipnotizar como "
+          "entretenimiento público. En otros lugares las reglas varían según el país y a "
+          "veces la ciudad, y algunos restringen quién puede usar hipnosis en un contexto "
+          "clínico.",
+          "Más importante que la licencia es el consentimiento. Hipnotizar a un "
+          "desconocido que no ha aceptado claramente no es una broma, y «dijo que sí "
+          "cuando ya había empezado» no es aceptar. Si lo pruebas, pregunta antes, acepta "
+          "un no y deja en paz a quien parezca incómodo."],
+         []],
+        ["Qué significa si quieres probarlo contigo",
+         ["Esto es lo que los vídeos esconden: el mecanismo no necesita público, un "
+          "desconocido ni un apretón de manos. Atención, expectativa y sugestión son las "
+          "piezas que trabajan, y las tres están disponibles cuando eres tú quien da las "
+          "instrucciones. Pierdes el espectáculo. Ganas poder apuntar a algo que de verdad "
+          "quieres — dormir, un miedo, un hábito, la hora antes de una conversación difícil.",
+          "También es más lento y más sobrio que un vídeo callejero, y hay que decirlo: el "
+          "efecto viene de la repetición durante semanas, no de un momento dramático. Si "
+          "estás en el cuarto que responde con fuerza, lo notarás pronto. Si tres o cuatro "
+          "intentos honestos no hacen nada, probablemente no es tu herramienta."],
+         []],
+        ["Dónde encaja Onira",
+         ["Onira escribe sesiones de autohipnosis en tu teléfono y las narra en voz alta: "
+          "eliges un tema, cuentas si quieres qué pasa de verdad, y un modelo que funciona "
+          "en el dispositivo escribe el guion y lo dice. Es el lado autodirigido de lo que "
+          "has estado viendo, orientado al sueño, la ansiedad, la confianza, los hábitos y "
+          "lo demás.",
+          "No enseña hipnosis callejera ni te convertirá en hipnotizador. Es gratis, "
+          "funciona sin conexión y nada de lo que escribes sale del teléfono."],
+         []],
+    ],
+    "faq": [
+        ("¿Puede alguien hipnotizarme contra mi voluntad?",
+         "No. La sugestión necesita tu cooperación, y por eso los hipnotizadores "
+         "callejeros piden voluntarios en vez de elegir víctimas. Quien no quiere "
+         "participar, sencillamente no responde."),
+        ("¿Haré algo vergonzoso?",
+         "Nada a lo que te opongas de verdad. Bajo sugestión se rechaza lo que cruza los "
+         "propios límites, está bien documentado y es también por eso que los espectáculos "
+         "se quedan en material inofensivo. El riesgo es social, no psicológico."),
+        ("¿Prueba el brazo rígido que alguien está hipnotizado?",
+         "No — es una prueba de sugestionabilidad. Muestra con qué facilidad se acepta una "
+         "sugestión, información útil, pero es un paso previo a cualquier estado hipnótico, "
+         "no una evidencia de él."),
+        ("¿Puedo aprender hipnosis callejera con Onira?",
+         "No, y conviene decirlo claro. Onira escribe sesiones de autohipnosis para que "
+         "las escuches; no te enseña a hipnotizar a otros. Si buscas eso, necesitas un "
+         "curso, no esta app."),
+        ("¿La gente recuerda lo que pasó?",
+         "Sí, en casi todos los casos. La amnesia sugerida es un efecto temporal en "
+         "personas sugestionables y se disipa. Despertar con un hueco en la vida es una "
+         "convención del cine."),
+    ],
+}
+ES["guides"]["is_it_safe"] = {
+    "slug": "es-segura-la-autohipnosis",
+    "nav": "¿Es segura?",
+    "card": "Segura para la mayoría, con una lista corta de excepciones reales.",
+    "title": "¿Es segura la autohipnosis? | Onira",
+    "desc": "Los riesgos reales de la autohipnosis, quién debería evitarla y las situaciones "
+            "en que conviene consultar a un médico antes: embarazo, epilepsia, niños y más.",
+    "h1": "¿Es segura la autohipnosis?",
+    "lede": "Para la mayoría, sí — y los riesgos reales son más sosos y más concretos que "
+            "los que la gente teme.",
+    "answer": "La autohipnosis es segura para la mayoría de adultos sanos. No puedes "
+              "quedarte atrapado, perder el control ni ser obligado a hacer algo contra tu "
+              "voluntad: eso son convenciones del cine. Las precauciones reales son más "
+              "estrechas: no escuchar nunca al conducir o manejar maquinaria, tratarla como "
+              "complemento y no como sustituto de un tratamiento prescrito, y consultar "
+              "antes a un médico si vives con psicosis, un trastorno disociativo, trastorno "
+              "bipolar o TEPT. En niños, epilepsia y embarazo la respuesta suele ser sí "
+              "con supervisión: conviene preguntarlo en vez de suponerlo.",
+    "sections": [
+        ["Los riesgos que preocupan y lo que es cierto",
+         ["Casi todos los miedos vienen de la ficción, así que conviene despejarlos "
+          "antes de los reales:"],
+         ["**Quedarse atrapado.** Imposible. Sin una voz que te guíe, el estado se "
+          "desvanece o se convierte en sueño normal. El regreso deliberado a la alerta al "
+          "final de una sesión es por comodidad, no un rescate.",
+          "**Perder el control.** La sugestión necesita tu cooperación. Sigues consciente, "
+          "lo recuerdas y rechazas lo que cruza tus límites — por eso los espectáculos "
+          "piden voluntarios.",
+          "**Ser reprogramado sin notarlo.** No se instala nada. Lo que cambia la "
+          "repetición es un hábito de respuesta, despacio, y solo en una dirección hacia "
+          "la que ya ibas.",
+          "**Debilitar la mente.** No hay evidencia de que la relajación y la sugestión "
+          "habituales dañen el juicio, la atención o la voluntad de nadie."]],
+        ["Los riesgos que sí son reales",
+         ["Son menos dramáticos y tienen más que ver con el contexto que con el estado "
+          "en sí."],
+         ["**Hacerla mientras haces otra cosa.** Nunca con auriculares al conducir, ir en "
+          "bici, cocinar o cuidar a un niño. Es la forma más probable de hacerse daño y es "
+          "totalmente evitable.",
+          "**Usarla en lugar de un tratamiento.** Una sesión que alivia el dolor o la "
+          "ansiedad puede tentar a saltarse una cita o bajar una dosis. Es la decisión que "
+          "más cuidado merece y corresponde a tu médico.",
+          "**Malestar inesperado.** Relajarse mucho puede dejar salir algo contenido — "
+          "duelo, rabia, un recuerdo. En la mayoría pasa; si una sesión te deja peor de "
+          "forma repetida, para y habla con alguien cualificado.",
+          "**Memoria.** La sugestión hace el recuerdo menos fiable, no más. Todo lo que "
+          "prometa recuperar hechos olvidados hace algo que la evidencia no respalda."]],
+        ["Cuándo consultar antes a un médico",
+         ["Ninguno es una prohibición absoluta y la mayoría de personas en estas "
+          "situaciones usan herramientas de relajación sin problema. Son los casos en que "
+          "un profesional que conoce tu historia debería opinar antes que una app."],
+         ["**Psicosis o esquizofrenia** — no se recomienda relajación ni sugestión sin "
+          "supervisión clínica.",
+          "**Trastornos disociativos o TEPT** — la relajación profunda puede provocar "
+          "disociación o recuerdos intrusivos. El trabajo con trauma corresponde a un "
+          "clínico formado.",
+          "**Trastorno bipolar** — en general bien cuando está estable; conviene hablarlo "
+          "antes de usarla durante un episodio.",
+          "**Epilepsia** — la relajación con audio no es un desencadenante conocido de "
+          "crisis, pero los casos difieren lo bastante como para preguntárselo a tu "
+          "neurólogo.",
+          "**Embarazo** — suele estar bien, y la hipnosis para preparar el parto está "
+          "bien establecida. Coméntalo en una cita en vez de adivinar.",
+          "**Niños** — la autohipnosis puede ir bien a niños mayores con guía adulta. "
+          "Onira está escrita para adultos y no está pensada para niños pequeños."]],
+        ["¿Es segura para la ansiedad en concreto?",
+         ["Para la ansiedad cotidiana, sí, y es de lo que mejor hace la relajación guiada "
+          "— bajar la activación física que alimenta el pensamiento. La distinción "
+          "importante es entre ansiedad cotidiana y trastorno de ansiedad: la primera es "
+          "un objetivo razonable para una herramienta de relajación, la segunda lo es "
+          "para un tratamiento, y usar la herramienta junto a ese tratamiento está bien.",
+          "Una nota práctica: si escuchar al acostarte te despeja en vez de adormecerte, "
+          "es habitual y no es una señal de alarma. Una sesión escrita para dormir "
+          "termina distinto que una para calmarse."],
+         []],
+        ["Dónde encaja Onira",
+         ["Onira escribe sesiones de autohipnosis en tu teléfono y las narra en voz alta, "
+          "para el sueño, la ansiedad, la confianza, los hábitos y lo demás. Cada sesión "
+          "termina devolviéndote a la plena alerta, y cada página de tema lleva la misma "
+          "advertencia que esta guía: es una herramienta de relajación, no una terapia ni "
+          "un consejo médico.",
+          "Es gratis, funciona sin conexión y nada de lo que escribes sale del "
+          "dispositivo — lo que también significa que nadie perfila lo que te preocupaba."],
+         []],
+    ],
+    "faq": [
+        ("¿Puede la autohipnosis empeorar mi salud mental?",
+         "Es poco probable en la mayoría y posible en condiciones concretas: psicosis, "
+         "trastornos disociativos y trauma abordado de frente. Si vives con alguna, "
+         "plantéaselo a tu clínico en vez de hacer el experimento."),
+        ("¿Es seguro escuchar cada noche?",
+         "Sí. El uso diario es lo que acumula el efecto y no se le conoce desventaja. El "
+         "límite es práctico: una sesión que te deja mirando la pantalla es peor que el "
+         "sueño que buscabas."),
+        ("¿Puedo volverme adicto?",
+         "No, en el sentido de dependencia. Es normal apegarse a una rutina que funciona, "
+         "y no es un problema — salvo que sustituya un cuidado que de verdad necesitas."),
+        ("¿Es segura para niños?",
+         "Con guía adulta y material adecuado a la edad, a menudo sí; la relajación se "
+         "usa con niños en entornos clínicos. Onira está escrita para adultos, así que no "
+         "es la herramienta para un niño pequeño."),
+        ("¿Qué hago si una sesión me altera?",
+         "Termínala, abre los ojos y vuelve a la habitación: siempre es posible y nada te "
+         "retiene. Si pasa más de una vez, tómalo como señal para trabajar con una "
+         "persona en vez de una app."),
+    ],
+}
+ES["guides"]["learn_self_hypnosis"] = {
+    "slug": "aprender-autohipnosis",
+    "nav": "Aprenderla",
+    "card": "Qué practicar, en qué orden y cuánto tarda de verdad.",
+    "title": "Autohipnosis para principiantes: cómo aprender | Onira",
+    "desc": "Una forma realista de aprender autohipnosis por tu cuenta: qué practicar "
+            "primero, cuánto tarda, qué se siente y cuándo parar.",
+    "h1": "Autohipnosis para principiantes: cómo aprenderla",
+    "lede": "Es una habilidad con un temario corto y unas primeras semanas lentas — este "
+            "es el orden que funciona y lo que todos hacen mal.",
+    "answer": "Puedes aprender autohipnosis por tu cuenta, y quienes lo logran siguen casi "
+              "siempre el mismo orden: relajar el cuerpo a propósito, estrechar la atención "
+              "sobre una sola cosa y darte una sugestión concreta repitiéndola cada noche "
+              "durante dos o tres semanas. Espera un estado anodino — absorto, como con un "
+              "buen libro, no inconsciente — y júzgalo por si el objetivo se mueve, no por "
+              "lo profundo que se sintió. Una grabación guiada es la forma más fácil de "
+              "empezar, porque leerte las instrucciones compite con la relajación.",
+    "sections": [
+        ["El orden que funciona",
+         ["Las piezas son simples. Hacerlas en este orden evita que la primera semana "
+          "parezca que no pasa nada."],
+         ["**Preparar el entorno.** Un sitio sin interrupciones, el teléfono en silencio, "
+          "tumbado o recostado. Decidir revisar algo a mitad es lo que acaba con la "
+          "mayoría de los primeros intentos.",
+          "**Relajarte a propósito, por etapas.** Manos, mandíbula, hombros, respiración "
+          "— más larga al soltar que al tomar. Mucha gente se salta esto, y es lo que "
+          "hace posible el resto.",
+          "**Estrechar la atención.** Una cuenta lenta desde veinte, una sola imagen, la "
+          "sensación de tu propia respiración. Una cosa, sostenida sin esfuerzo.",
+          "**Dar una sola sugestión, en presente y en positivo.** No «no me dará pánico» "
+          "sino «mi respiración sigue lenta y me mantengo firme». Ensáyala como una "
+          "escena, con detalle, en vez de repetirla como una frase.",
+          "**Volver a propósito.** Contar hacia arriba, abrir los ojos, estar plenamente "
+          "alerta. Importa para el hábito, no para la seguridad."]],
+        ["Qué se siente de verdad",
+         ["Aquí es donde la mayoría concluye que no puede. Se espera algo dramático — un "
+          "umbral, un clic, la sensación de hundirse. Lo real se parece más a estar "
+          "absorto en una película: la habitación se aleja un poco, el tiempo se vuelve "
+          "poco fiable, y podrías parar en cualquier momento pero no te apetece.",
+          "Así que no sentir nada especial dice muy poco. Juzga las semanas por el "
+          "objetivo: minutos para dormirte, si empezaste la tarea que evitabas, cómo fue "
+          "una hora tensa. Si la cifra se mueve, funciona, se sintiera como se sintiera."],
+         []],
+        ["Cuánto tarda",
+         ["Las primeras sesiones sirven para aprender la forma, no para obtener "
+          "resultados. Es razonable esperar que relajarte sea notablemente más fácil en "
+          "una semana, y que lo que busques de verdad tarde dos o tres semanas de práctica "
+          "casi diaria en moverse.",
+          "La respuesta también varía entre personas y es bastante estable en la vida — "
+          "más o menos una de cada cuatro responde con fuerza, y otra proporción apenas "
+          "responde. Si tres o cuatro intentos honestos no hacen nada, lo razonable es "
+          "concluir que no es tu herramienta, no que debas esforzarte más."],
+         []],
+        ["¿Se puede aprender con un libro o por tu cuenta?",
+         ["Por tu cuenta, sí — es de las pocas cosas de este campo que de verdad no "
+          "necesita un profesional. Con un libro, en parte: los libros sirven para "
+          "entender lo que haces y guían mal en directo, porque leerte las instrucciones "
+          "es lo contrario de estrechar la atención.",
+          "Ese es el argumento práctico a favor de una grabación. Algo distinto sostiene "
+          "la estructura y el ritmo mientras tú haces lo único que no se delega, que es "
+          "dejar que funcione. Una vez familiar la forma, hacerlo sin ayuda resulta mucho "
+          "más fácil."],
+         []],
+        ["Aprender autohipnosis no es aprender a hipnotizar",
+         ["Conviene separarlo, porque las búsquedas se mezclan. Hipnotizar a otra persona "
+          "es una actuación y una habilidad interpersonal, con consentimiento y ajuste que "
+          "aprender, y se enseña en cursos. La autohipnosis es una rutina privada dirigida "
+          "a uno de tus propios problemas.",
+          "Ser bueno en la segunda dice casi nada de la primera, y al revés."],
+         []],
+        ["Dónde encaja Onira",
+         ["Onira escribe la sesión por ti y la narra en voz alta: eliges un tema y, si "
+          "quieres, escribes una frase sobre lo que pasa de verdad. Así desaparecen las "
+          "dos dificultades de los principiantes — sostener la estructura y encontrar las "
+          "palabras de una sugestión que encaje con tu situación.",
+          "Es gratis, funciona sin conexión y nada de lo que escribes sale del teléfono. "
+          "Si más adelante prefieres hacer las sesiones mentalmente sin ella, es un buen "
+          "resultado y la app habrá cumplido."],
+         []],
+    ],
+    "faq": [
+        ("¿Cuánto debe durar una sesión?",
+         "De quince a treinta minutos sirve para casi todo. Más corto funciona cuando ya "
+         "dominas la habilidad; mucho más largo suele añadir solo somnolencia, que está "
+         "bien si el objetivo era dormir y se desperdicia si no."),
+        ("¿Qué hora del día es mejor?",
+         "La que te permita no ser interrumpido, con una salvedad: las sesiones que no "
+         "buscan dormir terminan devolviéndote a la alerta, así que la hora de acostarse no "
+         "siempre es la mejor."),
+        ("¿Necesito escribir mi propio guion?",
+         "No, y escribir uno mientras intentas relajarte es la trampa clásica del "
+         "principiante. Empieza con algo que te narre y escribe el tuyo después si te "
+         "apetece."),
+        ("¿Puedo aprender si mi mente no para nunca?",
+         "Es el punto de partida normal, no una descalificación. La relajación física por "
+         "etapas existe justo porque una mente acelerada no se estrecha a voluntad — "
+         "primero va el cuerpo y la mente lo sigue."),
+        ("¿Es lo mismo la autohipnosis que la meditación?",
+         "Parecidas, pero con otra orientación. La meditación entrena una relación general "
+         "con la atención; la autohipnosis dirige esa atención hacia un objetivo "
+         "concreto. La práctica se solapa, la intención no."),
+    ],
+}
+
+FR["themes"]["habits"] = {
+    "slug": "habitudes-nerveuses",
+    "nav": "Habitudes nerveuses",
+    "card": "Interrompre le rongement d'ongles ou la mâchoire serrée avant qu'ils démarrent.",
+    "title": "Auto-hypnose pour les habitudes nerveuses | Onira",
+    "desc": "Auto-hypnose guidée contre les ongles rongés, les dents serrées et la mâchoire "
+            "contractée, écrite sur votre téléphone autour de votre déclencheur. Gratuite.",
+    "h1": "Auto-hypnose pour les habitudes nerveuses",
+    "lede": "Une séance pour les habitudes qui tournent sans vous — ronger, serrer, gratter — "
+            "visant l'instant juste avant qu'elles commencent.",
+    "why_title": "Pourquoi l'hypnose aide contre une habitude nerveuse",
+    "why": [
+        "Ces habitudes ne sont pas des décisions. Quand vous les remarquez, la main est déjà "
+        "à la bouche et la mâchoire serrée depuis une heure. La volonté arrive trop tard pour "
+        "servir d'outil, ce qui explique que décider d'arrêter marche si rarement seul.",
+        "Une séance travaille sur l'espace avant l'habitude — la tension qui la précède et le "
+        "signal qui la déclenche. Répéter une autre réponse au même signal, dans un état "
+        "détendu, est la façon de donner autre chose à faire à la partie automatique.",
+    ],
+    "works_on": [
+        "La montée de tension : épaules, mâchoire et mains relâchées avant que l'habitude ait une raison de démarrer.",
+        "La conscience du signal — remarquer l'instant du geste, le seul moment où l'on peut agir.",
+        "Une action de remplacement répétée jusqu'à devenir aussi automatique que celle qu'elle remplace.",
+        "Votre propre déclencheur, si vous le saisissez : réunions, conduite, écrans, une heure précise.",
+    ],
+    "expect": "Les séances durent environ 15 à 30 minutes et se terminent par un retour à "
+              "l'état d'alerte complet. Les habitudes répondent à la répétition plutôt qu'à "
+              "l'intensité : une séance enregistrée rejouée chaque jour vaut mieux qu'une "
+              "longue séance occasionnelle.",
+    "faq": [
+        ("Est-ce utile contre le grincement des dents la nuit ?",
+         "Cela peut aider pour la contraction diurne qui l'alimente. Le bruxisme nocturne "
+         "relève du dentiste — émail usé et douleurs de mâchoire demandent un avis, et une "
+         "gouttière fait souvent plus qu'une séance de relaxation."),
+        ("Combien de temps avant qu'une habitude change ?",
+         "Plus qu'une séance. Ce sont des automatismes construits sur des années, et l'attente "
+         "réaliste est une diminution progressive avec un usage quotidien, pas un interrupteur."),
+        ("Se gratter la peau ou s'arracher les cheveux, est-ce pareil ?",
+         "Cela peut être plus qu'une habitude nerveuse, et lorsque cela cause une vraie "
+         "détresse ou des lésions, il faut en parler à un clinicien. Onira est un outil de "
+         "relaxation, pas un traitement pour cela."),
+    ],
+}
+FR["themes"]["learning"] = {
+    "slug": "memoire-et-apprentissage",
+    "nav": "Mémoire",
+    "card": "Entrer dans l'état où réviser fait vraiment effet.",
+    "title": "Auto-hypnose pour la mémoire et les révisions | Onira",
+    "desc": "Auto-hypnose guidée pour réviser, retenir et apprendre une langue, écrite sur votre "
+            "téléphone autour de ce que vous apprenez. Gratuite, privée, hors ligne.",
+    "h1": "Auto-hypnose pour la mémoire et l'apprentissage",
+    "lede": "Une séance pour l'état dont l'apprentissage a besoin — une attention calme et sans "
+            "distraction — écrite autour de l'examen, de la langue ou du cours devant vous.",
+    "why_title": "Pourquoi l'hypnose aide à réviser",
+    "why": [
+        "La plupart des problèmes de révision ne sont pas des problèmes de mémoire. Ce sont des "
+        "problèmes d'état : la moitié de l'attention est sur l'échéance, le téléphone ou la "
+        "façon dont tout cela se passe mal. Ce qui s'encode dans cet état est mince, d'où une "
+        "heure de révision anxieuse qui ne laisse presque rien.",
+        "Une séance guidée baisse d'abord le bruit, puis place la matière dans le calme qui "
+        "reste. Le rappel est répété comme il servira vraiment — le mot qui arrive en "
+        "conversation, la réponse qui arrive dans la salle d'examen — pour que l'entraînement "
+        "ressemble au moment.",
+    ],
+    "works_on": [
+        "L'agitation qui fait s'effondrer une séance de travail en dix minutes de défilement.",
+        "Le rappel le jour de l'examen : répéter la récupération dans le calme plutôt que relire seulement.",
+        "L'apprentissage d'une langue — s'entendre la parler sans la gêne.",
+        "Une matière précise, si vous la saisissez : une date d'examen, une liste de vocabulaire, une soutenance.",
+    ],
+    "expect": "Les séances durent environ 15 à 30 minutes et se terminent par un retour à "
+              "l'état d'alerte complet — elles servent avant de réviser, pas à la place. Une "
+              "séance enregistrée peut être rejouée avant chaque bloc de révision.",
+    "faq": [
+        ("Cela me fera-t-il apprendre en dormant ?",
+         "Non. L'apprentissage pendant le sommeil n'est pas ce que l'hypnose offre, et Onira "
+         "ne le prétend pas. Une séance peut vous mettre dans un état où l'étude volontaire "
+         "marche mieux — il faut tout de même étudier."),
+        ("Peut-elle m'aider à retrouver un oubli ?",
+         "Elle peut aider au rappel ordinaire — un nom, une liste, où l'on a posé quelque chose. "
+         "L'hypnose n'est pas un moyen fiable de retrouver des souvenirs lointains ou "
+         "pénibles, et Onira n'est pas écrite pour cela."),
+        ("Est-ce utile pour apprendre une langue ?",
+         "Oui — surtout pour la moitié confiance. Les séances répètent le fait de parler sans "
+         "hésiter, ce qui bloque d'ordinaire une langue qu'on connaît déjà en partie."),
+    ],
+}
+ES["themes"]["motivation"] = {
+    "slug": "motivacion-y-energia",
+    "nav": "Motivación",
+    "card": "Empezar lo que llevas una semana rondando.",
+    "title": "Autohipnosis para la motivación y la energía | Onira",
+    "desc": "Autohipnosis guiada contra la procrastinación y la falta de energía, escrita en tu "
+            "teléfono alrededor de la tarea que evitas. Gratis, privada y sin conexión.",
+    "h1": "Autohipnosis para la motivación y la energía",
+    "lede": "Una sesión sobre empezar — los diez minutos previos a la tarea, donde la "
+            "motivación se gana o se pierde — escrita alrededor de lo que sigues aplazando.",
+    "why_title": "Por qué la hipnosis ayuda contra la procrastinación",
+    "why": [
+        "Procrastinar casi nunca es pereza. Suele ser evitar una sensación ligada a la tarea: "
+        "será aburrida, dejará ver que vas retrasado, no saldrá lo bastante bien. La tarea se "
+        "aplaza porque la sensación se aplaza, y esa sensación crece cada hora que espera.",
+        "Una sesión trata la sensación en vez de sermonearte sobre la tarea. En un estado "
+        "sereno se ensaya el comienzo con detalle: sentarte, abrir el archivo, la primera "
+        "acción pequeña. Una vez ensayado, empezar deja de ser lo difícil.",
+    ],
+    "works_on": [
+        "El bloqueo antes de empezar, ensayado como una secuencia que ya has recorrido.",
+        "La energía plana y pesada de la tarde, tratada como tensión y no como falta de voluntad.",
+        "La idea de todo o nada de que una tarea debe salir perfecta o no empezarse.",
+        "Una tarea concreta, si la escribes: la declaración de impuestos, el gimnasio, el mensaje pendiente.",
+    ],
+    "expect": "Las sesiones duran unos 15 a 30 minutos y terminan devolviéndote a la plena "
+              "alerta, a propósito — es un tema para usar antes de la tarea, no al acostarte. "
+              "Mucha gente graba una y la repite como ritual de inicio del día.",
+    "faq": [
+        ("¿Una sesión me hará productivo?",
+         "No, y cualquier herramienta que lo prometa exagera. Lo que una sesión hace con "
+         "fiabilidad es bajar una vez la resistencia a empezar; repetirlo es lo que cambia "
+         "un hábito."),
+        ("¿La hipnosis arregla la falta de energía?",
+         "La relajación puede ayudar cuando la energía baja es en realidad tensión o mal "
+         "sueño. El cansancio persistente es primero una cuestión médica: mejor plantearla "
+         "a un médico que a una app."),
+        ("¿Sirve para motivarme a hacer ejercicio?",
+         "Sí. Ensayar el comienzo — ponerte las zapatillas, salir de casa — funciona mejor "
+         "que ensayar el entrenamiento, y así está escrita la sesión."),
+    ],
+}
+ES["themes"]["habits"] = {
+    "slug": "habitos-nerviosos",
+    "nav": "Hábitos nerviosos",
+    "card": "Interrumpir el morderse las uñas o apretar la mandíbula antes de que arranque.",
+    "title": "Autohipnosis para hábitos nerviosos | Onira",
+    "desc": "Autohipnosis guiada para morderse las uñas, apretar los dientes y la mandíbula, "
+            "escrita en tu teléfono alrededor de tu desencadenante. Privada, gratis.",
+    "h1": "Autohipnosis para hábitos nerviosos",
+    "lede": "Una sesión para los hábitos que funcionan sin ti — morder, apretar, rascar — "
+            "dirigida al momento justo antes de que empiecen.",
+    "why_title": "Por qué la hipnosis ayuda con un hábito nervioso",
+    "why": [
+        "Estos hábitos no son decisiones. Cuando los notas, la mano ya está en la boca y la "
+        "mandíbula lleva una hora tensa. La fuerza de voluntad llega tarde para servir de "
+        "herramienta, y por eso decidir parar rara vez funciona por sí solo.",
+        "Una sesión trabaja el hueco previo al hábito: la tensión que lo precede y la señal "
+        "que lo dispara. Ensayar otra respuesta a la misma señal, en un estado relajado, es "
+        "la forma de darle algo distinto que hacer a la parte automática.",
+    ],
+    "works_on": [
+        "La acumulación de tensión: hombros, mandíbula y manos sueltos antes de que el hábito tenga motivo para empezar.",
+        "Darte cuenta de la señal: el instante de llevar la mano, el único momento en que puedes actuar.",
+        "Una acción sustituta ensayada hasta ser tan automática como la que reemplaza.",
+        "Tu propio desencadenante, si lo escribes: reuniones, conducir, pantallas, una hora del día.",
+    ],
+    "expect": "Las sesiones duran unos 15 a 30 minutos y terminan devolviéndote a la plena "
+              "alerta. Los hábitos responden a la repetición más que a la intensidad: una "
+              "sesión grabada y repetida cada día rinde más que una larga de vez en cuando.",
+    "faq": [
+        ("¿Sirve para el rechinar de dientes por la noche?",
+         "Puede ayudar con el apretar diurno que lo alimenta. El bruxismo nocturno es cosa "
+         "del dentista: el esmalte desgastado y el dolor de mandíbula necesitan valoración, "
+         "y una férula suele hacer más que cualquier sesión de relajación."),
+        ("¿Cuánto tarda en cambiar un hábito?",
+         "Más de una sesión. Son automatismos construidos durante años, y lo realista es "
+         "una reducción gradual con uso diario, no un interruptor."),
+        ("¿Es lo mismo arrancarse la piel o el pelo?",
+         "Puede ser más que un hábito nervioso, y cuando causa angustia real o daño conviene "
+         "llevarlo a un clínico. Onira es una herramienta de relajación, no un tratamiento "
+         "para eso."),
+    ],
 }
 
 LANGS = [EN, FR, ES]
