@@ -9,7 +9,7 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 ## App
 
 - [Onira on Google Play](https://play.google.com/store/apps/details?id=com.oytaub.mindease): install page; Android, free with ads
-- [Privacy policy](https://onirahypno.com/privacy/): Session generation runs on-device; inputs and scripts are never uploaded. Ads (Google AdMob, unless removed), Play Billing purchases and anonymous 1-5 star session ratings (Firebase) are the only data that leaves the phone. No account exists, so uninstalling deletes everything.
+- [Privacy policy](https://onirahypno.com/privacy/): Session generation runs on-device by default; inputs and scripts are uploaded only if you turn on optional cloud generation (encrypted, not stored). Ads (Google AdMob, unless removed), Play Billing purchases and anonymous 1-5 star session ratings (Firebase) are the only data that leaves the phone. No account exists, so uninstalling deletes everything.
 - [Home page](https://onirahypno.com/): what the app does and how a session is built
 
 ## Session themes (English)

@@ -36,10 +36,11 @@
 </div></header>
 <main class="wrap">
 <h1>Privacy Policy</h1>
-<p class="muted">Last updated: 29 August 2026</p>
+<p class="muted">Last updated: 28 October 2026</p>
 
 <p class="lede">Onira is designed so that your personal reflections and generated
-hypnosis sessions never leave your device.</p>
+hypnosis sessions stay on your device by default. One optional feature, cloud
+generation, changes that for the sessions you choose to write in the cloud (see below).</p>
 
 <h2>What stays on your device</h2>
 <ul>
@@ -49,15 +50,29 @@ hypnosis sessions never leave your device.</p>
 </ul>
 
 <div class="callout">
-  <p>All script generation runs <strong>entirely on-device</strong> using a
-  locally-stored AI model. Your input and the generated script are never
-  transmitted to Onira&rsquo;s developer or any third party.</p>
+  <p>By default, script generation runs <strong>entirely on-device</strong> using a
+  locally-stored AI model. Your input and the generated script are not
+  transmitted to Onira&rsquo;s developer or any third party, unless you turn on
+  cloud generation.</p>
 </div>
 
 <h2>What does leave your device</h2>
 <ul>
+  <li><strong>Cloud generation (optional, off unless you turn it on)</strong> &mdash; if you
+    enable &ldquo;Write sessions in the cloud&rdquo; in Settings (after a consent screen),
+    the app sends, over an encrypted (HTTPS) connection to Onira&rsquo;s own server
+    (api.onirahypno.com), what is needed to write each block of your session: the session
+    theme, your interface language, any free-text details you typed (shortened), the
+    listener restrictions you set (for example no breathing cues) and, for learning
+    journeys, your progress. The server writes the text and returns it; the text is not
+    stored and not written to logs. The server does keep technical records without any
+    session content: a random one-time code that links the rewarded ad you watched to
+    your session, and a session ticket with its use count. No account is created and
+    nothing identifies you. Turn the setting off to go back to fully on-device
+    generation.</li>
   <li><strong>Advertising</strong> &mdash; unless you&rsquo;ve purchased &ldquo;Remove Ads&rdquo;,
-    the app shows ads via Google AdMob. AdMob may collect device identifiers and usage
+    the app shows ads via Google AdMob. Cloud sessions always include one rewarded ad,
+    even with &ldquo;Remove Ads&rdquo;. AdMob may collect device identifiers and usage
     data per Google&rsquo;s own privacy policy to serve and measure ads. Onira does not
     send your session content, category selection, or free-text input to AdMob or any
     ad network.</li>
@@ -78,9 +93,10 @@ hypnosis sessions never leave your device.</p>
 </ul>
 
 <h2>Data retention and deletion</h2>
-<p>Since your inputs and generated scripts are stored only in the app&rsquo;s local
-storage, uninstalling the app deletes all of it. There is no server-side account or
-profile to delete because none exists.</p>
+<p>Your inputs and generated scripts are stored only in the app&rsquo;s local
+storage, so uninstalling the app deletes all of it. Text generated in the cloud is not
+kept on the server. There is no server-side account or profile to delete because none
+exists.</p>
 
 <h2>Children&rsquo;s privacy</h2>
 <p>Onira is not directed at children and is not intended for users under 13 (or the
