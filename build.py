@@ -610,7 +610,7 @@ def build_guide(lang, key):
 
 
 PRIVACY_BODY = """<h1>Privacy Policy</h1>
-<p class="muted">Last updated: 28 October 2026</p>
+<p class="muted">Last updated: 29 October 2026</p>
 
 <p class="lede">Onira is designed so that your personal reflections and generated
 hypnosis sessions stay on your device by default. One optional feature, cloud
@@ -644,6 +644,12 @@ generation, changes that for the sessions you choose to write in the cloud (see 
     your session, and a session ticket with its use count. No account is created and
     nothing identifies you. Turn the setting off to go back to fully on-device
     generation.</li>
+  <li><strong>Cloud subscription (optional)</strong> &mdash; if you subscribe to Onira Cloud,
+    the purchase is processed by Google Play Billing. When you start a cloud session, the
+    app sends the subscription&rsquo;s purchase token to Onira&rsquo;s server, which asks
+    Google Play whether the subscription is active and counts your sessions for the day
+    (up to 20). The server keeps that token (as a one-way hash for the daily count) and no
+    personal information; no account is created.</li>
   <li><strong>Advertising</strong> &mdash; unless you&rsquo;ve purchased &ldquo;Remove Ads&rdquo;,
     the app shows ads via Google AdMob. Cloud sessions always include one rewarded ad,
     even with &ldquo;Remove Ads&rdquo;. AdMob may collect device identifiers and usage
