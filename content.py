@@ -49,7 +49,8 @@ SITE = {
 # hreflang set from the languages that publish it.
 THEMES = ["anxiety", "sleep", "confidence", "stress", "smoking", "focus", "weight",
           "fear", "letting_go", "learning", "motivation", "habits",
-          "pain", "ibs", "emotional_recovery", "mental_reset"]
+          "pain", "ibs", "emotional_recovery", "mental_reset",
+          "anger", "burnout", "night_waking"]
 
 # ---------------------------------------------------------------- English ----
 
@@ -732,6 +733,127 @@ EN = {
                  "they will not shorten grief, and they are not meant to."),
             ],
         },
+        "anger": {
+            "slug": "anger",
+            "nav": "Anger",
+            "card": "Take the heat out of the moment before you react.",
+            "title": "Self-Hypnosis for Anger and Irritability | Onira",
+            "desc": "Guided self-hypnosis to ease anger and short tempers: calm the body first, then "
+                    "rehearse a slower reaction to your own triggers. Private, free, offline.",
+            "h1": "Self-hypnosis for anger and a short temper",
+            "lede": "A session for the seconds before you snap: the heat, the clenched jaw, the sentence "
+                    "you will regret. Written around what sets you off.",
+            "why_title": "Why a calm rehearsal helps with anger",
+            "why": [
+                "Anger rarely starts at the moment you shout. The body is already tense, the jaw tight "
+                "and the breathing short, and by the time you notice, the reaction is under way. "
+                "Trying to argue yourself out of it at that point is the hardest possible moment to do it.",
+                "A guided session works earlier. It lowers the baseline tension first, because a calm "
+                "body gives the habit less to feed on, then walks you through your usual trigger with a "
+                "slower response. Rehearsed in a relaxed state, that response starts to arrive sooner "
+                "than the automatic one.",
+            ],
+            "works_on": [
+                "Lowering the background tension that makes small things feel large.",
+                "The first signs in the body, heat, jaw, shoulders, which are the cue you can still act on.",
+                "A specific trigger if you type it in: traffic, a colleague, a child, a message.",
+                "The pause itself, rehearsed until it comes without effort.",
+            ],
+            "expect": "Sessions run roughly 15 to 30 minutes and end by returning you to full alertness. "
+                      "The calm is noticeable at once; a changed reaction comes with repetition over "
+                      "weeks, not from one session.",
+            "faq": [
+                ("Can self-hypnosis cure anger problems?",
+                 "No. It is a relaxation tool that can make the build-up easier to catch. If anger "
+                 "leads you to hurt someone or yourself, or feels out of your control, talk to a "
+                 "professional: Onira is not a treatment."),
+                ("Is it for my partner or my child?",
+                 "A session is for the person listening and works only if they choose it. Using it to "
+                 "change someone else is not what it is for."),
+                ("How long before I notice a difference?",
+                 "Most people feel calmer after the first session. A different reaction in the moment "
+                 "takes repetition, so plan on a few weeks of regular use."),
+            ],
+        },
+        "burnout": {
+            "slug": "burnout",
+            "nav": "Burnout",
+            "card": "Recover a little ground when work has emptied you out.",
+            "title": "Self-Hypnosis for Burnout and Exhaustion | Onira",
+            "desc": "Guided self-hypnosis for the tired, wired state of burnout: real rest, switching "
+                    "work off, and sleep. A relaxation aid, not a treatment. Offline and private.",
+            "h1": "Self-hypnosis for burnout and exhaustion",
+            "lede": "A session for when rest no longer feels like rest: the tired-but-wired evenings, "
+                    "the work that follows you home, the sleep that does not repair anything.",
+            "why_title": "What a session can and cannot do for burnout",
+            "why": [
+                "Burnout is not fixed by a technique. It comes from load, and the load has to change. "
+                "What a guided session can do is give you a reliable stretch each day where nothing is "
+                "asked of you, which is harder to get than it sounds when your mind keeps running the "
+                "to-do list.",
+                "It is written as a companion to the rest of your recovery, never a replacement. "
+                "If you cannot function, sleep has collapsed for weeks, or you feel hopeless, that "
+                "belongs with a doctor first.",
+            ],
+            "works_on": [
+                "Switching work off at the end of the day instead of carrying it to bed.",
+                "Falling asleep when the mind replays the day.",
+                "Letting the body drop out of its constant readiness.",
+                "A few protected minutes in which nothing needs deciding.",
+            ],
+            "expect": "Sessions run 15 to 30 minutes, and a short one can be played in a break at work. "
+                      "What people describe is feeling more rested for a while, which adds up with daily "
+                      "use. It does not replace time off or a conversation about workload.",
+            "faq": [
+                ("Can hypnosis cure burnout?",
+                 "No. It can help you rest and sleep better while you deal with the causes. Onira is a "
+                 "relaxation tool, not a treatment."),
+                ("When should I see a doctor?",
+                 "If exhaustion has lasted weeks, you cannot work or care for yourself, or your mood "
+                 "is dropping, see a doctor or a therapist. Do not wait for a session to fix it."),
+                ("Can I use it during the workday?",
+                 "Yes, in a quiet place. Do not use it while driving or doing anything that needs attention."),
+            ],
+        },
+        "night_waking": {
+            "slug": "waking-up-at-night",
+            "nav": "Waking at night",
+            "card": "Fall back asleep after waking at 3 a.m.",
+            "title": "Self-Hypnosis for Waking Up at Night | Onira",
+            "desc": "A guided session for waking in the night and not getting back to sleep: lower the "
+                    "alertness, let go of the clock, drift off again. Offline and private.",
+            "h1": "Self-hypnosis for waking up in the night",
+            "lede": "A session for the 3 a.m. wake-up: the racing thought, the clock you cannot stop "
+                    "checking, the dread of the morning.",
+            "why_title": "Why falling back asleep is the hard part",
+            "why": [
+                "Waking briefly in the night is normal. What keeps you awake is what happens next: "
+                "checking the time, counting the hours left, getting a little more alert with each "
+                "calculation. The effort to sleep is itself what wakes you.",
+                "A session meant for the middle of the night is slow and low on purpose. It gives your "
+                "attention somewhere gentle to rest, takes the pressure off sleeping, and does not ask "
+                "you to do anything.",
+            ],
+            "works_on": [
+                "Letting go of the clock and the arithmetic of how much sleep is left.",
+                "Quieting the thought that started the wake-up.",
+                "Relaxing the body without asking it to try.",
+                "Drifting back without being brought up to alertness at the end.",
+            ],
+            "expect": "Keep the volume low and your phone face-down. Sessions are meant to be played "
+                      "to the end or until you fall asleep. Several weeks of the same routine usually "
+                      "matter more than any one night.",
+            "faq": [
+                ("Can I fall asleep during a session?",
+                 "That is the point. A sleep session is written so that you can drift off, and nothing "
+                 "is lost if you do."),
+                ("What if I wake up at the same hour every night?",
+                 "A regular pattern is worth mentioning to a doctor, especially with loud snoring, "
+                 "pain, or daytime exhaustion. A session can ease the waking, not diagnose it."),
+                ("Should I look at my phone at 3 a.m.?",
+                 "Dim the screen, start the session, and put the phone face-down. Avoid anything else on it."),
+            ],
+        },
     },
 }
 
@@ -1386,6 +1508,130 @@ FR = {
                 ("Le deuil, est-ce la même chose ?",
                  "Assez proche pour que le thème convienne. Les séances peuvent stabiliser les journées "
                  "et les nuits ; elles ne raccourciront pas un deuil, et ce n'est pas leur rôle."),
+            ],
+        },
+        "anger": {
+            "slug": "colere",
+            "nav": "Colère",
+            "card": "Faire retomber la chaleur avant de réagir.",
+            "title": "Auto-hypnose contre la colère et l'irritabilité | Onira",
+            "desc": "Auto-hypnose guidée pour apaiser la colère et les accès d'irritation : calmer le "
+                    "corps, puis répéter une réaction plus lente. Privée, gratuite, hors ligne.",
+            "h1": "Auto-hypnose contre la colère et l'irritabilité",
+            "lede": "Une séance pour les secondes qui précèdent l'explosion : la chaleur, la mâchoire "
+                    "serrée, la phrase qu'on regrettera. Écrite autour de ce qui vous met hors de vous.",
+            "why_title": "Pourquoi une répétition au calme aide face à la colère",
+            "why": [
+                "La colère ne commence pas au moment où l'on crie. Le corps est déjà tendu, la "
+                "mâchoire serrée, le souffle court, et quand on s'en aperçoit la réaction est lancée. "
+                "C'est le pire moment pour essayer de se raisonner.",
+                "Une séance guidée agit plus tôt. Elle fait d'abord baisser la tension de fond, car "
+                "un corps calme laisse moins de prise, puis elle vous fait parcourir votre déclencheur "
+                "habituel avec une réponse plus lente. Répétée au repos, cette réponse finit par "
+                "arriver avant la réaction automatique.",
+            ],
+            "works_on": [
+                "Faire baisser la tension de fond qui rend les petites choses énormes.",
+                "Les premiers signes dans le corps (chaleur, mâchoire, épaules), seul repère sur lequel on peut encore agir.",
+                "Un déclencheur précis si vous le tapez : les embouteillages, un collègue, un enfant, un message.",
+                "La pause elle-même, répétée jusqu'à ce qu'elle vienne sans effort.",
+            ],
+            "expect": "Les séances durent environ 15 à 30 minutes et se terminent par un retour à "
+                      "l'éveil complet. Le calme se sent tout de suite ; un changement de réaction "
+                      "demande des semaines de répétition, pas une séance.",
+            "faq": [
+                ("L'auto-hypnose peut-elle soigner la colère ?",
+                 "Non. C'est un outil de relaxation qui peut aider à repérer la montée. Si la colère "
+                 "vous amène à faire du mal à quelqu'un ou à vous-même, ou vous échappe, parlez-en à "
+                 "un professionnel : Onira n'est pas un traitement."),
+                ("Puis-je l'utiliser pour mon conjoint ou mon enfant ?",
+                 "Une séance s'adresse à la personne qui écoute et ne fonctionne que si elle le "
+                 "choisit. Ce n'est pas un moyen de changer quelqu'un d'autre."),
+                ("Combien de temps avant de voir une différence ?",
+                 "La plupart des gens se sentent plus calmes dès la première séance. Une autre "
+                 "réaction sur le moment demande de la répétition : comptez quelques semaines."),
+            ],
+        },
+        "burnout": {
+            "slug": "burn-out",
+            "nav": "Burn-out",
+            "card": "Reprendre un peu de terrain quand le travail vous a vidé.",
+            "title": "Auto-hypnose contre le burn-out et l'épuisement | Onira",
+            "desc": "Auto-hypnose guidée pour l'état fatigué mais tendu du burn-out : vrai repos, "
+                    "déconnexion du travail, sommeil. Un outil de détente, pas un soin. Hors ligne.",
+            "h1": "Auto-hypnose contre le burn-out et l'épuisement",
+            "lede": "Une séance pour quand le repos ne repose plus : les soirées fatiguées mais "
+                    "tendues, le travail qui vous suit à la maison, le sommeil qui ne répare rien.",
+            "why_title": "Ce qu'une séance peut et ne peut pas faire pour le burn-out",
+            "why": [
+                "Le burn-out ne se règle pas avec une technique. Il vient d'une charge, et c'est la "
+                "charge qu'il faut changer. Ce qu'une séance guidée peut offrir, c'est un moment "
+                "fiable chaque jour où l'on ne vous demande rien, ce qui est plus difficile qu'il n'y "
+                "paraît quand l'esprit déroule la liste des tâches.",
+                "Elle est écrite en complément du reste de votre récupération, jamais à sa place. Si "
+                "vous n'arrivez plus à fonctionner, si le sommeil est détruit depuis des semaines ou "
+                "si vous vous sentez sans espoir, voyez d'abord un médecin.",
+            ],
+            "works_on": [
+                "Couper du travail en fin de journée au lieu de l'emporter au lit.",
+                "S'endormir quand l'esprit rejoue la journée.",
+                "Laisser le corps sortir de son état d'alerte permanent.",
+                "Quelques minutes protégées où rien n'est à décider.",
+            ],
+            "expect": "Les séances durent 15 à 30 minutes, et une courte peut s'écouter pendant une "
+                      "pause. On décrit surtout se sentir plus reposé un moment, et cela s'additionne "
+                      "avec l'usage quotidien. Cela ne remplace ni l'arrêt de travail ni une discussion "
+                      "sur la charge.",
+            "faq": [
+                ("L'hypnose peut-elle guérir un burn-out ?",
+                 "Non. Elle peut aider à se reposer et mieux dormir pendant que l'on s'occupe des "
+                 "causes. Onira est un outil de relaxation, pas un traitement."),
+                ("Quand consulter un médecin ?",
+                 "Si l'épuisement dure depuis des semaines, si vous ne pouvez plus travailler ni "
+                 "prendre soin de vous, ou si le moral baisse, consultez un médecin ou un "
+                 "psychologue. N'attendez pas qu'une séance règle le problème."),
+                ("Puis-je l'écouter pendant la journée de travail ?",
+                 "Oui, dans un endroit calme. Pas au volant ni pendant une activité qui demande de l'attention."),
+            ],
+        },
+        "night_waking": {
+            "slug": "reveil-nocturne",
+            "nav": "Réveils nocturnes",
+            "card": "Se rendormir après un réveil à 3 heures du matin.",
+            "title": "Auto-hypnose contre les réveils nocturnes | Onira",
+            "desc": "Une séance guidée pour les réveils en pleine nuit et le sommeil qui ne revient "
+                    "pas : baisser la vigilance, oublier l'horloge, se rendormir. Hors ligne, privée.",
+            "h1": "Auto-hypnose contre les réveils nocturnes",
+            "lede": "Une séance pour le réveil de 3 heures : la pensée qui tourne, l'horloge qu'on ne "
+                    "peut s'empêcher de regarder, l'angoisse du matin.",
+            "why_title": "Pourquoi le plus dur est de se rendormir",
+            "why": [
+                "Se réveiller brièvement la nuit est normal. Ce qui garde éveillé, c'est ce qui suit : "
+                "regarder l'heure, compter les heures restantes, devenir un peu plus alerte à chaque "
+                "calcul. L'effort pour dormir est justement ce qui réveille.",
+                "Une séance conçue pour le milieu de la nuit est lente et basse, volontairement. Elle "
+                "donne à l'attention un endroit doux où se poser, enlève la pression de dormir et ne "
+                "vous demande rien.",
+            ],
+            "works_on": [
+                "Lâcher l'horloge et l'arithmétique du sommeil qui reste.",
+                "Apaiser la pensée qui a causé le réveil.",
+                "Détendre le corps sans lui demander d'essayer.",
+                "Se rendormir sans être ramené à l'éveil à la fin.",
+            ],
+            "expect": "Gardez le volume bas et le téléphone écran vers le bas. Les séances s'écoutent "
+                      "jusqu'au bout ou jusqu'à l'endormissement. Plusieurs semaines de la même "
+                      "routine comptent plus qu'une seule nuit.",
+            "faq": [
+                ("Puis-je m'endormir pendant la séance ?",
+                 "C'est le but. Une séance de sommeil est écrite pour que vous puissiez vous laisser "
+                 "glisser, et rien n'est perdu si c'est le cas."),
+                ("Et si je me réveille à la même heure chaque nuit ?",
+                 "Un schéma régulier mérite d'être signalé à un médecin, surtout avec des ronflements "
+                 "forts, des douleurs ou une fatigue en journée. Une séance peut adoucir le réveil, "
+                 "pas le diagnostiquer."),
+                ("Dois-je regarder mon téléphone à 3 heures du matin ?",
+                 "Baissez la luminosité, lancez la séance et posez le téléphone écran vers le bas. Évitez tout le reste."),
             ],
         },
     },
@@ -2083,6 +2329,128 @@ ES = {
                 ("¿Sirve para calmar la mente antes de dormir?",
                  "Sí, aunque la sesión termina devolviéndote al estado de alerta. Si lo que buscas es "
                  "dormirte, el tema de sueño está escrito justo para eso."),
+            ],
+        },
+        "anger": {
+            "slug": "controlar-la-ira",
+            "nav": "Ira",
+            "card": "Bajar el calor antes de reaccionar.",
+            "title": "Autohipnosis para controlar la ira | Onira",
+            "desc": "Autohipnosis guiada para calmar la ira y la irritabilidad: relajar primero el "
+                    "cuerpo y ensayar una reacción más lenta. Privada, gratuita y sin conexión.",
+            "h1": "Autohipnosis para controlar la ira",
+            "lede": "Una sesión para los segundos antes de estallar: el calor, la mandíbula apretada, "
+                    "la frase de la que te arrepentirás. Escrita en torno a lo que te saca de quicio.",
+            "why_title": "Por qué ensayar en calma ayuda con la ira",
+            "why": [
+                "La ira no empieza cuando gritas. El cuerpo ya está tenso, la mandíbula apretada y la "
+                "respiración corta, y cuando te das cuenta la reacción ya va en marcha. Es el peor "
+                "momento para intentar razonar.",
+                "Una sesión guiada actúa antes. Primero baja la tensión de fondo, porque un cuerpo "
+                "tranquilo le deja menos que alimentar, y luego te lleva por tu detonante habitual con "
+                "una respuesta más lenta. Ensayada en reposo, esa respuesta acaba llegando antes que la "
+                "automática.",
+            ],
+            "works_on": [
+                "Bajar la tensión de fondo que hace grandes las cosas pequeñas.",
+                "Las primeras señales en el cuerpo (calor, mandíbula, hombros), lo único sobre lo que aún puedes actuar.",
+                "Un detonante concreto si lo escribes: el tráfico, un compañero, un hijo, un mensaje.",
+                "La pausa en sí, ensayada hasta que sale sin esfuerzo.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos y terminan devolviéndote al estado de "
+                      "alerta. La calma se nota enseguida; un cambio de reacción llega con semanas de "
+                      "repetición, no con una sesión.",
+            "faq": [
+                ("¿Puede la autohipnosis curar la ira?",
+                 "No. Es una herramienta de relajación que ayuda a detectar la subida. Si la ira te "
+                 "lleva a hacer daño a alguien o a ti, o se te escapa de las manos, habla con un "
+                 "profesional: Onira no es un tratamiento."),
+                ("¿Puedo usarla para mi pareja o mi hijo?",
+                 "Una sesión es para quien la escucha y solo funciona si esa persona la elige. No es "
+                 "una forma de cambiar a otro."),
+                ("¿Cuánto tarda en notarse?",
+                 "Casi todos se sienten más tranquilos desde la primera sesión. Reaccionar distinto en "
+                 "el momento necesita repetición: cuenta con unas semanas."),
+            ],
+        },
+        "burnout": {
+            "slug": "burnout",
+            "nav": "Agotamiento",
+            "card": "Recuperar algo de terreno cuando el trabajo te ha vaciado.",
+            "title": "Autohipnosis para el burnout y el agotamiento | Onira",
+            "desc": "Autohipnosis guiada para el estado cansado pero tenso del burnout: descanso real, "
+                    "desconectar del trabajo y dormir. Una ayuda para relajarse, no un tratamiento.",
+            "h1": "Autohipnosis para el burnout y el agotamiento",
+            "lede": "Una sesión para cuando descansar ya no descansa: las tardes cansadas pero "
+                    "tensas, el trabajo que te sigue a casa, el sueño que no repara nada.",
+            "why_title": "Qué puede y qué no puede hacer una sesión por el burnout",
+            "why": [
+                "El burnout no se arregla con una técnica. Viene de una carga, y es la carga lo que "
+                "hay que cambiar. Lo que una sesión guiada puede darte es un rato fiable cada día en "
+                "el que no se te pide nada, más difícil de lo que parece cuando la mente repasa la "
+                "lista de tareas.",
+                "Está escrita como acompañamiento del resto de tu recuperación, nunca como sustituto. "
+                "Si no puedes funcionar, llevas semanas sin dormir o te sientes sin esperanza, eso "
+                "es primero para un médico.",
+            ],
+            "works_on": [
+                "Desconectar del trabajo al final del día en vez de llevarlo a la cama.",
+                "Dormirte cuando la mente repasa el día.",
+                "Dejar que el cuerpo salga de su alerta permanente.",
+                "Unos minutos protegidos en los que no hay nada que decidir.",
+            ],
+            "expect": "Las sesiones duran entre 15 y 30 minutos, y una corta cabe en una pausa del "
+                      "trabajo. Lo que se describe es sentirse más descansado un rato, y se acumula con "
+                      "el uso diario. No sustituye las vacaciones ni una conversación sobre la carga.",
+            "faq": [
+                ("¿Puede la hipnosis curar el burnout?",
+                 "No. Puede ayudarte a descansar y dormir mejor mientras te ocupas de las causas. "
+                 "Onira es una herramienta de relajación, no un tratamiento."),
+                ("¿Cuándo debo ir al médico?",
+                 "Si el agotamiento dura semanas, no puedes trabajar ni cuidarte, o baja el ánimo, "
+                 "consulta a un médico o a un psicólogo. No esperes a que una sesión lo arregle."),
+                ("¿Puedo usarla durante la jornada?",
+                 "Sí, en un sitio tranquilo. No mientras conduces ni en nada que exija atención."),
+            ],
+        },
+        "night_waking": {
+            "slug": "despertares-nocturnos",
+            "nav": "Despertares nocturnos",
+            "card": "Volver a dormirte tras despertar a las tres de la madrugada.",
+            "title": "Autohipnosis para los despertares nocturnos | Onira",
+            "desc": "Una sesión guiada para despertar de madrugada y no volver a dormirte: bajar la "
+                    "alerta, olvidar el reloj y dormirte otra vez. Sin conexión y privada.",
+            "h1": "Autohipnosis para los despertares nocturnos",
+            "lede": "Una sesión para el despertar de las tres: el pensamiento que da vueltas, el reloj "
+                    "que no puedes dejar de mirar, el miedo a la mañana.",
+            "why_title": "Por qué lo difícil es volver a dormirse",
+            "why": [
+                "Despertarse un momento por la noche es normal. Lo que te mantiene despierto es lo "
+                "que viene después: mirar la hora, contar las horas que quedan, estar un poco más "
+                "alerta con cada cuenta. El esfuerzo por dormir es justo lo que despierta.",
+                "Una sesión pensada para mitad de la noche es lenta y baja a propósito. Da a tu "
+                "atención un sitio suave donde descansar, quita la presión de dormir y no te pide "
+                "nada.",
+            ],
+            "works_on": [
+                "Soltar el reloj y la aritmética del sueño que queda.",
+                "Calmar el pensamiento que provocó el despertar.",
+                "Relajar el cuerpo sin pedirle que lo intente.",
+                "Volver a dormirte sin que te traigan de vuelta a la alerta al final.",
+            ],
+            "expect": "Mantén el volumen bajo y el teléfono boca abajo. Las sesiones se escuchan hasta "
+                      "el final o hasta que te duermes. Varias semanas con la misma rutina pesan más "
+                      "que una sola noche.",
+            "faq": [
+                ("¿Puedo dormirme durante la sesión?",
+                 "Es la idea. Una sesión de sueño está escrita para que te dejes ir, y no se pierde "
+                 "nada si ocurre."),
+                ("¿Y si me despierto a la misma hora cada noche?",
+                 "Un patrón regular conviene comentarlo con un médico, sobre todo si hay ronquidos "
+                 "fuertes, dolor o cansancio durante el día. Una sesión puede suavizar el despertar, "
+                 "no diagnosticarlo."),
+                ("¿Debo mirar el teléfono a las tres de la madrugada?",
+                 "Baja el brillo, inicia la sesión y deja el teléfono boca abajo. Evita todo lo demás."),
             ],
         },
     },
