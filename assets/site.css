@@ -146,3 +146,9 @@ li { margin: .45rem 0; }
   margin: 1.25rem 0 0;
 }
 .site-foot .badges img { max-width: 100%; height: auto; vertical-align: middle; }
+
+/* Press page */
+.press .table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+.press table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.press th, .press td { border: 1px solid var(--rule); padding: .5rem .65rem; text-align: left; vertical-align: top; }
+.press th { background: var(--surface); }

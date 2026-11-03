@@ -156,7 +156,7 @@ def expected_alternates(path):
                                              l["guides"][key]["slug"])
         if path in urls.values():
             return urls
-    return None  # privacy page: single-language, no alternate set expected
+    return None  # privacy and press pages: single-language, no alternate set expected
 
 
 # ----------------------------------------------------------- static checks ----
@@ -236,7 +236,7 @@ def check_pages(pages):
                 fail(path, "internal link to %s, which does not exist" % href)
 
         # The policy is a legal page, not a landing page; length is not a virtue there.
-        if path != "/privacy/":
+        if path not in ("/privacy/", "/fr/presse/"):
             words = len(p["text"].split())
             if words < THIN_CONTENT_WORDS:
                 warn(path, "%d words, thin for a page meant to rank" % words)
@@ -257,7 +257,7 @@ def check_orphans(pages):
     reciprocal alternates — while no longer being linked from anywhere. Only a
     comparison against content.py catches it.
     """
-    expected = {"/privacy/"}
+    expected = {"/privacy/", "/fr/presse/"}
     for lang in LANGS:
         base = "/" if not lang["base"] else "/%s/" % lang["base"]
         prefix = "/%s" % lang["base"] if lang["base"] else ""
