@@ -255,10 +255,20 @@ def privacy_and_safety(lang):
                 esc(ui["safety_title"]), esc(ui["safety_body"])))
 
 
+def news(lang):
+    """What changed in the app lately: a short boxed list under the call to action of the
+    home page. Kept to the latest release; older items go, they are in the store notes."""
+    h = lang["home"]
+    if not h.get("news"):
+        return ""
+    items = "".join("<li>%s</li>" % esc(i) for i in h["news"])
+    return ('<section class="news"><h2>%s</h2><ul>%s</ul></section>\n'
+            % (esc(h["news_title"]), items))
+
+
 def screens(lang, only=None):
-    """Phone captures. The app's UI is only captured in French so far, so those
-    files are shared across languages; the privacy card, which is generated, has a
-    file per language. Alt text and captions are localised either way.
+    """Phone captures, one file per language (`<key>-<code>.webp`, captured on a
+    Pixel 7 for the 0.16 look; the app repo's marketing/assets/screens_raw).
 
     Every image is lazy-loaded and carries its intrinsic width/height, which is
     what keeps CLS at 0 and the images out of the LCP measurement.
@@ -267,7 +277,7 @@ def screens(lang, only=None):
              if i[0] != "privacy" and (only is None or i[0] in only)]
     figures = []
     for key, alt, caption in items:
-        name = "privacy-%s" % lang["code"] if key == "privacy" else key
+        name = "%s-%s" % (key, lang["code"])
         figures.append(
             '<li><figure>'
             '<img src="/assets/screens/%s.webp" width="540" height="1200" '
@@ -453,8 +463,8 @@ def build_home(lang):
         "inLanguage": lang["code"],
         "installUrl": SITE["play"],
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-        "screenshot": [ORIGIN + "/assets/screens/%s.webp" % n
-                       for n in ("home", "session", "favorites")],
+        "screenshot": [ORIGIN + "/assets/screens/%s-%s.webp" % (n, lang["code"])
+                       for n in ("home", "day", "custom", "session")],
         "featureList": lang["ui"]["features"],
     }
     site_ld = {
@@ -466,6 +476,7 @@ def build_home(lang):
     }
     body = ["<h1>%s</h1>\n" % esc(h["h1"]), '<p class="lede">%s</p>\n' % esc(h["lede"])]
     body.append(cta(lang))
+    body.append(news(lang))
     body += ["<p>%s</p>\n" % esc(p) for p in h["intro"]]
     body.append(how_it_works(lang))
     body.append("<h2>%s</h2>\n" % esc(lang["ui"]["screens_title"]))
