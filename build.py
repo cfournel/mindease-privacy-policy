@@ -54,6 +54,12 @@ FAVICON_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">'
                + MARK_SHAPES + '</g></svg>')
 
 
+# The CDN (Cloudflare) caches site.css for hours, so a new page could arrive with the
+# old stylesheet: its URL carries a hash of its contents, which changes with every edit.
+import hashlib
+with open(os.path.join(ROOT, "assets", "site.css"), "rb") as _f:
+    CSS_VERSION = hashlib.sha256(_f.read()).hexdigest()[:10]
+
 # The site dresses for the moment of the day like the app does (#45 there):
 # dawn before 11 h, a clear sky until 18 h, the night after that, and always the
 # night for a visitor whose system asks for a dark theme. Runs in <head>, before
@@ -205,7 +211,7 @@ def head(lang, title, desc, url, alternates, jsonld):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=%(css_v)s">
 <script src="/assets/webmcp.js" defer></script>%(blocks)s
 </head>
 <body>
@@ -213,6 +219,7 @@ def head(lang, title, desc, url, alternates, jsonld):
         "code": lang["code"], "title": esc(title), "desc": esc(desc),
         "origin": ORIGIN, "url": url, "links": links, "blocks": blocks,
         "moment": MOMENT_JS,
+        "css_v": CSS_VERSION,
     }
 
 
