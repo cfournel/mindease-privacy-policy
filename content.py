@@ -108,7 +108,6 @@ EN = {
         "news_title": "New in Onira 0.17",
         "news": [
             "Onira's own narration voice in English, French and Spanish, made for hypnosis: soft and slow, it changes tone as the session deepens.",
-            'It downloads by itself on Wi-Fi (about 80 MB); until then your current voice narrates.',
             'The background music is a little quieter by default.',
         ],
         "title": "Onira — Self-Hypnosis Sessions Written for You",
@@ -920,7 +919,6 @@ FR = {
         "news_title": "Nouveautés d'Onira 0.17",
         "news": [
             "La voix de narration d'Onira, en français, anglais et espagnol, créée pour l'hypnose : douce et lente, elle change de ton à mesure que la séance s'approfondit.",
-            "Elle se télécharge toute seule en Wi-Fi (environ 80 Mo) ; d'ici là, votre voix actuelle narre.",
             'La musique de fond est un peu plus douce par défaut.',
         ],
         "title": "Onira — Séances d'auto-hypnose écrites pour vous",
@@ -1708,7 +1706,6 @@ ES = {
         "news_title": "Novedades de Onira 0.17",
         "news": [
             'La voz de narración de Onira, en español, inglés y francés, creada para la hipnosis: suave y lenta, cambia de tono a medida que la sesión se hace más profunda.',
-            'Se descarga sola con Wi-Fi (unos 80 MB); mientras tanto, narra tu voz actual.',
             'La música de fondo suena un poco más baja por defecto.',
         ],
         "title": "Onira — Sesiones de autohipnosis escritas para ti",
