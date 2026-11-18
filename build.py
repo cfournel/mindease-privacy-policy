@@ -54,6 +54,64 @@ FAVICON_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">'
                + MARK_SHAPES + '</g></svg>')
 
 
+# The site dresses for the moment of the day like the app does (#45 there):
+# dawn before 11 h, a clear sky until 18 h, the night after that, and always the
+# night for a visitor whose system asks for a dark theme. Runs in <head>, before
+# the first paint, so the page never flashes the wrong sky. Without JavaScript the
+# CSS falls back to midday, or the night under prefers-color-scheme: dark.
+MOMENT_JS = ("(function(){var h=new Date().getHours(),m=h>=5&&h<11?'morning':h>=11&&h<18?'midday':'evening';"
+             "try{if(matchMedia('(prefers-color-scheme: dark)').matches)m='evening'}catch(e){}"
+             "var q=/[?&]moment=(morning|midday|evening)/.exec(location.search);if(q)m=q[1];"
+             "document.documentElement.dataset.moment=m;"
+             "var c={morning:'#FFC9A8',midday:'#A9D9E3',evening:'#3C3A78'}[m];"
+             "document.querySelector('meta[name=theme-color]').content=c})()")
+
+# The home screen's landscape (app SkyScene.kt): a sky fading into the page, the
+# sun (or the moon, with stars) and two hills, the near one the colour of the page.
+# Every colour is a CSS variable of the current moment, so one markup serves all three.
+SCENE = ('<div class="scene" aria-hidden="true">'
+         '<svg class="stars" viewBox="0 0 400 160" preserveAspectRatio="none">'
+         + "".join('<circle cx="%d" cy="%d" r="%.1f"/>' % c for c in (
+             (180, 18, 1.2), (232, 52, 1.6), (268, 14, 1), (300, 96, 1.4), (338, 40, 1.8),
+             (372, 118, 1.1), (390, 22, 1.3), (212, 120, 1), (24, 10, 1.2), (96, 26, 1),
+             (252, 140, 1.2), (352, 74, 1)))
+         + '</svg><span class="celestial"></span>'
+         '<svg class="hills" viewBox="0 0 1440 140" preserveAspectRatio="none">'
+         '<path class="far" d="M0 70C240 20 480 20 720 55S1200 110 1440 50V140H0Z"/>'
+         '<path class="near" d="M0 110C300 70 560 80 820 100S1260 120 1440 90V140H0Z"/>'
+         '</svg></div>')
+
+# Theme tiles wear the app's category colours and motifs (CategoryArt.kt); themes
+# the app has no category for borrow the nearest one.
+MOTIFS = {
+    "leaf": '<path d="M20 4C31 12 33 26 20 37C7 26 9 12 20 4Z"/><path d="M20 12V33" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>',
+    "moon": '<path d="M25 5a15 15 0 1 0 10 25A13 13 0 0 1 25 5Z"/>',
+    "sun": '<circle cx="20" cy="20" r="7.5"/><g stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M20 3v5M20 32v5M3 20h5M32 20h5M8 8l3.5 3.5M28.5 28.5 32 32M8 32l3.5-3.5M28.5 11.5 32 8"/></g>',
+    "waves": '<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M3 13c5-5 9 5 14 0s9 5 14 0 6-2 6-2"/><path d="M3 21c5-5 9 5 14 0s9 5 14 0 6-2 6-2"/><path d="M3 29c5-5 9 5 14 0s9 5 14 0 6-2 6-2"/></g>',
+    "wind": '<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12h26"/><path d="M4 20h32"/><path d="M4 28h20"/></g>',
+    "target": '<g fill="none" stroke="currentColor" stroke-width="3"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="8.5"/></g><circle cx="20" cy="20" r="3.5"/>',
+    "stones": '<ellipse cx="20" cy="32" rx="12" ry="5"/><ellipse cx="20" cy="22" rx="9" ry="4.2"/><ellipse cx="20" cy="13" rx="6" ry="3.6"/>',
+    "star": '<path d="M20 3C22 14 26 18 37 20 26 22 22 26 20 37 18 26 14 22 3 20 14 18 18 14 20 3Z"/>',
+}
+THEME_ART = {
+    "anxiety": ("#86C49A", "leaf"), "sleep": ("#A897EA", "moon"),
+    "confidence": ("#F1C75B", "sun"), "stress": ("#F2A07E", "waves"),
+    "smoking": ("#8CC4E8", "wind"), "focus": ("#6CBDB5", "target"),
+    "weight": ("#EE9DB4", "stones"), "fear": ("#D7B48A", "star"),
+    "letting_go": ("#9DB4E8", "waves"), "motivation": ("#F2A07E", "sun"),
+    "pain": ("#EE9DB4", "leaf"), "ibs": ("#86C49A", "waves"),
+    "emotional_recovery": ("#A897EA", "star"), "anger": ("#F2A07E", "waves"),
+    "burnout": ("#F1C75B", "leaf"), "night_waking": ("#8CC4E8", "moon"),
+    "habits": ("#6CBDB5", "wind"), "learning": ("#9DB4E8", "target"),
+}
+
+
+def motif(key):
+    color, name = THEME_ART.get(key, ("#D7B48A", "star"))
+    return color, ('<svg class="motif" viewBox="0 0 40 40" fill="currentColor" aria-hidden="true">'
+                   '%s</svg>' % MOTIFS[name])
+
+
 # ------------------------------------------------------------------ paths ----
 
 _PAGE = "site"
@@ -140,7 +198,10 @@ def head(lang, title, desc, url, alternates, jsonld):
 <meta property="og:image:height" content="500">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="%(origin)s/assets/og.png">
-<meta name="theme-color" content="#5E7F6A">
+<meta name="theme-color" content="#F1F6F2">
+<script>%(moment)s</script>
+<link rel="preload" href="/assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/young-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -151,10 +212,11 @@ def head(lang, title, desc, url, alternates, jsonld):
 """ % {
         "code": lang["code"], "title": esc(title), "desc": esc(desc),
         "origin": ORIGIN, "url": url, "links": links, "blocks": blocks,
+        "moment": MOMENT_JS,
     }
 
 
-def header(lang, alternates, title):
+def header(lang, alternates, title, scene=True):
     """The wordmark spells out the page's own <title>, not just "Onira"."""
     langs = "".join(
         '<a href="%s" hreflang="%s" %s>%s</a>' % (
@@ -167,8 +229,8 @@ def header(lang, alternates, title):
     # A text button, not the Play badge: Google's badge guidelines forbid resizing
     # or redrawing the artwork, and the real badge already sits in the page body
     # (see cta()). This one only has to be reachable without scrolling.
-    return """<header class="site-head"><div class="wrap">
-  <a class="mark" href="%s">%s<span>%s</span></a>
+    return """%s<header class="site-head"><div class="wrap">
+  <a class="mark" href="%s" aria-label="%s">%s<span>Onira</span></a>
   <div class="head-end">
     <nav class="langs" aria-label="%s">%s</nav>
     <a class="get" href="%s" rel="noopener">%s</a>
@@ -176,7 +238,7 @@ def header(lang, alternates, title):
 </div></header>
 <main class="wrap">
 """ % (
-        home_url(lang), MARK, esc(title), esc(lang["ui"]["langs_label"]), langs,
+        SCENE if scene else "", home_url(lang), esc(title), MARK, esc(lang["ui"]["langs_label"]), langs,
         esc(play_url("header")), esc(lang["ui"]["head_cta"]),
     )
 
@@ -293,9 +355,10 @@ def theme_cards(lang, exclude=None):
         if key == exclude:
             continue
         t = lang["themes"][key]
-        lis.append('<li><a href="%s"><strong>%s</strong><span>%s</span></a></li>'
-                   % (theme_url(lang, key), esc(t["nav"]), esc(t["card"])))
-    return '<ul class="cards">%s</ul>\n' % "".join(lis)
+        color, art = motif(key)
+        lis.append('<li><a href="%s" style="--c:%s"><strong>%s</strong><span>%s</span>%s</a></li>'
+                   % (theme_url(lang, key), color, esc(t["nav"]), esc(t["card"]), art))
+    return '<ul class="cards tiles">%s</ul>\n' % "".join(lis)
 
 
 def guide_cards(lang, exclude=None):
@@ -474,8 +537,15 @@ def build_home(lang):
         "url": ORIGIN + "/",
         "inLanguage": [l["code"] for l in LANGS],
     }
-    body = ["<h1>%s</h1>\n" % esc(h["h1"]), '<p class="lede">%s</p>\n' % esc(h["lede"])]
-    body.append(cta(lang))
+    hero_shot = next(i for i in lang["ui"]["screens"] if i[0] == "home")
+    # The home page's landscape lives inside the hero, so its hills always meet the
+    # page right under the hero however tall the text wraps.
+    body = ['<section class="hero">' + SCENE + '<div class="hero-text">'
+            "<h1>%s</h1>\n" % esc(h["h1"]), '<p class="lede">%s</p>\n' % esc(h["lede"]),
+            cta(lang),
+            '</div><figure class="hero-phone"><img src="/assets/screens/home-%s.webp" '
+            'width="540" height="1200" fetchpriority="high" decoding="async" alt="%s"></figure>'
+            "</section>\n" % (lang["code"], esc(hero_shot[1]))]
     body.append(news(lang))
     body += ["<p>%s</p>\n" % esc(p) for p in h["intro"]]
     body.append(how_it_works(lang))
@@ -487,7 +557,7 @@ def build_home(lang):
     body.append(guide_cards(lang))
     body.append(privacy_and_safety(lang))
     markup = (head(lang, h["title"], h["desc"], url, alts, [site_ld, app_ld])
-              + header(lang, alts, h["title"]) + "".join(body) + footer(lang))
+              + header(lang, alts, h["title"], scene=False) + "".join(body) + footer(lang))
     return write(url, markup)
 
 

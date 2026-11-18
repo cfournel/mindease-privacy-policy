@@ -1,160 +1,288 @@
-:root {
-  --sage: #5E7F6A;
-  --sage-deep: #47624f;
-  --bg: #ffffff;
-  --surface: #f6f8f6;
-  --text: #1b211d;
-  --muted: #5c665f;
-  --rule: #dfe5e0;
+/* Onira's look, taken from the app (ui/theme in the mindease repo): Young Serif for
+   titles, Nunito for the rest, generous rounding, and three palettes that follow the
+   moment of the day (morning / midday / evening) instead of light and dark. The
+   moment is set on <html data-moment> by a tiny script in <head>; without it the
+   page is midday, or evening under a dark system theme. */
+
+@font-face {
+  font-family: "Young Serif"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("/assets/fonts/young-serif.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nunito"; font-style: normal; font-weight: 200 1000; font-display: swap;
+  src: url("/assets/fonts/nunito.woff2") format("woff2");
+}
+
+:root, :root[data-moment="midday"] {
+  color-scheme: light;
+  --sky: #A9D9E3; --hill: #BFE0D2; --celestial: #FFFBE8; --night: 0;
+  --hero-a: #6FA784; --hero-b: #4A8364;
+  --primary: #3F7A5A; --on-primary: #fff;
+  --container: #D3E8DA; --on-container: #123522;
+  --bg: #F1F6F2; --surface: #FCFEFC; --surface-2: #E2EDE5;
+  --text: #2C3A31; --muted: #56685C; --rule: #DCE8DF;
+  --shadow: 0 1px 2px rgba(30, 60, 40, .06), 0 8px 24px rgba(30, 60, 40, .08);
+}
+:root[data-moment="morning"] {
+  color-scheme: light;
+  --sky: #FFC9A8; --hill: #F9D2B4; --celestial: #FFF3DF; --night: 0;
+  --hero-a: #F2A580; --hero-b: #E07F70;
+  --primary: #B0603F; --on-primary: #fff;
+  --container: #FBDDCB; --on-container: #4F2615;
+  --bg: #FBF5EC; --surface: #FFFDF9; --surface-2: #F4E8D9;
+  --text: #3A3730; --muted: #6E655A; --rule: #EBDDCB;
+  --shadow: 0 1px 2px rgba(80, 40, 20, .06), 0 8px 24px rgba(80, 40, 20, .08);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
-    --sage: #8fb39c;
-    --sage-deep: #a8c7b4;
-    --bg: #141814;
-    --surface: #1b211d;
-    --text: #e8ede9;
-    --muted: #9aa8a0;
-    --rule: #2b332d;
+  :root:not([data-moment]) {
+    color-scheme: dark;
+    --sky: #3C3A78; --hill: #2C2C62; --celestial: #F3E9C6; --night: 1;
+    --hero-a: #8F7CE0; --hero-b: #B4669A;
+    --primary: #BDB0F2; --on-primary: #231C4B;
+    --container: #3B3479; --on-container: #E7E1FF;
+    --bg: #171A35; --surface: #1F2246; --surface-2: #2A2D57;
+    --text: #ECEBFB; --muted: #B6B5DA; --rule: #33376A;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 10px 30px rgba(0, 0, 0, .25);
   }
 }
+:root[data-moment="evening"] {
+  color-scheme: dark;
+  --sky: #3C3A78; --hill: #2C2C62; --celestial: #F3E9C6; --night: 1;
+  --hero-a: #8F7CE0; --hero-b: #B4669A;
+  --primary: #BDB0F2; --on-primary: #231C4B;
+  --container: #3B3479; --on-container: #E7E1FF;
+  --bg: #171A35; --surface: #1F2246; --surface-2: #2A2D57;
+  --text: #ECEBFB; --muted: #B6B5DA; --rule: #33376A;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .2), 0 10px 30px rgba(0, 0, 0, .25);
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font: 16px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0; position: relative; overflow-x: hidden;
+  background: var(--bg); color: var(--text);
+  font: 17px/1.65 "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
-.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
-a { color: var(--sage); }
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+a { color: var(--primary); text-underline-offset: .18em; }
+::selection { background: var(--container); color: var(--on-container); }
 
-/* Header */
-.site-head {
-  border-bottom: 1px solid var(--rule);
-  padding: 1.1rem 0;
-  margin-bottom: 2.5rem;
+/* ---- The sky: the app's home landscape behind the top of every page ----
+   On inner pages it is a fixed band behind the header; on the home page it sits
+   inside the hero (build.py) and stretches to the hero's bottom. */
+.scene {
+  position: absolute; inset: 0 0 auto 0; height: 10rem; z-index: -1; overflow: hidden;
+  background: linear-gradient(var(--sky), color-mix(in srgb, var(--sky) 55%, var(--bg)));
+  pointer-events: none;
 }
+.scene .stars { position: absolute; top: 0; right: 0; width: 60%; height: 70%; fill: #fff; opacity: calc(.75 * var(--night)); }
+.scene .celestial {
+  position: absolute; left: 60%; top: 4.3rem;
+  width: 3.2rem; height: 3.2rem; border-radius: 50%;
+  background: var(--celestial);
+  box-shadow: 0 0 0 1rem color-mix(in srgb, var(--celestial) calc(25% * (1 - var(--night))), transparent);
+}
+/* In the evening a disc the colour of the sky slides over the sun: the moon's crescent. */
+.scene .celestial::after {
+  content: ""; position: absolute; width: 86%; height: 86%; border-radius: 50%;
+  left: 36%; top: -18%; background: var(--sky); opacity: var(--night);
+}
+/* The inner pages' band fades faster than the home sky, so the bite matches its local tone. */
+body:not(:has(.hero)) .scene .celestial::after { background: color-mix(in srgb, var(--sky) 80%, var(--bg)); }
+.scene .hills { position: absolute; left: 0; bottom: -1px; width: 100%; height: 3.6rem; }
+.scene .hills .far { fill: var(--hill); }
+.scene .hills .near { fill: var(--bg); }
+.hero .scene {
+  inset: -9rem auto -7rem calc(50% - 50vw); width: 100vw; height: auto;
+}
+.hero .scene .celestial { left: 54%; top: 4.2rem; width: 4.4rem; height: 4.4rem; box-shadow: 0 0 0 1.4rem color-mix(in srgb, var(--celestial) calc(25% * (1 - var(--night))), transparent); }
+.hero .scene .stars { height: 22rem; }
+.hero .scene .hills { height: 7rem; }
+
+/* ---- Header ---- */
+.site-head { padding: 1.1rem 0; margin-bottom: 6rem; position: relative; z-index: 1; }
+body:has(.hero) .site-head { margin-bottom: 2rem; }
 .site-head .wrap {
-  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 68rem;
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: space-between;
 }
-/* The wordmark spells out the page's own <title>, so it has to wrap gracefully
-   and stay clear of the language switcher on a phone. */
 .mark {
-  display: inline-flex; align-items: center; gap: .7rem;
-  font-weight: 600; color: var(--sage); text-decoration: none;
-  font-size: 1rem; line-height: 1.3;
-  flex: 1 1 20rem; max-width: 36rem;
+  display: inline-flex; align-items: center; gap: .55rem;
+  color: var(--text); text-decoration: none;
+  font: 1.55rem/1 "Young Serif", Georgia, serif;
 }
-.mark svg { display: block; flex: none; }
-.mark span { display: block; }
-.langs { display: flex; gap: .5rem; font-size: .82rem; flex: none; }
-.langs a {
-  text-decoration: none; color: var(--muted);
-  border: 1px solid var(--rule); border-radius: 999px; padding: .18rem .6rem;
-}
-.langs a[aria-current="true"] { color: var(--bg); background: var(--sage); border-color: var(--sage); }
-/* Language switcher and install button travel together, so the button keeps its
-   place beside them when the wordmark wraps onto its own line on a phone. */
+.mark svg { display: block; flex: none; color: var(--primary); }
 .head-end { display: flex; align-items: center; gap: .75rem; flex: none; }
+.langs { display: flex; gap: .15rem; font-size: .85rem; font-weight: 700; padding: .2rem;
+  background: color-mix(in srgb, var(--surface) 70%, transparent); border-radius: 999px;
+  backdrop-filter: blur(6px); }
+.langs a { text-decoration: none; color: var(--muted); border-radius: 999px; padding: .2rem .65rem; }
+.langs a[aria-current="true"] { color: var(--on-primary); background: var(--primary); }
 .get {
   text-decoration: none; white-space: nowrap;
-  color: var(--bg); background: var(--sage); border: 1px solid var(--sage);
-  border-radius: 999px; padding: .3rem .85rem;
-  font-size: .82rem; font-weight: 600;
+  color: var(--on-primary); background: var(--primary);
+  border-radius: 999px; padding: .45rem 1.05rem;
+  font-size: .9rem; font-weight: 800;
+  box-shadow: var(--shadow);
 }
 .get:hover, .get:focus-visible { filter: brightness(1.08); }
 
-/* Type */
-h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -.015em; margin: 0 0 .75rem; }
-h2 {
-  font-size: 1.02rem; margin: 2.5rem 0 .6rem; color: var(--sage);
-  letter-spacing: .05em; text-transform: uppercase;
-}
-h3 { font-size: 1.05rem; margin: 1.6rem 0 .35rem; }
+/* ---- Type ---- */
+h1, h2, .faq h3 { font-family: "Young Serif", Georgia, serif; font-weight: 400; }
+h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); line-height: 1.12; letter-spacing: -.01em; margin: 0 0 1rem; }
+h2 { font-size: 1.65rem; line-height: 1.25; margin: 3.2rem 0 .9rem; color: var(--text); }
+h3 { font-size: 1.1rem; font-weight: 800; margin: 1.6rem 0 .35rem; }
 p, li { color: var(--text); }
-.lede { font-size: 1.1rem; color: var(--muted); margin: 0 0 1.5rem; }
-ul { padding-left: 1.15rem; }
+.lede { font-size: 1.2rem; line-height: 1.55; color: var(--muted); margin: 0 0 1.6rem; }
+ul { padding-left: 1.2rem; }
 li { margin: .45rem 0; }
-.muted { color: var(--muted); font-size: .9rem; }
+li::marker { color: var(--primary); }
+.muted { color: var(--muted); font-size: .92rem; }
+strong { font-weight: 800; }
 
-/* Blocks */
+/* Pages without a hero put their title over the sky, in the sky's own band. */
+.crumbs { font-size: .9rem; font-weight: 700; color: var(--muted); margin: 0 0 1rem; }
+.crumbs a { color: var(--muted); }
+
+/* ---- Home hero: text and the app side by side, wider than the reading column ---- */
+.hero {
+  display: grid; gap: 2.5rem; align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 17rem);
+  width: min(64rem, 100vw - 2.5rem);
+  margin: 1rem 0 7rem 50%; transform: translateX(-50%);
+  position: relative;
+}
+.hero-text, .hero-phone { position: relative; }
+.hero h1 { font-size: clamp(2.3rem, 5.2vw, 3.5rem); }
+.hero-phone { margin: 0; }
+.hero-phone img {
+  display: block; width: 100%; height: auto; border-radius: 2rem;
+  border: 6px solid color-mix(in srgb, var(--surface) 80%, transparent);
+  box-shadow: 0 30px 60px -20px rgba(20, 20, 60, .45);
+  transform: rotate(2deg);
+}
+@media (max-width: 46rem) {
+  .hero { grid-template-columns: 1fr; gap: 1.5rem; }
+  .hero-phone { max-width: 14rem; margin: 0 auto; }
+  .hero .scene .celestial { left: 46%; top: 1.7rem; width: 2.6rem; height: 2.6rem; box-shadow: none; }
+  body:has(.hero) .site-head { margin-bottom: 3.5rem; }
+  .hero { margin-bottom: 5rem; }
+  .hero .scene { bottom: -5rem; }
+  .hero .scene .hills { height: 4.5rem; }
+}
+
+/* ---- Blocks ---- */
 .callout {
-  background: var(--surface); border-left: 3px solid var(--sage);
-  padding: .95rem 1.1rem; border-radius: 0 6px 6px 0; margin: 1.4rem 0;
+  background: var(--surface); border: 1px solid var(--rule);
+  padding: 1.1rem 1.3rem; border-radius: 20px; margin: 1.4rem 0;
 }
 .callout p { margin: 0; }
 /* Official Google Play badge. The artwork must not be recoloured or cropped, so
    the only styling here is sizing and the clear space the guidelines ask for. */
-.cta { display: inline-block; line-height: 0; margin: .4rem 0 0; }
+.cta { display: inline-block; line-height: 0; margin: .4rem 0 0; transition: transform .15s; }
+.cta:hover { transform: translateY(-2px); }
 .cta img { display: block; width: 216px; height: auto; max-width: 100%; }
+
 /* Phone captures. Fixed aspect via the img's own width/height attributes, so the
-   grid never reflows as they load. */
+   grid never reflows as they load. On the home page the gallery is wider than the text. */
 .shots {
-  display: grid; gap: 1rem; padding: 0; list-style: none; margin: 1.25rem 0;
-  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 13rem));
+  display: grid; gap: 1.25rem; padding: 0; list-style: none; margin: 1.5rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 13rem));
+}
+main > h2 + .shots:has(li:nth-child(3)) {
+  width: min(60rem, 100vw - 2.5rem); margin-left: 50%; transform: translateX(-50%);
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
 }
 .shots li { margin: 0; }
 .shots figure { margin: 0; }
 .shots img {
   display: block; width: 100%; height: auto;
-  border: 1px solid var(--rule); border-radius: 10px; background: var(--surface);
+  border-radius: 22px; background: var(--surface); box-shadow: var(--shadow);
 }
-.shots figcaption { font-size: .8rem; color: var(--muted); margin-top: .5rem; line-height: 1.4; }
 .shots figcaption, .shot-wide figcaption {
-  font-size: .8rem; color: var(--muted); margin-top: .5rem; line-height: 1.4;
+  font-size: .85rem; color: var(--muted); margin-top: .7rem; line-height: 1.4;
 }
 /* The privacy card is a text poster: shown wide enough to read, not as a thumbnail. */
 .shot-wide { margin: 1.4rem 0; max-width: 19rem; }
-.shot-wide img {
-  display: block; width: 100%; height: auto;
-  border: 1px solid var(--rule); border-radius: 10px;
-}
-.cards { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); margin: 1.25rem 0; padding: 0; list-style: none; }
+.shot-wide img { display: block; width: 100%; height: auto; border-radius: 22px; box-shadow: var(--shadow); }
+
+/* Cards: guides are plain surfaces; themes are the app's coloured tiles with their motif. */
+.cards { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr)); margin: 1.25rem 0; padding: 0; list-style: none; }
 .cards li { margin: 0; }
 .cards a {
   display: block; height: 100%; text-decoration: none; color: var(--text);
-  background: var(--surface); border: 1px solid var(--rule); border-radius: 10px;
-  padding: .9rem 1rem;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 20px;
+  padding: 1rem 1.15rem; transition: transform .15s, box-shadow .15s;
 }
-.cards a:hover { border-color: var(--sage); }
-.cards strong { display: block; color: var(--sage); margin-bottom: .2rem; }
-.cards span { font-size: .875rem; color: var(--muted); }
-.steps { counter-reset: s; list-style: none; padding: 0; }
-.steps li { counter-increment: s; position: relative; padding-left: 2.1rem; margin: .8rem 0; }
-.steps li::before {
-  content: counter(s); position: absolute; left: 0; top: .1rem;
-  width: 1.5rem; height: 1.5rem; border-radius: 50%;
-  background: var(--surface); border: 1px solid var(--rule); color: var(--sage);
-  font-size: .8rem; font-weight: 600; display: grid; place-items: center;
+.cards a:hover, .cards a:focus-visible { transform: translateY(-2px); box-shadow: var(--shadow); }
+.cards strong { display: block; color: var(--text); font-size: 1.02rem; margin-bottom: .2rem; }
+.cards span { display: block; font-size: .88rem; line-height: 1.45; color: var(--muted); }
+.tiles a {
+  position: relative; overflow: hidden; padding-right: 3.6rem; min-height: 6.5rem;
+  border-color: transparent;
+  background: color-mix(in srgb, var(--c) 20%, var(--surface));
 }
-.faq h3 { color: var(--text); }
-.crumbs { font-size: .85rem; color: var(--muted); margin: 0 0 1rem; }
-.crumbs a { color: var(--muted); }
+.tiles .motif { position: absolute; right: -.35rem; bottom: -.35rem; width: 3.6rem; height: 3.6rem; color: var(--c); }
 
-/* Footer */
-.site-foot {
-  margin-top: 4rem; padding: 1.75rem 0 3.5rem;
-  border-top: 1px solid var(--rule); color: var(--muted); font-size: .875rem;
+/* Numbered steps: the app's soft badges. */
+.steps { counter-reset: s; list-style: none; padding: 0; }
+.steps li { counter-increment: s; position: relative; padding-left: 2.7rem; margin: 1rem 0; }
+.steps li::before {
+  content: counter(s); position: absolute; left: 0; top: -.05rem;
+  width: 1.9rem; height: 1.9rem; border-radius: 50%;
+  background: linear-gradient(135deg, var(--hero-a), var(--hero-b)); color: #fff;
+  font-size: .9rem; font-weight: 800; display: grid; place-items: center;
 }
-.site-foot ul { list-style: none; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; margin: 0 0 .8rem; }
+.faq h3 { color: var(--text); font-size: 1.15rem; margin-top: 1.8rem; }
+
+/* What's new: the app's large home card, its gradient and all. */
+.news {
+  margin: 0 0 1.2rem; padding: 1.4rem 1.6rem; border-radius: 28px; color: #fff;
+  background: linear-gradient(120deg, var(--hero-a), var(--hero-b));
+  box-shadow: var(--shadow); position: relative; overflow: hidden;
+}
+.news::after {
+  content: ""; position: absolute; right: -3rem; top: -3rem; width: 10rem; height: 10rem;
+  border-radius: 50%; background: rgba(255, 255, 255, .14);
+}
+.news h2 { margin: 0 0 .6rem; font-size: 1.4rem; color: #fff; }
+.news ul { margin: 0; padding-left: 1.1rem; position: relative; z-index: 1; }
+.news li { margin: .35rem 0; line-height: 1.45; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, .15); }
+.news li::marker { color: rgba(255, 255, 255, .8); }
+
+/* ---- Footer ---- */
+.site-foot {
+  margin-top: 5rem; padding: 2.2rem 0 3.5rem;
+  background: var(--surface-2); color: var(--muted); font-size: .92rem;
+  border-radius: 36px 36px 0 0;
+}
+.site-foot ul { list-style: none; padding: 0; display: flex; gap: 1.2rem; flex-wrap: wrap; margin: 0 0 .8rem; font-weight: 700; }
 .site-foot li { margin: 0; }
+.site-foot a { color: var(--text); text-decoration: none; }
+.site-foot a:hover { color: var(--primary); }
+.site-foot p { color: var(--muted); }
 .site-foot .badges {
   display: flex; flex-wrap: wrap; align-items: center; gap: .75rem;
   margin: 1.25rem 0 0;
 }
 .site-foot .badges img { max-width: 100%; height: auto; vertical-align: middle; }
 
-/* Press page */
+/* ---- Press page ---- */
 .press .table-wrap { overflow-x: auto; margin: 1.2rem 0; }
 .press table { border-collapse: collapse; width: 100%; font-size: .9rem; }
 .press th, .press td { border: 1px solid var(--rule); padding: .5rem .65rem; text-align: left; vertical-align: top; }
 .press th { background: var(--surface); }
 
-/* What's new box on the home page (app 0.16). */
-.news { margin: 1.8rem 0 1.2rem; padding: 1rem 1.2rem; border: 1px solid var(--rule); border-radius: 14px; background: var(--surface); }
-.news h2 { margin: 0 0 .5rem; font-size: 1.1rem; }
-.news ul { margin: 0; padding-left: 1.1rem; }
-.news li { margin: .3rem 0; line-height: 1.45; }
+@media (max-width: 34rem) {
+  body { font-size: 16px; }
+  .site-head { margin-bottom: 5rem; }
+  .scene .celestial { left: auto; right: 1.5rem; width: 2.4rem; height: 2.4rem; }
+  .get { display: none; }
+  h2 { font-size: 1.45rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .cards a, .cta { transition: none; }
+}

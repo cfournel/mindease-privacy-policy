@@ -36,10 +36,6 @@ SITE = {
          "src": "https://peerpush.com/p/onira/rating-badge.png",
          "alt": "Onira rating on PeerPush",
          "width": 340, "height": 65},
-        {"href": "https://smolhunt.com/projects/onira-self-hypnosis?utm_source=badge",
-         "src": "https://smolhunt.com/smolhunt/images/badges/featured-on-light.svg",
-         "alt": "Featured on Smol Hunt",
-         "width": 150, "height": 44},
     ],
 }
 
