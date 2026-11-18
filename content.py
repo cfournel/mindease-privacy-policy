@@ -105,12 +105,11 @@ EN = {
         ],
     },
     "home": {
-        "news_title": "New in Onira 0.16",
+        "news_title": "New in Onira 0.17",
         "news": [
-            "Colours that follow your day: dawn in the morning, a clear sky at midday, the night from 6 p.m.",
-            "An illustrated home screen that suggests a session for the moment of the day.",
-            "Nature sounds on the home screen, and under the music of a session if you want them.",
-            "A new Onira model, offered as an optional update: it follows your requests better and was made for journeys.",
+            "Onira's own narration voice in English, French and Spanish, made for hypnosis: soft and slow, it changes tone as the session deepens.",
+            'It downloads by itself on Wi-Fi (about 80 MB); until then your current voice narrates.',
+            'The background music is a little quieter by default.',
         ],
         "title": "Onira — Self-Hypnosis Sessions Written for You",
         "desc": "Onira writes a personal hypnosis session on your phone and narrates it aloud — "
@@ -918,12 +917,11 @@ FR = {
         ],
     },
     "home": {
-        "news_title": "Nouveautés d'Onira 0.16",
+        "news_title": "Nouveautés d'Onira 0.17",
         "news": [
-            "Des couleurs qui suivent votre journée : l'aube le matin, un ciel clair à midi, la nuit dès 18 h.",
-            "Un accueil illustré qui vous propose une séance selon le moment de la journée.",
-            "Des sons de nature sur l'accueil, et sous la musique d'une séance si vous le souhaitez.",
-            "Un nouveau modèle Onira, proposé en mise à jour facultative : il suit mieux vos demandes et a été conçu pour les parcours.",
+            "La voix de narration d'Onira, en français, anglais et espagnol, créée pour l'hypnose : douce et lente, elle change de ton à mesure que la séance s'approfondit.",
+            "Elle se télécharge toute seule en Wi-Fi (environ 80 Mo) ; d'ici là, votre voix actuelle narre.",
+            'La musique de fond est un peu plus douce par défaut.',
         ],
         "title": "Onira — Séances d'auto-hypnose écrites pour vous",
         "desc": "Onira écrit une séance d'hypnose personnelle sur votre téléphone et la narre à voix "
@@ -1707,12 +1705,11 @@ ES = {
         ],
     },
     "home": {
-        "news_title": "Novedades de Onira 0.16",
+        "news_title": "Novedades de Onira 0.17",
         "news": [
-            "Colores que siguen tu día: amanecer por la mañana, cielo despejado a mediodía, la noche desde las 18 h.",
-            "Una pantalla de inicio ilustrada que te propone una sesión según el momento del día.",
-            "Sonidos de la naturaleza en la pantalla de inicio, y bajo la música de una sesión si los quieres.",
-            "Un nuevo modelo Onira, ofrecido como actualización opcional: sigue mejor tus peticiones y se creó para los recorridos.",
+            'La voz de narración de Onira, en español, inglés y francés, creada para la hipnosis: suave y lenta, cambia de tono a medida que la sesión se hace más profunda.',
+            'Se descarga sola con Wi-Fi (unos 80 MB); mientras tanto, narra tu voz actual.',
+            'La música de fondo suena un poco más baja por defecto.',
         ],
         "title": "Onira — Sesiones de autohipnosis escritas para ti",
         "desc": "Onira escribe una sesión de hipnosis personal en tu teléfono y la narra en voz alta: "
