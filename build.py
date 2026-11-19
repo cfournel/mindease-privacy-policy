@@ -61,12 +61,12 @@ with open(os.path.join(ROOT, "assets", "site.css"), "rb") as _f:
     CSS_VERSION = hashlib.sha256(_f.read()).hexdigest()[:10]
 
 # The site dresses for the moment of the day like the app does (#45 there):
-# dawn before 11 h, a clear sky until 18 h, the night after that, and always the
-# night for a visitor whose system asks for a dark theme. Runs in <head>, before
+# dawn before 11 h, a clear sky until 18 h, the night after that. The visitor's
+# hour always decides, a dark system theme does not (a dark-mode visitor at 8 h
+# saw the night and took it for a bug). Runs in <head>, before
 # the first paint, so the page never flashes the wrong sky. Without JavaScript the
 # CSS falls back to midday, or the night under prefers-color-scheme: dark.
 MOMENT_JS = ("(function(){var h=new Date().getHours(),m=h>=5&&h<11?'morning':h>=11&&h<18?'midday':'evening';"
-             "try{if(matchMedia('(prefers-color-scheme: dark)').matches)m='evening'}catch(e){}"
              "var q=/[?&]moment=(morning|midday|evening)/.exec(location.search);if(q)m=q[1];"
              "document.documentElement.dataset.moment=m;"
              "var c={morning:'#FFC9A8',midday:'#A9D9E3',evening:'#3C3A78'}[m];"
