@@ -700,91 +700,8 @@ def build_guide(lang, key):
     return write(url, markup)
 
 
-PRIVACY_BODY = """<h1>Privacy Policy</h1>
-<p class="muted">Last updated: 8 November 2026</p>
-
-<p class="lede">Onira is designed so that your personal reflections and generated
-hypnosis sessions stay on your device by default. One optional feature, cloud
-generation, changes that for the sessions you choose to write in the cloud (see below).</p>
-
-<h2>What stays on your device</h2>
-<ul>
-  <li>The problem category and any free-text details you enter to generate a session.</li>
-  <li>The generated hypnosis script itself.</li>
-  <li>Your language preference, narration speed, and whether you&rsquo;ve purchased &ldquo;Remove Ads&rdquo;.</li>
-</ul>
-
-<div class="callout">
-  <p>By default, script generation runs <strong>entirely on-device</strong> using a
-  locally-stored AI model. Your input and the generated script are not
-  transmitted to Onira&rsquo;s developer or any third party, unless you turn on
-  cloud generation.</p>
-</div>
-
-<h2>What does leave your device</h2>
-<ul>
-  <li><strong>Cloud generation (optional, off unless you turn it on)</strong> &mdash; if you
-    enable &ldquo;Write sessions in the cloud&rdquo; in Settings (after a consent screen),
-    the app sends, over an encrypted (HTTPS) connection to Onira&rsquo;s own server
-    (api.onirahypno.com), what is needed to write each block of your session: the session
-    theme, your interface language, any free-text details you typed (shortened), the
-    listener restrictions you set (for example no breathing cues) and, for learning
-    journeys, your progress. The server writes the text and returns it; the text is not
-    stored and not written to logs. The server does keep technical records without any
-    session content: a random one-time code that links the rewarded ad you watched to
-    your session, and a session ticket with its use count. No account is created and
-    nothing identifies you. Turn the setting off to go back to fully on-device
-    generation.</li>
-  <li><strong>Cloud subscription (optional)</strong> &mdash; if you subscribe to Onira Cloud,
-    the purchase is processed by Google Play Billing. When you start a cloud session, the
-    app sends the subscription&rsquo;s purchase token to Onira&rsquo;s server, which asks
-    Google Play whether the subscription is active and counts your sessions for the day
-    (up to 20). The server keeps that token (as a one-way hash for the daily count) and no
-    personal information; no account is created.</li>
-  <li><strong>Advertising</strong> &mdash; unless you&rsquo;ve purchased &ldquo;Remove Ads&rdquo;,
-    the app shows ads via Google AdMob. Cloud sessions always include one rewarded ad,
-    even with &ldquo;Remove Ads&rdquo;. AdMob may collect device identifiers and usage
-    data per Google&rsquo;s own privacy policy to serve and measure ads. Onira does not
-    send your session content, category selection, or free-text input to AdMob or any
-    ad network.</li>
-  <li><strong>Purchases</strong> &mdash; the &ldquo;Remove Ads&rdquo; purchase is processed by
-    Google Play Billing; standard Google Play purchase data applies (see Google
-    Play&rsquo;s privacy policy).</li>
-  <li><strong>Session ratings</strong> &mdash; if you rate a finished session (1&ndash;5
-    stars), the app sends that star count &mdash; together with the session category,
-    your interface language and the app version &mdash; to Google Firebase, so the
-    developer can see the average rating. Nothing identifies you, and no free-text you
-    have typed is included. If you choose to write to support after a low rating, that
-    message is composed in your own email app and sent by you; the app never sends it
-    on its own.</li>
-  <li><strong>Anonymous usage counters</strong> &mdash; the app adds one to a daily counter,
-    held at Google Firebase, when a step is reached: the app is opened, an onboarding
-    screen is shown, a session is started (ready-made, personalized on the device,
-    personalized in the cloud, or part of a learning journey), a session is listened to
-    the end, or the AI model download starts, fails or finishes. Only the number goes
-    up. No identifier, no account, no device information, no session content and no text
-    you have typed is sent, so these counts cannot be linked to you. You can turn this
-    off at any time with &ldquo;Share anonymous usage statistics&rdquo; in Settings.</li>
-  <li><strong>Model download</strong> &mdash; on first use, the app downloads the AI model
-    weights (about 1.65&nbsp;GB) over the network. This is a one-way download of app
-    functionality, not a data upload &mdash; no user data is sent as part of this
-    download.</li>
-</ul>
-
-<h2>Data retention and deletion</h2>
-<p>Your inputs and generated scripts are stored only in the app&rsquo;s local
-storage, so uninstalling the app deletes all of it. Text generated in the cloud is not
-kept on the server. There is no server-side account or profile to delete because none
-exists.</p>
-
-<h2>Children&rsquo;s privacy</h2>
-<p>Onira is not directed at children and is not intended for users under 13 (or the
-minimum age of digital consent in your jurisdiction).</p>
-
-<h2>Contact</h2>
-<p>Questions about this policy can be sent to
-<a href="mailto:%(email)s">%(email)s</a>.</p>
-""" % {"email": SITE["email"]}
+# Generated from the app repo's docs/PRIVACY_POLICY.md (source of truth); regenerate rather than edit by hand.
+PRIVACY_BODY = '<h1>Onira Privacy Policy</h1>\n\n<p class="muted">Last updated: 2026-11-20</p>\n\n<p>Onira ("the app") can write your personalized sessions in two places: on your phone, where nothing you type leaves your device, or with Onira Cloud, on Onira&rsquo;s own server. On a new install Onira Cloud is selected, so that personalized sessions work on every phone without a large download; <strong>nothing is sent until you agree to it</strong>, the first time you start a personalized session. Ready-made sessions never send anything.</p>\n\n<h2>What stays on your device</h2>\n\n<ul>\n  <li>The problem category and any free-text details you enter to generate a session.</li>\n  <li>The generated hypnosis script itself.</li>\n  <li>Your language preference, narration speed, and whether you&rsquo;ve purchased "Remove Ads".</li>\n  <li>If you follow a journey (a series of sessions around one goal, such as sleep or stopping smoking): the goal, your answers to its questions, the optional date you set, the personal anchor and the short notes you write, and the ratings you give before and after each session (how it is going, how you feel). They are used to adapt your next sessions and to show your progress, and they never leave your device (except as described under cloud generation below). Ending the journey deletes them.</li>\n</ul>\n\n<p>When sessions are written on your phone, generation runs <strong>entirely on-device</strong> using a locally-stored AI model: your input and the generated script are not transmitted to Onira&rsquo;s developer or any third party.</p>\n\n<h2>What does leave your device</h2>\n\n<ul>\n  <li><strong>Cloud generation (Onira Cloud, only after you agree)</strong>: on a new install, the first time you start a personalized session (one where you typed something, or a journey session), Onira asks whether to write it with Onira Cloud. Only if you agree (or if you turn on "Write sessions in the cloud" in Settings, after the same consent screen), the app sends, over an encrypted (HTTPS) connection to Onira&rsquo;s own server (api.onirahypno.com), what is needed to write each block of your session: the session theme, your interface language, any free-text details you typed (shortened), the listener restrictions you set (for example no breathing cues) and, for a journey session, the facts that session is written from: the goal, the current phase and session number, your answers to the goal&rsquo;s questions, the anchor and notes you wrote (shortened), the trend of your ratings (not the ratings themselves), the days left until the date you set and, for stopping smoking, whether you said you smoked since the last session. The server writes the text and returns it; the text is not stored and not written to logs. The server does keep technical records without any session content: a random one-time code that links the rewarded ad you watched to your session, and a session ticket with its use count. No account is created and nothing identifies you. Choose "Keep it on my phone" in that question, or turn the setting off at any time, to keep generation fully on-device.</li>\n  <li><strong>Cloud subscription (optional)</strong>: if you subscribe to Onira Cloud, the purchase is processed by Google Play Billing. When you start a cloud session, the app sends the subscription&rsquo;s purchase token to Onira&rsquo;s server, which asks Google Play whether the subscription is active and counts your sessions for the day (up to 20). The server keeps that token (as a one-way hash for the daily count) and no personal information; no account is created.</li>\n  <li><strong>Advertising</strong>: unless you&rsquo;ve purchased "Remove Ads", the app shows ads via Google AdMob. Cloud sessions always include one rewarded ad, even with "Remove Ads". AdMob may collect device identifiers and usage data per Google&rsquo;s own privacy policy to serve and measure ads. Onira does not send your session content, category selection, or free-text input to AdMob or any ad network.</li>\n  <li><strong>Purchases</strong>: the "Remove Ads" purchase is processed by Google Play Billing; standard Google Play purchase data applies (see Google Play&rsquo;s privacy policy).</li>\n  <li><strong>Session ratings</strong>: if you rate a finished session (1-5 stars), the app sends that star count — together with the session category, your interface language, the app version, how the session was made (ready-made, replayed, generated on the device or in the cloud), how many minutes you listened, and whether any part of it had to be replaced — to Google Firebase, so the developer can see the average rating and understand a low one. Nothing identifies you, and no free-text you have typed is included. If you choose to write to support after a low rating, that message is composed in your own email app and sent by you; the app never sends it on its own.</li>\n  <li><strong>Anonymous usage counters</strong>: the app adds one to a daily counter, held at Google Firebase, when a step is reached: the app is opened, an onboarding screen is shown, a session is started (ready-made, personalized on the device, personalized in the cloud, or part of a journey, together with its theme such as "Sleep", whether it is the phone&rsquo;s first, second, third to fifth or later session, and whether it is started on a later day than the first opening; that session count stays on your phone), a session is listened to the end, a generated part of a session had to be redone or replaced, the button to share Onira or a link to review it on Google Play is tapped, or the AI model download starts, fails or finishes. The app opening and each started session are also counted under the app&rsquo;s language (English, French or Spanish), never your country. Only the number goes up. No identifier, no account, no device information, no session content and no text you typed is sent, so these counts cannot be linked to you. You can turn this off at any time with "Share anonymous usage statistics" in Settings.</li>\n  <li><strong>Model download</strong>: on first use, the app downloads the AI model weights (about 1.65 GB) over the network. This is a one-way download of app functionality, not a data upload — no user data is sent as part of this download.</li>\n  <li><strong>Narration voice download</strong>: the app also downloads Onira&rsquo;s narration voice for your language (about 80 MB), in the background and only on an unmetered connection such as Wi-Fi, from Hugging Face, the same host as the AI model. Like the model, it is a one-way download: nothing about you or your sessions is sent, and Hugging Face sees only the network request itself, as any website would.</li>\n</ul>\n\n<h2>Data retention and deletion</h2>\n\n<p>Your inputs and generated scripts are stored only in the app&rsquo;s local storage, so uninstalling the app deletes all of it. Text generated in the cloud is not kept on the server. There is no server-side account or profile to delete because none exists.</p>\n\n<h2>Children&rsquo;s privacy</h2>\n\n<p>Onira is not directed at children and is not intended for users under 13 (or the minimum age of digital consent in your jurisdiction).</p>\n\n<h2>Contact</h2>\n\n<p>Questions about this policy can be sent to <a href="mailto:support@onirahypno.com.">support@onirahypno.com.</a></p>\n'
 
 
 def build_privacy():
@@ -795,8 +712,8 @@ def build_privacy():
     alts = [(en["code"], url)]
     title = "Privacy Policy — Onira"
     markup = (head(en, title,
-                   "Onira generates hypnosis sessions entirely on your device. This policy "
-                   "explains what stays on your phone and what does not.",
+                   "Onira writes hypnosis sessions on your phone or, only if you agree, on its own "
+                   "server. This policy explains what stays on your phone and what does not.",
                    url, alts, [])
               + header(en, alternates_home(), title) + PRIVACY_BODY + footer(en))
     return write(url, markup)
@@ -922,9 +839,9 @@ APP_NOTES = [
     "published in every language: each page exists where people search for it.",
 ]
 
-PRIVACY_SUMMARY = ("Session generation runs on-device by default; inputs and scripts are "
-                   "uploaded only if you turn on optional cloud generation (encrypted, "
-                   "not stored). Ads (Google AdMob, unless removed), Play Billing purchases "
+PRIVACY_SUMMARY = ("Personalized sessions are written on the phone or, only after the user "
+                   "agrees, with Onira Cloud (encrypted, not stored); new installs are asked "
+                   "the first time they start one, ready-made sessions send nothing. Ads (Google AdMob, unless removed), Play Billing purchases "
                    "and anonymous 1-5 star session ratings (Firebase) are the only data "
                    "that leaves the phone. No account exists, so uninstalling deletes "
                    "everything.")
