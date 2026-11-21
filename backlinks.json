@@ -1,0 +1,6 @@
+[
+ {"name": "SaaSHub", "url": "https://www.saashub.com/onirahypno", "expect": "followed"},
+ {"name": "Product Hunt", "url": "https://www.producthunt.com/products/onira-self-hypnosis"},
+ {"name": "PeerPush", "url": "https://peerpush.com/p/onira"},
+ {"name": "Hugging Face model card", "url": "https://huggingface.co/oytaub/hypnos-e2b-enfres-GGUF"}
+]
