@@ -4445,4 +4445,120 @@ ES["themes"]["habits"] = {
     ],
 }
 
+# Engineering write-up, English only: the page the dev.to / Hashnode copies point
+# their canonical at, and the one to link from Show HN / r/LocalLLaMA threads.
+EN["guides"]["on_device_ai"] = {
+    "slug": "running-an-llm-on-a-phone",
+    "nav": "Running an LLM on a phone",
+    "card": "How Onira writes a session on the phone itself, with the measurements.",
+    "title": "Running an LLM on an Android Phone: What We Measured | Onira",
+    "desc": "How Onira runs a fine-tuned Gemma 4 E2B with llama.cpp on Android: memory, "
+            "mmap, threads, weight repacking and token bans, with numbers from real phones.",
+    "h1": "Running an LLM on an Android phone: memory is the whole problem",
+    "lede": "Onira writes a self-hypnosis session on the phone with a 2-billion-parameter "
+            "model. Speed turned out to be the easy part.",
+    "answer": "A 2B model quantized to 4 bits runs on a mid-range Android phone with about "
+              "5 GB of RAM, but only if the weights stay file-backed. Onira uses llama.cpp "
+              "with the GGUF memory-mapped, generates one 300-500 word block per call while "
+              "the previous block is narrated, and unloads the model as soon as the last "
+              "block is written. On a 6 GB Galaxy S20 FE that means about 1.6 GB resident "
+              "while generating, 0.31 GB of it anonymous, and 111 MB once the model is gone.",
+    "sections": [
+        ["The first runtime did not fit",
+         ["The first version ran stock Gemma 4 E2B through LiteRT-LM on the CPU. That runtime "
+          "maps the 2.6 GB model file only while loading it, copies the weights into the native "
+          "heap, then unmaps the file. Anonymous memory cannot be dropped by the kernel, only "
+          "swapped to zram.",
+          "Measured with /proc/<pid>/smaps every two seconds: on a Pixel 7 (7.6 GB RAM), mid "
+          "generation, about 6 GB PSS, zram 100 % full and kswapd at 72 % CPU. Generation slowed "
+          "to a crawl and the low-memory killer took the app as soon as it left the foreground. "
+          "On a 6 GB Galaxy S20 FE it never got that far: killed mid-load, in the foreground, "
+          "three runs out of three. A warm weight cache changed nothing."],
+         []],
+        ["What fixed it: keep the weights file-backed",
+         ["The current engine is llama.cpp with a Q4_K_M GGUF, over a small JNI bridge. The "
+          "settings that mattered, each measured on a phone rather than assumed:"],
+         ["mmap stays on. With it off, the weights become 1.7 GB of memory the kernel can never "
+          "reclaim, which is the LiteRT situation again.",
+          "The large per-layer embedding table is read lazily: same speed, 676 MB fewer file "
+          "pages resident, nine times less swap.",
+          "Weight repacking (a second, anonymous copy of the weights laid out for faster ARM "
+          "kernels) costs 1.13 GB. On the 6 GB phone: 5.0 words/s repacked with 1.29 GB "
+          "anonymous, 3.8 words/s without it at 0.32 GB. So it is only switched on from 7 GB "
+          "of RAM; below that a block takes about 40 seconds longer, hidden behind narration.",
+          "Threads: the performance cores minus one. More is slower: 8 threads ran at a third "
+          "of the speed of 3, and 4 threads gave 8.8 tokens/s against 10.7 for 3. Pinning "
+          "threads to cores did not help (within 4 %).",
+          "On unload, the allocator is purged explicitly. Without it about 1.2 GB of freed model "
+          "memory stayed in the process: 1,280 MB resident after closing the model, 74 MB with "
+          "the purge."]],
+        ["Generate in blocks, narrate while generating",
+         ["A session is 30 to 40 minutes of narration, several thousand words. Asking a 2B "
+          "model for all of it in one call takes too long before anything plays, so the "
+          "script is an ordered list of blocks: a pre-written induction, then deepening, "
+          "metaphor, suggestions and anchoring, generated one by one, then a pre-written "
+          "return to alertness.",
+          "Because the opening is pre-written, narration starts as soon as the model is "
+          "loaded. Block N+1 generates while block N is read aloud; on the S20 FE a body "
+          "block arrives about every 100 seconds, faster than it takes to narrate. A block "
+          "that fails or takes more than five minutes is replaced by a short pre-written "
+          "bridge, so the listener is never left in silence.",
+          "Each block is a single-turn prompt with the KV cache cleared, not a growing "
+          "conversation. The model was fine-tuned on single-turn prompts, and in a simulated "
+          "four-block session the accumulated conversation produced 6.3 duplicated sentences "
+          "against 0.9 for single-turn. It also keeps the context at 2,048 tokens instead of "
+          "10,000.",
+          "And the model is closed the moment the last block is written: the remaining half "
+          "hour of narration, exactly when people lock their phone, runs with nothing loaded."],
+         []],
+        ["Budget by duration, not by words",
+         ["An early version sized the script by word count. Narration speed and the pause "
+          "between phrases are listener settings, and together they swing the real length "
+          "by more than three times: some people got 90-minute sessions. The plan is now "
+          "built from a target duration, converted to words at the listener's own speed "
+          "and pause setting, minus the exact length of the pre-written parts."],
+         []],
+        ["Rules a small model will not follow on its own",
+         ["Some listeners ask for no breathing cues (tightness in the throat when told to "
+          "watch their breath) or have limited mobility. Written as prompt rules alone, the "
+          "model broke them in roughly 10 to 40 % of restricted prompts. The fix was to ban "
+          "the tokens themselves with a logit bias in the llama.cpp sampler: zero violations "
+          "on a 120-prompt held-out set. The banned ids belong to the model's vocabulary, so "
+          "the list is regenerated whenever the model file changes.",
+          "Lower sampling temperatures made repetition loops more frequent, not less, so "
+          "Onira samples like Gemma does: temperature 1.0, top-k 64, top-p 0.95, no "
+          "repetition penalty.",
+          "Safety does not rest on the model either. A deterministic check in English, "
+          "French and Spanish runs on what the listener types before anything is generated, "
+          "and a 2B model is treated as a second layer, never the first."],
+         []],
+        ["The model is public",
+         ["The fine-tune, hypnos-e2b-enfres, is Gemma 4 E2B trained on the exact prompts the "
+          "app sends and pruned to English, French and Spanish (a 58,488-token vocabulary). "
+          "It is published under Apache-2.0 on Hugging Face as oytaub/hypnos-e2b-enfres-GGUF, "
+          "with the training and evaluation details in its model card.",
+          "Phones that cannot run it can choose Onira Cloud, where the same kind of session is "
+          "written on Onira's own server and never stored. On a phone that can, nothing typed "
+          "or generated leaves the device and the app works in airplane mode."],
+         []],
+    ],
+    "faq": [
+        ("How much RAM does an on-device LLM need on Android?",
+         "For a 2B model at 4-bit quantization with memory-mapped weights, about 5 GB of total "
+         "RAM is enough in our measurements. Runtimes that copy the weights into the heap need "
+         "far more: the same class of model was killed by the system on a 6 GB phone."),
+        ("Why llama.cpp rather than LiteRT-LM?",
+         "Mostly memory: llama.cpp can keep the weights file-backed through mmap, which the "
+         "kernel can drop and reload, while the LiteRT-LM CPU backend copies them into "
+         "anonymous memory. The single-turn prompting and token bans were also easier to "
+         "control there."),
+        ("How fast is it?",
+         "On a Galaxy S20 FE, 3.8 to 5.0 words per second depending on weight repacking, and a "
+         "300-500 word block about every 100 seconds, which stays ahead of narration."),
+        ("Can I use the model myself?",
+         "Yes. It is on Hugging Face under Apache-2.0, as a GGUF file for llama.cpp."),
+    ],
+}
+GUIDES.append("on_device_ai")
+
 LANGS = [EN, FR, ES]
