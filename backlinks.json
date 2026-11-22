@@ -4,5 +4,6 @@
  {"name": "PeerPush", "url": "https://peerpush.com/p/onira"},
  {"name": "Hugging Face model card", "url": "https://huggingface.co/oytaub/hypnos-e2b-enfres-GGUF"},
  {"name": "dev.to cross-post", "url": "https://dev.to/cfournel/running-an-llm-on-an-android-phone-memory-is-the-whole-problem-15go"},
- {"name": "Hashnode cross-post", "url": "https://onira-engineering.hashnode.dev/running-an-llm-on-an-android-phone-memory-is-the-whole-problem"}
+ {"name": "Hashnode cross-post", "url": "https://onira-engineering.hashnode.dev/running-an-llm-on-an-android-phone-memory-is-the-whole-problem"},
+ {"name": "Medium cross-post", "url": "https://medium.com/@charlesantoine.fournel/running-an-llm-on-an-android-phone-memory-is-the-whole-problem-5db427491b1e"}
 ]
