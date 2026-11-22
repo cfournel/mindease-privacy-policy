@@ -534,7 +534,8 @@ def build_home(lang):
         "installUrl": SITE["play"],
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
         "screenshot": [ORIGIN + "/assets/screens/%s-%s.webp" % (n, lang["code"])
-                       for n in ("home", "day", "custom", "session")],
+                       for n in ("home", "day", "custom", "session")
+                       if any(s[0] == n for s in lang["ui"]["screens"])],  # pt/de have no "day" capture yet
         "featureList": lang["ui"]["features"],
     }
     site_ld = {

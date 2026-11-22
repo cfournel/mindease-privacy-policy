@@ -65,7 +65,7 @@ EN = {
         "how_title": "How Onira builds your session",
         "how_steps": [
             "You pick a theme and, if you want, type a sentence or two about what is actually going on.",
-            "An AI model running on your phone writes the script — induction, deepening, imagery, suggestions, anchoring, then a clear return to full alertness.",
+            "An AI model writes the script — induction, deepening, imagery, suggestions, anchoring, then a clear return to full alertness. It can run entirely on your phone, offline, or on Onira Cloud if you prefer.",
             "Narration starts as soon as the opening is ready and the rest keeps writing while you listen, so a full 15 to 30 minute session begins in seconds.",
             "Keep a session you liked and replay the exact same narration whenever you want.",
         ],
@@ -73,9 +73,11 @@ EN = {
         "expect_title": "What to expect",
         "faq_title": "Common questions",
         "privacy_title": "Private by design",
-        "privacy_body": "Onira runs its model on your device. The theme you pick, the words you type "
-                        "and the session you receive are never uploaded — there is no account, no "
-                        "cloud generation and no server that could read them.",
+        "privacy_body": "Everything can stay on your phone: Onira can run its model on the device, "
+                        "offline, and then the theme you pick, the words you type and the session you "
+                        "receive are never uploaded. If you prefer, Onira Cloud writes the session on "
+                        "Onira's own server instead, only after you agree, and the text is not stored. "
+                        "Either way there is no account.",
         "privacy_link": "Read the full privacy policy",
         "safety_title": "Not a medical treatment",
         "safety_body": "Onira is a relaxation and self-hypnosis tool. It is not therapy, not medical "
@@ -83,12 +85,12 @@ EN = {
                        "services. If you are in distress or in danger, contact a local crisis line or "
                        "emergency number.",
         "related_title": "Other themes",
-        "foot_tag": "Onira — hypnotherapy sessions written on your phone, by your phone.",
+        "foot_tag": "Onira — hypnotherapy sessions written for you, even fully offline.",
         "foot_privacy": "Privacy policy",
         "foot_play": "Google Play",
         "head_cta": "Get the app",
         "langs_label": "Language",
-        "features": ["Writes a personal self-hypnosis session around what you type", "Narrated aloud, 15 to 30 minutes", "Runs fully offline, nothing leaves the device", "Themes for sleep, anxiety, stress, confidence and more", "Free, no account"],
+        "features": ["Writes a personal self-hypnosis session around what you type", "Narrated aloud, 15 to 30 minutes", "Can run fully offline, on the device", "Themes for sleep, anxiety, stress, confidence and more", "Free, no account"],
         "screens_title": "Inside the app",
         # (asset key, alt text, caption). "privacy" resolves to the localised file.
         "screens": [
@@ -100,8 +102,8 @@ EN = {
              "Say what is going on in your own words."),
             ("session", "A session playing, with its phase indicator",
              "The session narrates itself, from induction to a clear return."),
-            ("privacy", "Nothing you type or receive leaves the phone",
-             "No account, nothing transmitted, works offline."),
+            ("privacy", "Nothing leaves the phone without your OK",
+             "No account. On the device it works offline; Onira Cloud only if you agree."),
         ],
     },
     "home": {
@@ -112,10 +114,10 @@ EN = {
         ],
         "title": "Onira — Self-Hypnosis Sessions Written for You",
         "desc": "Onira writes a personal hypnosis session on your phone and narrates it aloud — "
-                "sleep, anxiety, stress, confidence, focus. Nothing leaves your device.",
+                "sleep, anxiety, stress, confidence, focus. It can run fully offline.",
         "h1": "Self-hypnosis sessions written for you, on your phone",
         "lede": "Most hypnosis apps hand you the same recording as everyone else. Onira writes a "
-                "session for your situation, in the moment, with an AI model that runs entirely on "
+                "session for your situation, in the moment, with an AI model that can run entirely on "
                 "your device — then narrates it aloud while you close your eyes.",
         "intro": [
             "Guided hypnosis works best when the words match what you are actually carrying. A "
@@ -169,8 +171,9 @@ EN = {
                  "Yes, though the session ends by bringing you back to alertness. If your goal is to "
                  "fall asleep, the sleep theme is written for that instead."),
                 ("Do I have to type anything personal?",
-                 "No. The theme alone is enough. If you do type something, it stays on your phone — "
-                 "the model runs locally and nothing is uploaded."),
+                 "No. The theme alone is enough. If you do type something, it can stay on your phone: "
+                 "with the on-device model nothing is uploaded. With Onira Cloud, only if you "
+                 "agree, it is sent to write the session and is not stored."),
             ],
         },
         "sleep": {
@@ -179,7 +182,7 @@ EN = {
             "card": "Wind down a busy mind and let sleep arrive on its own.",
             "title": "Self-Hypnosis for Sleep — A Session Written for You | Onira",
             "desc": "Self-hypnotherapy for sleep, written on your phone around what is keeping you "
-                    "awake and narrated aloud. Runs offline, nothing leaves your device.",
+                    "awake and narrated aloud. It can run fully offline, on the device.",
             "h1": "Self-hypnosis for sleep",
             "lede": "A slow, low-stimulation session for the moment you are in bed and your mind will "
                     "not stop working.",
@@ -210,8 +213,9 @@ EN = {
                  "Yes. Saved sessions replay identically, and familiarity tends to help — the same "
                  "narration becomes a cue that it is time to sleep."),
                 ("Does it need an internet connection?",
-                 "Only once, to download the AI model on first run. After that, sessions are generated "
-                 "and narrated entirely offline."),
+                 "Not if sessions are written on your phone: the AI model is downloaded once, then "
+                 "sessions are generated and narrated entirely offline. Onira Cloud, the other "
+                 "option, needs a connection."),
             ],
         },
         "confidence": {
@@ -253,7 +257,8 @@ EN = {
                  "As specific as you like. \"Nervous about Thursday's presentation to twelve people\" "
                  "produces a more useful session than \"more confidence\"."),
                 ("Is what I type stored anywhere?",
-                 "Only on your phone, and only if you save the session. Nothing is sent to a server."),
+                 "Only on your phone, and only if you save the session. With Onira Cloud, it is sent "
+                 "to write the session and not stored; on the device, nothing is sent."),
             ],
         },
         "stress": {
@@ -262,7 +267,7 @@ EN = {
             "card": "Come down from a demanding day and recover properly.",
             "title": "Self-Hypnosis for Stress Relief — Written for You | Onira",
             "desc": "Guided self-hypnosis for stress, written on your phone around the pressure you "
-                    "are actually under, and narrated aloud. Offline and private.",
+                    "are actually under, and narrated aloud. Private, can run offline.",
             "h1": "Self-hypnosis for stress relief",
             "lede": "A session for the end of a demanding day — deliberate physical release first, then "
                     "some distance from what is causing the pressure.",
@@ -342,7 +347,7 @@ EN = {
             "card": "Settle a scattered mind before work that needs your attention.",
             "title": "Self-Hypnosis for Focus and Concentration | Onira",
             "desc": "Guided self-hypnosis for focus, written on your phone around the work you are "
-                    "about to do, and narrated aloud. Runs offline, nothing is uploaded.",
+                    "about to do, and narrated aloud. It can run fully offline.",
             "h1": "Self-hypnosis for focus",
             "lede": "A shorter, brighter session to clear the noise before study, writing, or work that "
                     "needs sustained attention.",
@@ -425,7 +430,7 @@ EN = {
             "card": "Face the flight, the drive or the height with a rehearsed calm.",
             "title": "Self-Hypnosis for Fear and Phobias | Onira",
             "desc": "Guided self-hypnosis for fear of flying, driving or heights, written on your "
-                    "phone around the situation you actually face. Private, free, offline.",
+                    "phone around the situation you actually face. Private, free, can run offline.",
             "h1": "Self-hypnosis for fear and phobias",
             "lede": "A session built around one specific situation — the flight, the lift, the "
                     "motorway — rehearsed slowly enough that your body stops treating it as an "
@@ -463,7 +468,7 @@ EN = {
                  "driving."),
                 ("Do I have to describe what scares me?",
                  "No, the theme alone works. If you do describe it, the detail makes the rehearsal "
-                 "sharper — and it stays on your phone, because the model runs locally."),
+                 "sharper — and it can stay on your phone, because the model can run locally."),
             ],
         },
         "learning": {
@@ -472,7 +477,7 @@ EN = {
             "card": "Settle into the state where studying actually sticks.",
             "title": "Self-Hypnosis for Memory and Learning | Onira",
             "desc": "Guided self-hypnosis for studying, recall and language learning, written on "
-                    "your phone around what you are learning. Free, private, works offline.",
+                    "your phone around what you are learning. Free, private, can run offline.",
             "h1": "Self-hypnosis for memory and learning",
             "lede": "A session for the state learning needs — unhurried, undistracted attention — "
                     "written around the exam, the language or the material in front of you.",
@@ -560,7 +565,7 @@ EN = {
             "card": "Interrupt nail biting or jaw clenching before it runs.",
             "title": "Self-Hypnosis for Nervous Habits | Onira",
             "desc": "Guided self-hypnosis for nail biting, teeth grinding and jaw clenching, "
-                    "written on your phone around your own trigger. Private, free, offline.",
+                    "written on your phone around your own trigger. Private, free, can run offline.",
             "h1": "Self-hypnosis for nervous habits",
             "lede": "A session for the habits that run without you — biting, clenching, picking — "
                     "aimed at the moment just before they start.",
@@ -602,7 +607,7 @@ EN = {
             "card": "Ease the bracing and the dread that make pain louder.",
             "title": "Self-Hypnosis for Pain — Written for You | Onira",
             "desc": "Guided self-hypnosis alongside your treatment: less bracing, less dread of the "
-                    "next flare, easier nights. A comfort tool, not a cure. Offline and private.",
+                    "next flare, easier nights. A comfort tool, not a cure. Can run offline.",
             "h1": "Self-hypnosis for living with pain",
             "lede": "A session for the parts of pain that are not the injury itself — the bracing, the "
                     "dread of the next flare, and the nights it takes from you.",
@@ -742,7 +747,7 @@ EN = {
             "card": "Take the heat out of the moment before you react.",
             "title": "Self-Hypnosis for Anger and Irritability | Onira",
             "desc": "Guided self-hypnosis to ease anger and short tempers: calm the body first, then "
-                    "rehearse a slower reaction to your own triggers. Private, free, offline.",
+                    "rehearse a slower reaction to your own triggers. Private, free, can run offline.",
             "h1": "Self-hypnosis for anger and a short temper",
             "lede": "A session for the seconds before you snap: the heat, the clenched jaw, the sentence "
                     "you will regret. Written around what sets you off.",
@@ -784,7 +789,7 @@ EN = {
             "card": "Recover a little ground when work has emptied you out.",
             "title": "Self-Hypnosis for Burnout and Exhaustion | Onira",
             "desc": "Guided self-hypnosis for the tired, wired state of burnout: real rest, switching "
-                    "work off, and sleep. A relaxation aid, not a treatment. Offline and private.",
+                    "work off, and sleep. A relaxation aid, not a treatment. Can run offline.",
             "h1": "Self-hypnosis for burnout and exhaustion",
             "lede": "A session for when rest no longer feels like rest: the tired-but-wired evenings, "
                     "the work that follows you home, the sleep that does not repair anything.",
@@ -824,7 +829,7 @@ EN = {
             "card": "Fall back asleep after waking at 3 a.m.",
             "title": "Self-Hypnosis for Waking Up at Night | Onira",
             "desc": "A guided session for waking in the night and not getting back to sleep: lower the "
-                    "alertness, let go of the clock, drift off again. Offline and private.",
+                    "alertness, let go of the clock, drift off again. Private, can run offline.",
             "h1": "Self-hypnosis for waking up in the night",
             "lede": "A session for the 3 a.m. wake-up: the racing thought, the clock you cannot stop "
                     "checking, the dread of the morning.",
@@ -877,7 +882,7 @@ FR = {
         "how_title": "Comment Onira compose votre séance",
         "how_steps": [
             "Vous choisissez un thème et, si vous le souhaitez, vous écrivez une phrase ou deux sur ce qui se passe vraiment.",
-            "Un modèle d'IA embarqué dans votre téléphone rédige le script — induction, approfondissement, images, suggestions, ancrage, puis un retour net à l'état de veille.",
+            "Un modèle d'IA rédige le script — induction, approfondissement, images, suggestions, ancrage, puis un retour net à l'état de veille. Il peut tourner entièrement sur votre téléphone, hors ligne, ou sur Onira Cloud si vous préférez.",
             "La narration démarre dès que l'ouverture est prête et la suite continue de s'écrire pendant que vous écoutez : une séance complète de 15 à 30 minutes commence en quelques secondes.",
             "Gardez une séance que vous avez aimée et rejouez la même narration quand vous voulez.",
         ],
@@ -885,9 +890,11 @@ FR = {
         "expect_title": "À quoi s'attendre",
         "faq_title": "Questions fréquentes",
         "privacy_title": "Confidentiel par conception",
-        "privacy_body": "Onira exécute son modèle sur votre appareil. Le thème choisi, les mots que vous "
-                        "écrivez et la séance obtenue ne sont jamais envoyés — aucun compte, aucune "
-                        "génération dans le cloud, aucun serveur susceptible de les lire.",
+        "privacy_body": "Tout peut rester sur votre téléphone : Onira peut exécuter son modèle sur "
+                        "l'appareil, hors ligne, et alors le thème choisi, les mots que vous écrivez et "
+                        "la séance obtenue ne sont jamais envoyés. Si vous préférez, Onira Cloud écrit "
+                        "la séance sur le serveur d'Onira, seulement avec votre accord, et le texte "
+                        "n'est pas conservé. Dans les deux cas, aucun compte.",
         "privacy_link": "Lire la politique de confidentialité",
         "safety_title": "Ce n'est pas un traitement médical",
         "safety_body": "Onira est un outil de relaxation et d'auto-hypnose. Ce n'est ni une thérapie, ni "
@@ -895,12 +902,12 @@ FR = {
                        "services d'urgence. En cas de détresse ou de danger, contactez une ligne d'écoute "
                        "ou le numéro d'urgence local (en France, le 3114 pour la prévention du suicide).",
         "related_title": "Autres thèmes",
-        "foot_tag": "Onira — des séances d'hypnose écrites sur votre téléphone, par votre téléphone.",
+        "foot_tag": "Onira — des séances d'hypnose écrites pour vous, même entièrement hors ligne.",
         "foot_privacy": "Confidentialité",
         "foot_play": "Google Play",
         "head_cta": "Obtenir l'app",
         "langs_label": "Langue",
-        "features": ["Écrit une séance d'auto-hypnose personnelle à partir de ce que vous saisissez", "Narrée à voix haute, 15 à 30 minutes", "Fonctionne entièrement hors ligne, rien ne quitte l'appareil", "Thèmes sommeil, anxiété, stress, confiance en soi et plus", "Gratuit, sans compte"],
+        "features": ["Écrit une séance d'auto-hypnose personnelle à partir de ce que vous saisissez", "Narrée à voix haute, 15 à 30 minutes", "Peut fonctionner entièrement hors ligne, sur l'appareil", "Thèmes sommeil, anxiété, stress, confiance en soi et plus", "Gratuit, sans compte"],
         "screens_title": "Dans l'application",
         "screens": [
             ("home", "L'accueil d'Onira le soir : un ciel de nuit, une séance de sommeil proposée, les thèmes en tuiles colorées",
@@ -911,8 +918,8 @@ FR = {
              "Dites avec vos mots ce qui se passe."),
             ("session", "Une séance en cours, avec l'indicateur de phase",
              "La séance se narre seule, de l'induction jusqu'au retour."),
-            ("privacy", "Rien de ce que vous écrivez ou recevez ne quitte le téléphone",
-             "Aucun compte, aucune donnée transmise, fonctionne hors ligne."),
+            ("privacy", "Rien ne quitte le téléphone sans votre accord",
+             "Aucun compte. Sur l'appareil, tout fonctionne hors ligne ; Onira Cloud seulement si vous acceptez."),
         ],
     },
     "home": {
@@ -923,11 +930,11 @@ FR = {
         ],
         "title": "Onira — Séances d'auto-hypnose écrites pour vous",
         "desc": "Onira écrit une séance d'hypnose personnelle sur votre téléphone et la narre à voix "
-                "haute : sommeil, anxiété, stress, confiance. Rien ne sort de l'appareil.",
+                "haute : sommeil, anxiété, stress, confiance. Peut fonctionner hors ligne.",
         "h1": "Des séances d'auto-hypnose écrites pour vous, sur votre téléphone",
         "lede": "La plupart des applications d'hypnose vous donnent le même enregistrement qu'à tout le "
                 "monde. Onira écrit une séance pour votre situation, sur le moment, avec un modèle d'IA "
-                "qui tourne entièrement sur votre appareil — puis vous la narre pendant que vous fermez "
+                "qui peut tourner entièrement sur votre appareil — puis vous la narre pendant que vous fermez "
                 "les yeux.",
         "intro": [
             "L'hypnose guidée fonctionne mieux quand les mots correspondent à ce que vous portez "
@@ -981,8 +988,9 @@ FR = {
                  "Oui, mais la séance se termine par un retour à la vigilance. Si votre objectif est de "
                  "vous endormir, le thème sommeil est écrit pour cela."),
                 ("Dois-je écrire quelque chose de personnel ?",
-                 "Non, le thème suffit. Et si vous écrivez quelque chose, cela reste sur votre "
-                 "téléphone : le modèle tourne en local, rien n'est envoyé."),
+                 "Non, le thème suffit. Et si vous écrivez quelque chose, cela peut rester sur votre "
+                 "téléphone : avec le modèle local, rien n'est envoyé. Avec Onira Cloud, seulement "
+                 "si vous acceptez, c'est envoyé pour écrire la séance, puis non conservé."),
             ],
         },
         "sleep": {
@@ -991,7 +999,7 @@ FR = {
             "card": "Calmer un esprit trop actif et laisser le sommeil venir.",
             "title": "Auto-hypnose pour le sommeil — écrite pour vous | Onira",
             "desc": "Hypnose guidée pour dormir, écrite sur votre téléphone à partir de ce qui vous tient "
-                    "éveillé, et narrée à voix haute. Fonctionne entièrement hors ligne.",
+                    "éveillé, et narrée à voix haute. Peut fonctionner entièrement hors ligne.",
             "h1": "Auto-hypnose pour le sommeil",
             "lede": "Une séance lente et peu stimulante, pour le moment où vous êtes au lit et où votre "
                     "esprit refuse de s'arrêter.",
@@ -1022,8 +1030,9 @@ FR = {
                  "Oui. Les séances enregistrées se rejouent à l'identique, et l'habitude aide : la même "
                  "narration devient un signal d'endormissement."),
                 ("Faut-il une connexion internet ?",
-                 "Une seule fois, pour télécharger le modèle au premier lancement. Ensuite, tout est "
-                 "généré et narré hors ligne."),
+                 "Pas si les séances sont écrites sur votre téléphone : le modèle se télécharge une "
+                 "fois, ensuite tout est généré et narré hors ligne. Onira Cloud, l'autre option, "
+                 "demande une connexion."),
             ],
         },
         "confidence": {
@@ -1065,8 +1074,9 @@ FR = {
                  "Autant que vous voulez. « Stressé par la présentation de jeudi devant douze "
                  "personnes » donne une séance bien plus utile que « plus de confiance »."),
                 ("Ce que j'écris est-il stocké quelque part ?",
-                 "Uniquement sur votre téléphone, et seulement si vous enregistrez la séance. Rien n'est "
-                 "envoyé à un serveur."),
+                 "Uniquement sur votre téléphone, et seulement si vous enregistrez la séance. Avec Onira "
+                 "Cloud, c'est envoyé pour écrire la séance et non conservé ; sur l'appareil, rien "
+                 "n'est envoyé."),
             ],
         },
         "stress": {
@@ -1075,7 +1085,7 @@ FR = {
             "card": "Redescendre après une journée exigeante et récupérer vraiment.",
             "title": "Auto-hypnose contre le stress — écrite pour vous | Onira",
             "desc": "Auto-hypnose guidée contre le stress, écrite sur votre téléphone à partir de la "
-                    "pression que vous vivez, et narrée à voix haute. Hors ligne et confidentielle.",
+                    "pression que vous vivez, narrée à voix haute. Confidentielle, même hors ligne.",
             "h1": "Auto-hypnose contre le stress",
             "lede": "Une séance pour la fin d'une journée exigeante : d'abord un relâchement physique "
                     "délibéré, puis de la distance avec ce qui met la pression.",
@@ -1160,7 +1170,7 @@ FR = {
             "card": "Apaiser un esprit dispersé avant un travail qui demande de l'attention.",
             "title": "Auto-hypnose pour la concentration | Onira",
             "desc": "Auto-hypnose guidée pour la concentration, écrite sur votre téléphone à partir du "
-                    "travail qui vous attend, et narrée à voix haute. Fonctionne hors ligne.",
+                    "travail qui vous attend, et narrée à voix haute. Peut fonctionner hors ligne.",
             "h1": "Auto-hypnose pour la concentration",
             "lede": "Une séance plus courte et plus tonique pour dégager le bruit avant de réviser, "
                     "d'écrire ou de travailler longtemps.",
@@ -1244,7 +1254,7 @@ FR = {
             "card": "Répéter au calme l'avion, la route ou le vide, avant d'y être.",
             "title": "Auto-hypnose pour les peurs et les phobies | Onira",
             "desc": "Hypnose guidée contre la peur de l'avion, de conduire ou du vide, écrite sur "
-                    "votre téléphone à partir de la situation que vous affrontez. Hors ligne.",
+                    "votre téléphone à partir de la situation que vous affrontez. Même hors ligne.",
             "h1": "Auto-hypnose pour les peurs et les phobies",
             "lede": "Une séance construite autour d'une situation précise — le vol, l'ascenseur, "
                     "l'autoroute — répétée assez lentement pour que le corps cesse d'y voir une "
@@ -1282,7 +1292,7 @@ FR = {
                  "sur la conduite."),
                 ("Dois-je décrire ce qui me fait peur ?",
                  "Non, le thème suffit. Si vous le décrivez, la répétition devient plus précise — et "
-                 "cela reste sur votre téléphone, puisque le modèle tourne en local."),
+                 "cela peut rester sur votre téléphone, puisque le modèle peut tourner en local."),
             ],
         },
         "letting_go": {
@@ -1291,7 +1301,7 @@ FR = {
             "card": "Cesser de rejouer la même conversation en boucle.",
             "title": "Auto-hypnose pour oublier une personne | Onira",
             "desc": "Hypnose guidée pour tourner la page après une rupture, écrite sur votre "
-                    "téléphone à partir de ce qui vous revient en tête. Gratuite et hors ligne.",
+                    "téléphone à partir de ce qui vous revient en tête. Gratuite, même hors ligne.",
             "h1": "Auto-hypnose pour tourner la page",
             "lede": "Une séance pour le moment où la personne est partie mais où votre tête, elle, "
                     "continue la conversation.",
@@ -1326,8 +1336,9 @@ FR = {
                  "chose à traiter avec une application. Un accompagnement humain compte davantage, "
                  "et Onira n'est pas écrit pour cela."),
                 ("Faut-il écrire son nom ?",
-                 "Ce n'est pas nécessaire, le thème suffit. Ce que vous écrivez ne quitte jamais "
-                 "le téléphone : la génération se fait en local, rien n'est envoyé."),
+                 "Ce n'est pas nécessaire, le thème suffit. Avec la génération en local, ce que vous "
+                 "écrivez ne quitte jamais le téléphone ; avec Onira Cloud, seulement si vous "
+                 "acceptez, rien n'est conservé."),
             ],
         },
         "motivation": {
@@ -1336,7 +1347,7 @@ FR = {
             "card": "Commencer enfin ce que vous repoussez depuis une semaine.",
             "title": "Auto-hypnose pour la motivation et l'énergie | Onira",
             "desc": "Hypnose guidée contre la procrastination et les coups de fatigue, écrite sur "
-                    "votre téléphone à partir de la tâche que vous évitez. Gratuite, hors ligne.",
+                    "votre téléphone à partir de la tâche que vous évitez. Gratuite, même hors ligne.",
             "h1": "Auto-hypnose pour la motivation et l'énergie",
             "lede": "Une séance sur le fait de commencer — les dix minutes qui précèdent la tâche, "
                     "là où la motivation se gagne ou se perd.",
@@ -1526,7 +1537,7 @@ FR = {
             "card": "Faire retomber la chaleur avant de réagir.",
             "title": "Auto-hypnose contre la colère et l'irritabilité | Onira",
             "desc": "Auto-hypnose guidée pour apaiser la colère et les accès d'irritation : calmer le "
-                    "corps, puis répéter une réaction plus lente. Privée, gratuite, hors ligne.",
+                    "corps, puis répéter une réaction plus lente. Privée, gratuite, même hors ligne.",
             "h1": "Auto-hypnose contre la colère et l'irritabilité",
             "lede": "Une séance pour les secondes qui précèdent l'explosion : la chaleur, la mâchoire "
                     "serrée, la phrase qu'on regrettera. Écrite autour de ce qui vous met hors de vous.",
@@ -1568,7 +1579,7 @@ FR = {
             "card": "Reprendre un peu de terrain quand le travail vous a vidé.",
             "title": "Auto-hypnose contre le burn-out et l'épuisement | Onira",
             "desc": "Auto-hypnose guidée pour l'état fatigué mais tendu du burn-out : vrai repos, "
-                    "déconnexion du travail, sommeil. Un outil de détente, pas un soin. Hors ligne.",
+                    "déconnexion du travail, sommeil. Un outil de détente, pas un soin. Même hors ligne.",
             "h1": "Auto-hypnose contre le burn-out et l'épuisement",
             "lede": "Une séance pour quand le repos ne repose plus : les soirées fatiguées mais "
                     "tendues, le travail qui vous suit à la maison, le sommeil qui ne répare rien.",
@@ -1610,7 +1621,7 @@ FR = {
             "card": "Se rendormir après un réveil à 3 heures du matin.",
             "title": "Auto-hypnose contre les réveils nocturnes | Onira",
             "desc": "Une séance guidée pour les réveils en pleine nuit et le sommeil qui ne revient "
-                    "pas : baisser la vigilance, oublier l'horloge, se rendormir. Hors ligne, privée.",
+                    "pas : baisser la vigilance, oublier l'horloge, se rendormir. Même hors ligne.",
             "h1": "Auto-hypnose contre les réveils nocturnes",
             "lede": "Une séance pour le réveil de 3 heures : la pensée qui tourne, l'horloge qu'on ne "
                     "peut s'empêcher de regarder, l'angoisse du matin.",
@@ -1664,7 +1675,7 @@ ES = {
         "how_title": "Cómo compone Onira tu sesión",
         "how_steps": [
             "Eliges un tema y, si quieres, escribes una o dos frases sobre lo que te pasa realmente.",
-            "Un modelo de IA que se ejecuta en tu teléfono escribe el guion: inducción, profundización, imágenes, sugestiones, anclaje y una vuelta clara al estado de alerta.",
+            "Un modelo de IA escribe el guion: inducción, profundización, imágenes, sugestiones, anclaje y una vuelta clara al estado de alerta. Puede funcionar por completo en tu teléfono, sin conexión, o en Onira Cloud si lo prefieres.",
             "La narración empieza en cuanto está lista la apertura y el resto se sigue escribiendo mientras escuchas: una sesión completa de 15 a 30 minutos arranca en segundos.",
             "Guarda una sesión que te haya gustado y repite la misma narración cuando quieras.",
         ],
@@ -1672,9 +1683,11 @@ ES = {
         "expect_title": "Qué esperar",
         "faq_title": "Preguntas frecuentes",
         "privacy_title": "Privado por diseño",
-        "privacy_body": "Onira ejecuta su modelo en tu dispositivo. El tema que eliges, lo que escribes y "
-                        "la sesión que recibes nunca se envían: no hay cuenta, ni generación en la nube, "
-                        "ni servidor que pueda leerlos.",
+        "privacy_body": "Todo puede quedarse en tu teléfono: Onira puede ejecutar su modelo en el "
+                        "dispositivo, sin conexión, y entonces el tema que eliges, lo que escribes y la "
+                        "sesión que recibes nunca se envían. Si lo prefieres, Onira Cloud escribe la "
+                        "sesión en el servidor de Onira, solo con tu permiso, y el texto no se guarda. "
+                        "En ambos casos, sin cuenta.",
         "privacy_link": "Leer la política de privacidad",
         "safety_title": "No es un tratamiento médico",
         "safety_body": "Onira es una herramienta de relajación y autohipnosis. No es terapia, ni consejo "
@@ -1682,12 +1695,12 @@ ES = {
                        "servicios de emergencia. Si estás en peligro o en crisis, contacta con una línea "
                        "de atención o el número de emergencias local (en España, el 024).",
         "related_title": "Otros temas",
-        "foot_tag": "Onira — sesiones de hipnosis escritas en tu teléfono, por tu teléfono.",
+        "foot_tag": "Onira — sesiones de hipnosis escritas para ti, incluso sin conexión.",
         "foot_privacy": "Privacidad",
         "foot_play": "Google Play",
         "head_cta": "Obtener la app",
         "langs_label": "Idioma",
-        "features": ["Escribe una sesión de autohipnosis personal a partir de lo que escribes", "Narrada en voz alta, de 15 a 30 minutos", "Funciona sin conexión, nada sale del dispositivo", "Temas de sueño, ansiedad, estrés, confianza y más", "Gratis, sin cuenta"],
+        "features": ["Escribe una sesión de autohipnosis personal a partir de lo que escribes", "Narrada en voz alta, de 15 a 30 minutos", "Puede funcionar sin conexión, en el dispositivo", "Temas de sueño, ansiedad, estrés, confianza y más", "Gratis, sin cuenta"],
         "screens_title": "Dentro de la app",
         "screens": [
             ("home", "La pantalla de inicio de Onira por la noche: cielo nocturno, una sesión de sueño propuesta, los temas en fichas de colores",
@@ -1698,8 +1711,8 @@ ES = {
              "Cuenta con tus palabras lo que pasa."),
             ("session", "Una sesión en marcha, con el indicador de fase",
              "La sesión se narra sola, de la inducción a una vuelta clara."),
-            ("privacy", "Ni lo que escribes ni lo que recibes sale del teléfono",
-             "Sin cuenta, nada se transmite, funciona sin conexión."),
+            ("privacy", "Nada sale del teléfono sin tu permiso",
+             "Sin cuenta. En el dispositivo funciona sin conexión; Onira Cloud solo si aceptas."),
         ],
     },
     "home": {
@@ -1710,10 +1723,10 @@ ES = {
         ],
         "title": "Onira — Sesiones de autohipnosis escritas para ti",
         "desc": "Onira escribe una sesión de hipnosis personal en tu teléfono y la narra en voz alta: "
-                "sueño, ansiedad, estrés, confianza. Nada sale de tu dispositivo.",
+                "sueño, ansiedad, estrés, confianza. Puede funcionar sin conexión.",
         "h1": "Sesiones de autohipnosis escritas para ti, en tu teléfono",
         "lede": "Casi todas las apps de hipnosis te dan la misma grabación que a los demás. Onira escribe "
-                "una sesión para tu situación, en el momento, con un modelo de IA que funciona "
+                "una sesión para tu situación, en el momento, con un modelo de IA que puede funcionar "
                 "íntegramente en tu dispositivo, y luego te la narra mientras cierras los ojos.",
         "intro": [
             "La hipnosis guiada funciona mejor cuando las palabras encajan con lo que realmente llevas "
@@ -1767,8 +1780,9 @@ ES = {
                  "Sí, aunque la sesión termina devolviéndote al estado de alerta. Si lo que quieres es "
                  "dormirte, el tema de sueño está escrito para eso."),
                 ("¿Tengo que escribir algo personal?",
-                 "No, basta con el tema. Y si escribes algo, se queda en tu teléfono: el modelo funciona "
-                 "en local y no se envía nada."),
+                 "No, basta con el tema. Y si escribes algo, puede quedarse en tu teléfono: con el "
+                 "modelo local no se envía nada. Con Onira Cloud, solo si aceptas, se envía para "
+                 "escribir la sesión y no se guarda."),
             ],
         },
         "sleep": {
@@ -1777,7 +1791,7 @@ ES = {
             "card": "Bajar revoluciones y dejar que el sueño llegue solo.",
             "title": "Autohipnosis para dormir — escrita para ti | Onira",
             "desc": "Hipnosis guiada para dormir, escrita en tu teléfono a partir de lo que te mantiene "
-                    "despierto y narrada en voz alta. Funciona sin conexión.",
+                    "despierto y narrada en voz alta. Puede funcionar sin conexión.",
             "h1": "Autohipnosis para dormir",
             "lede": "Una sesión lenta y poco estimulante para ese momento en el que ya estás en la cama y "
                     "tu cabeza no para.",
@@ -1809,8 +1823,9 @@ ES = {
                  "Sí. Las sesiones guardadas se repiten idénticas, y la familiaridad ayuda: la misma "
                  "narración acaba siendo una señal de que toca dormir."),
                 ("¿Necesita conexión a internet?",
-                 "Solo una vez, para descargar el modelo la primera vez. Después todo se genera y se "
-                 "narra sin conexión."),
+                 "No si las sesiones se escriben en tu teléfono: el modelo se descarga una vez y "
+                 "después todo se genera y se narra sin conexión. Onira Cloud, la otra opción, "
+                 "necesita conexión."),
             ],
         },
         "confidence": {
@@ -1851,8 +1866,8 @@ ES = {
                  "El que quieras. «Nervioso por la presentación del jueves ante doce personas» da una "
                  "sesión mucho más útil que «más confianza»."),
                 ("¿Se guarda en algún sitio lo que escribo?",
-                 "Solo en tu teléfono, y únicamente si guardas la sesión. No se envía nada a ningún "
-                 "servidor."),
+                 "Solo en tu teléfono, y únicamente si guardas la sesión. Con Onira Cloud se envía "
+                 "para escribir la sesión y no se guarda; en el dispositivo no se envía nada."),
             ],
         },
         "stress": {
@@ -1861,7 +1876,7 @@ ES = {
             "card": "Bajar de un día exigente y recuperarte de verdad.",
             "title": "Autohipnosis para el estrés — escrita para ti | Onira",
             "desc": "Autohipnosis guiada para el estrés, escrita en tu teléfono a partir de la presión "
-                    "que estás viviendo y narrada en voz alta. Sin conexión y privada.",
+                    "que estás viviendo y narrada en voz alta. Privada, incluso sin conexión.",
             "h1": "Autohipnosis para el estrés",
             "lede": "Una sesión para el final de un día exigente: primero una liberación física "
                     "deliberada, y luego algo de distancia con lo que aprieta.",
@@ -1944,7 +1959,7 @@ ES = {
             "card": "Ordenar una mente dispersa antes de un trabajo exigente.",
             "title": "Autohipnosis para la concentración | Onira",
             "desc": "Autohipnosis guiada para la concentración, escrita en tu teléfono a partir del "
-                    "trabajo que tienes por delante y narrada en voz alta. Funciona sin conexión.",
+                    "trabajo que tienes por delante, narrada en voz alta. Puede ir sin conexión.",
             "h1": "Autohipnosis para la concentración",
             "lede": "Una sesión más corta y más despierta para despejar el ruido antes de estudiar, "
                     "escribir o trabajar durante un buen rato.",
@@ -2027,7 +2042,7 @@ ES = {
             "card": "Ensayar en calma el vuelo, la carretera o la altura.",
             "title": "Autohipnosis para los miedos y las fobias | Onira",
             "desc": "Hipnosis guiada para el miedo a volar, a conducir o a las alturas, escrita en "
-                    "tu móvil a partir de la situación que afrontas. Gratis y sin conexión.",
+                    "tu móvil a partir de la situación que afrontas. Gratis, incluso sin conexión.",
             "h1": "Autohipnosis para los miedos y las fobias",
             "lede": "Una sesión construida alrededor de una situación concreta — el vuelo, el "
                     "ascensor, la autopista — ensayada lo bastante despacio como para que el "
@@ -2065,7 +2080,7 @@ ES = {
                  "conducir."),
                 ("¿Tengo que describir lo que me da miedo?",
                  "No, basta con el tema. Si lo describes, el ensayo se vuelve más preciso — y se "
-                 "queda en tu móvil, porque el modelo funciona en local."),
+                 "puede quedar en tu móvil, porque el modelo puede funcionar en local."),
             ],
         },
         "letting_go": {
@@ -2074,7 +2089,7 @@ ES = {
             "card": "Dejar de repetir la misma conversación en bucle.",
             "title": "Autohipnosis para olvidar a alguien | Onira",
             "desc": "Hipnosis guiada para pasar página tras una ruptura, escrita en tu móvil a "
-                    "partir de lo que se te repite en la cabeza. Gratis y sin conexión.",
+                    "partir de lo que se te repite en la cabeza. Gratis, incluso sin conexión.",
             "h1": "Autohipnosis para pasar página",
             "lede": "Una sesión para cuando la persona ya se ha ido pero tu cabeza sigue "
                     "manteniendo la conversación.",
@@ -2108,8 +2123,8 @@ ES = {
                  "resuelva una aplicación. El acompañamiento humano importa más, y Onira no está "
                  "escrita para eso."),
                 ("¿Hace falta escribir su nombre?",
-                 "No hace falta, basta con el tema. Lo que escribas no sale nunca del móvil: la "
-                 "generación ocurre en local y no se envía nada."),
+                 "No hace falta, basta con el tema. Con la generación en local, lo que escribas no "
+                 "sale nunca del móvil; con Onira Cloud, solo si aceptas, no se guarda nada."),
             ],
         },
         "learning": {
@@ -2118,7 +2133,7 @@ ES = {
             "card": "Entrar en el estado en el que estudiar de verdad cuaja.",
             "title": "Autohipnosis para la memoria y el estudio | Onira",
             "desc": "Hipnosis guiada para estudiar, memorizar y aprender idiomas, escrita en tu "
-                    "móvil a partir de lo que estás aprendiendo. Gratis y sin conexión.",
+                    "móvil a partir de lo que estás aprendiendo. Gratis, incluso sin conexión.",
             "h1": "Autohipnosis para la memoria y el aprendizaje",
             "lede": "Una sesión para el estado que el aprendizaje necesita — atención sin prisa y "
                     "sin ruido — escrita alrededor del examen, el idioma o el material que tienes "
@@ -2307,7 +2322,7 @@ ES = {
             "card": "Calmar la mente y ensayar otra forma de reaccionar.",
             "title": "Autohipnosis para reprogramar tu mente | Onira",
             "desc": "Autohipnosis guiada para calmar la mente y ensayar respuestas nuevas ante lo que "
-                    "siempre te dispara. Escrita en tu teléfono, privada y sin conexión.",
+                    "siempre te dispara. Escrita para ti, privada, incluso sin conexión.",
             "h1": "Autohipnosis para reprogramar tu mente",
             "lede": "Una sesión para lo que se repite solo: la reacción automática, el pensamiento de "
                     "siempre, el bucle que ya conoces de memoria.",
@@ -2354,7 +2369,7 @@ ES = {
             "card": "Bajar el calor antes de reaccionar.",
             "title": "Autohipnosis para controlar la ira | Onira",
             "desc": "Autohipnosis guiada para calmar la ira y la irritabilidad: relajar primero el "
-                    "cuerpo y ensayar una reacción más lenta. Privada, gratuita y sin conexión.",
+                    "cuerpo y ensayar una reacción más lenta. Privada, gratuita, incluso sin conexión.",
             "h1": "Autohipnosis para controlar la ira",
             "lede": "Una sesión para los segundos antes de estallar: el calor, la mandíbula apretada, "
                     "la frase de la que te arrepentirás. Escrita en torno a lo que te saca de quicio.",
@@ -2436,7 +2451,7 @@ ES = {
             "card": "Volver a dormirte tras despertar a las tres de la madrugada.",
             "title": "Autohipnosis para los despertares nocturnos | Onira",
             "desc": "Una sesión guiada para despertar de madrugada y no volver a dormirte: bajar la "
-                    "alerta, olvidar el reloj y dormirte otra vez. Sin conexión y privada.",
+                    "alerta, olvidar el reloj y dormirte otra vez. Privada, incluso sin conexión.",
             "h1": "Autohipnosis para los despertares nocturnos",
             "lede": "Una sesión para el despertar de las tres: el pensamiento que da vueltas, el reloj "
                     "que no puedes dejar de mirar, el miedo a la mañana.",
@@ -2556,7 +2571,7 @@ EN["guides"] = {
               "up — if you type that you cannot stop replaying a conversation, the imagery "
               "and suggestions are built on that rather than on a generic beach. It runs "
               "the model on the device, so nothing you type is uploaded, and it works with "
-              "the phone offline and face down."],
+              "the phone offline and face down (Onira Cloud is there if you prefer)."],
              []),
         ],
         "faq": [
@@ -2638,9 +2653,9 @@ EN["guides"] = {
               "do not compete; if anything, regular meditation makes the settling stage of a "
               "session faster.",
               "Onira sits on the hypnosis side of this. You pick the target, add a sentence "
-              "about what is actually going on, and a model running on the phone writes a "
-              "session around it, then narrates it — no account, nothing uploaded, and "
-              "nothing generic about the imagery."],
+              "about what is actually going on, and a model, on the phone or on Onira Cloud, "
+              "writes a session around it, then narrates it — no account, and nothing "
+              "generic about the imagery."],
              []),
         ],
         "faq": [
@@ -2726,8 +2741,9 @@ EN["guides"] = {
               "instead of a recording made for everyone, a model on your phone writes the "
               "session around the theme you pick and the sentence you type, then narrates "
               "it aloud.",
-              "It runs entirely on the device, so what you type about your own life never "
-              "leaves the phone — there is no account and no server that could read it. If "
+              "It can run entirely on the device, so what you type about your own life never "
+              "leaves the phone; Onira Cloud is an option only if you agree, and it does not "
+              "keep the text. There is no account either way. If "
               "you are in real distress, that is a conversation to have with a person, and "
               "no app is the right answer to it."],
              []),
@@ -2839,7 +2855,7 @@ EN["guides"] = {
               "directed side of what you have been watching, aimed at sleep, anxiety, "
               "confidence, habits and the rest.",
               "It does not teach street hypnosis and will not make you a hypnotist. It is "
-              "free, works offline, and nothing you type leaves the phone."],
+              "free, can run offline, and then nothing you type leaves the phone."],
              []],
         ],
         "faq": [
@@ -2947,7 +2963,7 @@ EN["guides"] = {
               "bringing you back fully alert, and every theme page carries the same line "
               "this guide does: it is a relaxation tool, not therapy and not medical "
               "advice.",
-              "It is free, runs offline, and nothing you type leaves the device — which "
+              "It is free, can run offline, and then nothing you type leaves the device — which "
               "also means nobody is profiling what you were anxious about."],
              []],
         ],
@@ -3055,7 +3071,7 @@ EN["guides"] = {
               "and, if you want, type a sentence about what is actually going on. That "
               "removes the two things beginners struggle with — holding the structure, and "
               "finding the words for a suggestion that fits your situation.",
-              "It is free, works offline, and nothing you type leaves your phone. If you "
+              "It is free, can run offline, and then nothing you type leaves your phone. If you "
               "later want to run sessions in your head without it, that is a fine outcome "
               "and the app will have done its job."],
              []],
@@ -3156,8 +3172,9 @@ FR["guides"] = {
               "Onira écrit la séance sur votre téléphone à partir de ce qui vous empêche "
               "réellement de dormir : si vous tapez que vous rejouez une conversation en "
               "boucle, les images et les suggestions se construisent là-dessus plutôt que "
-              "sur une plage générique. Le modèle tourne sur l'appareil, donc rien de ce que "
-              "vous écrivez n'est envoyé, et tout fonctionne hors ligne, téléphone retourné."],
+              "sur une plage générique. Le modèle peut tourner sur l'appareil : rien de ce que "
+              "vous écrivez n'est envoyé, et tout fonctionne hors ligne, téléphone retourné "
+              "(Onira Cloud existe aussi, si vous préférez)."],
              []),
         ],
         "faq": [
@@ -3333,8 +3350,9 @@ FR["guides"] = {
               "précision : au lieu d'un enregistrement fait pour tout le monde, un modèle "
               "embarqué dans votre téléphone écrit la séance autour du thème choisi et de la "
               "phrase que vous tapez, puis la narre à voix haute.",
-              "Tout tourne sur l'appareil : ce que vous écrivez de votre vie ne quitte jamais "
-              "le téléphone — il n'y a ni compte ni serveur qui pourrait le lire. Si vous "
+              "Tout peut tourner sur l'appareil : ce que vous écrivez de votre vie ne quitte "
+              "alors jamais le téléphone. Onira Cloud est une option, seulement avec votre "
+              "accord, et ne conserve pas le texte ; aucun compte dans les deux cas. Si vous "
               "allez réellement mal, c'est une conversation à avoir avec une personne, et "
               "aucune application n'est la bonne réponse à ça."],
              []),
@@ -3425,8 +3443,9 @@ ES["guides"] = {
               "Onira escribe la sesión en tu móvil a partir de lo que de verdad te mantiene "
               "despierto: si escribes que no dejas de darle vueltas a una conversación, las "
               "imágenes y las sugestiones se construyen sobre eso y no sobre una playa "
-              "genérica. El modelo se ejecuta en el dispositivo, así que nada de lo que "
-              "escribes se envía, y todo funciona sin conexión y con el móvil boca abajo."],
+              "genérica. El modelo puede ejecutarse en el dispositivo: nada de lo que escribes "
+              "se envía, y todo funciona sin conexión y con el móvil boca abajo (también "
+              "existe Onira Cloud, si lo prefieres)."],
              []),
         ],
         "faq": [
@@ -3594,8 +3613,9 @@ ES["guides"] = {
               "precisión: en lugar de una grabación hecha para todo el mundo, un modelo "
               "dentro de tu móvil escribe la sesión alrededor del tema que eliges y de la "
               "frase que escribes, y luego la narra en voz alta.",
-              "Todo se ejecuta en el dispositivo, así que lo que escribes sobre tu vida "
-              "nunca sale del móvil: no hay cuenta ni servidor que pudiera leerlo. Si estás "
+              "Todo puede ejecutarse en el dispositivo, y entonces lo que escribes sobre tu "
+              "vida nunca sale del móvil. Onira Cloud es una opción, solo con tu permiso, y "
+              "no guarda el texto; sin cuenta en ningún caso. Si estás "
               "pasándolo mal de verdad, esa es una conversación para tener con una persona, "
               "y ninguna aplicación es la respuesta correcta a eso."],
              []),
@@ -3703,12 +3723,12 @@ FR["guides"]["street_hypnosis"] = {
         ["Où se situe Onira",
          ["Onira écrit des séances d'auto-hypnose sur votre téléphone et les narre à voix "
           "haute : vous choisissez un thème, vous précisez, si vous voulez, ce qui se passe "
-          "vraiment, et un modèle qui tourne sur l'appareil écrit le script et le dit. "
+          "vraiment, et un modèle, sur l'appareil ou sur Onira Cloud, écrit le script et le dit. "
           "C'est le versant autodirigé de ce que vous venez de regarder, tourné vers le "
           "sommeil, l'anxiété, la confiance, les habitudes et le reste.",
           "Onira n'enseigne pas l'hypnose de rue et ne fera pas de vous un hypnotiseur. "
-          "L'app est gratuite, fonctionne hors ligne, et rien de ce que vous écrivez ne "
-          "quitte le téléphone."],
+          "L'app est gratuite, peut fonctionner hors ligne, et alors rien de ce que vous "
+          "écrivez ne quitte le téléphone."],
          []],
     ],
     "faq": [
@@ -3819,8 +3839,8 @@ FR["guides"]["is_it_safe"] = {
           "Chaque séance se termine par un retour complet à l'état d'alerte, et chaque page "
           "de thème porte la même mention que ce guide : c'est un outil de relaxation, pas "
           "une thérapie ni un avis médical.",
-          "L'app est gratuite, fonctionne hors ligne, et rien de ce que vous écrivez ne "
-          "quitte l'appareil — ce qui signifie aussi que personne ne dresse le profil de ce "
+          "L'app est gratuite, peut fonctionner hors ligne, et alors rien de ce que vous "
+          "écrivez ne quitte l'appareil — ce qui signifie aussi que personne ne dresse le profil de ce "
           "qui vous inquiétait."],
          []],
     ],
@@ -3924,8 +3944,8 @@ FR["guides"]["learn_self_hypnosis"] = {
           "thème et, si vous voulez, tapez une phrase sur ce qui se passe vraiment. Cela "
           "supprime les deux difficultés des débutants — tenir la structure, et trouver les "
           "mots d'une suggestion adaptée à votre situation.",
-          "L'app est gratuite, fonctionne hors ligne, et rien de ce que vous écrivez ne "
-          "quitte votre téléphone. Si vous voulez ensuite faire vos séances de tête sans "
+          "L'app est gratuite, peut fonctionner hors ligne, et alors rien de ce que vous "
+          "écrivez ne quitte votre téléphone. Si vous voulez ensuite faire vos séances de tête sans "
           "elle, c'est un bon résultat et l'app aura fait son travail."],
          []],
     ],
@@ -4031,12 +4051,12 @@ ES["guides"]["street_hypnosis"] = {
          []],
         ["Dónde encaja Onira",
          ["Onira escribe sesiones de autohipnosis en tu teléfono y las narra en voz alta: "
-          "eliges un tema, cuentas si quieres qué pasa de verdad, y un modelo que funciona "
-          "en el dispositivo escribe el guion y lo dice. Es el lado autodirigido de lo que "
+          "eliges un tema, cuentas si quieres qué pasa de verdad, y un modelo, en el "
+          "dispositivo o en Onira Cloud, escribe el guion y lo dice. Es el lado autodirigido de lo que "
           "has estado viendo, orientado al sueño, la ansiedad, la confianza, los hábitos y "
           "lo demás.",
           "No enseña hipnosis callejera ni te convertirá en hipnotizador. Es gratis, "
-          "funciona sin conexión y nada de lo que escribes sale del teléfono."],
+          "puede funcionar sin conexión, y entonces nada de lo que escribes sale del teléfono."],
          []],
     ],
     "faq": [
@@ -4143,8 +4163,8 @@ ES["guides"]["is_it_safe"] = {
           "termina devolviéndote a la plena alerta, y cada página de tema lleva la misma "
           "advertencia que esta guía: es una herramienta de relajación, no una terapia ni "
           "un consejo médico.",
-          "Es gratis, funciona sin conexión y nada de lo que escribes sale del "
-          "dispositivo — lo que también significa que nadie perfila lo que te preocupaba."],
+          "Es gratis, puede funcionar sin conexión, y entonces nada de lo que escribes sale "
+          "del dispositivo — lo que también significa que nadie perfila lo que te preocupaba."],
          []],
     ],
     "faq": [
@@ -4244,7 +4264,7 @@ ES["guides"]["learn_self_hypnosis"] = {
           "quieres, escribes una frase sobre lo que pasa de verdad. Así desaparecen las "
           "dos dificultades de los principiantes — sostener la estructura y encontrar las "
           "palabras de una sugestión que encaje con tu situación.",
-          "Es gratis, funciona sin conexión y nada de lo que escribes sale del teléfono. "
+          "Es gratis, puede funcionar sin conexión, y entonces nada de lo que escribes sale del teléfono. "
           "Si más adelante prefieres hacer las sesiones mentalmente sin ella, es un buen "
           "resultado y la app habrá cumplido."],
          []],
@@ -4322,7 +4342,7 @@ FR["themes"]["learning"] = {
     "card": "Entrer dans l'état où réviser fait vraiment effet.",
     "title": "Auto-hypnose pour la mémoire et les révisions | Onira",
     "desc": "Auto-hypnose guidée pour réviser, retenir et apprendre une langue, écrite sur votre "
-            "téléphone autour de ce que vous apprenez. Gratuite, privée, hors ligne.",
+            "téléphone autour de ce que vous apprenez. Gratuite, privée, même hors ligne.",
     "h1": "Auto-hypnose pour la mémoire et l'apprentissage",
     "lede": "Une séance pour l'état dont l'apprentissage a besoin — une attention calme et sans "
             "distraction — écrite autour de l'examen, de la langue ou du cours devant vous.",
@@ -4366,7 +4386,7 @@ ES["themes"]["motivation"] = {
     "card": "Empezar lo que llevas una semana rondando.",
     "title": "Autohipnosis para la motivación y la energía | Onira",
     "desc": "Autohipnosis guiada contra la procrastinación y la falta de energía, escrita en tu "
-            "teléfono alrededor de la tarea que evitas. Gratis, privada y sin conexión.",
+            "teléfono alrededor de la tarea que evitas. Gratis y privada, sin conexión.",
     "h1": "Autohipnosis para la motivación y la energía",
     "lede": "Una sesión sobre empezar — los diez minutos previos a la tarea, donde la "
             "motivación se gana o se pierde — escrita alrededor de lo que sigues aplazando.",
@@ -4537,7 +4557,7 @@ EN["guides"]["on_device_ai"] = {
           "app sends and pruned to English, French and Spanish (a 58,488-token vocabulary). "
           "It is published under Apache-2.0 on Hugging Face as oytaub/hypnos-e2b-enfres-GGUF, "
           "with the training and evaluation details in its model card.",
-          "Phones that cannot run it can choose Onira Cloud, where the same kind of session is "
+          "Phones that cannot run it, or anyone who prefers, can choose Onira Cloud, where the same kind of session is "
           "written on Onira's own server and never stored. On a phone that can, nothing typed "
           "or generated leaves the device and the app works in airplane mode."],
          []],
@@ -4560,5 +4580,6 @@ EN["guides"]["on_device_ai"] = {
     ],
 }
 GUIDES.append("on_device_ai")
+
 
 LANGS = [EN, FR, ES]
