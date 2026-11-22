@@ -1,0 +1,1156 @@
+{
+ "ui": {
+  "home_name": "Onira",
+  "home_crumb": "Startseite",
+  "badge_alt": "Jetzt bei Google Play",
+  "cta_note": "Kostenlos, kein Konto, kein Abo. Einmalige Zahlung zur Entfernung der Werbung.",
+  "how_title": "So erstellt Onira deine Session",
+  "how_steps": [
+   "Du wählst ein Thema und gibst, wenn du möchtest, einen Satz oder zwei dazu ein, was gerade in dir vorgeht.",
+   "Ein KI-Modell auf deinem Handy schreibt das Skript – Einleitung, Vertiefung, Imagination, Suggestionen, Verankerung und schließlich eine klare Rückkehr zur vollen Wachheit.",
+   "Die Ansage beginnt, sobald die Einleitung fertig ist, und der Rest wird während des Hörens weitergeschrieben. So startet eine komplette 15- bis 30-minütige Session in wenigen Sekunden.",
+   "Speichere eine Session, die dir gefallen hat, und höre sie dir jederzeit genau so noch einmal an."
+  ],
+  "works_title": "Woran eine Session arbeitet",
+  "expect_title": "Was dich erwartet",
+  "faq_title": "Häufige Fragen",
+  "privacy_title": "Privatsphäre by Design",
+  "privacy_body": "Onira führt das Modell direkt auf deinem Gerät aus. Das gewählte Thema, deine Eingaben und die empfangene Session werden niemals hochgeladen – es gibt kein Konto, keine Cloud-Generierung und keinen Server, der darauf zugreifen könnte.",
+  "privacy_link": "Lies die vollständige Datenschutzerklärung",
+  "safety_title": "Keine medizinische Behandlung",
+  "safety_body": "Onira ist ein Entspannungs- und Selbsthypnose-Tool. Es ist keine Therapie, keine medizinische oder psychiatrische Beratung und kein Ersatz für professionelle Hilfe oder Notdienste. Wenn du in Not bist oder dich in Gefahr fühlst, wende dich bitte an eine lokale Krisen hotline oder den Notruf.",
+  "related_title": "Weitere Themen",
+  "foot_tag": "Onira – Hypnose-Sessions, geschrieben auf deinem Handy, von deinem Handy.",
+  "foot_privacy": "Datenschutzerklärung",
+  "foot_play": "Google Play",
+  "head_cta": "App herunterladen",
+  "langs_label": "Sprache",
+  "features": [
+   "Erstellt eine persönliche Selbsthypnose-Session basierend auf deinen Eingaben",
+   "Vorgesprochen, 15 bis 30 Minuten",
+   "Funktioniert komplett offline, nichts verlässt das Gerät",
+   "Themen für Schlaf, Angst, Stress, Selbstvertrauen und mehr",
+   "Kostenlos, kein Konto erforderlich"
+  ],
+  "screens_title": "Ein Blick in die App",
+  "screens": [
+   [
+    "home",
+    "Der Startbildschirm von Onira am Abend: ein Nachthimmel, ein Vorschlag für eine Schlaf-Session, die Themen als farbige Kacheln",
+    "Am Abend wechselt die App in den Nachtmodus und schlägt eine Schlaf-Session vor."
+   ],
+   [
+    "day",
+    "Der Startbildschirm von Onira am Morgen, in den Farben der Morgendämmerung",
+    "Die Farben passen sich deinem Tag an: Morgendämmerung, klarer Himmel, Nacht."
+   ],
+   [
+    "custom",
+    "Der Bildschirm „Meine Session“ mit einem eingegebenen Satz",
+    "Beschreibe, was gerade in dir vorgeht, mit deinen eigenen Worten."
+   ],
+   [
+    "session",
+    "Eine laufende Session mit Phasenindikator",
+    "Die Session spricht sich selbst vor, von der Einleitung bis zur klaren Rückkehr."
+   ],
+   [
+    "privacy",
+    "Nichts, was du eingibst oder empfängst, verlässt das Handy",
+    "Kein Konto, keine Übertragung, funktioniert offline."
+   ]
+  ],
+  "guides_title": "Fragen, die sich viele stellen",
+  "guides_crumb": "Ratgeber",
+  "guide_answer_title": "Die kurze Antwort",
+  "guide_cta_title": "Probier es heute Abend aus"
+ },
+ "home": {
+  "news_title": "Neu in Onira 0.17",
+  "news": [
+   "Oniras eigene Erzählstimme auf Englisch, Französisch und Spanisch, speziell für die Hypnose entwickelt: sanft und langsam, passt sie ihren Klang an, während die Sitzung tiefer geht.",
+   "Die Hintergrundmusik ist standardmäßig etwas leiser."
+  ],
+  "title": "Onira — Selbsthypnose-Sitzungen, die für dich geschrieben werden",
+  "desc": "Onira erstellt eine persönliche Hypnose-Sitzung auf deinem Handy und spricht sie laut vor — für Schlaf, Angst, Stress, Selbstvertrauen und Fokus. Dabei verlässt nichts dein Gerät.",
+  "h1": "Selbsthypnose-Sitzungen, die für dich auf deinem Handy geschrieben werden",
+  "lede": "Die meisten Hypnose-Apps geben dir dieselbe Aufnahme wie allen anderen. Onira hingegen erstellt eine Sitzung für deine konkrete Situation, genau im Moment, mit einem KI-Modell, das vollständig auf deinem Gerät läuft — und spricht sie dann laut vor, während du die Augen schließt.",
+  "intro": [
+   "Geführte Hypnose funktioniert am besten, wenn die Worte zu dem passen, was dich gerade belastet. Eine Aufnahme für ein allgemeines Publikum muss vage bleiben; eine Sitzung, die auf dem Satz basiert, den du gerade getippt hast, kann das Problem beim Namen nennen und die Vorstellungsbilder darauf aufbauen.",
+   "Genau das ist die Idee hinter Onira. Du wählst ein Thema, gibst so viel oder so wenig Detailwissen ein, wie du möchtest, und ein kleines, offenes Sprachmodell auf deinem Handy schreibt ein vollständiges Skript nach dem klassischen Ablauf einer hypnotherapeutischen Sitzung."
+  ],
+  "themes_title": "Wähle ein Thema"
+ },
+ "themes.anxiety": {
+  "slug": "anxiety",
+  "nav": "Angst",
+  "card": "Löse den Griff ängstlicher Gedanken und beruhige deinen Körper.",
+  "title": "Selbsthypnose bei Angst — Persönlich für dich erstellt | Onira",
+  "desc": "Geführte Selbsthypnose bei Angst, erstellt auf deinem Handy genau zu dem, worüber du dir tatsächlich Sorgen machst, und vorgelesen. Privat, kostenlos, kein Abo.",
+  "h1": "Selbsthypnose bei Angst",
+  "lede": "Eine geführte Sitzung, die zuerst den Körper verlangsamt und dann an der ängstlichen Gedankenstruktur arbeitet – zugeschnitten auf das, was dich tatsächlich belastet.",
+  "why_title": "Warum Hypnose bei Angst hilft",
+  "why": [
+   "Angst hält zwei Systeme gleichzeitig in Atem: einen Körper, der auf etwas vorbereitet ist, und einen Geist, der es durchspielt. Geführte Hypnose adressiert zuerst den Körper – ruhige, rhythmische Sprache und gleichmäßiges Atmen holen dich aus dem Alarmzustand, was es deutlich einfacher macht, die Gedanken zu lockern.",
+   "In diesem beruhigten Zustand wirken Suggestionen anders. Statt gegen einen ängstlichen Gedanken zu argumentieren, bietet die Sitzung eine ruhigere Version derselben Szene und lässt dich sie einüben, sodass sie beim nächsten Mal weniger stark auflädt."
+  ],
+  "works_on": [
+   "Körperliche Anspannung – Kiefer, Schultern, Brust, Magen – wird schrittweise gelöst.",
+   "Die Schleife der Erwartung, dass etwas schiefgehen könnte, wird durch eine eingeübte, ruhige Reaktion ersetzt.",
+   "Ein Anker, den du später nutzen kannst: ein Atemzug, ein Wort oder eine Geste, die den Zustand der Sitzung abrufen.",
+   "Eine spezifische Sorge, wenn du sie eingibst – ein Vorstellungsgespräch, ein Flug, ein Gespräch, dem du entgegensiehst."
+  ],
+  "expect": "Sitzungen dauern etwa 15 bis 30 Minuten. Du bleibst durchgehend bei Bewusstsein – Hypnose ist fokussierte Aufmerksamkeit, kein Schlaf oder Bewusstseinsverlust – und die Sitzung endet immer mit einer bewussten Rückkehr zur vollen Wachheit. Die meisten Menschen nutzen Kopfhörer, sitzend oder liegend an einem Ort, an dem sie nicht gestört werden.",
+  "faq": [
+   [
+    "Funktioniert Selbsthypnose bei Angst wirklich?",
+    "Geführte Entspannung und Suggestionen sind weit verbreitete Selbsthilfetechniken bei alltäglicher Angst und Stress, und viele Menschen finden sie beruhigend. Onira ist ein Entspannungstool, keine Behandlung für eine Angststörung – das solltest du mit einem Arzt oder Therapeuten besprechen."
+   ],
+   [
+    "Kann ich das vor dem Schlafengehen machen?",
+    "Ja, obwohl die Sitzung dich wieder in den wachen Zustand zurückholt. Wenn dein Ziel ist, einzuschlafen, ist das Schlaf-Thema dafür optimiert."
+   ],
+   [
+    "Muss ich etwas Persönliches eingeben?",
+    "Nein. Das Thema allein reicht aus. Wenn du etwas eingibst, bleibt es auf deinem Handy – das Modell läuft lokal, und nichts wird hochgeladen."
+   ]
+  ]
+ },
+ "themes.sleep": {
+  "slug": "sleep",
+  "nav": "Schlafen",
+  "card": "Beruhige einen überforderten Geist und lass den Schlaf natürlich kommen.",
+  "title": "Selbsthypnose zum Schlafen — Eine Session, die für dich geschrieben wurde | Onira",
+  "desc": "Selbsthypnose für besseren Schlaf, individuell auf dein Handy zugeschnitten und basierend auf dem, was dich wachhält. Läuft offline, nichts verlässt dein Gerät.",
+  "h1": "Selbsthypnose zum Schlafen",
+  "lede": "Eine ruhige, wenig anregende Session für den Moment, in dem du im Bett liegst und dein Kopf nicht abschalten kann.",
+  "why_title": "Warum Hypnose beim Schlafen hilft",
+  "why": [
+   "Schwierigkeiten beim Einschlafen liegen selten an mangelnder Müdigkeit. Oft ist es ein Geist, der noch weiterarbeitet — der den Tag durchgeht, für morgen plant oder prüft, ob der Schlaf schon kommt. Eine geführte Session gibt dieser Aufmerksamkeit einen sanften Anker, genau die Voraussetzung, die Schlaf braucht.",
+   "Das Tempo übernimmt die meiste Arbeit: Sätze werden langsamer und weicher, Bilder werden weniger detailliert, und es gibt nichts, worüber man entscheiden oder genau folgen müsste. Viele hören bewusst viel vor dem Ende der Session auf zu lauschen — das ist genau das gewünschte Ergebnis."
+  ],
+  "works_on": [
+   "Progressive körperliche Entspannung, von den Füßen aufwärts, damit der Körper den Tag loslässt.",
+   "Die Gewohnheit, ständig zu prüfen, ob man schon schläft — ersetzt durch etwas Leichtes, dem man folgen kann.",
+   "Wiederholende, beruhigende Bilder: Treppensteigen, treibendes Wasser, ein langer, stiller Korridor.",
+   "Ein konkreter Grund, warum du wach bist, falls du ihn eingibst — eine Deadline, ein Gespräch, eine Gewohnheit um 3 Uhr nachts."
+  ],
+  "expect": "Stelle die Lautstärke leise und lass die Session laufen. Sie dauert 15 bis 30 Minuten; du musst nicht bis zum Ende wach bleiben, und es gibt nichts zu tun, wenn du einschliefst. Wenn eine Session gut bei dir ankommt, speichere sie und höre dieselbe Erzählung jede Nacht.",
+  "faq": [
+   [
+    "Weckt mich das am Ende auf?",
+    "Schlaf-Sessionen sind so geschrieben, dass sie ausklingen, statt dich aufzuwecken. Wenn du klar zurück in den Wachzustand möchtest, nutze stattdessen eines der Tages-Themen."
+   ],
+   [
+    "Kann ich es jede Nacht nutzen?",
+    "Ja. Gespeicherte Sessions laufen identisch ab, und Vertrautheit hilft oft — dieselbe Erzählung wird zu einem Signal, das signalisiert: Jetzt ist Schlafenszeit."
+   ],
+   [
+    "Brauche ich eine Internetverbindung?",
+    "Nur einmal, um das KI-Modell beim ersten Start herunterzuladen. Danach werden Sessionen komplett offline generiert und vorgelesen."
+   ]
+  ]
+ },
+ "themes.confidence": {
+  "slug": "confidence",
+  "nav": "Selbstvertrauen",
+  "card": "Übe, die Version von dir zu sein, die du bereits in dir trägst.",
+  "title": "Selbsthypnose für Selbstvertrauen und Selbstwertgefühl | Onira",
+  "desc": "Geführte Selbsthypnose für mehr Selbstvertrauen, zugeschnitten auf deine konkrete Situation, direkt auf dem Handy erstellt und vorgelesen. Privat und kostenlos.",
+  "h1": "Selbsthypnose für mehr Selbstvertrauen",
+  "lede": "Eine Sitzung, die auf mentaler Einübung basiert: Sieh dich dabei, wie du die Situation souverän meistert, in so vielen Details, dass es nicht mehr nur abstrakt wirkt.",
+  "why_title": "Warum Hypnose bei Unsicherheit hilft",
+  "why": [
+   "Selbstvertrauen fehlt selten generell – es fehlt in bestimmten Situationen. Sich im Meeting zu Wort zu melden, einen Raum zu betreten, einen Anruf zu tätigen. Diese Momente sind bereits intensiv eingeübt, nur in die falsche Richtung: Du hast sie dir oft genug als misslungen vorgestellt.",
+   "Eine Hypnosesitzung ist eine strukturierte Einübung in die andere Richtung. In einem entspannten, fokussierten Zustand gehst du die Situation als erfolgreich durch – Körperhaltung, Stimme, das erste Wort – und diese Version erhält einen Teil der Lebendigkeit, die der ängstlichen Version bisher kostenlos zuteilwurde."
+  ],
+  "works_on": [
+   "Eine konkrete, bevorstehende Situation, wenn du sie benennst – ein Vortrag, ein Date, ein Vorstellungsgespräch, ein schwieriges Gespräch.",
+   "Die körperlichen Anzeichen von Selbstvertrauen: Atmung, Haltung, ruhiges Sprechtempo.",
+   "Das Abrufen von Zeiten, in denen du etwas bereits gut gemeistert hast, sodass die Beweise dir selbst gehören und nicht ausgeliehen sind.",
+   "Einen Anker, den du im Moment selbst nutzen kannst, wenn keine Zeit für eine vollständige Sitzung bleibt."
+  ],
+  "expect": "Sitzungen dauern 15 bis 30 Minuten und enden mit einem klaren Rückkehr in volle Wachheit, sodass sie gut am Morgen des Tages oder am Vorabend passen. Speichere die Sitzung und spiele sie erneut ab, je näher das Datum rückt.",
+  "faq": [
+   [
+    "Ist das nur positive Selbstbestätigung?",
+    "Nein. Affirmationen behaupten etwas; eine Hypnosesitzung baut eine Szene auf und lässt dich sie in einem entspannten Zustand durchspielen, was die meisten Menschen als leichter annehmbar empfinden, als eine Behauptung zu wiederholen, der sie noch nicht glauben."
+   ],
+   [
+    "Wie detailliert sollte meine Beschreibung sein?",
+    "So detailliert, wie du möchtest. „Nervös wegen des Vortrags am Donnerstag vor zwölf Personen“ ergibt eine nützlichere Sitzung als „mehr Selbstvertrauen“."
+   ],
+   [
+    "Wo wird gespeichert, was ich eingebe?",
+    "Nur auf deinem Handy und nur, wenn du die Sitzung speicherst. Nichts wird an einen Server gesendet."
+   ]
+  ]
+ },
+ "themes.smoking": {
+  "slug": "quit-smoking",
+  "nav": "Rauchen aufhören",
+  "card": "Unterstütze eine Entscheidung, die du bereits getroffen hast – Sucht nach Sucht.",
+  "title": "Selbsthypnose zum Rauchen aufhören — Persönlich für dich | Onira",
+  "desc": "Geführte Selbsthypnose zur Raucherentwöhnung, geschrieben auf deinem Handy basierend auf deinen eigenen Auslösern und Gründen, und vorgelesen. Privat und kostenlos.",
+  "h1": "Selbsthypnose zum Rauchen aufhören",
+  "lede": "Eine Sitzung, die am Moment des Verlangens ansetzt – dem Auslöser, dem Ritual, dem Grund, warum du aufhörst – statt auf Willenskraft zu setzen.",
+  "why_title": "Warum Hypnose bei der Raucherentwöhnung eingesetzt wird",
+  "why": [
+   "Rauchen wird nicht nur durch Nikotin aufrechterhalten: der Kaffee, der Spaziergang draußen, der Telefonanruf, der Moment nach dem Essen. Jeder davon ist ein erlernter Auslöser, und Auslöser reagieren auf Einübung – genau das bietet eine Hypnosessitzung.",
+   "Sitzungen wirken auf zwei Ebenen. Sie üben ein, wie der Auslöser kommt und vergeht, ohne die Zigarette, und halten deinen persönlichen Grund zum Aufhören lebendig, sodass die Entscheidung nicht bei jedem Druck neu getroffen werden muss."
+  ],
+  "works_on": [
+   "Deine spezifischen Auslöser, wenn du sie benennst – der Morgenkaffee, die Autofahrt, Stress bei der Arbeit.",
+   "Ein Verlangen als Welle zu durchleben, die ihren Höhepunkt erreicht und dann abflacht, statt als Befehl, dem Folge geleistet werden muss.",
+   "Deinen Grund zum Aufhören, in deinen eigenen Worten – Gesundheit, Geld, Kinder, Atem, Kontrolle.",
+   "Die Identitätsverschiebung vom „Versuch, aufzuhören“ hin zu jemandem, der nicht raucht."
+  ],
+  "expect": "Sitzungen dauern 15 bis 30 Minuten und enden mit voller Wachheit. Viele hören in den ersten Wochen täglich – der Phase, in der die Auslöser am stärksten wirken – und bewahren eine gespeicherte Sitzung für schwierige Tage danach auf.",
+  "faq": [
+   [
+    "Wird eine einzige Sitzung mich das Rauchen lassen?",
+    "Nein. Onira unterstützt eine Entscheidung, die du bereits getroffen hast; es ist kein Heilmittel und erhebt keine medizinischen Ansprüche. Nikotinersatz, verschreibungspflichtige Medikamente und Beratungsstellen sind Gespräche mit einem Arzt oder Apotheker wert."
+   ],
+   [
+    "Wann sollte ich hören?",
+    "Idealerweise vor den Tageszeiten, zu denen dein Verlangen am stärksten ist, und erneut, wenn ein schwerer Tag bevorsteht."
+   ],
+   [
+    "Funktioniert es auch für Vapes?",
+    "Die gleiche Struktur gilt – gib ein, was du tatsächlich aufgeben möchtest, und die Sitzung wird darauf zugeschnitten."
+   ]
+  ]
+ },
+ "themes.focus": {
+  "slug": "focus",
+  "nav": "Fokus",
+  "card": "Beruhige ein zerstreutes Mindset vor der Arbeit, die deine Aufmerksamkeit erfordert.",
+  "title": "Selbsthypnose für Fokus und Konzentration | Onira",
+  "desc": "Geführte Selbsthypnose für Fokus, geschrieben auf deinem Handy rund um die Arbeit, die du gleich tun wirst, und laut vorgelesen. Läuft offline, nichts wird hochgeladen.",
+  "h1": "Selbsthypnose für Fokus",
+  "lede": "Eine kürzere, hellere Sitzung, um das Rauschen vor dem Lernen, Schreiben oder der Arbeit zu klären, die anhaltende Aufmerksamkeit erfordert.",
+  "why_title": "Warum Hypnose beim Fokus hilft",
+  "why": [
+   "Den Fokus zu verlieren, ist normalerweise kein Mangel an Aufmerksamkeit, sondern ein Überfluss an konkurrierenden Ansprüchen darauf — Benachrichtigungen, halb fertige Aufgaben, das leise Summen von allem anderen, das du tun solltest. Aufmerksamkeit ist bereits auf etwas trainiert; es ist nur nicht das, was vor dir liegt.",
+   "Hypnose ist, einfach ausgedrückt, anhaltende fokussierte Aufmerksamkeit. Eine Sitzung verengt das Feld absichtlich, legt das, was nicht jetzt ist, beiseite, und probt den Start — was normalerweise der schwierigste Teil einer langen Arbeitsphase ist."
+  ],
+  "works_on": [
+   "Die Aufmerksamkeit auf eine Aufgabe zu verengen und den Rest für einen definierten Zeitraum beiseite zu legen.",
+   "Die Reibung des Starts, probiert, bis die erste Minute unremarkabel ist.",
+   "Zurück zur Aufgabe nach einer Unterbrechung, ohne den Faden zu verlieren.",
+   "Ein spezifisches Stück Arbeit, wenn du es benennst — eine Prüfung, ein Kapitel, ein Build, eine Frist."
+  ],
+  "expect": "Verwende eine Fokus-Sitzung unmittelbar vor der Arbeit selbst. Sie endet klar wach und vorwärtsgerichtet, statt schläfrig, sodass du direkt in die Aufgabe einsteigen kannst.",
+  "faq": [
+   [
+    "Sollte ich während der Arbeit zuhören?",
+    "Nein — höre zuerst zu, dann arbeite. Die Sitzung verlangt deine Aufmerksamkeit; die Aufgabe braucht sie danach."
+   ],
+   [
+    "Ist das nützlich zum Lernen?",
+    "Das ist eine der häufigsten Anwendungen. Das Benennen des Faches und des Prüfungstermins macht die Sitzung merklich spezifischer."
+   ],
+   [
+    "Kann ich sie kürzer machen?",
+    "Sitzungen zielen auf etwa 15 bis 30 Minuten. Du kannst jederzeit aufhören — nichts geht kaputt, wenn du früh aufhörst."
+   ]
+  ]
+ },
+ "themes.weight": {
+  "slug": "weight-loss",
+  "nav": "Gewicht",
+  "card": "Arbeite an Gewohnheiten und deinem Verhältnis zum Essen, nicht an starren Regeln.",
+  "title": "Selbsthypnose zur Gewichtsabnahme und für Essgewohnheiten | Onira",
+  "desc": "Selbsthypnose-Therapie zur Gewichtsabnahme und Optimierung der Essgewohnheiten, individuell auf dein Smartphone zugeschnitten und vorgelesen. Privat, kostenlos, ohne Abo.",
+  "h1": "Selbsthypnose für Gewicht und Essgewohnheiten",
+  "lede": "Eine Sitzung konzentriert sich auf die Momente rund ums Essen – den Abend, Langeweile, der Belohnungsmoment – statt darauf, was du essen darfst.",
+  "why_title": "Warum Hypnose bei Essgewohnheiten hilft",
+  "why": [
+   "Die meisten Essgewohnheiten, die man ändern möchte, sind nicht auf Hunger zurückzuführen. Es sind Routinen, die mit bestimmten Situationen verknüpft sind: die Stunde nach dem Abendessen, die Heimfahrt, das Ende eines anstrengenden Tages oder die Beschäftigung für die Hände. Starre Regeln greifen hier zu kurz, denn die Situation tritt ein, bevor eine bewusste Entscheidung gefällt wird.",
+   "Eine Hypnosession übt diese Momente anders ein – du lernst, den Auslöser zu bemerken, ihn vorbeiziehen zu lassen und ein ruhigeres Verhältnis zum Essen im Allgemeinen aufzubauen. Der Fokus liegt darauf, wie und warum du isst, nicht auf Verzicht."
+  ],
+  "works_on": [
+   "Den spezifischen Moment, in dem deine Gewohnheit auslöst, wenn du ihn benennst – abends, bei Stress, Langeweile oder Feiern.",
+   "Langsameres Essen und das Spüren von Sättigung, anstatt automatisch weiterzuessen.",
+   "Die Trennung von Appetit und dem Streben nach Trost, ohne das eine oder andere als Versagen zu werten.",
+   "Einen ruhigeren inneren Zustand, da Selbstkritik den Kreislauf eher nährt als durchbricht."
+  ],
+  "expect": "Die Sitzungen dauern 15 bis 30 Minuten und enden in einem völlig wachen Zustand. Das Hören zu einer festen Zeit – viele wählen den späten Nachmittag, vor den schwersten Stunden – wirkt oft besser, als sich nur nach einem schwierigen Tag anzuhören.",
+  "faq": [
+   [
+    "Ist das eine Diät?",
+    "Nein. Onira gibt keine Ernährungs-, Ernährungs- oder medizinischen Ratschläge und stellt keine Regeln für Lebensmittel auf. Es arbeitet an Gewohnheiten und dem Verhältnis zum Essen."
+   ],
+   [
+    "Wird es mich abnehmen lassen?",
+    "Es macht keine solchen Versprechen. Gewicht ist ein medizinisches Thema; ein Arzt oder Ernährungsberater ist der richtige Ansprechpartner für einen Plan."
+   ],
+   [
+    "Was ist, wenn ich eine Vorgeschichte mit Essstörungen habe?",
+    "Bitte sprich mit einem Kliniker, anstatt ein Selbsthilfetool zu nutzen. Onira ist nicht für Essstörungen konzipiert und wird Inhalte umleiten, die in diese Richtung gehen."
+   ],
+   [
+    "Wie kann ich mich selbst hypnotisieren, um weniger zu essen?",
+    "Du unterdrückst nicht den Appetit; du übst die Momente rund ums Essen – der Abendbrot-Snack, die Langeweile, die Belohnung – damit der automatische Griff nach dem Essen nachlässt. Eine Sitzung, die auf dein eigenes Muster zugeschnitten ist und einige Wochen lang wiederholt wird, ist die realistische Variante. Es ist ein Entspannungstool, keine Diät oder Behandlung."
+   ]
+  ]
+ },
+ "themes.fear": {
+  "slug": "fear-and-phobias",
+  "nav": "Angst",
+  "card": "Stelle dich dem Flug, der Autofahrt oder der Höhe mit eingeübter Ruhe.",
+  "title": "Selbsthypnose bei Angst und Phobien | Onira",
+  "desc": "Geführte Selbsthypnose bei Flugangst, Fahrangst oder Höhenangst, zugeschnitten auf dein Smartphone und die Situation, der du tatsächlich begegnest. Privat, kostenlos, offline.",
+  "h1": "Selbsthypnose bei Angst und Phobien",
+  "lede": "Eine Sitzung, die auf eine ganz bestimmte Situation zugeschnitten ist — den Flug, den Aufzug, die Autobahn — langsam genug eingeübt, damit dein Körper sie nicht länger als Notfall einstuft.",
+  "why_title": "Warum Hypnose bei spezifischen Ängsten hilft",
+  "why": [
+   "Eine Angst lässt sich selten durch Argumente wegreden. Die Reaktion setzt ein, bevor das Denken beginnt: Die Brust zieht sich zusammen, die Aufmerksamkeit verengt sich, und die Situation ist vorbei, bevor ein vernünftiger Gedanke Platz greifen kann. Geführte Hypnose wirkt auf den Teil, der zuerst reagiert — ruhige, getaktete Sprache beruhigt den Körper, und ein beruhigter Körper reagiert anders auf denselben Auslöser.",
+   "Danach wird die Szene geübt, statt ihr auszuweichen. Du gehst durch das Boarding-Gate, den Kreisverkehr, die Glasfahrstuhl — in einem Tempo, das dich ruhig bleiben lässt. Wiederholtes Üben ist es, was die reale Situation vertraut statt plötzlich wirken lässt."
+  ],
+  "works_on": [
+   "Der körperliche Anstieg — Atmung, Brust, Hände — wird bewusst verlangsamt, bevor die Szene beginnt.",
+   "Die Vermeidung selbst: Die Situation wird jedes Mal kleiner, wenn sie im Training ruhig angegangen wird.",
+   "Ein Anker für den Moment: Ein Atemzug, ein Wort, eine Geste, die an die Sitzung erinnert.",
+   "Deine eigene Situation, wenn du sie eingibst — ein Flug im nächsten Monat, eine Fahrprüfung, ein Tunnel."
+  ],
+  "expect": "Sitzungen dauern etwa 15 bis 30 Minuten. Du bleibst währenddessen bewusst, und die Sitzung endet immer damit, dass du wieder voll bei Bewusstsein bist — sodass sie am Morgen des Flugs genutzt werden kann, nicht nur in der Nacht davor. Die meisten hören mit Kopfhörern an einem Ort, an dem sie nicht unterbrochen werden.",
+  "faq": [
+   [
+    "Kann Selbsthypnose eine Phobie heilen?",
+    "Nein. Geführte Entspannung und mentales Training sind ein Selbsthilfemittel, und viele Menschen finden sie hilfreich bei einer alltäglichen Angst. Eine Phobie, die dein Leben einschränkt, wird von einer Fachperson behandelt — oft sehr effektiv — und das ist das Gespräch, das du führen solltest."
+   ],
+   [
+    "Sollte ich während des Flugs hören?",
+    "Du kannst, und viele tun es. Die Sitzung endet damit, dass du wieder voll bei Bewusstsein bist, daher ist sie vor oder während des Flugs sicher — aber niemals während des Fahrens, auch nicht bei einer Sitzung über das Fahren."
+   ],
+   [
+    "Muss ich beschreiben, was mich ängstigt?",
+    "Nein, das Thema allein reicht. Wenn du es beschreibst, macht die Detailtiefe das Training schärfer — und es bleibt auf deinem Telefon, weil das Modell lokal läuft."
+   ]
+  ]
+ },
+ "themes.learning": {
+  "slug": "memory-and-learning",
+  "nav": "Gedächtnis",
+  "card": "Finde den Zustand, in dem Lernen wirklich hängen bleibt.",
+  "title": "Selbsthypnose für Gedächtnis und Lernen | Onira",
+  "desc": "Geführte Selbsthypnose für Prüfungsvorbereitung, Abruf von Wissen und Sprachenlernen, personalisiert auf dein Gerät und den Stoff, den du gerade lernst. Kostenlos, privat und ohne Internetverbindung nutzbar.",
+  "h1": "Selbsthypnose für Gedächtnis und Lernen",
+  "lede": "Eine Session für den Zustand, den Lernen braucht: ungestörte, entspannte Aufmerksamkeit. Angepasst an deine Prüfung, die Sprache oder das Material, das vor dir liegt.",
+  "why_title": "Warum Hypnose beim Lernen hilft",
+  "why": [
+   "Die meisten Lernprobleme sind keine Gedächtnisprobleme. Sie sind Zustandsprobleme: Die Hälfte deiner Aufmerksamkeit ist beim Deadline-Druck, dem Handy oder der Sorge, wie schlecht es läuft. Was in diesem Zustand gespeichert wird, ist oberflächlich. Deshalb kann eine Stunde ängstliches Pauken fast nichts hinterlassen.",
+   "Eine geführte Session reduziert zunächst das innere Rauschen und legt dann den Lernstoff in die Stille, die sie hinterlässt. Das Abrufen des Wissens wird genau so geübt, wie es später gebraucht wird – das Wort, das im Gespräch kommt, die Antwort, die im Prüfungsraum parat steht. So stimmt das Training mit dem Moment überein."
+  ],
+  "works_on": [
+   "Die Unruhe, die eine Lernsession in zehn Minuten Scrollen auflösen lässt.",
+   "Wissensabruf am Prüfungstag: Das Üben des Abrufens unter ruhigen Bedingungen statt nur des wiederholten Lesens.",
+   "Sprachenlernen – sich selbst sprechen zu hören, ohne das Gefühl, beobachtet zu werden.",
+   "Ein bestimmtes Fach, wenn du es eingibst: ein Prüfungstermin, ein Vokabelset, ein mündliches Examen."
+  ],
+  "expect": "Sessions dauern etwa 15 bis 30 Minuten und enden damit, dass du wieder voll bei Bewusstsein bist. Sie sind dafür gedacht, vor dem Lernen genutzt zu werden, nicht statt dessen. Eine einmal erstellte Session kannst du vor jedem Lernblock erneut abspielen.",
+  "faq": [
+   [
+    "Kann ich damit im Schlaf lernen?",
+    "Nein. Schlaflernen ist etwas, das Hypnose nicht liefert, und Onira macht keine solchen Versprechen. Was eine Session leisten kann, ist, dich in einen Zustand zu bringen, in dem gezieltes Lernen besser funktioniert. Das Lernen selbst muss trotzdem stattfinden."
+   ],
+   [
+    "Kann es mir helfen, mich an etwas zu erinnern, das ich vergessen habe?",
+    "Es kann bei alltäglichen Erinnerungen helfen – einem Namen, einer Liste, dem Ort, wo etwas lag. Hypnose ist keine zuverlässige Methode, um ferne oder belastende Erinnerungen wiederherzustellen, und Onira ist nicht dafür konzipiert."
+   ],
+   [
+    "Ist es speziell für Sprachenlernen nützlich?",
+    "Ja – vor allem für den Selbstvertrauens-Aspekt. Die Sessions üben das Sprechen ohne Zögern, was meist das Hindernis ist, wenn man eine Sprache bereits teilweise beherrscht."
+   ]
+  ]
+ },
+ "themes.motivation": {
+  "slug": "motivation-and-energy",
+  "nav": "Motivation",
+  "card": "Starte das Projekt, das du schon seit einer Woche vor dir her schiebst.",
+  "title": "Selbsthypnose für Motivation und Energie | Onira",
+  "desc": "Geführte Selbsthypnose gegen Prokrastination, Energiemangel und Anlaufschwierigkeiten. Personalisiert für dein Smartphone und die Aufgabe, die du gerade meidest. Kostenlos und privat.",
+  "h1": "Selbsthypnose für Motivation und Energie",
+  "lede": "Eine Sitzung zum Thema „Starten“ – die zehn Minuten vor der eigentlichen Aufgabe, in denen sich entscheidet, ob du durchstartest oder wieder abschaltest. Personalisiert für die Sache, die du immer wieder hinausschiebst.",
+  "why_title": "Warum Hypnose bei Prokrastination hilft",
+  "why": [
+   "Prokrastination ist selten Faulheit. Oft ist es die Vermeidung eines Gefühls, das mit der Aufgabe verbunden ist – sie wird langweilig sein, sie wird zeigen, dass du hinterherhinkst, sie wird nicht perfekt genug sein. Die Aufgabe wird verschoben, weil das Gefühl verschoben wird, und dieses Gefühl wächst mit jeder Stunde, in der es wartet.",
+   "Eine Sitzung spricht das Gefühl an, statt dir vorzutragen, was du tun solltest. In einem ruhigen Zustand wird das Starten detailliert eingeübt: Platz nehmen, die Datei öffnen, die erste kleine Handlung. Wenn du den Start einmal eingeübt hast, wird er zum leichtesten Teil."
+  ],
+  "works_on": [
+   "Die Blockade vor dem Beginn – eingeübt als eine Sequenz, die du bereits hinter dir hast.",
+   "Flache, schwere Energie am Nachmittag, angesprochen als Anspannung statt als Willensschwäche.",
+   "Die Alles-oder-nichts-Geschichte, dass eine Aufgabe perfekt sein muss oder gar nicht erst begonnen werden darf.",
+   "Eine konkrete Aufgabe, wenn du sie eingibst: die Steuererklärung, das Training, die Nachricht, die du noch schuldest."
+  ],
+  "expect": "Sitzungen dauern etwa 15 bis 30 Minuten und enden bewusst damit, dass du wieder voll bei dir bist. Das ist ein Thema, das du vor der Aufgabe nutzt, nicht vor dem Schlafengehen. Viele Menschen nehmen eine Sitzung auf und hören sie täglich als Start-Ritual.",
+  "faq": [
+   [
+    "Macht mich eine einzige Sitzung produktiv?",
+    "Nein, und jedes Tool, das das verspricht, übertreibt. Was eine Sitzung zuverlässig leistet, ist den Widerstand gegen das Starten einmal zu senken. Es ist die wiederholte Anwendung, die eine Gewohnheit verändert."
+   ],
+   [
+    "Kann Hypnose Energiemangel beheben?",
+    "Entspannung kann helfen, wenn Energiemangel eigentlich Anspannung oder schlechter Schlaf ist. Anhaltende Erschöpfung ist zunächst eine medizinische Frage – worth besprechen mit einem Arzt, nicht mit einer App."
+   ],
+   [
+    "Kann ich es für die Motivation beim Sport nutzen?",
+    "Ja. Das Einüben des Starts – die Schuhe anziehen, die Wohnung verlassen – funktioniert besser, als das Training selbst einzuplanen. Und genau darauf ist die Sitzung ausgelegt."
+   ]
+  ]
+ },
+ "themes.ibs": {
+  "slug": "ibs",
+  "nav": "Reizdarm",
+  "card": "Beruhige die Darm-Hirn-Schleife, die die Schübe aufrechterhält.",
+  "title": "Selbsthypnose bei Reizdarm — Persönlich für dich | Onira",
+  "desc": "Geführte Selbsthypnose für die Stresskomponente des Reizdarms: ein ruhigerer Darm, weniger Vorfreude auf Beschwerden, leichtere Tage. Ein Entspannungstool als Ergänzung zu deiner Behandlung, kein Ersatz.",
+  "h1": "Selbsthypnose bei Reizdarm",
+  "lede": "Eine Sitzung für den Teufelskreis, in dem Stress die Symptome verschlimmert und die Symptome den Stress nähren — der Teil des Reizdarms, der auf Ruhe reagiert.",
+  "why_title": "Warum Entspannung den Darm erreicht",
+  "why": [
+   "Darm und Nervensystem stehen in ständigem Austausch. Deshalb zeigen sich Stresswochen in der Verdauung und kann die Angst vor einem neuen Schub ihn tatsächlich auslösen. Geführte Entspannung wirkt direkt an dieser Achse: Sie senkt den Alarmzustand, der den Kreislauf am Laufen hält.",
+   "Es lohnt sich, genau zu sein, denn die Unterscheidung ist wichtig: Die darmorientierte Hypnotherapie ist eine etablierte Option in der Reizdarm-Behandlung und wird in klinischen Leitlinien empfohlen, wenn andere Ansätze nicht gewirkt haben — sie ist jedoch ein strukturierter Kurs, der von einem geschulten Therapeuten durchgeführt wird. Onira ist nicht dieser Kurs. Es ist ein Entspannungstool, das an derselben Stressachse arbeitet, und es ergänzt deine Behandlung, statt sie zu ersetzen."
+  ],
+  "works_on": [
+   "Die Vorabplanung — den Tag danach auszurichten, wo es Toiletten gibt, und was das kostet.",
+   "Bauchspannung und flache, gehaltene Atmung während eines Schubs.",
+   "Schlaf, der in beide Richtet leidet, wenn die Symptome aktiv sind.",
+   "Eine spezifische Situation, wenn du sie benennst: eine lange Reise, ein Restaurant, ein Tag im Büro."
+  ],
+  "expect": "Sitzungen dauern 15 bis 30 Minuten. Verdauungssymptome reagieren langsam, also bewerte dies über Wochen regelmäßiger Nutzung, nicht daran, wie eine einzelne Sitzung verlief.",
+  "faq": [
+   [
+    "Ist das dasselbe wie darmorientierte Hypnotherapie?",
+    "Nein. Das ist ein strukturiertes Programm mit einem geschulten Therapeuten, meist mehrere Sitzungen über ein paar Monate. Onira erstellt Entspannungssitzungen basierend auf deinen Angaben. Wenn du das klinische Protokoll suchst, bitte deinen Arzt um eine Überweisung."
+   ],
+   [
+    "Sollte ich mich zuerst diagnostizieren lassen?",
+    "Ja. Verdauungssymptome haben viele Ursachen und einige müssen abgeklärt werden — Blutungen, unerklärlicher Gewichtsverlust und eine Veränderung deines normalen Musters erfordern einen Arztbesuch, nicht eine App."
+   ],
+   [
+    "Kann ich es während eines Schubs nutzen?",
+    "Ja, und viele Menschen tun das. Setz oder leg dich an einen Ort, an dem du nicht unterbrochen wirst, und betrachte es als Linderung der Anspannung um den Schub herum, nicht als dessen Stopp."
+   ]
+  ]
+ },
+ "themes.anger": {
+  "slug": "anger",
+  "nav": "Wut",
+  "card": "Nimm dem Moment die Schärfe, bevor du reagierst.",
+  "title": "Selbsthypnose bei Wut und Reizbarkeit | Onira",
+  "desc": "Geführte Selbsthypnose zur Linderung von Wut und kurzen Zündungen: Beruhige zuerst den Körper, dann probiere eine langsamere Reaktion auf deine Auslöser ein. Privat, kostenlos, offline.",
+  "h1": "Selbsthypnose bei Wut und kurzem Zünd",
+  "lede": "Eine Session für die Sekunden, bevor du durchdrehst: die Hitze, die gebissenen Zähne, der Satz, den du bereuen wirst. Geschrieben rund um das, was dich aus der Ruhe bringt.",
+  "why_title": "Warum eine ruhige Einübung bei Wut hilft",
+  "why": [
+   "Wut beginnt selten erst im Moment des Schreis. Der Körper ist bereits angespannt, die Kiefer sind verkrampft und die Atmung flach, und bis du es bemerkst, läuft die Reaktion bereits. Versuchen, sich in diesem Moment rational herauszureden, ist der schwierigste Zeitpunkt dafür.",
+   "Eine geführte Session wirkt früher. Sie senkt zuerst die Grundspannung, denn ein ruhiger Körper hat weniger „Nahrung“ für die Gewohnheit, und führt dich dann mit deiner üblichen Auslösesituation durch eine langsamere Reaktion. In einem entspannten Zustand einstudiert, setzt diese Reaktion früher ein als die automatische."
+  ],
+  "works_on": [
+   "Senkung der Hintergrundspannung, die kleine Dinge groß erscheinen lässt.",
+   "Die ersten Anzeichen im Körper, Hitze, Kiefer, Schultern, die das Signal sind, auf das du noch reagieren kannst.",
+   "Ein spezifischer Auslöser, wenn du ihn eingibst: Stau, ein Kollege, ein Kind, eine Nachricht.",
+   "Die Pause selbst, einstudiert, bis sie mühelos kommt."
+  ],
+  "expect": "Sessions dauern etwa 15 bis 30 Minuten und enden damit, dass du wieder voll bei Bewusstsein bist. Die Ruhe ist sofort spürbar; eine veränderte Reaktion entsteht durch Wiederholung über Wochen, nicht durch eine einzelne Session.",
+  "faq": [
+   [
+    "Kann Selbsthypnose Wutprobleme heilen?",
+    "Nein. Es ist ein Entspannungstool, das helfen kann, das Ansteigen leichter zu bemerken. Wenn Wut dazu führt, dass du jemanden oder dich selbst verletzt, oder wenn sie sich außerhalb deiner Kontrolle anfühlt, sprich mit einem Fachmann: Onira ist keine Behandlung."
+   ],
+   [
+    "Ist es für meinen Partner oder mein Kind?",
+    "Eine Session ist für die Person, die zuhört, und wirkt nur, wenn sie sie selbst wählt. Sie zu nutzen, um jemand anderen zu ändern, ist nicht ihr Zweck."
+   ],
+   [
+    "Wie lange dauert es, bis ich einen Unterschied bemerke?",
+    "Die meisten Menschen fühlen sich nach der ersten Session ruhiger. Eine andere Reaktion im Moment erfordert Wiederholung, also plane mit ein paar Wochen regelmäßiger Nutzung."
+   ]
+  ]
+ },
+ "themes.burnout": {
+  "slug": "burnout",
+  "nav": "Burnout",
+  "card": "Erhole dich ein wenig, wenn dich die Arbeit leer gemacht hat.",
+  "title": "Selbsthypnose bei Burnout und Erschöpfung | Onira",
+  "desc": "Geführte Selbsthypnose für den müden, aber überdrehten Zustand des Burnouts: echte Erholung, Abschalten vom Job und besserer Schlaf. Ein Entspannungsangebot, keine Behandlung. Offline und privat.",
+  "h1": "Selbsthypnose bei Burnout und Erschöpfung",
+  "lede": "Eine Session für Momente, in denen Ruhe sich nicht mehr wie Ruhe anfühlt: die abendliche Müdigkeit gepaart mit innerer Unruhe, die Arbeit, die dir nach Hause folgt, und der Schlaf, der dich nicht wiederherstellt.",
+  "why_title": "Was eine Session für dich bei Burnout leisten kann und was nicht",
+  "why": [
+   "Burnout wird nicht durch eine Technik geheilt. Es entsteht durch Überlastung, und diese Überlastung muss sich ändern. Was eine geführte Session leisten kann, ist dir täglich eine verlässliche Pause zu schenken, in der von dir nichts erwartet wird. Das ist schwieriger, als es klingt, wenn dein Kopf ständig die To-do-Liste abspult.",
+   "Sie ist als Begleiter deiner Genesung gedacht, nie als Ersatz. Wenn du nicht mehr funktionieren kannst, der Schlaf seit Wochen zusammengebrochen ist oder du Hoffnungslosigkeit spürst, dann gehört das zuerst in ärztliche Hände."
+  ],
+  "works_on": [
+   "Am Ende des Tages abschalten, statt die Arbeit ins Bett zu nehmen.",
+   "Einschlafen, wenn der Kopf den Tag immer wieder durchspielt.",
+   "Den Körper aus dem ständigen Alarmzustand entlassen.",
+   "Ein paar geschützte Minuten, in denen du keine Entscheidungen treffen musst."
+  ],
+  "expect": "Die Sessions dauern 15 bis 30 Minuten, und eine kurze Session kannst du auch in einer Pause bei der Arbeit anhören. Was Nutzer beschreiben: Sie fühlen sich für eine Weile erholter, und das summiert sich bei täglicher Anwendung. Sie ersetzt weder Urlaubstage noch ein Gespräch über die Arbeitslast.",
+  "faq": [
+   [
+    "Kann Hypnose Burnout heilen?",
+    "Nein. Sie kann dir helfen, dich besser zu erholen und zu schlafen, während du an den Ursachen arbeitest. Onira ist ein Entspannungstool, keine Behandlung."
+   ],
+   [
+    "Wann sollte ich einen Arzt aufsuchen?",
+    "Wenn die Erschöpfung seit Wochen anhält, du nicht mehr arbeiten oder dich selbst versorgen kannst oder deine Stimmung stark sinkt, suche einen Arzt oder Therapeuten auf. Warte nicht darauf, dass eine Session das Problem löst."
+   ],
+   [
+    "Kann ich es während des Arbeitstags nutzen?",
+    "Ja, an einem ruhigen Ort. Nutze es nicht beim Autofahren oder bei Tätigkeiten, die deine Aufmerksamkeit erfordern."
+   ]
+  ]
+ },
+ "themes.night_waking": {
+  "slug": "waking-up-at-night",
+  "nav": "Nachts aufwachen",
+  "card": "Fallschlafen nach dem Aufwachen um 3 Uhr morgens",
+  "title": "Selbsthypnose gegen nächtliches Aufwachen | Onira",
+  "desc": "Eine geführte Session, wenn du nachts aufwachst und nicht wieder einschlafen kannst: Senke deine Wachheit, lass die Uhr aus dem Kopf und schlaf wieder ein. Offline und privat.",
+  "h1": "Selbsthypnose gegen nächtliches Aufwachen",
+  "lede": "Eine Session für das Aufwachen um 3 Uhr: die rastenden Gedanken, die Uhr, die du nicht aus den Augen lassen kannst, und die Angst vor dem Morgen.",
+  "why_title": "Warum das Wiedereinschlafen so schwerfällt",
+  "why": [
+   "Kurzes Aufwachen in der Nacht ist normal. Was dich wachhält, ist das, was danach passiert: die Uhrzeit prüfen, die verbleibenden Stunden durchzählen und mit jeder Berechnung ein Stück wacher werden. Der Versuch, schlafen zu wollen, ist es selbst, der dich wachhält.",
+   "Eine Session für die Nachtmitte ist bewusst langsam und ruhig gehalten. Sie gibt deiner Aufmerksamkeit einen sanften Ort zum Ausruhen, nimmt den Druck vom Schlafen und verlangt von dir nichts."
+  ],
+  "works_on": [
+   "Die Uhr und die Rechnung, wie viel Schlaf noch fehlt, loszulassen.",
+   "Den Gedanken zu beruhigen, der das Aufwachen ausgelöst hat.",
+   "Den Körper zu entspannen, ohne ihn dazu aufzufordern, es zu versuchen.",
+   "Einzuschlafen, ohne am Ende wieder voll aufgeweckt zu werden."
+  ],
+  "expect": "Halte die Lautstärke niedrig und lege das Handy mit dem Display nach unten. Sessions sind dafür gedacht, bis zum Ende oder bis du einschläfst, abgespielt zu werden. Mehrere Wochen derselben Routine sind meist wichtiger als eine einzelne Nacht.",
+  "faq": [
+   [
+    "Kann ich während einer Session einschlafen?",
+    "Genau dafür ist sie da. Eine Schlaf-Session ist so geschrieben, dass du leicht einschlafen kannst. Nichts geht verloren, wenn es passiert."
+   ],
+   [
+    "Was, wenn ich jede Nacht zur gleichen Stunde aufwache?",
+    "Ein regelmäßiges Muster solltest du mit einem Arzt besprechen, besonders bei lautem Schnarchen, Schmerzen oder Tagesmüdigkeit. Eine Session kann das Aufwachen lindern, aber nicht die Ursache diagnostizieren."
+   ],
+   [
+    "Sollte ich um 3 Uhr morgens auf mein Handy schauen?",
+    "Dämpfe den Bildschirm, starte die Session und lege das Handy mit dem Display nach unten. Vermeide alles andere darauf."
+   ]
+  ]
+ },
+ "guides.fall_asleep": {
+  "slug": "how-to-fall-asleep-with-self-hypnosis",
+  "nav": "Einschlafen",
+  "card": "Die Methode Schritt für Schritt für die Nächte, in denen dein Geist nicht zur Ruhe kommt.",
+  "title": "Wie du mit Selbsthypnose einschlafen kannst | Onira",
+  "desc": "Eine schrittweise Selbsthypnose-Methode zum Einschlafen, wenn der Kopf nicht still wird, und was du tun kannst, wenn es beim ersten Mal nicht klappt.",
+  "h1": "Wie du mit Selbsthypnose einschlafen kannst",
+  "lede": "Eine praktische Methode für die Nächte, in denen der Körper müde ist, der Geist aber noch auf Hochtouren läuft – und ein ehrlicher Blick darauf, was die Methode kann und was nicht.",
+  "answer": "Lege dich hin, schließe die Augen und zähle langsam von zwanzig herunter, wobei jede Zahl auf einer Ausatmung landet. Lass bei jeder Zahl einen bestimmten Körperteil los – Kiefer, Schultern, Hände. Wenn du bei eins ankommst, stelle dir eine einzige ruhige Szene so detailliert vor, wie du es schaffen kannst, und bleibe darin. Es geht nicht darum, den Schlaf zu erzwingen, sondern dem Geist eine langsame Aufgabe zu geben, statt der schnellen, die er sich vorgenommen hatte.",
+  "sections": [
+   [
+    "Warum das Abwärtszählen funktioniert",
+    [
+     "Schlaflosigkeit zu Beginn der Nacht ist selten ein Mangel an Müdigkeit. Es ist ein Geist, dem nichts zu tun gegeben wurde und der die Lücke mit Gedanken an morgen gefüllt hat. Selbsthypnose wirkt direkt an dieser Lücke: Eine langsame, repetitive, leicht fordernde Aufgabe beschäftigt genau die Aufmerksamkeit, die sonst einen Streit oder eine Deadline durchgehen würde.",
+     "Das Abwärtszählen ist wichtiger als die Zahl selbst. Abwärtszählen impliziert eine Ankunft, und die Paarung jeder Zahl mit einer Ausatmung verlangsamt den Atem, ohne dass du darüber nachdenken musst – was der zuverlässigste Weg ist, das Nervensystem aus dem Alarmzustand zu holen."
+    ],
+    []
+   ],
+   [
+    "Die Methode Schritt für Schritt",
+    [
+     "Dafür brauchst du keine Ausbildung und du musst an nichts glauben. Du brauchst etwa fünfzehn Minuten und die Bereitschaft, von vorne zu beginnen, wenn du abdriftest und anfängst zu denken – was passieren wird."
+    ],
+    [
+     "Richte den Raum zuerst her: dunkel, kühl, Handy mit dem Display nach unten. Zu entscheiden, zwischendurch etwas nachzuschauen, ist es, was die meisten Versuche beendet.",
+     "Lege dich auf den Rücken, Arme an den Seiten, und atme drei Mal tief ein und aus, wobei die Ausatmung länger ist als die Einatmung.",
+     "Zähle von zwanzig herunter. Sprich jede Zahl leise aus, während du ausatmest.",
+     "Lass bei jeder Zahl einen Körperteil los: Kiefer, Zunge, Schultern, Hände, Bauch, Oberschenkel, Füße. Den Ort zu benennen, ist es, der ihn loslassen lässt.",
+     "Wähle bei eins eine Szene – einen Strand in der Dämmerung, einen Pfad durch Bäume, ein Zimmer, das du kennst – und fülle sie aus: die Temperatur, das Geräusch, was unter den Füßen ist.",
+     "Wenn du merkst, dass du in Gedanken abgewandert bist, fange nicht wieder bei zwanzig an. Nimm den Zählvorgang dort wieder auf, wo du aufgehört hast, und fahre fort."
+    ]
+   ],
+   [
+    "Was du tun kannst, wenn es nicht funktioniert",
+    [
+     "Die ersten Versuche enden oft mit einem wandelnden Geist, und das ist kein Scheitern – es ist das normale Verhalten der Aufmerksamkeit, bevor sie sich in eine Gewohnheit einpendelt. Was das Ergebnis verändert, ist die Wiederholung zur gleichen Nachtzeit, sodass die Sequenz selbst zu einem Signal wird.",
+     "Wenn du nach etwa zwanzig Minuten immer noch wach bist, steh auf, halte das Licht niedrig und tu etwas Langweiliges, bis du schläfrig wirst. Im Bett zu liegen und um Schlaf zu kämpfen, lehrt den Körper, dass das Bett ein Ort ist, an dem du um Schlaf kämpfst – und das ist eine Assoziation, die es zu vermeiden gilt."
+    ],
+    []
+   ],
+   [
+    "Wo eine geschriebene Session hilft",
+    [
+     "Das aus dem Gedächtnis zu machen, bedeutet, dass ein Teil von dir die Anweisungen abarbeitet, was bedeutet, dass ein Teil von dir wach bleibt. Von jemandem vorgelesen zu werden, nimmt diese Aufgabe ab: Du folgst einer Stimme statt eine Liste zu merken, weshalb geführte Sessions für die meisten Leute beim Schlafengehen besser funktionieren als selbstgesteuerte.",
+     "Onira schreibt die Session auf deinem Handy basierend darauf, was dich tatsächlich wachhält – wenn du eingibst, dass du eine Konversation nicht los wirst, werden die Bilder und Suggestionen darauf aufgebaut statt auf einem generischen Strand. Das Modell läuft auf dem Gerät, also wird nichts hochgeladen, und es funktioniert mit dem Handy offline und Display nach unten."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Wie lange dauert es, auf diese Weise einzuschlafen?",
+    "Die meisten, die es durchziehen, schlafen irgendwo in der Szene ein, statt erst am Ende des Zählens – oft nach fünfzehn bis fünfundzwanzig Minuten. Wenn du regelmäßig am Ende immer noch wach bist, betrachte es als Signal, die Stunden vor dem Schlafengehen zu überprüfen, statt im Bett härter zu versuchen, einzuschlafen."
+   ],
+   [
+    "Ist Selbsthypnose nachts sicher?",
+    "Bei gewöhnlichen Schlafstörungen, ja – es ist eine geführte Entspannung, und das Schlimmste, was passieren kann, ist, dass du wach bleibst. Es ist keine Behandlung für eine Schlafstörung, und anhaltende Schlaflosigkeit, Schlafapnoe oder Schlaflosigkeit in Verbindung mit gedrückter Stimmung sind matters for a doctor."
+   ],
+   [
+    "Kann ich eine Aufnahme statt der Selbstausführung nutzen?",
+    "Ja, und zum Einschlafen ist eine Aufnahme meist besser: Sie nimmt die Aufgabe ab, sich die Schritte zu merken. Was eine Aufnahme nicht kann, ist das zu erwähnen, woran du tatsächlich herumkautst – genau das ist die Lücke, die eine Session füllt, die im Moment geschrieben wird."
+   ],
+   [
+    "Kann Hypnotherapie beim Einschlafen helfen?",
+    "Hypnotherapie hat eine bescheidene, aber echte Erfolgsbilanz beim Einschlafen, weshalb eine Selbsthypnose-Session ein vernünftiger Versuch ist für eine Nacht, in der der Geist nicht still wird. Es ist ein Entspannungstool, keine Behandlung: Wenn Schlaflosigkeit über Wochen anhält, suche einen Arzt auf, neben der Nutzung der Session."
+   ]
+  ]
+ },
+ "guides.vs_meditation": {
+  "slug": "hypnosis-vs-meditation",
+  "nav": "Hypnose vs. Meditation",
+  "card": "Zwei Zustände, zwei Ziele — und was heute Abend zu dir passt.",
+  "title": "Hypnose vs. Meditation: Unterschied und Wann du was nutzen solltest | Onira",
+  "desc": "Was wirklich Hypnose und Meditation voneinander unterscheidet, wofür jede Methode gut ist und wie du die richtige Wahl für Schlaf, Angst oder Gewohnheitsänderungen triffst.",
+  "h1": "Hypnose vs. Meditation",
+  "lede": "Von außen sehen sie ähnlich aus: geschlossene Augen, langsames Atmen, eine ruhige Stimme. Doch sie verfolgen unterschiedliche Ziele.",
+  "answer": "Meditation schult deine Aufmerksamkeit: Du übst, zu bemerken, wohin deine Gedanken schweifen, und bringst sie sanft zurück, ohne zu versuchen, den Inhalt zu verändern. Hypnose nutzt einen entspannten, fokussierten Zustand, um etwas Spezifisches einzuüben — besser schlafen, in einem Meeting ruhig bleiben oder nicht zur Zigarette greifen. Wenn du eine allgemeine Fähigkeit entwickeln möchtest, meditiere. Wenn du an einem konkreten Thema arbeiten willst, ist eine Hypnosesession das direktere Werkzeug.",
+  "sections": [
+   [
+    "Was genau der Unterschied ist",
+    [
+     "Beide Praktiken erzeugen einen ähnlichen physiologischen Zustand: langsamerer Atem, weniger Erregung, fokussierte Aufmerksamkeit. Der Unterschied liegt darin, was du tust, wenn du diesen Zustand erreicht hast. Eine Meditation bringt dich immer wieder zu einem neutralen Anker zurück und verlangt nichts von den Inhalten deines Geistes. Eine Hypnosesession nutzt diesen ruhigen Zustand, um Suggestionen einzubauen — Bilder, Sätze und Wiederholungen, die auf ein bestimmtes Ergebnis abzielen.",
+     "Deshalb ist Hypnose strukturierter als Meditation, die oft freier ist. Eine Session hat einen klaren Ablauf: eine Einleitung, die dich beruhigt, eine Vertiefung, Visualisierungen, die Suggestionen selbst, ein Anker, den du mitnimmst, und ein bewusster Rückkehrprozess in den vollen Wachzustand. Jeder Teil bereitet den nächsten vor, damit er wirken kann."
+    ],
+    []
+   ],
+   [
+    "Wofür jede Methode gut ist",
+    [
+     "Im Abstrakten ist keine Praxis besser. Sie beantworten unterschiedliche Fragen, und die ehrliche Wahl hängt davon ab, was du im nächsten Monat erreichen willst, nicht davon, was seriöser klingt."
+    ],
+    [
+     "Meditation für eine allgemeine Beziehung zu deiner Aufmerksamkeit: weniger Reaktivität, mehr Raum zwischen einem Gefühl und deiner Reaktion darauf. Sie zahlt sich langsam und breit aus.",
+     "Hypnose für ein spezifisches Ziel: Einschlafen, die Angst vor einem Flug am kommenden Dienstag, die ersten zehn Minuten einer Aufgabe, die du immer aufschiebst, oder eine Gewohnheit, die du durchbrechen willst.",
+     "Meditation bittet dich, das Streben nach einem Ergebnis zu stoppen — was genau dann frustrierend ist, wenn du ein konkretes Ziel hast.",
+     "Hypnose ist ergebnisorientiert, was den Einstieg erleichtert, aber auch zu überzogenen Versprechungen verleiten kann — keine Session verändert dein Leben in einem einzigen Durchgang."
+    ]
+   ],
+   [
+    "Ist eine der beiden besser erforscht?",
+    [
+     "Beide haben eine fundierte wissenschaftliche Basis, und an den Rändern gibt es oft mehr Begeisterung als Evidenz. Achtsamkeitsbasierte Programme haben den größeren Körper an klinischen Studien, vor allem zu Stress, Rückfällen bei Depressionen und chronischen Schmerzen. Die klinische Hypnotherapie hat eine schmalere, aber echte Erfolgsbilanz — bei Schmerz und prozeduraler Belastung ist sie am stärksten, mit nützlichen Ergebnissen für das Einschlafen und Reizdarmsymptome.",
+     "Was keine der beiden behauptet, ist, eine Behandlung zu ersetzen. Beide sind Ergänzungen: Dinge, die neben der ärztlichen oder therapeutischen Versorgung helfen, nicht statt dieser."
+    ],
+    []
+   ],
+   [
+    "Du musst dich nicht für eine entscheiden",
+    [
+     "Ein häufiges und sinnvolles Muster ist Meditation als tägliche Praxis und eine Hypnosesession für das spezifische Thema, das dich diese Woche blockiert. Sie konkurrieren nicht; im Gegenteil: Regelmäßige Meditation beschleunigt die Einstiegsphase einer Session.",
+     "Onira bewegt sich auf der Seite der Hypnose. Du wählst dein Ziel, fügst einen Satz hinzu, was genau gerade los ist, und ein Modell auf deinem Telefon schreibt eine Session darum herum und spricht sie vor — kein Konto, nichts wird hochgeladen, und keine generischen Bilder."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Kann Hypnose mich dazu bringen, etwas zu tun, das ich nicht will?",
+    "Nein. In einer Selbsthypnose-Session bleibst du throughout bewusst und kontrollierst dich selbst. Suggestionen, die gegen deine eigentlichen Wünsche verstoßen, wirken einfach nicht. Bühnenhypnose ist Unterhaltung, die auf Freiwilligen basiert, die mitmachen wollen, und hat nichts mit einer therapeutischen Session zu tun."
+   ],
+   [
+    "Was ist besser bei Angst?",
+    "Bei Angst als allgemeinem Muster hat Meditation die bessere langfristige Evidenz. Für eine spezifische, benennbare angstauslösende Situation — einen Flug, eine Präsentation, eine Untersuchung — ist das Einüben in einer Hypnosesession oft nützlicher, als nur mit dem Atem zu sitzen."
+   ],
+   [
+    "Ist geführte Meditation dasselbe wie Hypnose?",
+    "Es ist das Nächste. Eine geführte Meditation, die ein Ergebnis visualisiert und Suggestionen wiederholt, macht das meiste dessen, was eine Hypnosesession ausmacht; der Unterschied liegt eher im Label als in der Praxis."
+   ],
+   [
+    "Was ist der Unterschied zwischen Hypnose und Meditation?",
+    "Meditation schult die Aufmerksamkeit im Allgemeinen und versucht nicht, den Inhalt zu verändern; Hypnose nutzt denselben ruhigen, fokussierten Zustand, um ein spezifisches Ziel einzuüben, wie Schlaf oder eine Gewohnheit. Die Physiologie ist ähnlich, die Absicht nicht. Für eine breite Fähigkeit meditiere; für ein konkretes Thema ist Hypnose direkter."
+   ]
+  ]
+ },
+ "guides.does_it_work": {
+  "slug": "does-self-hypnosis-work",
+  "nav": "Funktioniert es?",
+  "card": "Was die Evidenz belegt, was nicht, und für wen es nicht geeignet ist.",
+  "title": "Funktioniert Selbsthypnose wirklich? | Onira",
+  "desc": "Ein ehrlicher Blick darauf, wofür Selbsthypnose gut ist, was die Forschung unterstützt, für wen sie nicht funktioniert und wie du erkennst, dass sie wirkt.",
+  "h1": "Funktioniert Selbsthypnose wirklich?",
+  "lede": "Ja, für bestimmte Dinge, mit moderater Wirkung, und nicht für jeden – was eine etwas nüchternere Antwort ist, als sie die Befürworter oder Skeptiker meist geben.",
+  "answer": "Selbsthypnose hat eine gute Evidenzbasis für das Ein schlafen, bei Schmerzen und prozeduraler Belastung sowie zur Senkung der Erregung, die Angst in einer spezifischen Situation nährt. Als alleinige Behandlung für klinische Erkrankungen ist die Evidenz schwach, und etwa jeder vierte Mensch reagiert unabhängig von der Technik schlecht auf Suggestionen. Es ist ein echtes Werkzeug mit einem begrenzten Anwendungsbereich, kein Allheilmittel und kein Placebo.",
+  "sections": [
+   [
+    "Wofür es gut ist",
+    [
+     "Die klarsten Ergebnisse sind die wenigsten dramatischen. Schneller einschlafen, einen zahnärztlichen oder medizinischen Eingriff mit weniger Belastung überstehen, Schmerzen lindern und sich auf ein identifizierbares stressiges Ereignis ruhiger vorbereiten, als man es sonst wäre. All diese Bereiche haben eine gemeinsame Struktur: eine kurze Zeithorizont und eine körperliche Komponente, die durch Entspannung tatsächlich beeinflusst wird.",
+     "Gewohnheitsarbeit – Rauchen, Nägelkauen, die ersten zehn Minuten einer vermiedenen Aufgabe – liegt eine Stufe darunter. Sitzungen helfen, am zuverlässigsten als Teil eines Plans und nicht als der gesamte Plan, und der Effekt entsteht durch Wiederholung, nicht dadurch, dass eine einzelne Sitzung besonders kraftvoll ist."
+    ],
+    []
+   ],
+   [
+    "Wofür es nicht ist",
+    [
+     "Es ist keine Therapie und behandelt keine Depressionen, Angststörungen, PTBS oder Essstörungen. Es ist kein Weg, um vergessene Erinnerungen wiederzugewinnen – Suggestionen machen das Gedächtnis weniger zuverlässig, nicht mehr. Es ist kein Ersatz für Medikamente, die dir verschrieben wurden, und keine ehrliche Sitzung wird das anders suggerieren.",
+     "Es ist auch nicht schnell. Das Marketing um Hypnose stützt sich auf einzelne dramatische Sitzungen, und das tatsächliche Muster ist eine moderate Wirkung, die sich bei täglicher Anwendung über Wochen ansammelt."
+    ],
+    []
+   ],
+   [
+    "Warum es nicht bei jedem funktioniert",
+    [
+     "Die Suggestibilität variiert zwischen Menschen und ist über ein Leben hinweg relativ stabil. Etwa jeder vierte Mensch reagiert schwach auf hypnotische Suggestionen, egal wie sie dargeboten wird, und etwa derselbe Anteil reagiert stark. Das hat nichts mit Intelligenz oder Willenskraft zu tun, und es gibt keine Technik, die jemanden zuverlässig von der einen in die andere Gruppe verschiebt.",
+     "Die praktische Konsequenz ist es wert, vor dem Start zu wissen: Wenn drei oder vier ehrliche Versuche gar nichts bewirken, ist die vernünftige Schlussfolgerung, dass dies nicht dein Werkzeug ist, und nicht, dass du es falsch gemacht hast."
+    ],
+    []
+   ],
+   [
+    "Wie du erkennst, ob es etwas bewirkt",
+    [
+     "Beurteile es am Ziel, nicht am Erlebnis. Die Leute erwarten, sich hypnotisiert zu fühlen, und tun dies meist nicht – der Zustand ist von innen heraus unauffällig, eher damit, in ein Buch vertieft zu sein, als mit irgendetwas Theatralischem. Nichts Besonderes während einer Sitzung zu fühlen, sagt sehr wenig darüber aus, ob sie gewirkt hat.",
+     "Wähle eine messbare Sache und beobachte sie zwei Wochen lang: Minuten bis zum Einschlafen, Zigaretten pro Tag, ob du die Aufgabe begonnen hast. Wenn sich die Zahl bewegt, mach weiter; wenn nicht, hör auf und probiere etwas anderes. Das ist ein besserer Test als jeder Bericht darüber, wie tief du gegangen bist."
+    ],
+    []
+   ],
+   [
+    "Wo Onira passt",
+    [
+     "Onira ist ein Entspannungs- und Selbsthypnose-Tool und wird bewusst nicht als mehr verkauft. Was es am üblichen Angebot ändert, ist die Spezifität: Statt einer Aufnahme für alle schreibt ein Modell auf deinem Telefon die Sitzung rund um das Thema, das du auswählst, und den Satz, den du tippst, und spricht sie dann laut vor.",
+     "Es läuft vollständig auf dem Gerät, also verlässt, was du über dein eigenes Leben tippst, das Telefon nie – es gibt kein Konto und keinen Server, der es lesen könnte. Wenn du unter ernsthafter Belastung leidest, ist das ein Gespräch, das du mit einer Person führen solltest, und keine App ist die richtige Antwort darauf."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Ist Selbsthypnose nur der Placebo-Effekt?",
+    "Erwartung ist ein echter Teil davon, wie in den meisten Bereichen der Medizin. Aber die hypnotische Reaktion zeigt sich in Wegen, die Placebo allein nicht vorhersagt – sie variiert mit der Eigenschaft der Suggestibilität, und Bildgebungsstudien finden Zustandsänderungen, die damit korrelieren. Die faire Zusammenfassung ist eine moderate echte Wirkung mit einer Erwartungskomponente darauf."
+   ],
+   [
+    "Wie oft sollte ich eine Sitzung machen?",
+    "Täglich, für zwei oder drei Wochen, wenn du an einer Gewohnheit oder am Schlaf arbeitest. Der Effekt ist kumulativ, und der größte Prädiktor dafür, etwas daraus zu gewinnen, ist, es tatsächlich wiederholt gemacht zu haben."
+   ],
+   [
+    "Kann ich in der Hypnose stecken bleiben?",
+    "Nein. Ohne eine Stimme, die dich führt, verfließt der Zustand einfach oder geht in Schlaf über. Eine Sitzung, die ordnungsgemäß endet, enthält eine bewusste Rückkehr zur vollen Wachheit zum Komfort, nicht zur Sicherheit."
+   ],
+   [
+    "Funktioniert Selbsthypnose immer noch, wenn ich währenddessen einschlafen?",
+    "Ja, und es ist normalerweise in Ordnung. Wenn die Sitzung für Schlaf ist, ist das Einschlafen das Ziel. Wenn es für etwas anderes ist, zählen die Suggestionen, die du hörst, bevor du einschliefst, immer noch, obwohl du möglicherweise weniger von den späteren aufnimmst; wenn es weiterhin passiert, verschiebe die Sitzung auf einen früheren Abend im Abend oder sitze aufrecht statt zu liegen."
+   ]
+  ]
+ },
+ "guides.street_hypnosis": {
+  "slug": "how-street-hypnosis-works",
+  "nav": "Straßenhypnose",
+  "card": "Echt, keine Gehirnwäsche — und derselbe Mechanismus funktioniert auch an dir selbst.",
+  "title": "Wie Straßenhypnose funktioniert (Und Ist Sie Echt?) | Onira",
+  "desc": "Was bei der Straßenhypnose wirklich passiert: der steife Arm, der gefrorene Händedruck, warum es bei manchen Menschen funktioniert und bei anderen nicht, und ob es legal ist.",
+  "h1": "Wie Straßenhypnose funktioniert",
+  "lede": "Der steife Arm, der gefrorene Händedruck, die Freiwillige, die ihren eigenen Namen vergisst — was genau passiert da, und wie viel davon ist echt?",
+  "answer": "Straßenhypnose ist echt, und sie ist keine Gehirnwäsche. Was der Hypnotiseur nutzt, sind Suggestion, Erwartungshaltung und die Bereitschaft der Freiwilligen, in die vorgegebene Situation einzutauchen — plus ein schneller Screening-Schritt, der die Menschen findet, die stark reagieren, da etwa jeder Vierte darauf anspricht. Niemand wird kontrolliert, niemand verliert das Gedächtnis daran, und niemand tut etwas, was er wirklich ablehnen würde. Derselbe Mechanismus, abzüglich des Theaters, ist das, was die Selbsthypnose nutzt, wenn du sie auf dich selbst richtest.",
+  "sections": [
+   [
+    "Was genau passiert da",
+    [
+     "Hypnose ist fokussierte Aufmerksamkeit plus Suggestion. Engst du die Aufmerksamkeit einer Person stark genug ein, gibst ihr eine klare Erwartung dessen, was gleich passiert, und Suggestionen werden umgesetzt, bevor das übliche kritische Prüfen einsetzt. Das ist der gesamte Mechanismus, auf einer Straßenecke oder in einer Sitzung.",
+     "Die Straßenvariante fügt zwei Dinge hinzu, die eine Aufzeichnung nicht bieten kann. Erstens: eine soziale Verpflichtung. Die Person ist stehen geblieben, hat zugestimmt, Leute schauen zu, und sich jetzt zurückzuziehen, wäre eine kleine peinliche Situation. Zweitens: Selektion. Der Hypnotiseur probiert mehrere Personen aus und behält diejenigen, die reagieren, weshalb die Clips, die du siehst, alle Erfolge sind."
+    ],
+    []
+   ],
+   [
+    "Der steife Arm und der gefrorene Händedruck",
+    [
+     "Die bekannten Effekte sind weniger mysteriös, als sie aussehen, und jeder hat seine Funktion:"
+    ],
+    [
+     "**Suggestibilitätstests** — der steife Arm, der sich nicht biegen lässt, die zusammengeklebten Hände, die Augenlider, die sich nicht öffnen lassen. Diese kommen zuerst, weil sie dem Hypnotiseur zeigen, wie ansprechbar jemand ist, bevor etwas Größeres versucht wird.",
+     "**Überzeugungen** — dieselben Tests mit einer zweiten Aufgabe. Zu spüren, wie der eigene Arm sich weigert, sich zu biegen, ist viel überzeugender, als einem gesagt zu werden, dass es so sein wird, und dieser Glaube lässt die nächste Suggestion härter landen.",
+     "**Musterverletzung** — die Händedruck-Induktion. Eine automatische soziale Handlung wird gestartet und dann mitten drin unterbrochen, was eine halbe Sekunde Leere hinterlässt, und eine klare Anweisung wird in diese Lücke gesetzt. Es ist Überraschung, die als Türöffnung genutzt wird, nicht ein magisches Wort.",
+     "**Konformität und Rapport** — die unromantische Zutat. Die Freiwillige will, dass es funktioniert. Das ist kein Betrug; das Wollen ist Teil davon, wie Suggestion überhaupt funktioniert."
+    ]
+   ],
+   [
+    "Ist es echt, oder sind sie Schauspieler?",
+    [
+     "Meistens echt, mit der Einschränkung, dass du eine Bearbeitung siehst. Die Ansprechbarkeit auf hypnotische Suggestion variiert zwischen Menschen und ist über ein Leben hinweg relativ stabil: Etwa jeder Vierte reagiert stark, etwa derselbe Anteil reagiert kaum, und der Rest liegt dazwischen. Ein Straßenhypnotiseur findet die erste Gruppe und filmt sie.",
+     "Was nicht echt ist, ist der Verlust des Selbst. Freiwillige bleiben throughout bewusst, erinnern sich danach und können jederzeit aufhören, wenn sie es entscheiden. Der dramatische Teil — jemand, der zehn Sekunden lang seinen Namen nicht abrufen kann — ist eine temporäre Suggestion, der jemand folgt, kein Ausschalter."
+    ],
+    []
+   ],
+   [
+    "Ist Hypnose illegal?",
+    [
+     "Das Durchführen ist im Allgemeinen legal, und das Aufführen im öffentlichen Raum ist es, was reguliert wird, nicht die Hypnose an sich. Das Vereinigte Königreich ist das klarste Beispiel: Der Hypnotism Act 1952 erfordert eine Lizenz der lokalen Behörde, bevor Hypnose als öffentliche Unterhaltung aufgeführt wird.anderswo variieren die Regeln je nach Land und manchmal je nach Stadt, und einige Orte schränken ein, wer Hypnose im klinischen Kontext anwenden darf.",
+     "Der Teil, der wichtiger ist als die Lizenzierung, ist die Einwilligung. Jemanden zu hypnotisieren, der nicht klar zugestimmt hat, ist kein Prank, und \"sie hat ja gesagt, nachdem ich angefangen habe\" ist keine Einwilligung. Wenn du das versuchst, frage vorher, akzeptiere ein Nein als Antwort und lasse jeden in Ruhe, der gestresst wirkt."
+    ],
+    []
+   ],
+   [
+    "Was es bedeutet, wenn du es an dir selbst versuchen willst",
+    [
+     "Hier ist der Teil, den die Videos verschweigen: Der Mechanismus braucht kein Publikum, keinen Fremden oder einen Händedruck. Aufmerksamkeit, Erwartung und Suggestion sind die funktionierenden Teile, und alle drei sind verfügbar, wenn du derjenige bist, der die Anweisungen gibt. Was du verlierst, ist die Schau. Was du gewinnst, ist, dass du es auf etwas richten kannst, das du wirklich willst — Schlaf, eine Angst, eine Gewohnheit, die Stunde vor einem schwierigen Gespräch.",
+     "Es ist auch langsamer und nüchterner als ein Straßenclip, und ehrlich dazu: Der Effekt kommt von Wiederholung über Wochen, nicht von einem dramatischen Moment. Wenn du zu dem Viertel der Menschen gehörst, die stark reagieren, wirst du es schnell merken. Wenn drei oder vier ehrliche Versuche nichts bewirken, ist das wahrscheinlich nicht dein Werkzeug."
+    ],
+    []
+   ],
+   [
+    "Wo Onira passt",
+    [
+     "Onira schreibt Selbsthypnose-Sitzungen auf dein Telefon und spricht sie laut vor — du wählst ein Thema, sagst optional, was wirklich los ist, und ein Modell, das auf dem Gerät läuft, schreibt das Skript und spricht es. Es ist die selbstgerichtete Seite dessen, was du gesehen hast, gerichtet auf Schlaf, Angst, Selbstvertrauen, Gewohnheiten und den Rest.",
+     "Es lehrt keine Straßenhypnose und wird dich nicht zum Hypnotiseur machen. Es ist kostenlos, funktioniert offline, und nichts, was du tippst, verlässt das Telefon."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Kann mich jemand gegen meinen Willen hypnotisieren?",
+    "Nein. Suggestion braucht deine Mitarbeit, und genau deshalb bitten Straßenhypnotiseure um Freiwillige, statt Ziele auszusuchen. Jemand, der nicht teilnehmen will, reagiert einfach nicht."
+   ],
+   [
+    "Mache ich etwas Peinliches?",
+    "Nicht etwas, dem du wirklich widersprechen würdest. Menschen unter Suggestion lehnen Dinge ab, die ihre eigenen Grenzen überschreiten, was gut dokumentiert ist, und genau deshalb halten Bühnenshows sich an harmloses Material. Das Risiko bei einer Show ist sozial, nicht psychologisch."
+   ],
+   [
+    "Ist der steife Arm ein Beweis dafür, dass jemand hypnotisiert ist?",
+    "Nein — es ist ein Suggestibilitätstest. Er zeigt, wie bereitwillig jemand eine Suggestion annimmt, was nützliche Informationen sind, aber es ist ein Schritt vor allem, das einem hypnotischen Zustand ähnelt, kein Beweis dafür."
+   ],
+   [
+    "Kann ich Straßenhypnose von Onira lernen?",
+    "Nein, und es lohnt sich, ehrlich dazu zu sein. Onira schreibt Selbsthypnose-Sitzungen für dich zum Anhören; es lehrt dich nicht, andere Menschen zu hypnotisieren. Wenn das ist, wonach du suchst, willst du einen Kurs, nicht diese App."
+   ],
+   [
+    "Erinnern sich Menschen an das, was passiert ist?",
+    "Ja, in fast jedem Fall. Vorgeschlagene Amnesie ist eine temporäre Wirkung bei suggestiblen Menschen, und sie vergeht. Das Aufwachen mit einer leeren Lücke im Leben ist eine Filmkonvention."
+   ]
+  ]
+ },
+ "guides.is_it_safe": {
+  "slug": "is-self-hypnosis-safe",
+  "nav": "Ist das sicher?",
+  "card": "Für die meisten Menschen sicher, mit einer kurzen Liste echter Ausnahmen.",
+  "title": "Ist Selbsthypnose sicher? | Onira",
+  "desc": "Die ehrlichen Risiken der Selbsthypnose, wer sie meiden sollte und in welchen Fällen du zuerst einen Arzt konsultieren musst – Schwangerschaft, Epilepsie, Kinder und mehr.",
+  "h1": "Ist Selbsthypnose sicher?",
+  "lede": "Für die meisten Menschen ja – und die echten Risiken sind weniger dramatisch und spezifischer, als viele befürchten.",
+  "answer": "Selbsthypnose ist für die meisten gesunden Erwachsenen sicher. Du kannst nicht darin stecken bleiben, die Kontrolle verlieren oder gezwungen werden, etwas gegen deinen Willen zu tun – das sind Klischees aus Filmen. Die echten Vorsichtsmaßnahmen sind enger gefasst: Höre niemals während des Autofahrens oder Bediens von Maschinen zu, betrachte sie als Ergänzung statt als Ersatz für verschriebene Behandlungen und sprich vorher mit einem Arzt, wenn du unter Psychose, einer dissoziativen Störung, bipolaren Störungen oder PTBS leidest. Für Kinder, Epilepsie und Schwangerschaft lautet die Antwort meist ja unter Aufsicht, was du besser abklärst, statt es vorauszusetzen.",
+  "sections": [
+   [
+    "Die Risiken, vor denen Menschen Angst haben, und was wirklich stimmt",
+    [
+     "Fast jede Angst vor Hypnose stammt aus der Fiktion, also lohnt es sich, diese auszuräumen, bevor wir auf die echten Risiken eingehen:"
+    ],
+    [
+     "**Stecken bleiben.** Nicht möglich. Ohne eine Stimme, die dich führt, verfließt der Zustand einfach oder geht in normalen Schlaf über. Die bewusste Rückkehr zur Wachheit am Ende einer Session dient deinem Komfort, nicht der Rettung.",
+     "**Kontrollverlust.** Vorschläge benötigen deine Mitarbeit. Du bleibst bewusst, erinnerst dich daran und lehnst alles ab, das deine eigenen Grenzen überschreitet – genau deshalb bitten Bühnenhypnotiseure um Freiwillige.",
+     "**Ohne es zu merken umprogrammiert werden.** Es wird nichts installiert. Was sich durch Wiederholung ändert, ist eine Gewohnheit der Reaktion, langsam und nur in eine Richtung, in die du ohnehin schon gelenkt wurdest.",
+     "**Schwächung deines Geistes.** Es gibt keine Beweise dafür, dass gewöhnliche Entspannung und Suggestion die Urteilsfähigkeit, Aufmerksamkeit oder Willenskraft von jemandem schädigen."
+    ]
+   ],
+   [
+    "Die Risiken, die echt sind",
+    [
+     "Sie sind weniger dramatisch und betreffen meist den Kontext statt den Zustand selbst."
+    ],
+    [
+     "**Es tun, während man etwas anderes tut.** Niemals mit Kopfhörern beim Autofahren, Radfahren, Kochen oder Aufpassen auf ein Kind. Dies ist die wahrscheinlichste Art, Schaden zu nehmen, und sie ist vollständig vermeidbar.",
+     "**Es anstelle von Behandlung nutzen.** Eine Session, die Schmerzen oder Angst lindert, kann verlockend sein, einen Termin zu überspringen oder eine Verschreibung zu reduzieren. Das ist die Entscheidung, bei der man am vorsichtigsten sein sollte, und sie liegt in der Hand deines Arztes.",
+     "**Unerwartete Belastung.** Tiefes Entspannen kann ein Gefühl aufkommen lassen, das du unterdrückt hast – Trauer, Wut, eine Erinnerung. Für die meisten Menschen vergeht das; wenn dich eine Session zuverlässig schlechter fühlen lässt, hör auf und sprich mit einer qualifizierten Person.",
+     "**Gedächtnis.** Suggestion macht das Erinnern weniger zuverlässig, nicht mehr. Alles, was verspricht, vergessene Ereignisse wiederherzustellen, tut etwas, das die Evidenz nicht unterstützt."
+    ]
+   ],
+   [
+    "Wann du zuerst einen Arzt fragen solltest",
+    [
+     "Keines davon sind absolute Verbote, und die meisten Menschen in diesen Situationen nutzen Entspannungstools ohne Probleme. Es sind die Fälle, in denen ein Fachmann, der deine Vorgeschichte kennt, vor einer App Einschätzung geben sollte."
+    ],
+    [
+     "**Psychose oder Schizophrenie** – Entspannung und Suggestion werden ohne klinische Aufsicht nicht empfohlen.",
+     "**Dissoziative Störungen oder PTBS** – tiefe Entspannung kann Dissoziation oder aufdringliche Erinnerungen auslösen. Traumabearbeitung gehört in die Hände eines geschulten Klinikers.",
+     "**Bipolare Störung** – im Allgemeinen in Ordnung, wenn stabil; lohnt sich vor der Nutzung während einer Episode zu besprechen.",
+     "**Epilepsie** – Audio-Entspannung ist kein bekannter Anfallsauslöser, aber die Bedingungen unterscheiden sich genug, dass es eine faire Frage für deinen Neurologen ist.",
+     "**Schwangerschaft** – meist in Ordnung, und Hypnose zur Geburtsvorbereitung ist gut etabliert. Sprich es beim Termin an, statt zu raten.",
+     "**Kinder** – Selbsthypnose kann für ältere Kinder mit Erwachsenenaufsicht geeignet sein. Onira ist für Erwachsene geschrieben und nicht für kleine Kinder konzipiert."
+    ]
+   ],
+   [
+    "Ist es speziell für Angstzustände sicher?",
+    [
+     "Für alltägliche Angst ja, und es ist eines der Dinge, bei denen geführte Entspannung am besten hilft – sie senkt die körperliche Erregung, die das Denken antreibt. Die entscheidende Unterscheidung liegt zwischen alltäglicher Angst und einer Angststörung: Erstere ist ein vernünftiges Ziel für ein Entspannungstool, Letztere ist ein vernünftiges Ziel für eine Behandlung, und die Nutzung des Tools alongside dieser Behandlung ist in Ordnung.",
+     "Ein praktischer Hinweis: Wenn das Hören vor dem Schlafengehen dich eher wacher als ruhiger macht, ist das üblich und kein Warnsignal. Eine Session, die für Schlaf geschrieben wurde, endet anders als eine für Ruhe."
+    ],
+    []
+   ],
+   [
+    "Wo Onira passt",
+    [
+     "Onira erstellt Selbsthypnose-Sessions auf deinem Telefon und spricht sie laut vor, für Schlaf, Angst, Selbstvertrauen, Gewohnheiten und den Rest. Jede Session bringt dich vollständig wach zurück, und jede Themenseite trägt denselben Satz, den auch dieser Leitfaden hat: Es ist ein Entspannungstool, keine Therapie und kein medizinischer Rat.",
+     "Es ist kostenlos, läuft offline und nichts, was du eingibst, verlässt das Gerät – was auch bedeutet, dass niemand profilieren kann, worüber du besorgt warst."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Kann Selbsthypnose meine psychische Gesundheit verschlechtern?",
+    "Für die meisten Menschen unwahrscheinlich, und möglich bei spezifischen Bedingungen – Psychose, dissoziative Störungen und Trauma, wenn es direkt angegangen wird. Wenn du eine davon hast, mache es zu einer Frage für deinen Kliniker statt zu einem Experiment."
+   ],
+   [
+    "Ist es sicher, jede Nacht zu hören?",
+    "Ja. Tägliche Nutzung ist, wie sich die Wirkung aufbaut, und es ist keine nachteilige Wirkung bekannt. Die übliche Grenze ist praktisch: Eine Session, die dich wach hält, um auf den Bildschirm zu schauen, ist schlechter als der Schlaf, den du erreichen wolltest."
+   ],
+   [
+    "Kann ich süchtig werden?",
+    "Nein, im Sinne der Abhängigkeit. Menschen binden sich an eine Routine, die funktioniert, was normal ist und kein Problem darstellt – es sei denn, sie ersetzt Pflege, die du tatsächlich brauchst."
+   ],
+   [
+    "Ist es für Kinder sicher?",
+    "Mit Erwachsenenaufsicht und altersgerechtem Material oft ja; Entspannung wird mit Kindern in klinischen Settings genutzt. Onira ist für Erwachsene geschrieben, also ist es nicht das richtige Tool für ein kleines Kind."
+   ],
+   [
+    "Was soll ich tun, wenn mich eine Session verunsichert?",
+    "Beende sie, öffne die Augen und kehre in den Raum zurück – das ist immer verfügbar und nichts hält dich unter Hypnose. Wenn es öfter als einmal passiert, betrachte es als Signal, mit einer Person statt einer App zu arbeiten."
+   ]
+  ]
+ },
+ "guides.learn_self_hypnosis": {
+  "slug": "how-to-learn-self-hypnosis",
+  "nav": "Lernen",
+  "card": "Was du üben solltest, in welcher Reihenfolge und wie lange es wirklich dauert.",
+  "title": "Selbsthypnose für Anfänger: So lernst du sie | Onira",
+  "desc": "Ein realistischer Weg, Selbsthypnose allein zu lernen: Was du zuerst üben solltest, wie lange es dauert, wie sich der Trancezustand anfühlt und wann du aufhören solltest.",
+  "h1": "Selbsthypnose für Anfänger: So lernst du sie",
+  "lede": "Es ist eine Fähigkeit mit einem kurzen Lehrplan und einer langsamen ersten zwei Wochen – hier ist die Reihenfolge, die funktioniert, und der Teil, den alle falsch machen.",
+  "answer": "Du kannst Selbsthypnose allein lernen, und die meisten Menschen, die Fortschritte erzielen, tun dies in derselben Reihenfolge: Den Körper gezielt entspannen, die Aufmerksamkeit auf einen einzigen Punkt richten, dir dann einen spezifischen Vorschlag geben und ihn zwei bis drei Wochen lang jede Nacht wiederholen. Erwarte, dass der Zustand unremarkabel wirkt – du bist vertieft, wie bei einem guten Buch, nicht bewusstlos – und bewerte ihn daran, ob sich das Ziel bewegt, nicht daran, wie tief es sich angefühlt hat. Eine geführte Aufnahme ist der einfachste Einstieg, weil das Lesen von Anweisungen im Widerspruch zur Entspannung steht.",
+  "sections": [
+   [
+    "Die Reihenfolge, die funktioniert",
+    [
+     "Die Bestandteile sind einfach. Sie in dieser Reihenfolge auszuführen, verhindert, dass die erste Woche das Gefühl erweckt, als würde sich nichts tun."
+    ],
+    [
+     "**Schaffe die Voraussetzungen.** Ein Ort, an dem du nicht unterbrochen wirst, das Telefon stumm geschaltet, im Liegen oder Zurücklehnen. Zu entscheiden, zwischendurch etwas zu prüfen, ist es, was die meisten frühen Versuche beendet.",
+     "**Entspanne gezielt in Stufen.** Hände, Kiefer, Schultern, Atmung – länger ausatmen als einatmen. Dies ist der Teil, den die Leute überspringen, und genau er macht den Rest erst möglich.",
+     "**Verenge deine Aufmerksamkeit.** Ein langsamer Abwärtszählen von zwanzig, ein einziges Bild, das Gefühl deiner eigenen Atmung. Ein Ding, locker festgehalten.",
+     "**Gib einen Vorschlag, in der Gegenwart und positiv formuliert.** Nicht „Ich werde keine Panik bekommen“, sondern „meine Atmung bleibt ruhig und ich bleibe gefasst“. Übe es als Szene, im Detail, statt sie nur als Phrase zu wiederholen.",
+     "**Kehre gezielt zurück.** Zähle hoch, öffne die Augen, sei vollständig wach. Das ist wichtig für die Gewohnheit, nicht für die Sicherheit."
+    ]
+   ],
+   [
+    "Wie es sich tatsächlich anfühlt",
+    [
+     "Hier ziehen die meisten Leute den Schluss, dass sie es nicht können. Die Erwartung ist etwas Dramatisches – eine Schwelle, ein Klicken, das Gefühl, unterzugehen. Das Reale ähnelt eher dem Vertieftsein in einen Film: Der Raum tritt etwas in den Hintergrund, die Zeit wird unzuverlässig, und du könntest jederzeit aufhören, willst es aber besonders nicht.",
+     "Das bedeutet, dass sich nichts Besonderes anzufühlen, sehr wenig aussagt. Bewerte die zwei Wochen anhand des Ziels: Wie lange du brauchst, um einzuschlafen, ob du die vermiedene Aufgabe begonnen hast, wie eine stressige Stunde verlief. Wenn sich die Zahl verändert, funktioniert es, egal wie es sich angefühlt hat."
+    ],
+    []
+   ],
+   [
+    "Wie lange es dauert",
+    [
+     "Die ersten Sitzungen dienen dem Erlernen der Struktur, nicht den Ergebnissen. Eine faire Erwartung ist, dass das Entspannen innerhalb einer Woche spürbar leichter fällt und dass sich jedes eigentliche Ziel erst nach zwei bis drei Wochen nahezu täglicher Praxis verschiebt.",
+     "Die Ansprechbarkeit variiert auch zwischen Menschen und ist über ein Leben hinweg ziemlich stabil – etwa jeder Vierte reagiert stark, etwa so viele reagieren kaum bis gar nicht. Wenn drei oder vier ehrliche Versuche überhaupt nichts bewirken, ist die vernünftige Schlussfolgerung, dass dies nicht dein Werkzeug ist, nicht dass du härter versuchen musst."
+    ],
+    []
+   ],
+   [
+    "Kann man es aus einem Buch oder allein lernen?",
+    [
+     "Allein, ja – es ist eines der wenigen Dinge in diesem Bereich, das wirklich keinen Praktiker benötigt. Aus einem Buch, teilweise: Bücher sind gut zum Verständnis dessen, was man tut, und schlecht als live-Anleitung, weil das Lesen von Anweisungen im Widerspruch zur Verengung der Aufmerksamkeit steht.",
+     "Das ist das praktische Argument für eine Aufnahme. Etwas anderes hält die Struktur und das Tempo, während du den einzigen Teil machst, der nicht delegiert werden kann, nämlich es wirken zu lassen. Sobald die Struktur vertraut ist, wird es ohne Hilfe viel einfacher."
+    ],
+    []
+   ],
+   [
+    "Selbsthypnose lernen ist nicht lernen, andere zu hypnotisieren",
+    [
+     "Es lohnt sich, das zu trennen, weil die Suchanfragen oft vermischt werden. Jemanden zu hypnotisieren ist eine Performance und eine zwischenmenschliche Fähigkeit, mit Einwilligung und Kalibrierung, die man lernen muss, und sie wird in Kursen gelehrt. Selbsthypnose ist eine private Routine, die auf eines deiner eigenen Probleme gerichtet ist.",
+     "Gut in der zweiten Sache zu sein, sagt fast nichts über die erste aus, und umgekehrt gilt das ebenfalls."
+    ],
+    []
+   ],
+   [
+    "Wo Onira passt",
+    [
+     "Onira schreibt die Sitzung für dich und spricht sie laut vor: Du wählst ein Thema und gibst, wenn du möchtest, einen Satz darüber ein, was tatsächlich los ist. Das nimmt dir die zwei Dinge, mit denen Anfänger kämpfen – die Struktur aufrechtzuerhalten und die passenden Worte für einen Vorschlag zu finden, der zu deiner Situation passt.",
+     "Es ist kostenlos, funktioniert offline, und nichts, was du eingibst, verlässt dein Telefon. Wenn du später Sitzungen im Kopf ohne die App durchführen möchtest, ist das ein gutes Ergebnis und die App hat ihren Job getan."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Wie lange sollte eine Sitzung sein?",
+    "Fünfzehn bis dreißig Minuten eignen sich für die meisten Zwecke. Kürzer funktioniert, sobald die Fähigkeit vertraut ist; viel länger führt meist nur zum Einschlafen, was in Ordnung ist, wenn Schlaf das Ziel war, und ansonsten verschwendete Zeit ist."
+   ],
+   [
+    "Wann ist die beste Tageszeit?",
+    "Wann immer du ungestört sein kannst, mit einer Einschränkung: Sitzungen, die auf etwas anderes als Schlaf abzielen, enden damit, dass du wieder voll wach bist, daher ist die Schlafenszeit nicht automatisch der richtige Zeitpunkt."
+   ],
+   [
+    "Muss ich mein eigenes Skript schreiben?",
+    "Nein, und eines zu schreiben, während man versucht, sich zu entspannen, ist der klassische Anfängerfehler. Beginne mit etwas, das für dich narrativ vorträgt, und schreibe dein eigenes später, wenn du möchtest."
+   ],
+   [
+    "Kann ich es lernen, wenn mein Kopf nie aufhört?",
+    "Das ist der normale Ausgangszustand, keine Disqualifikation. Die gestufte körperliche Entspannung existiert genau deshalb, weil ein rasender Geist nicht auf Befehl fokussieren kann – der Körper geht voran, der Geist folgt."
+   ],
+   [
+    "Ist Selbsthypnose dasselbe wie Meditation?",
+    "Verwandt, aber anders ausgerichtet. Meditation schult eine allgemeine Beziehung zu deiner Aufmerksamkeit; Selbsthypnose richtet diese Aufmerksamkeit auf ein spezifisches Ziel. Die Praxis überschneidet sich, die Intention nicht."
+   ]
+  ]
+ },
+ "themes.stress": {
+  "slug": "stress",
+  "nav": "Stress",
+  "card": "Komm nach einem anstrengenden Tag runter und erhole dich richtig.",
+  "title": "Selbsthypnose gegen Stress — Persönlich für dich | Onira",
+  "desc": "Geführte Selbsthypnose gegen Stress, maßgeschneidert für deinen aktuellen Druck, direkt auf dem Handy. Offline und privat.",
+  "h1": "Selbsthypnose gegen Stress",
+  "lede": "Eine Session zum Ende eines anstrengenden Tages — zuerst gezielte körperliche Entspannung, dann ein Stück Distanz zu dem, was dich gerade belastet.",
+  "why_title": "Warum Hypnose bei Stress hilft",
+  "why": [
+   "Dauerstress hält den Körper lange in Alarmbereitschaft, auch wenn die eigentliche Belastung schon vorbei ist. Du merkst das an einer verspannten Kiefermuskulatur, flacher Atmung, Gereiztheit oder Schlaflosigkeit. Die Erholung bleibt aus, weil nichts signalisiert, dass der Tag zu Ende ist.",
+   "Eine geführte Session ist genau dieses Signal. Langsame Ansagen und gestufte körperliche Entspannung holen dich aus dem Anspannungszustand. Die folgenden Bilder geben dir eine Perspektive auf den Druck, statt dich darin gefangen zu halten."
+  ],
+  "works_on": [
+   "Gestufte Lösung von angesammelten Verspannungen — Hände, Kiefer, Schultern, Atmung.",
+   "Unterscheidung zwischen dem, was wirklich dringend ist, und dem, was sich nur gerade so anfühlt.",
+   "Ein klarer Erholungspunkt im Tagesablauf, damit sich der Druck nicht staut.",
+   "Eine konkrete Stressquelle, wenn du sie benennst — Arbeitspensum, ein Umzug, Pflegeaufgaben, finanzielle Sorgen."
+  ],
+  "expect": "Die Sessions dauern 15 bis 30 Minuten und enden damit, dass du wieder wach und bei Kräften bist. Sie passen daher genauso gut in eine Mittagspause oder die Zeit zwischen Arbeit und Abend wie in die Zeit vor dem Schlafengehen.",
+  "faq": [
+   [
+    "Wie oft sollte ich es nutzen?",
+    "So oft, wie es dir hilft. Viele nutzen täglich eine kurze Session über einen Zeitraum hinweg und speichern sich dann eine weitere für besonders anstrengende Tage."
+   ],
+   [
+    "Was ist der Unterschied zum Thema Angst?",
+    "Stress-Sessions konzentrieren sich auf die Erholung von tatsächlichem, anhaltendem Druck; Angst-Sessions fokussieren sich auf den Grübelkreislauf und die Angst selbst. Nutze das, was auf deine Woche zutrifft."
+   ],
+   [
+    "Kann ich es mit Kopfhörern im Zug hören?",
+    "Ja, aber betrachte es eher als Entspannung als als volle Session. Nutze es nicht beim Autofahren oder bei Tätigkeiten, die deine volle Aufmerksamkeit erfordern."
+   ]
+  ]
+ },
+ "themes.habits": {
+  "slug": "nervous-habits",
+  "nav": "Nervöse Gewohnheiten",
+  "card": "Unterbrich Nagelkauen oder Zähneknirschen, bevor es sich festigt.",
+  "title": "Selbsthypnose bei nervösen Gewohnheiten | Onira",
+  "desc": "Geführte Selbsthypnose bei Nagelkauen, Zähneknirschen und Kieferanspannung, geschrieben auf deinem Handy rund um deinen eigenen Auslöser. Privat, kostenlos, offline.",
+  "h1": "Selbsthypnose bei nervösen Gewohnheiten",
+  "lede": "Eine Sitzung für Gewohnheiten, die automatisch ablaufen – beißen, kneifen, zupfen – mit Fokus auf den Moment kurz vor dem Beginn.",
+  "why_title": "Warum Hypnose bei nervösen Gewohnheiten hilft",
+  "why": [
+   "Diese Gewohnheiten sind keine bewussten Entscheidungen. Bevor du es merkst, ist die Hand schon am Mund und der Kiefer ist bereits seit einer Stunde verspannt. Willenskraft kommt zu spät, um als Werkzeug zu dienen – deshalb scheitert der Entschluss, aufzuhören, oft allein daran.",
+   "Eine Session arbeitet an der Lücke vor der Gewohnheit – der Anspannung, die ihr vorausgeht, und dem Auslöser, der sie in Gang setzt. Wenn du in einem entspannten Zustand eine andere Reaktion auf denselben Auslöser einübst, bekommt der automatische Teil deines Gehirns etwas anderes zu tun."
+  ],
+  "works_on": [
+   "Der Abbau: Schultern, Kiefer und Hände entspannen sich, bevor die Gewohnheit überhaupt einen Grund hat zu beginnen.",
+   "Cue-Bewusstsein – das Erkennen des Moments des Greifens, der einzige Moment, in dem du handeln kannst.",
+   "Eine Ersatzhandlung, die so lange eingeübt wird, bis sie genauso automatisch ist wie die, die sie ersetzt.",
+   "Dein eigener Auslöser, falls du ihn eingibst: Meetings, Autofahren, Bildschirme, eine bestimmte Tageszeit."
+  ],
+  "expect": "Die Sessions dauern etwa 15 bis 30 Minuten und enden, indem du wieder vollständig wach bist. Gewohnheiten reagieren auf Wiederholung statt auf Intensität, daher bewirkt eine täglich wiederholte Aufnahme mehr als eine gelegentliche lange Session.",
+  "faq": [
+   [
+    "Hilft das bei nächtlichem Zähneknirschen?",
+    "Es kann bei dem täglichen Zähnepressen helfen, das das Knirschen oft fördert. Nächtliches Zähneknirschen ist eine zahnärztliche Angelegenheit – abgenutzter Zahnschmelz und Kieferschmerzen erfordern einen Zahnarztbesuch, und eine Schiene wirkt oft besser als jede Entspannungssitzung."
+   ],
+   [
+    "Wie lange dauert es, bis sich eine Angewohnheit ändert?",
+    "Länger als eine einzige Sitzung. Diese automatischen Muster haben sich über Jahre aufgebaut, und die realistische Erwartung ist eine allmähliche Reduktion bei täglicher Anwendung, kein sofortiger Wandel."
+   ],
+   [
+    "Ist Hautpicken oder Haarezupfen dasselbe?",
+    "Sie können mehr als eine nervöse Angewohnheit sein, und wenn sie echte Belastung oder Schäden verursachen, ist es ratsam, sie von einem Facharzt behandeln zu lassen. Onira ist ein Entspannungstool, keine Behandlung dafür."
+   ]
+  ]
+ },
+ "themes.pain": {
+  "slug": "pain",
+  "nav": "Schmerzen",
+  "card": "Lindere die Anspannung und die Angst, die den Schmerz verstärken.",
+  "title": "Selbsthypnose bei Schmerzen – Persönlich für dich | Onira",
+  "desc": "Geführte Selbsthypnose als Ergänzung zu deiner Behandlung: weniger Anspannung, weniger Angst vor dem nächsten Schub, ruhigere Nächte. Ein Werkzeug zur Beruhigung, kein Heilmittel. Offline und privat.",
+  "h1": "Selbsthypnose bei chronischen Schmerzen",
+  "lede": "Eine Sitzung für die Teile des Schmerzes, die nicht die Verletzung selbst sind – das Anspannen, die Angst vor dem nächsten Schub und die Nächte, die er dir raubt.",
+  "why_title": "Was Hypnose bei Schmerzen leisten kann und was nicht",
+  "why": [
+   "Schmerz ist nie nur ein Signal des Körpers. Wie viel Aufmerksamkeit er auf sich zieht, wie sehr du dich um ihn herum verspannst, wie sehr du der nächsten Episode entgegenfieberst – all das verändert, wie laut er wird. Genau an diesen Stellen setzt eine geführte Session an, und oft ist es der Unterschied zwischen einem schweren Tag und einem, der sich unmöglich anfühlt.",
+   "Was es nicht tut, ist die Ursache zu beseitigen. Dieses Thema ist als Begleiter deiner Behandlung konzipiert, niemals als Ersatz dafür, und es ist kein Grund, einen Arzttermin zu verschieben oder deine verschriebene Therapie zu ändern. Neuer, sich verschlimmernder oder unerklärlicher Schmerz gehört zunächst in ärztliche Hände."
+  ],
+  "works_on": [
+   "Die Schutzspannung und Muskelverspannungen, die sich um einen schmerzhaften Bereich aufbauen.",
+   "Einschlafen, wenn der Schmerz deine Aufmerksamkeit immer wieder zurückholt.",
+   "Die Erwartung des nächsten Schubs, die alles zusammenziehen lässt, bevor er eintritt.",
+   "Wo der Schmerz im Alltag sitzt – am Rande deiner Aufmerksamkeit statt im Zentrum."
+  ],
+  "expect": "Die Sessions dauern 15 bis 30 Minuten und enden damit, dass du wieder wach und bei Kräften bist. Was Menschen beschreiben, ist meist teilweise und vorübergehend – die Lautstärke wird gedreht, nicht ganz ausgeschaltet – und sie stellt sich eher durch Wiederholung ein als durch eine einzelne Session.",
+  "faq": [
+   [
+    "Kann Hypnose meine Schmerzen heilen?",
+    "Nein, und alles, was dir etwas anderes verspricht, will dir etwas verkaufen. Entspannung und Suggestion werden häufig ergänzend zur medizinischen Behandlung eingesetzt, um Schmerzen erträglicher zu machen. Onira ist in diesem Sinne ein Entspannungstool – eine Ergänzung, keine Behandlung."
+   ],
+   [
+    "Werden die Schmerzen trotzdem noch da sein?",
+    "Wahrscheinlich ja. Das realistische Ziel ist, dass sie weniger von dir einnehmen: weniger Anspannung im Umgang damit, weniger Vorfreude davor und mehr Raum für den Rest des Tages."
+   ],
+   [
+    "Ist es sicher in Kombination mit meiner Medikation?",
+    "Eine Sitzung hat keine Wechselwirkungen mit den Medikamenten, die du einnimmst. Wichtig ist, dass du eine verschriebene Behandlung niemals reduzierst oder absetzt, nur weil eine Sitzung geholfen hat – diese Entscheidung liegt bei der Person, die sie verschrieben hat."
+   ],
+   [
+    "Was ist mit Migräne?",
+    "Die Anspannung und Vorfreude vor einem Anfall sind beeinflussbar; der Anfall selbst ist ein neurologisches Ereignis und eine medizinische Angelegenheit. Nutze eine Sitzung nicht als Ersatz für eine Behandlung, die bei dir funktioniert."
+   ]
+  ]
+ },
+ "themes.emotional_recovery": {
+  "slug": "emotional-recovery",
+  "nav": "Emotionale Erholung",
+  "card": "Finde nach einer anstrengenden Situation wieder zur Ruhe, ohne sie erneut durchleben zu müssen.",
+  "title": "Selbsthypnose zur emotionalen Erholung | Onira",
+  "desc": "Geführte Selbsthypnose nach einer schweren Zeit: ruhigere Nächte, weniger Grübeln, stabilere Tage. Ein Entspannungstool, keine Traumatherapie.",
+  "h1": "Selbsthypnose zur emotionalen Erholung",
+  "lede": "Eine Session für die Nachbereitung – wenn die schwere Situation vorbei ist, aber dein Schlaf, deine Nerven und deine Aufmerksamkeit noch nicht nachgeholt haben.",
+  "why_title": "Die Folgen beruhigen, nicht wieder aufreißen",
+  "why": [
+   "Nach belastenden Situationen bleibt der Körper oft noch lange angespannt, obwohl das Ereignis längst vorbei ist. Das zeigt sich in schlechtem Schlaf, Gereiztheit, Gedankenkreisen in der Nacht oder einer übermäßigen Schreckreaktion. Das sind ganz normale Nachwirkungen, die gut auf gezielte Entspannung ansprechen.",
+   "Diese Sessions sind darauf ausgelegt, diesen Zustand zu beruhigen – nicht, um das Erlebte noch einmal durchzugehen. Du wirst nicht gebeten, eine Erinnerung wachzurufen oder zu beschreiben, was passiert ist. Solche Arbeiten sind wichtig und hilfreich, sollten aber von einem geschulten Fachmann begleitet werden, der dich dabei unterstützt – und nicht allein mit dem Handy."
+  ],
+  "works_on": [
+   "Schlafstörungen, die nach einer schwierigen Phase aufgetreten sind und nicht von selbst verschwunden sind.",
+   "Nächtliches Grübeln – dieselben Gedankenkreisen ohne Lösung.",
+   "Ein Körper, der dauerhaft in Alarmbereitschaft ist: enger Brustkorb, zusammengebissene Zähne, übermäßige Schreckhaftigkeit.",
+   "Den Alltag bewältigen, während sich eine schwere Last noch nicht gelegt hat."
+  ],
+  "expect": "Die Sessions dauern 15 bis 30 Minuten und enden immer damit, dass du wieder vollständig wach und bei Kräften bist. Wenn dich eine Session statt zu beruhigen eher belastet, höre auf, sie zu nutzen, und sprich dich mit einer fachkundigen Person ab.",
+  "faq": [
+   [
+    "Kann dies Trauma oder PTBS behandeln?",
+    "Nein, und es ist auch nicht dafür konzipiert. Flashbacks, Albträume, Dissoziation oder Vermeidungsverhalten, die dein Leben prägen, sind behandelbar – durch eine Fachkraft, die in Traumatherapie geschult ist. Onira ist ein Entspannungstool für die Nachsorge und wird parallel zu solcher Unterstützung genutzt, falls du sie in Anspruch nimmst."
+   ],
+   [
+    "Wird mich eine Sitzung daran erinnern, an etwas zu denken?",
+    "Sie ist nicht darauf ausgelegt, und sie wird dich nicht dazu auffordern, danach zu suchen. Hypnose ist auch keine zuverlässige Methode, um Erinnerungen wiederzugewinnen – ein gut bekannter Fakt. Das ist auch ein Grund, warum sich dieses Thema auf die Beruhigung der Gegenwart konzentriert, statt in die Vergangenheit einzutauchen."
+   ],
+   [
+    "Was passiert, wenn ich mich während einer Sitzung schlechter fühle?",
+    "Beende sie, öffne die Augen und kehre in den Raum zurück. Diese Reaktion ist ein Signal, um mit einer Person statt mit einer App zu arbeiten, und es lohnt sich, ihr ernsthaft Beachtung zu schenken, anstatt einfach weiterzumachen."
+   ],
+   [
+    "Ist Trauer dasselbe?",
+    "Nahe genug, dass das Thema dafür passt. Sitzungen können die Tage und Nächte stabilisieren; sie werden die Trauer nicht verkürzen, und das ist auch nicht beabsichtigt."
+   ]
+  ]
+ }
+}

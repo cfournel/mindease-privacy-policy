@@ -1,0 +1,20 @@
+themes.stress ok (22/25)
+themes.habits: JSONDecodeError, retry
+themes.habits: JSONDecodeError, retry
+themes.habits: JSONDecodeError, retry
+themes.habits: whole unit failed, field by field
+themes.habits: 0 strings left in English
+themes.habits ok (23/25)
+themes.pain: JSONDecodeError, retry
+themes.pain: JSONDecodeError, retry
+themes.pain: JSONDecodeError, retry
+themes.pain: whole unit failed, field by field
+themes.pain: 0 strings left in English
+themes.pain ok (24/25)
+themes.emotional_recovery: JSONDecodeError, retry
+themes.emotional_recovery: JSONDecodeError, retry
+themes.emotional_recovery: JSONDecodeError, retry
+themes.emotional_recovery: whole unit failed, field by field
+themes.emotional_recovery: 0 strings left in English
+themes.emotional_recovery ok (25/25)
+done 25 / 25

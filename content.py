@@ -4581,5 +4581,7 @@ EN["guides"]["on_device_ai"] = {
 }
 GUIDES.append("on_device_ai")
 
+# Portuguese (Brazil) and German (mindease#57): generated from reviewed drafts, see tools/make_ptde.py.
+from content_ptde import PT, DE  # noqa: E402
 
-LANGS = [EN, FR, ES]
+LANGS = [EN, FR, ES]  # PT, DE go live with the app release (mindease#57)

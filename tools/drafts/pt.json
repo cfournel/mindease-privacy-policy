@@ -1,0 +1,1156 @@
+{
+ "ui": {
+  "home_name": "Onira",
+  "home_crumb": "Início",
+  "badge_alt": "Disponível no Google Play",
+  "cta_note": "Grátis, sem conta, sem assinatura. Compra única para remover os anúncios.",
+  "how_title": "Como o Onira cria sua sessão",
+  "how_steps": [
+   "Você escolhe um tema e, se quiser, digita uma ou duas frases sobre o que está acontecendo.",
+   "Um modelo de IA rodando no seu celular escreve o roteiro — indução, aprofundamento, imagética, sugestões, ancoragem e, por fim, um retorno claro ao estado de alerta total.",
+   "A narração começa assim que a abertura está pronta e o restante do texto é gerado enquanto você ouve, então uma sessão completa de 15 a 30 minutos começa em segundos.",
+   "Salve uma sessão que você gostou e ouça a mesma narração exata sempre que quiser."
+  ],
+  "works_title": "No que uma sessão atua",
+  "expect_title": "O que esperar",
+  "faq_title": "Perguntas frequentes",
+  "privacy_title": "Privacidade desde a concepção",
+  "privacy_body": "O Onira executa seu modelo diretamente no seu dispositivo. O tema escolhido, as palavras digitadas e a sessão recebida nunca são enviados à nuvem — não há conta, nem geração em servidor, nem nenhum serviço que possa ler seus dados.",
+  "privacy_link": "Leia a política de privacidade completa",
+  "safety_title": "Não é um tratamento médico",
+  "safety_body": "O Onira é uma ferramenta de relaxamento e auto-hipnose. Não é terapia, não oferece aconselhamento médico ou psiquiátrico e não substitui o cuidado profissional ou serviços de emergência. Se você está em sofrimento ou perigo, entre em contato com uma linha de crise local ou com o número de emergência.",
+  "related_title": "Outros temas",
+  "foot_tag": "Onira — sessões de hipnoterapia escritas no seu celular, pelo seu celular.",
+  "foot_privacy": "Política de privacidade",
+  "foot_play": "Google Play",
+  "head_cta": "Baixe o app",
+  "langs_label": "Idioma",
+  "features": [
+   "Escreve uma sessão pessoal de auto-hipnose com base no que você digita",
+   "Narração em áudio, de 15 a 30 minutos",
+   "Funciona 100% offline, nada sai do seu dispositivo",
+   "Temas para sono, ansiedade, estresse, confiança e mais",
+   "Grátis, sem necessidade de conta"
+  ],
+  "screens_title": "Dentro do app",
+  "screens": [
+   [
+    "home",
+    "Tela inicial do Onira à noite: um céu estrelado, uma sugestão de sessão para dormir, os temas como blocos coloridos",
+    "À noite, o app muda para o modo noturno e sugere uma sessão para dormir."
+   ],
+   [
+    "day",
+    "Tela inicial do Onira de manhã, com cores do amanhecer",
+    "As cores acompanham seu dia: amanhecer, céu claro, noite."
+   ],
+   [
+    "custom",
+    "Tela 'Minha sessão' com uma frase digitada",
+    "Diga o que está acontecendo com suas próprias palavras."
+   ],
+   [
+    "session",
+    "Uma sessão em reprodução, com o indicador de fase",
+    "A sessão narra a si mesma, desde a indução até o retorno claro ao estado de alerta."
+   ],
+   [
+    "privacy",
+    "Nada do que você digita ou recebe sai do celular",
+    "Sem conta, sem transmissão de dados, funciona offline."
+   ]
+  ],
+  "guides_title": "Perguntas comuns",
+  "guides_crumb": "Guias",
+  "guide_answer_title": "A resposta curta",
+  "guide_cta_title": "Experimente hoje à noite"
+ },
+ "home": {
+  "news_title": "Novidades no Onira 0.17",
+  "news": [
+   "A voz de narração exclusiva do Onira em inglês, francês e espanhol, criada para hipnose: suave e lenta, muda de tom à medida que a sessão se aprofunda.",
+   "A música de fundo está um pouco mais baixa por padrão."
+  ],
+  "title": "Onira — Sessões de Autohipnose Escritas Para Você",
+  "desc": "O Onira cria uma sessão de hipnose personalizada no seu celular e a narra em voz alta — para dormir, ansiedade, estresse, confiança e foco. Nada sai do seu dispositivo.",
+  "h1": "Sessões de autohipnose escritas para você, no seu celular",
+  "lede": "A maioria dos apps de hipnose oferece a mesma gravação para todos. O Onira escreve uma sessão para a sua situação, no momento exato, com uma IA que roda inteiramente no seu dispositivo — e então narra em voz alta enquanto você fecha os olhos.",
+  "intro": [
+   "A hipnose guiada funciona melhor quando as palavras refletem o que você está sentindo. Uma gravação genérica precisa ser vaga; já uma sessão escrita com base na frase que você digitou consegue nomear exatamente o que te impede de dormir e construir imagens mentais em torno disso.",
+   "Essa é a ideia central do Onira. Você escolhe um tema, adiciona mais ou menos detalhes conforme quiser, e um pequeno modelo de linguagem de código aberto no seu celular escreve um roteiro completo seguindo a estrutura clássica de uma sessão de hipnoterapia."
+  ],
+  "themes_title": "Escolha um tema"
+ },
+ "themes.anxiety": {
+  "slug": "anxiety",
+  "nav": "Ansiedade",
+  "card": "Solte o controle do pensamento ansioso e acalme o corpo.",
+  "title": "Autohipnose para Ansiedade — Feita para Você | Onira",
+  "desc": "Autohipnose guiada para ansiedade, escrita no seu celular com base no que você realmente teme, e narrada em voz alta. Privada, gratuita, sem assinatura.",
+  "h1": "Autohipnose para ansiedade",
+  "lede": "Uma sessão guiada que acalma o corpo primeiro e, em seguida, trabalha o pensamento ansioso em si — adaptada ao que você realmente teme.",
+  "why_title": "Por que a hipnose ajuda com a ansiedade",
+  "why": [
+   "A ansiedade mantém dois sistemas ocupados ao mesmo tempo: um corpo em estado de alerta e uma mente que ensaia o pior. A hipnose guiada atua diretamente no primeiro — a linguagem pausada e a respiração constante tiram você desse estado de alerta, o que facilita o relaxamento do segundo.",
+   "Nesse estado de calma, as sugestões são mais eficazes. Em vez de discutir com o pensamento ansioso, a sessão oferece uma versão mais tranquila da mesma cena e permite que você a ensaie, para que, na próxima vez que surgir, ela cause menos impacto."
+  ],
+  "works_on": [
+   "Tensão física — mandíbula, ombros, peito, estômago — liberada gradualmente.",
+   "O ciclo de antecipar o que pode dar errado, substituído por uma resposta calma e ensaiada.",
+   "Um âncora que você pode usar depois: uma respiração, uma palavra ou um gesto que reativa o estado da sessão.",
+   "Uma preocupação específica, se você digitar uma — uma entrevista, um voo, uma conversa que você está evitando."
+  ],
+  "expect": "As sessões duram cerca de 15 a 30 minutos. Você permanece consciente durante toda a sessão — a hipnose é atenção focada, não sono ou inconsciência — e a sessão sempre termina com um retorno intencional ao estado de alerta total. A maioria das pessoas usa fones de ouvido, sentada ou deitada em um local onde não será interrompida.",
+  "faq": [
+   [
+    "A autohipnose realmente funciona para a ansiedade?",
+    "O relaxamento guiado e as sugestões são amplamente usados como ferramenta de autoajuda para a ansiedade e o estresse do dia a dia, e muitas pessoas os encontram calmantes. O Onira é uma ferramenta de relaxamento, não um tratamento para um transtorno de ansiedade — isso deve ser discutido com um profissional de saúde."
+   ],
+   [
+    "Posso fazer isso antes de dormir?",
+    "Sim, embora a sessão termine trazendo você de volta ao estado de alerta. Se o seu objetivo é adormecer, o tema de sono é escrito para isso."
+   ],
+   [
+    "Preciso digitar algo pessoal?",
+    "Não. O tema por si só já é suficiente. Se você digitar algo, ele permanece no seu celular — o modelo roda localmente e nada é enviado para a nuvem."
+   ]
+  ]
+ },
+ "themes.sleep": {
+  "slug": "sleep",
+  "nav": "Sono",
+  "card": "Acalme uma mente agitada e deixe o sono chegar naturalmente.",
+  "title": "Autohipnose para dormir — Uma sessão personalizada | Onira",
+  "desc": "Autohipnoterapia para o sono, escrita no seu celular com base no que te impede de dormir e narrada em áudio. Funciona offline, nada sai do seu dispositivo.",
+  "h1": "Autohipnose para dormir",
+  "lede": "Uma sessão lenta e de baixa estimulação para o momento em que você está na cama e a mente não para de trabalhar.",
+  "why_title": "Por que a hipnose ajuda a dormir",
+  "why": [
+   "Dificuldade para adormecer raramente é sobre cansaço. Geralmente, é uma mente que continua ativa — revivendo o dia, planejando o amanhã, verificando se o sono está chegando. Uma sessão guiada oferece um destino suave para essa atenção, que é exatamente a condição que o sono precisa.",
+   "O ritmo faz a maior parte do trabalho: as frases ficam mais lentas e suaves, as imagens menos detalhadas, e não há nada para decidir ou acompanhar de perto. Muitas pessoas param de ouvir conscientemente bem antes do fim da sessão, que é o resultado desejado."
+  ],
+  "works_on": [
+   "Liberação física progressiva, dos pés para cima, para que o corpo deixe de carregar o peso do dia.",
+   "O hábito de monitorar se você já está dormindo — substituído por algo leve para seguir.",
+   "Imagens repetitivas e desaceleradoras: descer escadas, água derivando, um longo corredor silencioso.",
+   "Uma razão específica para você estar acordado, se você a digitar — um prazo, uma conversa, um hábito das 3 da manhã."
+  ],
+  "expect": "Coloque o volume baixo e deixe a sessão tocar. Ela dura de 15 a 30 minutos; não é preciso ficar acordado até o fim, e não há nada a fazer se você adormecer. Se uma sessão funcionar bem para você, salve-a e reproduza a mesma narração todas as noites.",
+  "faq": [
+   [
+    "Vou acordar no final?",
+    "As sessões para dormir são escritas para desvanecer, não para despertar. Se você quiser um retorno claro ao estado de alerta, use um dos temas diurnos."
+   ],
+   [
+    "Posso usar todas as noites?",
+    "Sim. As sessões salvas são reproduzidas exatamente da mesma forma, e a familiaridade tende a ajudar — a mesma narração se torna um sinal de que é hora de dormir."
+   ],
+   [
+    "Precisa de internet?",
+    "Apenas uma vez, para baixar o modelo de IA na primeira execução. Depois disso, as sessões são geradas e narradas totalmente offline."
+   ]
+  ]
+ },
+ "themes.confidence": {
+  "slug": "confidence",
+  "nav": "Confiança",
+  "card": "Treine ser a versão de você que já sabe como ser.",
+  "title": "Auto-hipnose para Confiança e Autoestima | Onira",
+  "desc": "Auto-hipnose guiada para confiança, escrita no seu celular com base na situação real que você enfrenta e narrada em voz alta. Privada e gratuita.",
+  "h1": "Auto-hipnose para confiança",
+  "lede": "Uma sessão construída sobre o ensaio: ver a si mesmo lidando bem com a situação, com detalhes suficientes para que ela deixe de parecer hipotética.",
+  "why_title": "Por que a hipnose ajuda com a confiança",
+  "why": [
+   "A confiança raramente falta de forma geral — ela desaparece em situações específicas. Falar em uma reunião, entrar em uma sala, fazer uma ligação. Esses momentos já são intensamente ensaiados, apenas na direção errada: você imaginou que dariam errado muitas vezes.",
+   "Uma sessão de hipnose é um ensaio estruturado na direção oposta. Em um estado relaxado e focado, você percorre a situação dando certo — postura, voz, o que dizer primeiro — e essa versão ganha parte da vivacidade que a versão ansiosa vinha recebendo de graça."
+  ],
+  "works_on": [
+   "Uma situação específica que está por vir, se você a nomear — uma apresentação, um encontro, uma entrevista, uma conversa difícil.",
+   "A assinatura física da confiança: respiração, postura, fala pausada.",
+   "Lembrar de vezes em que você já lidou bem com algo, para que a evidência seja sua, não emprestada.",
+   "Um âncora para usar no momento exato, quando não há tempo para uma sessão completa."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos e terminam com um retorno claro ao estado de alerta total, por isso funcionam bem pela manhã do dia ou na noite anterior. Salve a sessão e reproduza-a à medida que a data se aproxima.",
+  "faq": [
+   [
+    "Isso é apenas afirmações positivas?",
+    "Não. Afirmações afirmam algo; uma sessão de hipnose constrói uma cena e permite que você a ensaie em um estado relaxado, o que a maioria das pessoas acha que fixa mais facilmente do que repetir uma afirmação que ainda não acredita."
+   ],
+   [
+    "Quão específica deve ser minha descrição?",
+    "Tão específica quanto você quiser. \"Nervoso com a apresentação de quinta-feira para doze pessoas\" produz uma sessão mais útil do que \"mais confiança\"."
+   ],
+   [
+    "O que eu digito é armazenado em algum lugar?",
+    "Apenas no seu celular, e somente se você salvar a sessão. Nada é enviado para um servidor."
+   ]
+  ]
+ },
+ "themes.stress": {
+  "slug": "stress",
+  "nav": "Estresse",
+  "card": "Descomprima após um dia exigente e recupere suas energias.",
+  "title": "Auto-hipnose para alívio do estresse — Feita para você | Onira",
+  "desc": "Auto-hipnose guiada para o estresse, adaptada ao seu nível de pressão atual e narrada em voz alta. Funciona offline e mantém sua privacidade.",
+  "h1": "Auto-hipnose para alívio do estresse",
+  "lede": "Uma sessão para o fim de um dia intenso — primeiro, liberação física consciente e, em seguida, um distanciamento saudável das fontes de pressão.",
+  "why_title": "Por que a hipnose ajuda com o estresse",
+  "why": [
+   "O estresse crônico mantém o corpo em estado de alerta muito depois que a demanda inicial passou. Você percebe isso como mandíbula travada, respiração curta, irritabilidade e dificuldade para relaxar — a recuperação nunca acontece de fato porque nada sinaliza que o dia acabou.",
+   "Uma sessão guiada é esse sinal. A narração lenta e a liberação física gradual tiram você desse estado de tensão, e as imagens mentais subsequentes oferecem uma perspectiva sobre a pressão, permitindo que você a observe de fora, em vez de estar preso dentro dela."
+  ],
+  "works_on": [
+   "Liberação gradual da tensão acumulada — mãos, mandíbula, ombros e respiração.",
+   "Diferenciar o que é realmente urgente do que apenas parece urgente neste momento.",
+   "Um ponto de recuperação ao longo do dia, para que a pressão não se acumule continuamente.",
+   "Uma fonte específica de estresse, se você a identificar — carga de trabalho, mudança de casa, cuidado com alguém ou questões financeiras."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos e terminam trazendo você de volta ao estado de alerta, podendo ser usadas durante o intervalo do almoço, entre o trabalho e o fim do dia, ou na hora de dormir.",
+  "faq": [
+   [
+    "Com que frequência devo usar?",
+    "Tão frequentemente quanto for útil. Muitas pessoas usam sessões curtas diariamente por um período, depois mantêm uma salva para os dias mais exigentes."
+   ],
+   [
+    "Qual a diferença em relação ao tema ansiedade?",
+    "As sessões de estresse focam na recuperação diante de pressões reais e contínuas; as de ansiedade focam no ciclo de antecipação e no medo em si. Escolha a que melhor descreve sua semana."
+   ],
+   [
+    "Posso ouvir com fones no ônibus?",
+    "Pode, mas trate como um momento de relaxamento, não como uma sessão completa — não use enquanto dirige ou fizer qualquer atividade que exija sua atenção plena."
+   ]
+  ]
+ },
+ "themes.smoking": {
+  "slug": "quit-smoking",
+  "nav": "Parar de fumar",
+  "card": "Apoie uma decisão que você já tomou, desejo após desejo.",
+  "title": "Autohipnose para Parar de Fumar — Personalizada para Você | Onira",
+  "desc": "Autohipnose guiada para apoiar o processo de parar de fumar, escrita no seu celular com base nos seus gatilhos e motivos, e narrada em voz alta. Privado e gratuito.",
+  "h1": "Autohipnose para parar de fumar",
+  "lede": "Uma sessão que atua no momento do desejo — o gatilho, o ritual, o motivo pelo qual você está parando — em vez de depender apenas da força de vontade.",
+  "why_title": "Por que a hipnose é usada para parar de fumar",
+  "why": [
+   "O vício no cigarro é mantido por mais do que a nicotina: o café, o cigarro ao ar livre, a ligação telefônica, o momento após as refeições. Cada um desses é um estímulo aprendido, e estímulos respondem à repetição — que é exatamente o que uma sessão de hipnose proporciona.",
+   "As sessões atuam em duas frentes. Elas repetem a chegada e a passagem do estímulo sem o cigarro, e mantêm vivo o seu próprio motivo para parar, para que a decisão não precise ser refeita sob pressão a cada vez."
+  ],
+  "works_on": [
+   "Seus gatilhos específicos, se você os nomear — o café da manhã, o carro, o estresse no trabalho.",
+   "Superar um desejo como uma onda que sobe e passa, em vez de uma exigência a ser atendida.",
+   "O seu motivo para parar, nos seus próprios termos — saúde, dinheiro, filhos, fôlego, controle.",
+   "A mudança de identidade de \"tentando parar\" para alguém que não fuma."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos e terminam com você totalmente alerta. Muitas pessoas ouvem diariamente durante as primeiras semanas — o período em que os estímulos são mais intensos — e mantêm uma sessão salva para os dias mais difíceis.",
+  "faq": [
+   [
+    "Uma única sessão vai me fazer parar de fumar?",
+    "Não. A Onira apoia uma decisão que você já tomou; não é uma cura e não faz alegações clínicas. A reposição de nicotina, medicamentos prescritos e serviços de cessação valem a pena ser discutidos com um médico ou farmacêutico."
+   ],
+   [
+    "Quando devo ouvir?",
+    "Idealmente, antes dos horários do dia em que seus desejos são mais fortes, e novamente sempre que um dia difícil estiver se aproximando."
+   ],
+   [
+    "Funciona para o vape também?",
+    "A mesma estrutura se aplica — digite o que você realmente quer parar e a sessão será escrita em torno disso."
+   ]
+  ]
+ },
+ "themes.focus": {
+  "slug": "focus",
+  "nav": "Foco",
+  "card": "Acalme uma mente dispersa antes do trabalho que exige sua atenção.",
+  "title": "Auto-hipnose para Foco e Concentração | Onira",
+  "desc": "Auto-hipnose guiada para foco, escrita no seu celular em torno do trabalho que você vai realizar e narrada em voz alta. Funciona offline, nada é enviado.",
+  "h1": "Auto-hipnose para foco",
+  "lede": "Uma sessão mais curta e leve para limpar a bagunça mental antes de estudar, escrever ou trabalhar com atenção sustentada.",
+  "why_title": "Por que a hipnose ajuda com o foco",
+  "why": [
+   "Perder o foco geralmente não é uma falta de atenção, mas um excesso de demandas competindo por ela — notificações, tarefas inacabadas, o ruído constante de tudo o que você deveria estar fazendo. Sua atenção já está treinada em algo; só não é na coisa à sua frente.",
+   "A hipnose é, em sua essência, atenção sustentada e focada. Uma sessão estreita deliberadamente o campo de visão, deixa de lado o que não é prioridade agora e ensaia o início — que costuma ser a parte mais difícil de um longo período de trabalho."
+  ],
+  "works_on": [
+   "Estreitar a atenção para uma única tarefa e deixar o resto de lado por um período definido.",
+   "Reduzir a fricção do início, ensaiada até que o primeiro minuto se torne algo rotineiro.",
+   "Retomar a tarefa após uma interrupção sem perder o fio da meada.",
+   "Uma tarefa específica, se você a nomear — uma prova, um capítulo, um projeto, um prazo."
+  ],
+  "expect": "Use uma sessão de foco imediatamente antes de começar o trabalho. Ela termina com você alerta e pronto para agir, não sonolento, permitindo que você entre diretamente na tarefa.",
+  "faq": [
+   [
+    "Devo ouvir enquanto trabalho?",
+    "Não — ouça primeiro, depois trabalhe. A sessão pede sua atenção; a tarefa precisa dela depois."
+   ],
+   [
+    "Isso é útil para estudar?",
+    "Sim, esse é um dos usos mais comuns. Nomear a matéria e a data da prova torna a sessão notavelmente mais específica."
+   ],
+   [
+    "Posso encurtar a sessão?",
+    "As sessões têm duração alvo de 15 a 30 minutos. Você pode parar a qualquer momento — nada quebra se você encerrar antes."
+   ]
+  ]
+ },
+ "themes.weight": {
+  "slug": "weight-loss",
+  "nav": "Peso",
+  "card": "Trabalhe nos hábitos e na relação com a comida, não em regras.",
+  "title": "Autohipnose para Emagrecimento e Hábitos Alimentares | Onira",
+  "desc": "Autohipnoterapia para emagrecimento e hábitos alimentares, escrita no seu celular com base nos seus próprios padrões e narrada em voz alta. Privado, gratuito, sem assinatura.",
+  "h1": "Autohipnose para peso e hábitos alimentares",
+  "lede": "Uma sessão sobre os momentos ao redor da alimentação — o final da noite, o tédio, a recompensa — em vez de sobre o que você pode ou não comer.",
+  "why_title": "Por que a hipnose é usada para hábitos alimentares",
+  "why": [
+   "A maioria das mudanças alimentares que as pessoas buscam não é motivada pela fome. É um hábito ligado a um momento específico: a hora após o jantar, o caminho de volta para casa, o fim de um dia difícil, algo para fazer com as mãos. Regras não resolvem isso, porque o momento chega antes de qualquer decisão.",
+   "Uma sessão de hipnose ensaia esses momentos de forma diferente — percebendo o gatilho, deixando-o passar e construindo uma relação mais calma com a alimentação em geral. O foco está em como você come e por quê, não na restrição."
+  ],
+  "works_on": [
+   "O momento específico em que seu hábito é acionado, se você o identificar — noites, estresse, tédio, celebrações.",
+   "Comer devagar e perceber a saciedade, em vez de terminar automaticamente.",
+   "Separar o apetite da busca por conforto, sem tratar nenhum dos dois como uma falha.",
+   "Um tom interno mais estável, já que a autocrítica tende a alimentar o ciclo em vez de quebrá-lo."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos e terminam com você totalmente alerta. Ouvir em um horário consistente — muitas pessoas escolhem o final da tarde, antes das horas mais difíceis — tende a funcionar melhor do que ouvir apenas após um dia difícil.",
+  "faq": [
+   [
+    "Isso é uma dieta?",
+    "Não. A Onira não oferece conselhos dietéticos, nutricionais ou médicos e não estabelece regras sobre alimentos. Ela trabalha os hábitos e a relação com a alimentação."
+   ],
+   [
+    "Isso vai me fazer emagrecer?",
+    "Não faz tal promessa. O peso é um tema médico; um médico ou nutricionista é o local adequado para um plano."
+   ],
+   [
+    "E se eu tiver histórico de transtornos alimentares?",
+    "Por favor, consulte um profissional de saúde em vez de usar uma ferramenta de autoajuda. A Onira não foi projetada para transtornos alimentares e redirecionará o conteúdo que siga por esse caminho."
+   ],
+   [
+    "Como posso me hipnotizar para comer menos?",
+    "Você não suprime o apetite; você ensaia os momentos ao redor da alimentação — o lanche da noite, o tédio, a recompensa — para que o impulso automático diminua. Uma sessão escrita com base no seu próprio padrão, repetida por algumas semanas, é a abordagem realista. É uma ferramenta de relaxamento, não uma dieta ou um tratamento."
+   ]
+  ]
+ },
+ "themes.fear": {
+  "slug": "fear-and-phobias",
+  "nav": "Medo",
+  "card": "Enfrente o voo, a viagem de carro ou a altura com uma calma ensaiada.",
+  "title": "Autohipnose para Medo e Fobias | Onira",
+  "desc": "Autohipnose guiada para medo de voar, dirigir ou altura, escrita no seu telefone ao redor da situação que você realmente enfrenta. Privada, gratuita, offline.",
+  "h1": "Autohipnose para medo e fobias",
+  "lede": "Uma sessão construída em torno de uma situação específica — o voo, o elevador, a rodovia — ensaiada lentamente o suficiente para que seu corpo pare de tratá-la como uma emergência.",
+  "why_title": "Por que a hipnose ajuda com um medo específico",
+  "why": [
+   "Um medo raramente é resolvido apenas com argumentos. A reação chega antes do raciocínio: o peito aperta, a atenção se estreita, e a situação termina antes que qualquer pensamento sensato tenha vez. A hipnose guiada atua na parte que se move primeiro — a linguagem lenta e ritmada acalma o corpo, e um corpo acalmado reage de maneira diferente ao mesmo gatilho.",
+   "A partir daí, a sessão ensaia a cena em vez de evitá-la. Você passa pelo portão de embarque, pela rotatória, pelo elevador de vidro, em um ritmo que permite manter a calma. O ensaio repetido é o que faz a situação real parecer familiar em vez de súbita."
+  ],
+  "works_on": [
+   "O pico físico — respiração, peito, mãos — desacelerado deliberadamente antes do início da cena.",
+   "A própria evitação: a situação fica menor cada vez que é enfrentada calmamente no ensaio.",
+   "Um âncora para usar no momento: uma respiração, uma palavra, um gesto que remete à sessão.",
+   "Sua própria situação, se você a digitar — um voo no próximo mês, uma prova de direção, um túnel."
+  ],
+  "expect": "As sessões duram aproximadamente 15 a 30 minutos. Você permanece consciente durante todo o processo, e a sessão sempre termina trazendo você de volta ao estado de alerta total — para que possa ser usada na manhã do voo, não apenas na noite anterior. A maioria das pessoas ouve com fones de ouvido em um local onde não será interrompida.",
+  "faq": [
+   [
+    "A autohipnose pode curar uma fobia?",
+    "Não. A relaxamento guiado e o ensaio mental são ferramentas de autoajuda, e muitas pessoas as acham úteis para um medo do cotidiano. Uma fobia que limita sua vida é tratada por um clínico — muitas vezes de forma muito eficaz — e essa é a conversa que você deve ter."
+   ],
+   [
+    "Devo ouvir durante o próprio voo?",
+    "Você pode, e muitas pessoas fazem. A sessão termina retornando você ao estado de alerta total, por isso é segura antes ou durante — mas nunca enquanto dirige, mesmo uma sessão sobre dirigir."
+   ],
+   [
+    "Preciso descrever o que me assusta?",
+    "Não, o tema sozinho funciona. Se você descrever, o detalhe torna o ensaio mais preciso — e ele permanece no seu telefone, porque o modelo roda localmente."
+   ]
+  ]
+ },
+ "themes.learning": {
+  "slug": "memory-and-learning",
+  "nav": "Memória",
+  "card": "Entre no estado em que o estudo realmente fixa.",
+  "title": "Autohipnose para Memória e Aprendizado | Onira",
+  "desc": "Autohipnose guiada para estudar, recuperar informações e aprender idiomas, personalizada no seu celular com base no que você está estudando. Grátis, privada e funciona offline.",
+  "h1": "Autohipnose para memória e aprendizado",
+  "lede": "Uma sessão para o estado que o aprendizado precisa — atenção calma e sem distrações — adaptada à prova, ao idioma ou ao material que você tem em mãos.",
+  "why_title": "Por que a hipnose ajuda nos estudos",
+  "why": [
+   "A maioria dos problemas de estudo não é de memória. É de estado: metade da sua atenção está no prazo, no celular ou na sensação de que está indo mal. O que se fixa nesse estado é superficial, por isso uma hora de revisão ansiosa pode deixar quase nada para trás.",
+   "Uma sessão guiada reduz o ruído primeiro e depois coloca o material no silêncio que ela cria. A recuperação da informação é praticada exatamente como será necessária — a palavra surgindo na conversa, a resposta chegando na sala de prova — para que o treino combine com o momento."
+  ],
+  "works_on": [
+   "A inquietação que faz uma sessão de estudo desmoronar em dez minutos de rolagem infinita.",
+   "Recuperação no dia da prova: praticar a recuperação em condições calmas, em vez de apenas reler.",
+   "Aprendizado de idiomas — ouvir a si mesmo falando sem a vergonha ou o constrangimento.",
+   "Uma matéria específica, se você digitar uma: data de prova, lista de vocabulário, entrevista oral."
+  ],
+  "expect": "As sessões duram cerca de 15 a 30 minutos e terminam trazendo você de volta ao alerta total — elas devem ser usadas antes de estudar, não no lugar do estudo. Uma sessão gravada uma vez pode ser reproduzida antes de cada bloco de revisão.",
+  "faq": [
+   [
+    "Isso me permite aprender enquanto durmo?",
+    "Não. O aprendizado durante o sono não é algo que a hipnose proporciona, e a Onira não faz essa afirmação. O que uma sessão pode fazer é colocar você em um estado em que o estudo deliberado funciona melhor — o estudo ainda precisa acontecer."
+   ],
+   [
+    "Pode me ajudar a lembrar algo que esqueci?",
+    "Pode ajudar na recuperação comum — um nome, uma lista, onde algo foi deixado. A hipnose não é um meio confiável para recuperar memórias distantes ou dolorosas, e a Onira não foi desenvolvida para isso."
+   ],
+   [
+    "É útil especificamente para aprender idiomas?",
+    "Sim — principalmente para a parte da confiança. As sessões praticam a fala sem hesitação, que é geralmente o que bloqueia um idioma que você já conhece parcialmente."
+   ]
+  ]
+ },
+ "themes.motivation": {
+  "slug": "motivation-and-energy",
+  "nav": "Motivação",
+  "card": "Comece o que você vem adiantando há uma semana.",
+  "title": "Auto-hipnose para motivação e energia | Onira",
+  "desc": "Auto-hipnose guiada para procrastinação, baixa energia e para começar, escrita no seu celular em torno da tarefa que você está evitando. Gratuita e privada.",
+  "h1": "Auto-hipnose para motivação e energia",
+  "lede": "Uma sessão sobre começar — os dez minutos antes da tarefa, onde a motivação é realmente ganha ou perdida — escrita em torno da coisa que você continua adiando.",
+  "why_title": "Por que a hipnose ajuda com a procrastinação",
+  "why": [
+   "A procrastinação raramente é preguiça. Geralmente, é o evitar de um sentimento ligado à tarefa — ela será entediante, revelará que você está atrasado, não será boa o suficiente. A tarefa é postergada porque o sentimento também o é, e esse sentimento cresce a cada hora que espera.",
+   "Uma sessão aborda o sentimento em vez de dar uma palestra sobre a tarefa. Em um estado de calma, o início é ensaiado em detalhes: sentar-se, abrir o arquivo, a primeira pequena ação. Tendo ensaiado o começo, o começo deixa de ser a parte difícil."
+  ],
+  "works_on": [
+   "A hesitação antes de começar — ensaiada como uma sequência que você já passou.",
+   "Energia plana e pesada à tarde, tratada como tensão em vez de falta de vontade.",
+   "A história de tudo ou nada de que uma tarefa deve ser feita perfeitamente ou não iniciada de forma alguma.",
+   "Uma tarefa específica, se você a digitar: a declaração de imposto de renda, a academia, a mensagem que você deve."
+  ],
+  "expect": "As sessões duram aproximadamente de 15 a 30 minutos e terminam trazendo você de volta ao estado de alerta total, deliberadamente — este é um tema para usar antes da tarefa, não na hora de dormir. Muitas pessoas gravam uma e a reproduzem como um ritual de início de dia.",
+  "faq": [
+   [
+    "Uma sessão me tornará produtivo?",
+    "Não, e qualquer ferramenta que prometa isso está exagerando. O que uma sessão faz de forma confiável é reduzir a resistência para começar uma vez; fazer isso repetidamente é o que muda um hábito."
+   ],
+   [
+    "A baixa energia é algo que a hipnose pode corrigir?",
+    "O relaxamento pode ajudar com a energia que é realmente tensão ou sono ruim. O esgotamento persistente é uma questão médica em primeiro lugar — vale a pena levantar com um médico em vez de um aplicativo."
+   ],
+   [
+    "Posso usá-lo para motivação para exercícios?",
+    "Sim. Ensaiar o começo — colocar os sapatos, sair de casa — funciona melhor do que ensaiar o próprio treino, e é assim que a sessão é escrita."
+   ]
+  ]
+ },
+ "themes.habits": {
+  "slug": "nervous-habits",
+  "nav": "Hábitos nervosos",
+  "card": "Interrompa o hábito de roer as unhas ou ranger os dentes antes que se torne um vício.",
+  "title": "Autohipnose para Hábitos Nervosos | Onira",
+  "desc": "Autohipnose guiada para roer unhas, ranger os dentes e contrair a mandíbula, escrita no seu celular em torno do seu próprio gatilho. Privado, gratuito e offline.",
+  "h1": "Autohipnose para hábitos nervosos",
+  "lede": "Uma sessão para os hábitos que acontecem sem você — roer, ranger, beliscar — focada no momento exato antes que eles comecem.",
+  "why_title": "Por que a hipnose ajuda com um hábito nervoso",
+  "why": [
+   "Esses hábitos não são decisões. Quando você percebe, a mão já está na sua boca e a mandíbula já está tensa há uma hora. A força de vontade chega tarde demais para ser a ferramenta, é por isso que decidir parar raramente funciona por si só.",
+   "O que uma sessão trabalha é a lacuna antes do hábito — a tensão que o precede e o gatilho que o desencadeia. Rehearsing uma resposta diferente ao mesmo gatilho, em um estado relaxado, é como a parte automática do cérebro recebe algo diferente para fazer."
+  ],
+  "works_on": [
+   "A tensão acumulada: ombros, mandíbula e mãos relaxados antes que o hábito tenha motivo para começar.",
+   "Consciência do gatilho — perceber o momento de alcançar ou contrair, que é o único momento em que você pode agir.",
+   "Uma ação de substituição ensaiada até que se torne tão automática quanto a que ela substitui.",
+   "Seu próprio gatilho, se você o digitar: reuniões, dirigir, telas, um determinado horário do dia."
+  ],
+  "expect": "As sessões duram aproximadamente 15 a 30 minutos e terminam trazendo você de volta ao estado de alerta total. Os hábitos respondem à repetição, não à intensidade, então uma sessão gravada e reproduzida diariamente faz mais do que uma sessão ocasional e longa.",
+  "faq": [
+   [
+    "Isso funciona para ranger os dentes à noite?",
+    "Pode ajudar com o ranger diurno que alimenta o noturno. O ranger noturno é uma questão dental — esmalte desgastado e dor na mandíbula precisam de um dentista, e uma placa de proteção geralmente faz mais do que qualquer sessão de relaxamento."
+   ],
+   [
+    "Quanto tempo leva para um hábito mudar?",
+    "Mais do que uma sessão. São padrões automáticos construídos ao longo de anos, e a expectativa realista é uma redução gradual com o uso diário, não uma mudança repentina."
+   ],
+   [
+    "Arrancar a pele ou puxar os cabelos é a mesma coisa?",
+    "Podem ser mais do que um hábito nervoso, e quando causam sofrimento real ou danos, vale a pena procurar um clínico. O Onira é uma ferramenta de relaxamento, não um tratamento para eles."
+   ]
+  ]
+ },
+ "themes.pain": {
+  "slug": "pain",
+  "nav": "Dor",
+  "card": "Alivie a tensão e o medo que intensificam a dor.",
+  "title": "Autohipnose para Dor — Feita para Você | Onira",
+  "desc": "Autohipnose guiada como complemento ao seu tratamento: menos tensão, menos medo da próxima crise e noites mais tranquilas. Uma ferramenta de conforto, não uma cura. Offline e privado.",
+  "h1": "Autohipnose para conviver com a dor",
+  "lede": "Uma sessão para lidar com os aspectos da dor que não são a lesão em si — a tensão muscular, o medo da próxima crise e o sono que ela rouba de você.",
+  "why_title": "O que a hipnose pode e não pode fazer pela dor",
+  "why": [
+   "A dor nunca é apenas um sinal do corpo. O quanto de atenção ela ocupa, o quanto você se contrai ao redor dela e o quanto você teme o próximo episódio — tudo isso altera a intensidade que ela tem. São esses aspectos que uma sessão guiada pode alcançar, e muitas vezes fazem a diferença entre um dia difícil e um dia impossível.",
+   "O que ela não faz é remover a causa. Este tema é escrito como um complemento ao seu tratamento, nunca como substituto, e não é motivo para pular consultas ou alterar o que foi prescrito. Dor nova, em piora ou sem explicação deve ser avaliada por um médico primeiro."
+  ],
+  "works_on": [
+   "O guarda-costas muscular e a tensão que se acumulam ao redor de uma área dolorida.",
+   "Adormecer quando a dor continua atraindo sua atenção de volta.",
+   "A antecipação da próxima crise, que tensa tudo antes mesmo de ela chegar.",
+   "O lugar que a dor ocupa no dia — na borda da sua atenção, e não no centro."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos e terminam trazendo você de volta ao estado alerta. O que as pessoas costumam relatar é geralmente parcial e temporário — abaixar o volume, não desligar — e tende a melhorar com a repetição, não com uma única sessão.",
+  "faq": [
+   [
+    "A hipnose pode curar minha dor?",
+    "Não, e qualquer coisa que diga o contrário está vendendo algo. Relaxeamento e sugestão são amplamente usados junto com cuidados médicos para tornar a dor mais suportável. A Onira é uma ferramenta de relaxamento nesse sentido — um complemento, não um tratamento."
+   ],
+   [
+    "Eu ainda vou sentir a dor?",
+    "Provavelmente sim. O objetivo realista é que ela ocupe menos de você: menos tensão ao redor dela, menos medo antes dela, mais espaço para o resto do dia."
+   ],
+   [
+    "É seguro com meus medicamentos?",
+    "Uma sessão não interage com nada que você tome. O que importa é que você nunca reduza ou pare um tratamento prescrito porque uma sessão ajudou — essa decisão cabe a quem prescreveu."
+   ],
+   [
+    "E sobre a enxaqueca?",
+    "A tensão e a antecipação em torno de uma crise são acessíveis; a crise em si é um evento neurológico e uma questão médica. Não use uma sessão como substituto para um tratamento que funciona para você."
+   ]
+  ]
+ },
+ "themes.ibs": {
+  "slug": "ibs",
+  "nav": "SII",
+  "card": "Acalme o ciclo intestino-cérebro que mantém as crises.",
+  "title": "Autohipnose para SII — Feita para Você | Onira",
+  "desc": "Autohipnose guiada para o lado estressante da SII: intestino mais calmo, menos antecipação, dias mais leves. Uma ferramenta de relaxamento ao lado do seu tratamento, não um tratamento.",
+  "h1": "Autohipnose para SII",
+  "lede": "Uma sessão para o ciclo em que o estresse piora os sintomas e os sintomas alimentam o estresse — a parte da SII que responde ao relaxamento.",
+  "why_title": "Por que o relaxamento alcança o intestino",
+  "why": [
+   "O intestino e o sistema nervoso estão em constante comunicação, por isso uma semana estressante se reflete na sua digestão e o medo de uma crise em um lugar inadequado pode desencadeá-la. O relaxamento guiado atua diretamente nesse eixo: reduz o estado de alerta que mantém o ciclo ativo.",
+   "Vale ser preciso, porque a distinção importa: a hipnoterapia dirigida ao intestino é uma opção estabelecida no tratamento da SII, recomendada nas diretrizes clínicas quando outras abordagens não funcionaram — mas é um curso estruturado ministrado por um terapeuta qualificado. O Onira não é esse curso. É uma ferramenta de relaxamento que atua no mesmo eixo do estresse e complementa seu tratamento, sem substituí-lo."
+  ],
+  "works_on": [
+   "A antecipação — planejar o dia em função da localização dos banheiros e o custo emocional disso.",
+   "Tensão abdominal e respiração rasa, contida, durante uma crise.",
+   "O sono, que sofre em ambas as direções quando os sintomas estão ativos.",
+   "Uma situação específica, se você a definir: uma viagem longa, um restaurante, um dia no escritório."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos. Os sintomas digestivos respondem lentamente, por isso avalie os resultados ao longo de semanas de uso regular, e não apenas após uma única sessão.",
+  "faq": [
+   [
+    "Isso é o mesmo que hipnoterapia dirigida ao intestino?",
+    "Não. Essa é uma programa estruturado com um terapeuta qualificado, geralmente várias sessões ao longo de alguns meses. O Onira cria sessões de relaxamento personalizadas com base no que você descreve. Se você busca o protocolo clínico, consulte seu médico para um encaminhamento."
+   ],
+   [
+    "Devo ser diagnosticado primeiro?",
+    "Sim. Os sintomas digestivos têm muitas causas e alguns exigem investigação — sangramento, perda de peso inexplicável e mudança no seu padrão habitual exigem avaliação médica, não de aplicativo."
+   ],
+   [
+    "Posso usar durante uma crise?",
+    "Pode, e muitas pessoas fazem. Sente ou deite em um local onde não será interrompido e use a sessão para aliviar a tensão em torno do episódio, não para interrompê-lo."
+   ]
+  ]
+ },
+ "themes.anger": {
+  "slug": "anger",
+  "nav": "Raiva",
+  "card": "Respire antes de reagir e evite o impulso do momento.",
+  "title": "Auto-hipnose para Raiva e Irritabilidade | Onira",
+  "desc": "Auto-hipnose guiada para acalmar a raiva e o temperamento curto: tranquilize o corpo primeiro e pratique uma reação mais lenta aos seus gatilhos. Privado, gratuito e offline.",
+  "h1": "Auto-hipnose para raiva e temperamento curto",
+  "lede": "Uma sessão para os segundos antes de explodir: o calor, a mandíbula travada, a frase que você vai se arrepender. Baseada no que realmente te irrita.",
+  "why_title": "Por que uma prática de calma ajuda com a raiva",
+  "why": [
+   "A raiva raramente começa no momento em que você grita. O corpo já está tenso, a mandíbula travada e a respiração curta; quando você percebe, a reação já está em andamento. Tentar argumentar consigo mesmo nesse ponto é o momento mais difícil para fazer isso.",
+   "Uma sessão guiada atua antes. Ela reduz a tensão de base primeiro, pois um corpo calmo dá menos combustível ao hábito, e depois guia você pelo seu gatilho habitual com uma resposta mais lenta. Praticada em um estado relaxado, essa resposta começa a surgir mais rápido que a automática."
+  ],
+  "works_on": [
+   "Reduzir a tensão de fundo que faz pequenas coisas parecerem grandes.",
+   "Os primeiros sinais no corpo, calor, mandíbula, ombros, que são o aviso que ainda permite agir.",
+   "Um gatilho específico se você o digitar: trânsito, um colega, uma criança, uma mensagem.",
+   "A própria pausa, praticada até que ela venha sem esforço."
+  ],
+  "expect": "As sessões duram aproximadamente de 15 a 30 minutos e terminam trazendo você de volta ao estado de alerta total. A calma é perceptível imediatamente; uma mudança na reação vem com a repetição ao longo de semanas, não de uma única sessão.",
+  "faq": [
+   [
+    "A auto-hipnose cura problemas de raiva?",
+    "Não. É uma ferramenta de relaxamento que pode facilitar a identificação do acúmulo de raiva. Se a raiva leva você a machucar alguém ou a si mesmo, ou se parece fora de controle, procure um profissional: o Onira não é um tratamento."
+   ],
+   [
+    "É para o meu parceiro ou meu filho?",
+    "A sessão é para a pessoa que está ouvindo e só funciona se ela escolher participar. Usá-la para mudar outra pessoa não é o objetivo."
+   ],
+   [
+    "Quanto tempo leva para notar diferença?",
+    "A maioria das pessoas se sente mais calma após a primeira sessão. Uma reação diferente no momento exige repetição, então planeje algumas semanas de uso regular."
+   ]
+  ]
+ },
+ "themes.burnout": {
+  "slug": "burnout",
+  "nav": "Esgotamento",
+  "card": "Recupere um pouco de fôlego quando o trabalho te deixar esgotado.",
+  "title": "Autohipnose para Esgotamento e Cansaço Excessivo | Onira",
+  "desc": "Autohipnose guiada para o estado de burnout: descanso real, desligar o trabalho e dormir melhor. Um auxiliar de relaxamento, não um tratamento. Funciona offline e é privado.",
+  "h1": "Autohipnose para esgotamento e cansaço excessivo",
+  "lede": "Uma sessão para quando o descanso não parece mais descanso: as noites de cansaço com a mente agitada, o trabalho que te acompanha para casa, o sono que não repõe as energias.",
+  "why_title": "O que uma sessão pode e não pode fazer pelo burnout",
+  "why": [
+   "O burnout não se resolve apenas com uma técnica. Ele vem da sobrecarga, e essa sobrecarga precisa mudar. O que uma sessão guiada pode fazer é oferecer um momento confiável todos os dias em que nada é exigido de você, o que é mais difícil do que parece quando sua mente não para de listar tarefas.",
+   "É escrita como um complemento ao seu processo de recuperação, nunca como substituto. Se você não consegue funcionar, se o seu sono colapsou por semanas ou se sente sem esperança, procure um médico antes."
+  ],
+  "works_on": [
+   "Desligar o trabalho no fim do dia em vez de levá-lo para a cama.",
+   "Adormecer quando a mente repete os eventos do dia.",
+   "Deixar o corpo sair do estado constante de alerta.",
+   "Alguns minutos protegidos em que nada precisa ser decidido."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos, e uma curta pode ser ouvida em uma pausa no trabalho. O que as pessoas relatam é sentir-se mais descansado por um tempo, o que se acumula com o uso diário. Não substitui folgas ou uma conversa sobre a carga de trabalho.",
+  "faq": [
+   [
+    "A hipnose cura o burnout?",
+    "Não. Pode ajudar você a descansar e dormir melhor enquanto você lida com as causas. O Onira é uma ferramenta de relaxamento, não um tratamento."
+   ],
+   [
+    "Quando devo procurar um médico?",
+    "Se o esgotamento durou semanas, você não consegue trabalhar ou cuidar de si mesmo, ou seu humor está piorando, procure um médico ou terapeuta. Não espere que uma sessão resolva isso."
+   ],
+   [
+    "Posso usar durante o expediente?",
+    "Sim, em um lugar tranquilo. Não use enquanto dirige ou faz algo que exija atenção."
+   ]
+  ]
+ },
+ "themes.night_waking": {
+  "slug": "waking-up-at-night",
+  "nav": "Acordar à noite",
+  "card": "Volte a dormir após acordar às 3 da manhã",
+  "title": "Autohipnose para Acordar à Noite | Onira",
+  "desc": "Uma sessão guiada para quando você acorda no meio da noite e não consegue voltar a dormir: reduza o estado de alerta, esqueça o relógio e adormeça novamente. Offline e privado.",
+  "h1": "Autohipnose para acordar durante a noite",
+  "lede": "Uma sessão para o despertar às 3 da manhã: os pensamentos acelerados, o relógio que você não consegue parar de olhar, o medo da manhã que se aproxima.",
+  "why_title": "Por que voltar a dormir é a parte difícil",
+  "why": [
+   "Acordar brevemente durante a noite é normal. O que o mantém acordado é o que acontece em seguida: olhar a hora, contar as horas que faltam para o dia começar e ficar um pouco mais alerta a cada cálculo. O esforço para dormir é, em si, o que o acorda.",
+   "Uma sessão pensada para o meio da noite é lenta e baixa de propósito. Ela oferece à sua atenção um lugar tranquilo para descansar, tira a pressão de dormir e não pede que você faça nada."
+  ],
+  "works_on": [
+   "Desapegar-se do relógio e da matemática de quanto tempo de sono ainda falta.",
+   "Acalmar o pensamento que iniciou o despertar.",
+   "Relaxar o corpo sem pedir que ele tente.",
+   "Adormecer suavemente sem ser puxado de volta ao estado de alerta no final."
+  ],
+  "expect": "Mantenha o volume baixo e o celular virado para baixo. As sessões devem ser reproduzidas até o fim ou até você adormecer. Várias semanas seguindo a mesma rotina costumam fazer mais diferença do que qualquer noite isolada.",
+  "faq": [
+   [
+    "Posso adormecer durante uma sessão?",
+    "Esse é o objetivo. Uma sessão para dormir é escrita de forma que você possa adormecer, e nada se perde se isso acontecer."
+   ],
+   [
+    "E se eu acordar na mesma hora todas as noites?",
+    "Um padrão regular deve ser mencionado a um médico, especialmente se houver ronco alto, dor ou exaustão durante o dia. Uma sessão pode aliviar o despertar, mas não diagnosticá-lo."
+   ],
+   [
+    "Devo olhar o celular às 3 da manhã?",
+    "Escureça a tela, inicie a sessão e coloque o celular virado para baixo. Evite usar qualquer outro aplicativo."
+   ]
+  ]
+ },
+ "guides.vs_meditation": {
+  "slug": "hypnosis-vs-meditation",
+  "nav": "Hipnose vs meditação",
+  "card": "Dois estados, dois objetivos — e qual deles combina com o que você quer hoje à noite.",
+  "title": "Hipnose vs Meditação: Diferenças e Qual Usar | Onira",
+  "desc": "O que realmente separa a hipnose guiada da meditação, para que cada uma é mais eficaz e como escolher entre elas para dormir melhor, controlar a ansiedade ou mudar um hábito.",
+  "h1": "Hipnose vs meditação",
+  "lede": "Pelas aparências, parecem semelhantes: olhos fechados, respiração lenta, uma voz calma. Mas elas visam propósitos diferentes.",
+  "answer": "A meditação treina a atenção: você pratica perceber para onde a mente foi e trazê-la de volta, sem tentar alterar o que encontra. A hipnose usa um estado de relaxamento e foco para ensaiar algo específico — dormir, manter a calma em uma reunião ou não pegar o cigarro. Se você quer desenvolver uma habilidade geral, medite. Se quer trabalhar em um objetivo específico, uma sessão de hipnose é a ferramenta mais direta.",
+  "sections": [
+   [
+    "O que realmente é diferente",
+    [
+     "Ambas as práticas produzem um estado fisiológico semelhante: respiração mais lenta, menor ativação do sistema nervoso e atenção mais concentrada. A diferença está no que você faz quando chega lá. A meditação continua trazendo você de volta a um âncora neutra e não exige nada sobre o conteúdo da sua mente. Uma sessão de hipnose utiliza esse mesmo estado de calma para inserir sugestões — imagens, frases e ensaios focados em um único resultado.",
+     "É por isso que a hipnose é estruturada, enquanto a meditação muitas vezes não é. Uma sessão tem um arco: uma indução que o acalma, um aprofundamento, imagens, as sugestões em si, uma âncora para levar consigo e um retorno deliberado ao estado de alerta total. Cada parte existe para garantir que a próxima tenha efeito."
+    ],
+    []
+   ],
+   [
+    "Para que cada uma é mais eficaz",
+    [
+     "Nenhuma é uma prática superior de forma abstrata. Elas respondem a perguntas diferentes, e a maneira honesta de escolher é definir o que você quer nos próximos meses, e não qual soa mais séria."
+    ],
+    [
+     "Meditação, para um relacionamento geral com sua própria atenção: menos reatividade, mais espaço entre um sentimento e a ação que você toma. Os benefícios aparecem lentamente e de forma ampla.",
+     "Hipnose, para um alvo específico: adormecer, o medo de voar na próxima terça-feira, os primeiros dez minutos de uma tarefa que você sempre evita, um hábito que você quer interromper.",
+     "A meditação pede que você pare de perseguir um resultado, o que é exatamente o que a torna frustrante quando você tem um objetivo claro.",
+     "A hipnose é moldada por resultados, o que a torna mais fácil de começar, mas também mais fácil de exagerar — nenhuma sessão reescreve sua vida em uma única sessão."
+    ]
+   ],
+   [
+    "Uma delas tem mais comprovação científica?",
+    [
+     "Ambas têm uma literatura real e ambas têm mais entusiasmo do que evidências nas margens. Programas baseados em mindfulness têm o maior corpo de trabalho clínico, principalmente em torno do estresse, recaída na depressão e dor crônica. A hipnoterapia clínica tem um registro mais estreito, mas genuíno — a dor e o sofrimento procedural são seus pontos mais fortes, com resultados úteis para o início do sono e sintomas de síndrome do intestino irritável.",
+     "O que nenhuma delas tem é a pretensão de substituir o tratamento. Ambas são complementares: ajudam junto com o cuidado médico, não no lugar dele."
+    ],
+    []
+   ],
+   [
+    "Você não precisa escolher apenas uma",
+    [
+     "Um padrão comum e sensato é usar a meditação como prática diária e uma sessão de hipnose para a coisa específica que está no caminho esta semana. Elas não competem; na verdade, a meditação regular torna a fase de acalmamento de uma sessão mais rápida.",
+     "A Onira fica do lado da hipnose. Você escolhe o alvo, adiciona uma frase sobre o que realmente está acontecendo, e um modelo rodando no seu telefone escreve uma sessão em torno disso, depois narra — sem conta, nada enviado para a nuvem e nada genérico nas imagens."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "A hipnose pode me fazer fazer algo que não quero?",
+    "Não. Em uma sessão de autohipnose, você permanece consciente e no controle durante todo o tempo, e sugestões que vão contra o que você realmente deseja simplesmente não têm efeito. A hipnose de palco é entretenimento construído com voluntários dispostos a participar, e não é o que uma sessão terapêutica é."
+   ],
+   [
+    "Qual é melhor para ansiedade?",
+    "Para a ansiedade como um padrão geral, a meditação tem melhor comprovação a longo prazo. Para uma situação ansiosa específica que você pode nomear — um voo, uma apresentação, uma tomografia — ensaiá-la em uma sessão de hipnose tende a ser mais útil do que apenas ficar observando a respiração."
+   ],
+   [
+    "Meditação guiada é a mesma coisa que hipnose?",
+    "É o que mais se aproxima. Uma meditação guiada que visualiza um resultado e repete sugestões está fazendo a maior parte do que uma sessão de hipnose faz; a diferença está mais na etiqueta do que na prática."
+   ],
+   [
+    "Qual é a diferença entre hipnose e meditação?",
+    "A meditação treina a atenção de forma geral e não tenta alterar o que encontra; a hipnose usa o mesmo estado calmo e focado para ensaiar um alvo específico, como dormir ou mudar um hábito. A fisiologia é semelhante, mas a intenção não. Para uma habilidade ampla, medite; para uma coisa específica, a hipnose é mais direta."
+   ]
+  ]
+ },
+ "guides.does_it_work": {
+  "slug": "does-self-hypnosis-work",
+  "nav": "Funciona mesmo?",
+  "card": "O que a ciência comprova, o que não comprova e para quem não serve.",
+  "title": "A Hipnose Autoinduzida Funciona Mesmo? | Onira",
+  "desc": "Uma análise honesta sobre para que a hipnose autoinduzida serve, o que a evidência científica apoia, para quem ela não funciona e como saber se está tendo efeito.",
+  "h1": "A hipnose autoinduzida funciona mesmo?",
+  "lede": "Sim, para algumas coisas, com efeito moderado, e não para todos — uma resposta menos empolgante do que a maioria dos defensores ou críticos costuma apresentar.",
+  "answer": "A hipnose autoinduzida tem evidências razoáveis para a adormecimento, para a dor e para o estresse em procedimentos médicos, e para reduzir a ativação fisiológica que alimenta a ansiedade em situações específicas. Tem evidências fracas como tratamento isolado para qualquer condição clínica, e cerca de uma em quatro pessoas responde mal às sugestões, independentemente da técnica. É uma ferramenta real com um escopo limitado, não uma cura e não um placebo.",
+  "sections": [
+   [
+    "Para o que ela é boa",
+    [
+     "Os resultados mais claros são os menos dramáticos. Adormecer mais rápido, passar por um procedimento odontológico ou médico com menos sofrimento, amenizar a dor e entrar em um evento estressante específico mais tranquilo do que você estaria normalmente. Todos esses casos compartilham um padrão: um horizonte de curto prazo e um componente físico que o relaxamento realmente impacta.",
+     "Trabalho com hábitos — fumar, roer as unhas, dar os primeiros passos em uma tarefa que você evita — fica um degrau abaixo. As sessões ajudam, sendo mais eficazes como parte de um plano do que como o plano em si, e o efeito vem da repetição, não do poder de uma única sessão."
+    ],
+    []
+   ],
+   [
+    "Para o que ela não serve",
+    [
+     "Não é terapia e não trata depressão, transtorno de ansiedade, TEPT ou transtornos alimentares. Não é um meio de recuperar memórias esquecidas — a sugestão torna a memória menos confiável, não mais. Não substitui a medicação que seu médico prescreveu, e nenhuma sessão honesta sugerirá o contrário.",
+     "Também não é rápida. O marketing da hipnose aposta em sessões únicas e dramáticas, mas o padrão real é um efeito modesto que se acumula com o uso diário ao longo de semanas."
+    ],
+    []
+   ],
+   [
+    "Por que não funciona para todos",
+    [
+     "A sugestionabilidade varia entre as pessoas e é bastante estável ao longo da vida. Cerca de uma em quatro pessoas responde fracamente à sugestão hipnótica, não importa como seja entregue, e uma proporção semelhante responde fortemente. Isso não tem a ver com inteligência ou força de vontade, e não há técnica que mova alguém de um grupo para o outro de forma confiável.",
+     "A consequência prática vale a pena saber antes de começar: se três ou quatro tentativas honestas não fizerem absolutamente nada, a conclusão razoável é que esta não é a sua ferramenta, e não que você fez algo errado."
+    ],
+    []
+   ],
+   [
+    "Como saber se está tendo efeito",
+    [
+     "Avalie pelo objetivo, não pela experiência. As pessoas esperam sentir que estão hipnotizadas e, na maioria das vezes, não sentem — o estado é incomum por dentro, mais parecido com estar absorvido em um livro do que com qualquer coisa teatral. Não sentir nada especial durante uma sessão diz muito pouco sobre se funcionou.",
+     "Escolha uma coisa mensurável e observe por duas semanas: minutos para adormecer, cigarros por dia, se você iniciou a tarefa. Se o número mudar, continue; se não mudar, pare e tente outra coisa. Esse é um teste melhor do que qualquer relato sobre o quão fundo você foi."
+    ],
+    []
+   ],
+   [
+    "Onde a Onira se encaixa",
+    [
+     "A Onira é uma ferramenta de relaxamento e hipnose autoinduzida, e não é vendida como algo mais. O que muda em relação ao que geralmente se oferece é a especificidade: em vez de uma gravação feita para todos, um modelo no seu celular cria a sessão com base no tema que você escolhe e na frase que você digita, e então a narra em voz alta.",
+     "Ela roda inteiramente no dispositivo, então o que você digita sobre sua própria vida nunca sai do celular — não há conta nem servidor que possa ler isso. Se você está em sofrimento real, essa é uma conversa para ter com uma pessoa, e nenhum app é a resposta adequada para isso."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "A hipnose autoinduzida é apenas efeito placebo?",
+    "A expectativa é uma parte real disso, assim como na maioria da medicina. Mas a resposta hipnótica aparece de maneiras que o placebo sozinho não prevê — varia pela sugestionabilidade de traço, e estudos de imagem mostram mudanças de estado que acompanham isso. O resumo justo é um efeito genuíno modesto, com um componente de expectativa por cima."
+   ],
+   [
+    "Com que frequência devo fazer uma sessão?",
+    "Diariamente, por duas ou três semanas, se você estiver trabalhando em um hábito ou no sono. O efeito é cumulativo, e o maior preditor de obter algum resultado é ter feito as sessões repetidamente."
+   ],
+   [
+    "Posso ficar preso na hipnose?",
+    "Não. Sem uma voz guiando você, o estado simplesmente desaparece ou se transforma em sono. Uma sessão que termina corretamente inclui um retorno deliberado ao estado de alerta total para seu conforto, não por segurança."
+   ],
+   [
+    "A hipnose autoinduzida ainda funciona se eu adormecer durante a sessão?",
+    "Sim, e geralmente é tranquilo. Se a sessão for para dormir, adormecer é o objetivo. Se for para outra coisa, as sugestões ouvidas antes de você cochilar ainda contam, embora você possa absorver menos das sugestões posteriores; se isso continuar acontecendo, faça a sessão mais cedo no final do dia ou sente-se em vez de deitar."
+   ]
+  ]
+ },
+ "guides.street_hypnosis": {
+  "slug": "how-street-hypnosis-works",
+  "nav": "Hipnose de rua",
+  "card": "Real, não controle mental — e o mesmo mecanismo funciona em você.",
+  "title": "Como funciona a hipnose de rua (e é real?) | Onira",
+  "desc": "O que realmente acontece na hipnose de rua: o braço rígido, o aperto de mão congelado, por que funciona em algumas pessoas e não em outras, e se é legal.",
+  "h1": "Como funciona a hipnose de rua",
+  "lede": "O braço rígido, o aperto de mão congelado, o voluntário que esquece o próprio nome — o que está acontecendo ali, e quanto disso é real.",
+  "answer": "A hipnose de rua é real, e não é controle mental. O que o hipnotista usa é sugestão, expectativa e a própria disposição do voluntário de participar do cenário — além de uma etapa rápida de triagem que encontra as pessoas que respondem fortemente, já que aproximadamente uma em quatro pessoas o faz. Ninguém é controlado, ninguém perde a memória do evento, e ninguém faz nada que realmente recusaria. O mesmo mecanismo, menos o teatro, é o que a autohipnose usa quando você a direciona a si mesmo.",
+  "sections": [
+   [
+    "O que está acontecendo de fato",
+    [
+     "Hipnose é atenção focada mais sugestão. Reduza a atenção de alguém o suficiente, dê a eles uma expectativa clara do que está prestes a acontecer, e as sugestões começam a ser executadas antes que a verificação crítica habitual entre em ação. Esse é todo o mecanismo, numa esquina de rua ou em uma sessão.",
+     "A versão de rua adiciona duas coisas que uma gravação não consegue. Primeiro, uma pessoa socialmente comprometida: ela parou, concordou, há pessoas assistindo, e recuar agora seria um pequeno constrangimento. Segundo, a seleção — o hipnotista tenta várias pessoas e fica com as que respondem, é por isso que os clipes que você vê são todos de sucesso."
+    ],
+    []
+   ],
+   [
+    "O braço rígido e o aperto de mão congelado",
+    [
+     "Os elementos cênicos são menos misteriosos do que parecem, e cada um tem uma função:"
+    ],
+    [
+     "**Testes de sugestionabilidade** — o braço rígido que não dobra, as mãos coladas, as pálpebras que não abrem. Eles vêm primeiro porque dizem ao hipnotista o quão responsivo alguém é antes que algo maior seja tentado.",
+     "**Convencimentos** — os mesmos testes, fazendo um segundo trabalho. Sentir o próprio braço recusar-se a dobrar é muito mais persuasivo do que ser dito que ele vai, e essa crença faz a próxima sugestão ter mais força.",
+     "**Interrupção de padrão** — a indução pelo aperto de mão. Uma ação social automática é iniciada e depois interrompida no meio, deixando meio segundo de brancura, e uma instrução clara é inserida nesse espaço. É a surpresa usada como porta de entrada, não uma palavra mágica.",
+     "**Conformidade e rapport** — o ingrediente pouco glamouroso. O voluntário quer que isso funcione. Isso não é trapaça; querer que funcione é parte de como a sugestão funciona em geral."
+    ]
+   ],
+   [
+    "É real, ou são atores?",
+    [
+     "Principalmente real, com a ressalva de que você está assistindo a uma edição. A resposta à sugestão hipnótica varia entre pessoas e é bastante estável ao longo da vida: cerca de uma em quatro pessoas responde fortemente, uma proporção similar responde quase nada, e o resto fica no meio. Um hipnotista de rua encontra o primeiro grupo e filma eles.",
+     "O que não é real é a perda do eu. Os voluntários permanecem conscientes durante todo o processo, lembram-se depois e podem parar quando decidirem. A parte dramática — alguém incapaz de lembrar o próprio nome por dez segundos — é uma sugestão temporária com a qual alguém está cooperando, não um interruptor de desligamento."
+    ],
+    []
+   ],
+   [
+    "A hipnose é ilegal?",
+    [
+     "Fazê-la é geralmente legal, e performá-la em público é o que é regulado, em vez da coisa em si. O Reino Unido é o exemplo mais claro: a Lei de Hipnotismo de 1952 exige uma licença da autoridade local antes que a hipnose seja realizada como entretenimento público. Em outros lugares, as regras variam por país e às vezes por cidade, e alguns lugares restringem quem pode usar hipnose em um contexto clínico.",
+     "A parte que importa mais do que a licença é o consentimento. Hipnotizar um estranho que não concordou claramente não é uma brincadeira, e \"ele disse sim depois que eu comecei\" não é acordo. Se você tentar qualquer uma dessas coisas, pergunte antes, aceite um não como resposta e deixe qualquer pessoa que pareça angustiada em paz."
+    ],
+    []
+   ],
+   [
+    "O que isso significa se você quiser tentar em você mesmo",
+    [
+     "Aqui está a parte que os vídeos escondem: o mecanismo não precisa de plateia, de um estranho ou de um aperto de mão. Atenção, expectativa e sugestão são as partes funcionais, e todas as três estão disponíveis quando você é quem dá as instruções. O que você perde é o espetáculo. O que você ganha é que pode direcioná-lo a algo que você realmente quer — sono, um medo, um hábito, a hora antes de uma conversa difícil.",
+     "Também é mais lento e menos emocionante do que um clipe de rua, e honesto sobre isso: o efeito vem da repetição ao longo de semanas, não de um momento dramático único. Se você está no quarto das pessoas que respondem fortemente, você notará rapidamente. Se três ou quatro tentativas honestas não fizerem nada, este provavelmente não é o seu método."
+    ],
+    []
+   ],
+   [
+    "Onde a Onira se encaixa",
+    [
+     "A Onira escreve sessões de autohipnose no seu celular e as narra em voz alta — você escolhe um tema, opcionalmente diz o que está acontecendo de fato, e um modelo rodando no dispositivo escreve o roteiro e o fala. É o lado autodirigido do que você tem assistido, direcionado ao sono, ansiedade, confiança, hábitos e o resto.",
+     "Ela não ensina hipnose de rua e não vai fazer de você um hipnotista. É gratuita, funciona offline, e nada do que você digita sai do telefone."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Alguém pode me hipnotizar contra a minha vontade?",
+    "Não. A sugestão precisa da sua cooperação, e é por isso que os hipnotistas de rua pedem voluntários em vez de escolher alvos. Alguém que não quer participar simplesmente não responde."
+   ],
+   [
+    "Vou fazer algo embaraçoso?",
+    "Não algo a que você realmente se oponha. Pessoas sob sugestão recusam coisas que cruzam seus próprios limites, o que é bem documentado e também por que os shows de palco se mantêm em material inofensivo. O risco em um show é social, não psicológico."
+   ],
+   [
+    "O braço rígido é prova de que alguém está hipnotizado?",
+    "Não — é um teste de sugestionabilidade. Ele mostra o quão prontamente alguém aceita uma sugestão, o que é informação útil, mas é um passo antes de qualquer coisa que se assemelhe a um estado hipnótico, não evidência dele."
+   ],
+   [
+    "Posso aprender hipnose de rua com a Onira?",
+    "Não, e vale ser direto sobre isso. A Onira escreve sessões de autohipnose para você ouvir; ela não ensina você a hipnotizar outras pessoas. Se é isso que você busca, você quer um curso, não este aplicativo."
+   ],
+   [
+    "As pessoas lembram do que aconteceu?",
+    "Sim, em quase todos os casos. A amnésia sugerida é um efeito temporário em pessoas sugestionáveis, e ele passa. Acordar com um trecho em branco da vida esquecida é um recurso de filme."
+   ]
+  ]
+ },
+ "guides.is_it_safe": {
+  "slug": "is-self-hypnosis-safe",
+  "nav": "É seguro?",
+  "card": "Seguro para a maioria das pessoas, com uma lista curta de exceções reais.",
+  "title": "A hipnose autogênica é segura? | Onira",
+  "desc": "Os riscos reais da hipnose autogênica, quem deve evitá-la e quando é necessário consultar um médico antes — gravidez, epilepsia, crianças e mais.",
+  "h1": "A hipnose autogênica é segura?",
+  "lede": "Para a maioria das pessoas, sim — e os riscos reais são mais específicos e menos dramáticos do que as pessoas costumam imaginar.",
+  "answer": "A hipnose autogênica é segura para a maioria dos adultos saudáveis. Você não fica preso nela, não perde o controle e não é forçado a fazer algo contra sua vontade — isso é convenção de filmes. As precauções genuínas são mais específicas: nunca ouça enquanto dirige ou opera máquinas, trate-a como um complemento e não como substituto do tratamento prescrito, e converse com um médico antes se você tem psicose, transtorno dissociativo, transtorno bipolar ou TEPT. Para crianças, epilepsia e gravidez, a resposta geralmente é sim, com supervisão, o que vale a pena perguntar em vez de assumir.",
+  "sections": [
+   [
+    "Os riscos que as pessoas temem e o que é realmente verdade",
+    [
+     "Quase todo medo sobre a hipnose vem da ficção, então vale a pena esclarecê-los antes de abordar os reais:"
+    ],
+    [
+     "**Ficar preso.** Impossível. Sem uma voz guiando você, o estado simplesmente desaparece ou se transforma em sono comum. O retorno deliberado ao estado de alerta no final da sessão é para seu conforto, não um resgate.",
+     "**Perder o controle.** A sugestão requer sua cooperação. Você permanece consciente, lembra-se disso e recusa qualquer coisa que ultrapasse seus limites — que é exatamente por isso que os shows de palco pedem voluntários.",
+     "**Ser reprogramado sem perceber.** Nada é instalado. O que a repetição muda é um hábito de resposta, lentamente, e apenas na direção para a qual você já estava direcionado.",
+     "**Enfraquecer sua mente.** Não há evidências de que o relaxamento comum e a sugestão prejudiquem o julgamento, a atenção ou a força de vontade de ninguém."
+    ]
+   ],
+   [
+    "Os riscos que são reais",
+    [
+     "Eles são menos dramáticos e geralmente envolvem o contexto, não o estado em si."
+    ],
+    [
+     "**Fazer isso enquanto faz outra coisa.** Nunca com fones de ouvido enquanto dirige, pedala, cozinha ou cuida de uma criança. Esta é a maneira mais provável de se prejudicar, e é totalmente evitável.",
+     "**Usá-la em vez de tratamento.** Uma sessão que alivia a dor ou a ansiedade pode tornar tentador pular uma consulta ou reduzir uma prescrição. Essa é a decisão que requer mais cuidado, e cabe ao seu médico.",
+     "**Angústia inesperada.** Relaxar profundamente pode fazer com que um sentimento que você estava reprimindo surja — tristeza, raiva, uma memória. Para a maioria das pessoas, isso passa; se uma sessão consistentemente deixar você pior, pare e converse com um profissional qualificado.",
+     "**Memória.** A sugestão torna a recordação menos confiável, não mais. Qualquer coisa que ofereça recuperar eventos esquecidos está fazendo algo que a evidência não apoia."
+    ]
+   ],
+   [
+    "Quando consultar um médico antes",
+    [
+     "Nenhuma dessas é uma proibição absoluta, e a maioria das pessoas nessas situações usa ferramentas de relaxamento sem problemas. São os casos em que um profissional que conhece seu histórico deve opinar antes que um aplicativo o faça."
+    ],
+    [
+     "**Psicose ou esquizofrenia** — relaxamento e sugestão não são recomendados sem supervisão clínica.",
+     "**Transtornos dissociativos ou TEPT** — o relaxamento profundo pode desencadear dissociação ou memórias intrusivas. O trabalho com trauma deve ser feito com um clínico treinado.",
+     "**Transtorno bipolar** — geralmente é seguro quando estável; vale a pena discutir antes de usar durante um episódio.",
+     "**Epilepsia** — o relaxamento auditivo não é um gatilho conhecido de crises, mas as condições variam o suficiente para ser uma pergunta justa para seu neurologista.",
+     "**Gravidez** — geralmente é seguro, e a hipnose para preparação para o parto é bem estabelecida. Mencione isso em uma consulta em vez de adivinhar.",
+     "**Crianças** — a hipnose autogênica pode ser adequada para crianças mais velhas com orientação de um adulto. O Onira é escrito para adultos e não foi projetado para crianças pequenas."
+    ]
+   ],
+   [
+    "É seguro para ansiedade especificamente?",
+    [
+     "Para a ansiedade do dia a dia, sim, e é uma das coisas em que o relaxamento guiado é melhor — reduzindo a ativação física que alimenta o pensamento. A distinção importante é entre ansiedade cotidiana e um transtorno de ansiedade: a primeira é um alvo razoável para uma ferramenta de relaxamento, a segunda é um alvo razoável para tratamento, e usar a ferramenta junto com esse tratamento é seguro.",
+     "Uma nota prática: se ouvir antes de dormir o deixar mais alerta em vez de menos, isso é comum e não é um sinal de alerta. Uma sessão escrita para o sono termina de forma diferente de uma escrita para a calma."
+    ],
+    []
+   ],
+   [
+    "Onde o Onira se encaixa",
+    [
+     "O Onira cria sessões de hipnose autogênica no seu celular e as narra em voz alta, para sono, ansiedade, confiança, hábitos e o resto. Cada sessão termina trazendo você de volta ao estado de alerta total, e cada página de tema carrega a mesma linha deste guia: é uma ferramenta de relaxamento, não terapia e não aconselhamento médico.",
+     "É gratuito, funciona offline e nada que você digita sai do dispositivo — o que também significa que ninguém está perfilando sobre o que você estava ansioso."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "A hipnose autogênica pode piorar minha saúde mental?",
+    "É improvável para a maioria das pessoas, e possível em condições específicas — psicose, transtornos dissociativos e trauma quando abordado diretamente. Se você tem algum desses, faça disso uma pergunta para seu clínico em vez de um experimento."
+   ],
+   [
+    "É seguro ouvir todas as noites?",
+    "Sim. O uso diário é como o efeito se acumula, e não há nenhum efeito colateral conhecido. O limite usual é prático: uma sessão que o mantém acordado lendo a tela é pior do que o sono que você buscava."
+   ],
+   [
+    "Posso me viciar nisso?",
+    "Não, no sentido de dependência. As pessoas realmente se apegam a uma rotina que funciona, o que é comum e não um problema — a menos que esteja substituindo o cuidado que você realmente precisa."
+   ],
+   [
+    "É seguro para crianças?",
+    "Com orientação de um adulto e material adequado à idade, muitas vezes sim; o relaxamento é usado com crianças em ambientes clínicos. O Onira é escrito para adultos, então não é a ferramenta certa para uma criança pequena."
+   ],
+   [
+    "O que devo fazer se uma sessão me aborrecer?",
+    "Termine-a, abra os olhos e volte para o ambiente — isso está sempre disponível e nada o mantém sob hipnose. Se acontecer mais de uma vez, trate isso como um sinal para trabalhar com uma pessoa em vez de um aplicativo."
+   ]
+  ]
+ },
+ "guides.learn_self_hypnosis": {
+  "slug": "how-to-learn-self-hypnosis",
+  "nav": "Aprendendo",
+  "card": "O que praticar, em que ordem e quanto tempo realmente leva.",
+  "title": "Autohipnose para iniciantes: como aprender | Onira",
+  "desc": "Um método realista para aprender autohipnose por conta própria: o que praticar primeiro, quanto tempo leva, como é a sensação de entrar em transe e quando parar.",
+  "h1": "Autohipnose para iniciantes: como aprender",
+  "lede": "É uma habilidade com um currículo curto e as duas primeiras semanas mais lentas — aqui está a ordem que funciona e o erro que todos cometem.",
+  "answer": "Você pode aprender autohipnose por conta própria, e a maioria das pessoas que obtém resultados segue a mesma ordem: relaxar o corpo deliberadamente, estreitar a atenção para uma única coisa, dar a si mesmo uma sugestão específica e repeti-la todas as noites por duas ou três semanas. Espere que o estado pareça incomum — absorvido, como um bom livro, não inconsciente — e julgue-o pelo progresso no objetivo, não pela profundidade da sensação. Uma gravação guiada é a maneira mais fácil de começar, porque ler instruções para si mesmo compete com o relaxamento.",
+  "sections": [
+   [
+    "A ordem que funciona",
+    [
+     "As peças são simples. Fazer na ordem certa é o que impede que a primeira semana pareça que nada está acontecendo."
+    ],
+    [
+     "**Prepare o ambiente.** Um lugar onde você não será interrompido, celular silenciado, deitado ou recostado. Decidir verificar algo no meio do caminho é o que acaba com a maioria das tentativas iniciais.",
+     "**Relaxe de propósito, em etapas.** Mãos, mandíbula, ombros, respiração — expiração mais longa que a inspiração. Esta é a parte que as pessoas pulam, e é a parte que torna o resto possível.",
+     "**Estreite sua atenção.** Uma contagem regressiva lenta de vinte, uma única imagem, a sensação da sua própria respiração. Uma coisa, mantida com leveza.",
+     "**Dê uma sugestão, no presente e de forma positiva.** Não \"eu não vou entrar em pânico\", mas \"minha respiração permanece lenta e eu me mantenho firme\". Rehearse a cena em detalhes, em vez de repeti-la como uma frase.",
+     "**Volte deliberadamente.** Conte para cima, abra os olhos, esteja totalmente alerta. Isso importa para o hábito, não para a segurança."
+    ]
+   ],
+   [
+    "Como realmente parece",
+    [
+     "É aqui que a maioria das pessoas conclui que não consegue fazer. A expectativa é algo dramático — um limiar, um clique, uma sensação de cair em transe. A realidade é mais parecida com estar absorvido em um filme: o ambiente recua um pouco, o tempo fica impreciso, e você poderia parar a qualquer momento, mas não tem muita vontade de fazê-lo.",
+     "O que significa que não sentir nada especial diz muito pouco. Julgue as duas semanas pelo alvo: minutos para adormecer, se você começou a tarefa que evitava, como foi uma hora estressante. Se o número muda, está funcionando, não importa como foi a sensação."
+    ],
+    []
+   ],
+   [
+    "Quanto tempo leva",
+    [
+     "As primeiras sessões são para aprender a estrutura, não para obter resultados. Uma expectativa justa é que o relaxamento fique notavelmente mais fácil dentro de uma semana, e que qualquer coisa que você esteja realmente mirando leve de duas a três semanas de prática quase diária para mudar.",
+     "A responsividade também varia entre pessoas e é bastante estável ao longo da vida — aproximadamente um em cada quatro responde fortemente, cerca de tantos respondem quase nada. Se três ou quatro tentativas honestas não fizerem absolutamente nada, a conclusão razoável é que esta não é sua ferramenta, não que você precise tentar mais."
+    ],
+    []
+   ],
+   [
+    "Você pode aprender de um livro ou por conta própria?",
+    [
+     "Por conta própria, sim — é uma das poucas coisas nesta área que genuinamente não precisa de um profissional. De um livro, parcialmente: livros são bons para entender o que você está fazendo e ruins como guia em tempo real, porque ler instruções para si mesmo é o oposto de estreitar sua atenção.",
+     "Este é o argumento prático para uma gravação. Algo mais mantém a estrutura e o ritmo enquanto você faz a única parte que não pode ser delegada, que é deixar funcionar. Uma vez que a estrutura estiver familiar, fazer sem ajuda fica muito mais fácil."
+    ],
+    []
+   ],
+   [
+    "Aprender autohipnose não é aprender a hipnotizar pessoas",
+    [
+     "Vale a pena separar, porque as buscas se misturam. Hipnotizar outra pessoa é uma performance e uma habilidade interpessoal, com consentimento e calibração a aprender, e é ensinada em cursos. Autohipnose é uma rotina privada voltada para um dos seus próprios problemas.",
+     "Ser bom na segunda coisa quase não diz nada sobre a primeira, e o inverso também é verdadeiro."
+    ],
+    []
+   ],
+   [
+    "Onde o Onira se encaixa",
+    [
+     "O Onira escreve a sessão para você e a narra em voz alta: você escolhe um tema e, se quiser, digita uma frase sobre o que realmente está acontecendo. Isso remove as duas coisas com as quais os iniciantes lutam — manter a estrutura e encontrar as palavras para uma sugestão que se encaixe na sua situação.",
+     "É gratuito, funciona offline e nada que você digita sai do seu celular. Se você mais tarde quiser realizar sessões na sua cabeça sem ele, esse é um ótimo resultado e o app terá cumprido seu papel."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Quanto tempo deve durar uma sessão?",
+    "Quinze a trinta minutos atendem à maioria dos propósitos. Menos tempo funciona quando a habilidade já está familiar; muito mais tempo geralmente adiciona apenas sonolência, o que é bom se o objetivo era dormir e desperdiçado caso contrário."
+   ],
+   [
+    "Qual horário do dia é melhor?",
+    "Quando você puder ficar sem interrupções, com uma ressalva: sessões voltadas para qualquer coisa além do sono terminam trazendo você de volta à plena consciência, então a hora de dormir não é automaticamente o melhor momento."
+   ],
+   [
+    "Preciso escrever meu próprio roteiro?",
+    "Não, e escrever um enquanto tenta relaxar é a armadilha clássica de iniciante. Comece com algo que narre para você, e escreva o seu próprio mais tarde se sentir vontade de fazer isso."
+   ],
+   [
+    "Posso aprender se minha mente nunca para?",
+    "Essa é a condição inicial normal, não um impedimento. O relaxamento físico em etapas existe precisamente porque uma mente agitada não consegue se concentrar por comando — o corpo vai primeiro e a mente segue."
+   ],
+   [
+    "Autohipnose é a mesma coisa que meditação?",
+    "Relacionada, mas com objetivos diferentes. A meditação treina uma relação geral com sua atenção; a autohipnose direciona essa atenção para um alvo específico. A prática se sobrepõe, a intenção não."
+   ]
+  ]
+ },
+ "themes.emotional_recovery": {
+  "slug": "emotional-recovery",
+  "nav": "Recuperação emocional",
+  "card": "Relaxe após algo difícil, sem reviver a situação.",
+  "title": "Autohipnose para Recuperação Emocional | Onira",
+  "desc": "Autohipnose guiada para lidar com os efeitos de um período difícil: noites mais tranquilas, menos ruminação e dias mais equilibrados. Uma ferramenta de relaxamento, não terapia para trauma.",
+  "h1": "Autohipnose para a recuperação emocional",
+  "lede": "Uma sessão para o pós-evento — quando a situação difícil já passou, mas o seu sono, os seus nervos e a sua atenção ainda não se recuperaram.",
+  "why_title": "Acabe com o estresse, não com a sua paz",
+  "why": [
+   "Depois de uma situação difícil, o corpo costuma permanecer em estado de alerta muito tempo após o evento ter passado. Isso se manifesta em sono fragmentado, irritabilidade, pensamentos que voltam à mente durante a noite e uma resposta de susto que não se acalmou. São consequências comuns do estresse, e elas respondem muito bem à calma intencional.",
+   "Essas sessões foram desenvolvidas para acalmar esse estado, e não para reviver o que causou o problema. Elas não pedirão que você reexamine uma memória ou descreva o que aconteceu. Esse tipo de trabalho é válido, ajuda muito e deve ser feito com um profissional qualificado que possa acompanhar você por inteiro — e não sozinho, apenas com o celular."
+  ],
+  "works_on": [
+   "Sono que foi interrompido por um período difícil e não voltou.",
+   "Ruminação noturna — a mesma cena sendo repetida sem resolução.",
+   "Um corpo que permanece em alerta: peito apertado, mandíbula travada, sustos com pequenas coisas.",
+   "Enfrentar os dias comuns enquanto algo pesado ainda está se acomodando."
+  ],
+  "expect": "As sessões duram de 15 a 30 minutos e sempre terminam trazendo você de volta ao estado de alerta total. Se alguma sessão deixar você mais angustiado em vez de mais tranquilo, pare de usá-la e converse com um profissional qualificado.",
+  "faq": [
+   [
+    "Isso pode tratar trauma ou TEPT?",
+    "Não, e não é essa a proposta. Flashbacks, pesadelos, dissociação ou evitação que impactam sua vida são tratáveis — por um profissional de saúde mental especializado em trauma. O Onira é uma ferramenta de relaxamento para o pós-trauma, a ser usada em conjunto com esse tipo de acompanhamento, se você tiver."
+   ],
+   [
+    "Uma sessão pode me fazer lembrar de coisas?",
+    "Não foi projetada para isso, e não pedirá que você busque memórias. A hipnose também não é um método confiável para recuperar lembranças — um fato bem conhecido, e uma das razões pelas quais o foco do Onira está na calma do presente, e não em escavar o passado."
+   ],
+   [
+    "What if I start feeling worse during a session?",
+    "End it, open your eyes, and come back to the room. That reaction is a signal to work with a person rather than an app, and it is worth taking seriously rather than pushing through."
+   ],
+   [
+    "Luto é a mesma coisa?",
+    "É bem parecido, e o tema é adequado para isso. As sessões podem trazer mais equilíbrio para os seus dias e noites; elas não encurtam o processo de luto, e esse não é o seu objetivo."
+   ]
+  ]
+ },
+ "guides.fall_asleep": {
+  "slug": "how-to-fall-asleep-with-self-hypnosis",
+  "nav": "Adormecer",
+  "card": "O método passo a passo para as noites em que sua mente não para.",
+  "title": "Como Adormecer com Autohipnose | Onira",
+  "desc": "Um método de autohipnose passo a passo para adormecer quando sua mente não para, e o que fazer se não funcionar na primeira tentativa.",
+  "h1": "Como adormecer com autohipnose",
+  "lede": "Um método prático para as noites em que o corpo está cansado, mas a mente continua ativa — e um relato honesto sobre o que ele pode e não pode fazer.",
+  "answer": "Deite-se, feche os olhos e conte lentamente de vinte para um, fazendo cada número coincidir com uma expiração. Em cada número, solte um lugar específico: mandíbula, ombros, mãos. Ao chegar ao um, visualize uma única cena tranquila com o máximo de detalhes sensoriais possível e permaneça nela. O objetivo não é forçar o sono; é dar à mente uma tarefa lenta para fazer, em vez das tarefas aceleradas que ela havia planejado.",
+  "sections": [
+   [
+    "Por que a contagem regressiva funciona",
+    [
+     "A insônia no início da noite raramente é falta de cansaço. É uma mente que não recebeu nada para fazer e preencheu esse vazio com o amanhã. A autohipnose atua diretamente nesse vazio: uma tarefa lenta, repetitiva e levemente exigente ocupa exatamente a atenção que, de outra forma, seria usada para ensaiar uma discussão ou lembrar de um prazo.",
+     "A contagem regressiva é mais importante do que o número em si. Contar para baixo implica chegada, e associar cada número a uma expiração desacelera a respiração sem que você precise pensar sobre ela — o que é a maneira mais eficaz de tirar o sistema nervoso do modo de alerta."
+    ],
+    []
+   ],
+   [
+    "O método, passo a passo",
+    [
+     "Nada disso exige treinamento, nem precisa que você acredite em algo. Exige cerca de quinze minutos e a disposição para recomeçar quando sua mente divagar, o que acontecerá."
+    ],
+    [
+     "Prepare o ambiente primeiro: escuro, fresco, com o celular virado para baixo. Decidir verificar algo no meio do caminho é o que interrompe a maioria das tentativas.",
+     "Deite-se de costas, braços ao lado do corpo, e faça três respirações que sejam mais longas na expiração do que na inspiração.",
+     "Conte de vinte para um. Diga cada número em silêncio enquanto expira.",
+     "Com cada número, solte um lugar: mandíbula, língua, ombros, mãos, estômago, coxas, pés. Nomear o local é o que faz a tensão se soltar.",
+     "Ao chegar ao um, escolha uma cena — uma praia ao entardecer, um caminho entre árvores, um quarto que você lembra — e preencha-a: a temperatura, o som, o que está sob os pés.",
+     "Quando perceber que divagou e começou a pensar, não recomece do vinte. Retome a contagem de onde parou e continue."
+    ]
+   ],
+   [
+    "O que fazer quando não funciona",
+    [
+     "As primeiras tentativas frequentemente terminam com a mente divagando, e isso não é fracasso — é o comportamento normal da atenção antes de se acostumar com o hábito. O que muda o resultado é a repetição no mesmo horário da noite, para que a sequência se torne um gatilho.",
+     "Se você ainda estiver acordado após cerca de vinte minutos, levante-se, mantenha as luzes baixas e faça algo monótono até sentir sono. Deitar na cama lutando pelo sono ensina ao corpo que a cama é um lugar de luta pelo sono, o que é uma associação que vale a pena evitar."
+    ],
+    []
+   ],
+   [
+    "Onde uma sessão escrita ajuda",
+    [
+     "Fazer isso de memória significa que parte de você está executando as instruções, o que mantém essa parte acordada. Ser guiado por uma narração remove essa tarefa: você segue uma voz em vez de lembrar de uma lista, por isso as sessões guiadas funcionam melhor do que as autoguiadas para a maioria das pessoas na hora de dormir.",
+     "A Onira cria a sessão no seu celular com base no que realmente está impedindo você de dormir — se você digitar que não consegue parar de reviver uma conversa, as imagens e sugestões serão construídas em torno disso, em vez de uma praia genérica. O modelo roda no dispositivo, então nada do que você digita é enviado para a nuvem, e funciona com o celular offline e virado para baixo."
+    ],
+    []
+   ]
+  ],
+  "faq": [
+   [
+    "Quanto tempo leva para adormecer dessa forma?",
+    "A maioria das pessoas que pratica adormece durante a visualização da cena, e não no final da contagem — geralmente entre quinze e vinte e cinco minutos. Se você regularmente ainda estiver acordado ao final, trate isso como um sinal para observar as horas anteriores ao sono, em vez de tentar se esforçar mais na cama."
+   ],
+   [
+    "A autohipnose é segura para fazer à noite?",
+    "Para a insônia comum, sim — é uma relaxamento guiado, e o pior resultado comum é que você permaneça acordado. Não é um tratamento para distúrbios do sono, e insônia persistente, apneia do sono ou insônia acompanhada de humor deprimido são questões que devem ser avaliadas por um médico."
+   ],
+   [
+    "Posso usar uma gravação em vez de fazer por conta própria?",
+    "Sim, e para adormecer, uma gravação geralmente é melhor: ela remove a tarefa de lembrar os passos. O que uma gravação não pode fazer é mencionar exatamente o que você está revirando na mente, o que é a lacuna que uma sessão escrita no momento preenche."
+   ],
+   [
+    "A hipnoterapia pode me ajudar a dormir?",
+    "A hipnoterapia tem um histórico modesto, mas genuíno, para facilitar o início do sono, por isso uma sessão de autohipnose é uma opção razoável para tentar em noites em que sua mente não para. É uma ferramenta de relaxamento, não um tratamento: se a insônia durar semanas, consulte um médico além de usar a técnica."
+   ]
+  ]
+ }
+}
