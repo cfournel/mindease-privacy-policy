@@ -25,6 +25,7 @@ import html.parser
 import json
 import os
 import pathlib
+import re
 import time
 import urllib.error
 import urllib.parse
@@ -52,7 +53,14 @@ ROUNDUP_QUERIES = [
 MENTION_QUERIES = ['"Onira" hypnosis -site:onirahypno.com',
                    '"Onira" hypnose -site:onirahypno.com',
                    '"Onira" hipnosis -site:onirahypno.com']
-SKIP_HOSTS = ("onirahypno.com", "play.google.com", "apps.apple.com", "youtube.com",
+# A roundup lists several apps: its title says so. Technique articles, product pages and
+# APK mirrors also rank for these queries and are not outreach targets.
+ROUNDUP_TITLE = re.compile(
+    r"\b(best|top \d+|\d+ (best|top)|compared|comparison|vs|ranked|tested|meilleur(e)?s?|"
+    r"comparatif|top|mejor(es)?|comparad[ao]s?|comparativa)\b.*\b(apps?|applications?|aplicaciones|appli)\b|"
+    r"\b(apps?|applications?|aplicaciones)\b.*\b(compared|comparatif|comparad[ao]s?|valent le coup|valen la pena)\b",
+    re.I)
+SKIP_HOSTS = ("uptodown.com", "appbrain.com", "apkpure.com", "onirahypno.com", "play.google.com", "apps.apple.com", "youtube.com",
               "reddit.com", "facebook.com", "instagram.com", "tiktok.com", "x.com", "twitter.com")
 
 
@@ -160,6 +168,8 @@ def main():
             for url, title in brave(q, lang):
                 h = host(url)
                 if url in state["seen"] or any(s in h for s in SKIP_HOSTS) or h in known_hosts:
+                    continue
+                if not ROUNDUP_TITLE.search(title):
                     continue
                 state["seen"][url] = today
                 status, ours, named = inspect(url)
