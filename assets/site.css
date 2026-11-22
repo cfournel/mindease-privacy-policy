@@ -270,10 +270,12 @@ main > h2 + .shots:has(li:nth-child(3)) {
 .site-foot .badges img { max-width: 100%; height: auto; vertical-align: middle; }
 
 /* ---- Press page ---- */
-.press .table-wrap { overflow-x: auto; margin: 1.2rem 0; }
-.press table { border-collapse: collapse; width: 100%; font-size: .9rem; }
-.press th, .press td { border: 1px solid var(--rule); padding: .5rem .65rem; text-align: left; vertical-align: top; }
-.press th { background: var(--surface); }
+.table-wrap { overflow-x: auto; margin: 1.2rem 0; }
+.table-wrap table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.table-wrap th, .table-wrap td { border: 1px solid var(--rule); padding: .5rem .65rem; text-align: left; vertical-align: top; }
+.table-wrap th { background: var(--surface); }
+.table-wrap caption { caption-side: bottom; text-align: left; color: var(--muted); font-size: .85rem; padding-top: .5rem; }
+.updated { margin-top: -.4rem; }
 
 @media (max-width: 34rem) {
   body { font-size: 16px; }

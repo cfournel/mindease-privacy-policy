@@ -1,6 +1,6 @@
 # Onira
 
-> Onira is a free Android app that writes a personal self-hypnosis session with an AI model running entirely on the phone, then narrates it aloud. Nothing the user types or receives leaves the device.
+> Onira is a free Android app that writes a personal self-hypnosis session with an AI model, then narrates it aloud. When the phone can run the model (about 6 GB of RAM or more), everything is written on the phone, offline, and nothing the user types leaves the device; otherwise, or if the user prefers, Onira Cloud writes it on Onira's own server, only after the user agrees, without storing it. Which phones qualify: https://onirahypno.com/guides/which-phones-can-run-onira-offline/
 
 Onira is a relaxation and self-hypnosis tool, not therapy, medical or psychiatric advice, and not a substitute for professional care or emergency services.
 
@@ -42,6 +42,7 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Is it safe?](https://onirahypno.com/guides/is-self-hypnosis-safe/): The honest risks of self-hypnosis, who should skip it, and the situations where it needs a doctor first — pregnancy, epilepsy, children and more.
 - [Learning it](https://onirahypno.com/guides/how-to-learn-self-hypnosis/): A realistic way to learn self-hypnosis on your own: what to practise first, how long it takes, what going under feels like, and when to stop.
 - [Running an LLM on a phone](https://onirahypno.com/guides/running-an-llm-on-a-phone/): How Onira runs a fine-tuned Gemma 4 E2B with llama.cpp on Android: memory, mmap, threads, weight repacking and token bans, with numbers from real phones.
+- [Compatible phones](https://onirahypno.com/guides/which-phones-can-run-onira-offline/): Onira writes sessions on the phone, offline, when it has about 6 GB of RAM. How to check yours, and what Onira Cloud does on other phones.
 
 ## Session themes (Français)
 
@@ -72,6 +73,11 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Hypnose de rue](https://onirahypno.com/fr/guides/comment-fonctionne-l-hypnose-de-rue/): Ce qui se passe vraiment dans l'hypnose de rue : le bras raide, la poignée de main, pourquoi ça marche sur certains et pas sur d'autres, et ce que dit la loi.
 - [Est-ce sans danger ?](https://onirahypno.com/fr/guides/l-auto-hypnose-est-elle-sans-danger/): Les vrais risques de l'auto-hypnose, qui doit s'en abstenir, et les situations où il faut un avis médical d'abord — grossesse, épilepsie, enfants et plus.
 - [Apprendre](https://onirahypno.com/fr/guides/apprendre-l-auto-hypnose/): Une façon réaliste d'apprendre l'auto-hypnose seul : quoi pratiquer d'abord, combien de temps cela prend, ce que l'on ressent, et quand s'arrêter.
+- [Téléphones compatibles](https://onirahypno.com/fr/guides/telephones-compatibles-hors-ligne/): Onira écrit vos séances sur le téléphone, hors ligne, s'il a environ 6 Go de RAM. Comment le vérifier, et ce que fait Onira Cloud sur les autres.
+- [Applis d'hypnose IA comparées](https://onirahypno.com/fr/guides/meilleures-applis-hypnose-ia/): Onira, Hypnothera, InTheMoment et Hypnova comparées : gratuité, compte, hors ligne, Android, langues et prix, vérifiés sur leurs sites.
+- [Onira ou Hypnothera](https://onirahypno.com/fr/guides/onira-ou-hypnothera/): Onira ou Hypnothera : gratuité, compte, hors ligne, voix, langues et prix comparés, à partir du site de Hypnothera. Pour choisir selon ce qui compte.
+- [Onira ou InTheMoment](https://onirahypno.com/fr/guides/onira-ou-inthemoment/): Onira ou InTheMoment : séances gratuites, compte, hors ligne, langues et prix comparés à partir du site d'InTheMoment. Pour choisir l'appli qui vous va.
+- [Onira ou Hypnova](https://onirahypno.com/fr/guides/onira-ou-hypnova/): Onira ou Hypnova : bibliothèque, crédits, compte, hors ligne et prix comparés à partir du site d'Hypnova. Pour choisir selon votre façon d'écouter.
 
 ## Session themes (Español)
 
@@ -103,6 +109,11 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Hipnosis callejera](https://onirahypno.com/es/guias/como-funciona-la-hipnosis-callejera/): Qué ocurre de verdad en la hipnosis callejera: el brazo rígido, el apretón de manos, por qué funciona con unos y con otros no, y qué dice la ley.
 - [¿Es segura?](https://onirahypno.com/es/guias/es-segura-la-autohipnosis/): Los riesgos reales de la autohipnosis, quién debería evitarla y las situaciones en que conviene consultar a un médico antes: embarazo, epilepsia, niños y más.
 - [Aprenderla](https://onirahypno.com/es/guias/aprender-autohipnosis/): Una forma realista de aprender autohipnosis por tu cuenta: qué practicar primero, cuánto tarda, qué se siente y cuándo parar.
+- [Teléfonos compatibles](https://onirahypno.com/es/guias/telefonos-compatibles-sin-conexion/): Onira escribe tus sesiones en el teléfono, sin conexión, si tiene unos 6 GB de RAM. Cómo comprobarlo y qué hace Onira Cloud en los demás.
+- [Apps de hipnosis con IA comparadas](https://onirahypno.com/es/guias/mejores-apps-hipnosis-ia/): Onira, Hypnothera, InTheMoment e Hypnova comparadas: qué es gratis, si piden cuenta, sin conexión, Android, idiomas y precios, comprobados en sus webs.
+- [Onira o Hypnothera](https://onirahypno.com/es/guias/onira-o-hypnothera/): Onira o Hypnothera: qué es gratis, cuenta, sin conexión, voces, idiomas y precios comparados con la web de Hypnothera. Para elegir según lo que importa.
+- [Onira o InTheMoment](https://onirahypno.com/es/guias/onira-o-inthemoment/): Onira o InTheMoment: sesiones gratis, cuenta, sin conexión, idiomas y precios comparados con la web de InTheMoment. Para elegir la app que te va.
+- [Onira o Hypnova](https://onirahypno.com/es/guias/onira-o-hypnova/): Onira o Hypnova: biblioteca, créditos, cuenta, sin conexión y precios comparados con la web de Hypnova. Para elegir según cómo escuchas.
 
 ## Optional
 

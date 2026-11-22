@@ -73,8 +73,8 @@ EN = {
         "expect_title": "What to expect",
         "faq_title": "Common questions",
         "privacy_title": "Private by design",
-        "privacy_body": "Everything can stay on your phone: Onira can run its model on the device, "
-                        "offline, and then the theme you pick, the words you type and the session you "
+        "privacy_body": "Everything can stay on your phone, [if your phone can run the model](/guides/which-phones-can-run-onira-offline/): "
+                        "Onira runs it on the device, offline, and then the theme you pick, the words you type and the session you "
                         "receive are never uploaded. If you prefer, Onira Cloud writes the session on "
                         "Onira's own server instead, only after you agree, and the text is not stored. "
                         "Either way there is no account.",
@@ -890,8 +890,8 @@ FR = {
         "expect_title": "À quoi s'attendre",
         "faq_title": "Questions fréquentes",
         "privacy_title": "Confidentiel par conception",
-        "privacy_body": "Tout peut rester sur votre téléphone : Onira peut exécuter son modèle sur "
-                        "l'appareil, hors ligne, et alors le thème choisi, les mots que vous écrivez et "
+        "privacy_body": "Tout peut rester sur votre téléphone, [si le téléphone le permet](/fr/guides/telephones-compatibles-hors-ligne/) : "
+                        "Onira exécute son modèle sur l'appareil, hors ligne, et alors le thème choisi, les mots que vous écrivez et "
                         "la séance obtenue ne sont jamais envoyés. Si vous préférez, Onira Cloud écrit "
                         "la séance sur le serveur d'Onira, seulement avec votre accord, et le texte "
                         "n'est pas conservé. Dans les deux cas, aucun compte.",
@@ -1683,8 +1683,8 @@ ES = {
         "expect_title": "Qué esperar",
         "faq_title": "Preguntas frecuentes",
         "privacy_title": "Privado por diseño",
-        "privacy_body": "Todo puede quedarse en tu teléfono: Onira puede ejecutar su modelo en el "
-                        "dispositivo, sin conexión, y entonces el tema que eliges, lo que escribes y la "
+        "privacy_body": "Todo puede quedarse en tu teléfono, [si tu teléfono lo permite](/es/guias/telefonos-compatibles-sin-conexion/): "
+                        "Onira ejecuta su modelo en el dispositivo, sin conexión, y entonces el tema que eliges, lo que escribes y la "
                         "sesión que recibes nunca se envían. Si lo prefieres, Onira Cloud escribe la "
                         "sesión en el servidor de Onira, solo con tu permiso, y el texto no se guarda. "
                         "En ambos casos, sin cuenta.",
@@ -4583,5 +4583,711 @@ GUIDES.append("on_device_ai")
 
 # Portuguese (Brazil) and German (mindease#57): generated from reviewed drafts, see tools/make_ptde.py.
 from content_ptde import PT, DE  # noqa: E402
+
+# ------------------------------------------------------- phones, comparisons ----
+#
+# "Everything stays on your phone" is only true when the phone can run the model, so
+# that promise always carries its condition, and the condition links here (the
+# owner's rule, 2026-11-22). The comparison pages (FR and ES first, where no
+# competitor publishes one) are written by Onira and say so; every fact about another
+# app comes from that app's own site or store listing, with the date it was checked.
+# Re-check those facts before touching the date.
+GUIDES += ["phones", "best_ai_apps", "vs_hypnothera", "vs_inthemoment", "vs_hypnova"]
+
+COMPARED_ON = {"en": "November 22, 2026", "fr": "22 novembre 2026", "es": "22 de noviembre de 2026"}
+
+EN["ui"]["updated_label"] = "Updated"
+FR["ui"]["updated_label"] = "Mis à jour le"
+ES["ui"]["updated_label"] = "Actualizado el"
+PT["ui"]["updated_label"] = "Atualizado em"
+DE["ui"]["updated_label"] = "Aktualisiert am"
+
+# ------------------------------------------------------------------ home FAQ ----
+
+EN["home"]["faq"] = [
+    ("Is Onira free?",
+     "Yes. Personalized and ready-made sessions are free, with no credits to count and no "
+     "subscription to take: one ad plays while a personalized session is prepared, and a "
+     "one-time purchase removes it."),
+    ("Do I need an account?",
+     "No. There is no sign-up, no email and no login: you open the app and start a session."),
+    ("Does Onira work offline?",
+     "Yes, [if your phone can run the model](/guides/which-phones-can-run-onira-offline/) "
+     "(about 6 GB of RAM or more): after a one-time download, sessions are written and "
+     "narrated on the phone, in airplane mode if you like. On other phones, Onira Cloud "
+     "writes the session, only if you agree."),
+    ("Is it hypnotherapy or a medical treatment?",
+     "No. Onira is a relaxation and self-hypnosis tool. It does not replace a doctor, a "
+     "therapist or emergency services."),
+    ("Which languages does Onira speak?",
+     "English, French and Spanish, each with its own narration voice made for hypnosis."),
+]
+
+FR["home"]["faq"] = [
+    ("Onira est-elle gratuite ?",
+     "Oui. Les séances personnalisées et les séances prêtes à écouter sont gratuites, sans "
+     "crédits à compter ni abonnement à prendre : une publicité passe pendant la préparation "
+     "d'une séance personnalisée, et un achat unique la retire."),
+    ("Faut-il créer un compte ?",
+     "Non. Pas d'inscription, pas d'adresse e-mail, pas de mot de passe : on ouvre l'appli et "
+     "on lance une séance."),
+    ("Onira fonctionne-t-elle hors ligne ?",
+     "Oui, [si le téléphone le permet](/fr/guides/telephones-compatibles-hors-ligne/) (environ "
+     "6 Go de RAM ou plus) : après un téléchargement unique, les séances sont écrites et lues "
+     "sur le téléphone, en mode avion si vous voulez. Sur les autres téléphones, Onira Cloud "
+     "écrit la séance, seulement si vous l'acceptez."),
+    ("Est-ce un traitement médical ?",
+     "Non. Onira est un outil de relaxation et d'auto-hypnose. Elle ne remplace ni un médecin, "
+     "ni un psychologue, ni les services d'urgence."),
+    ("En quelles langues ?",
+     "Français, anglais et espagnol, chacune avec sa propre voix, faite pour l'hypnose."),
+]
+
+ES["home"]["faq"] = [
+    ("¿Onira es gratis?",
+     "Sí. Las sesiones personalizadas y las sesiones listas para escuchar son gratis, sin "
+     "créditos que contar ni suscripción que contratar: se muestra un anuncio mientras se "
+     "prepara una sesión personalizada, y una compra única lo quita."),
+    ("¿Hace falta crear una cuenta?",
+     "No. Sin registro, sin correo y sin contraseña: abres la app y empiezas una sesión."),
+    ("¿Onira funciona sin conexión?",
+     "Sí, [si tu teléfono lo permite](/es/guias/telefonos-compatibles-sin-conexion/) "
+     "(unos 6 GB de RAM o más): tras una descarga única, las sesiones se escriben y se narran "
+     "en el teléfono, en modo avión si quieres. En otros teléfonos, Onira Cloud escribe la "
+     "sesión, solo si lo aceptas."),
+    ("¿Es un tratamiento médico?",
+     "No. Onira es una herramienta de relajación y autohipnosis. No sustituye a un médico, a "
+     "un psicólogo ni a los servicios de emergencia."),
+    ("¿En qué idiomas?",
+     "Español, inglés y francés, cada uno con su propia voz, hecha para la hipnosis."),
+]
+
+# ------------------------------------------------------------- phones guide ----
+
+EN["guides"]["phones"] = {
+    "slug": "which-phones-can-run-onira-offline",
+    "nav": "Compatible phones",
+    "card": "Which phones write your sessions offline, and what happens on the others.",
+    "title": "Which Phones Can Run Onira Offline? | Onira",
+    "desc": "Onira writes sessions on the phone, offline, when it has about 6 GB of RAM. "
+            "How to check yours, and what Onira Cloud does on other phones.",
+    "h1": "Which phones can run Onira offline?",
+    "lede": "Onira can write every session on your phone itself, with no connection and "
+            "nothing sent anywhere. That takes a reasonably powerful phone: here is which "
+            "ones, how to tell, and what happens on the others.",
+    "answer": "An Android phone with about 6 GB of memory (RAM) or more, and roughly 2 GB of "
+              "free storage for a one-time download of the AI model (1.7 GB). On those "
+              "phones the session is written on the device, in airplane mode if you like, and "
+              "what you type never leaves it. On lighter phones Onira offers Onira Cloud: the "
+              "session is written on Onira's own server, only if you agree, and the text is "
+              "not kept.",
+    "sections": [
+        ("Why memory matters more than speed",
+         ["The model that writes your session has to sit in the phone's memory while it "
+          "works. On a 6 GB phone it takes about 1.6 GB while writing and is unloaded as soon "
+          "as the last part is written, so the session then plays with the memory free again. "
+          "Below that, Android would start closing apps, Onira included, in the middle of a "
+          "session.",
+          "Onira checks the phone's memory itself; there is nothing to configure. It was "
+          "tested on a 6 GB Samsung Galaxy S20 FE, an older mid-range phone, which writes a "
+          "full session comfortably. The engineering details are in [how we run an AI model "
+          "on a phone](/guides/running-an-llm-on-a-phone/)."],
+         []),
+        ("How to check your phone",
+         ["You can look it up, or simply let Onira decide."],
+         ["Open Settings, then About phone: the amount of RAM is listed there (on some brands "
+          "under Device specifications or Hardware).",
+          "6 GB or more: Onira can write your sessions on the phone, offline.",
+          "4 GB or less: ready-made sessions work as usual, and personalized ones go through "
+          "Onira Cloud, after you agree.",
+          "Not sure? Start a personalized session: if the phone cannot run the model, Onira "
+          "tells you and offers Onira Cloud instead."]),
+        ("What happens the first time",
+         ["The first time you start a personalized session, Onira asks once whether to use "
+          "Onira Cloud. Choose “Keep it on my phone” and the model downloads (1.7 GB, "
+          "best on Wi-Fi), then every session is written on the device. Choose “Use the "
+          "cloud” and the session starts at once without the download. You can change "
+          "your mind later in Settings.",
+          "Ready-made sessions never send anything and work on every phone."],
+         []),
+        ("Onira Cloud, on the other phones",
+         ["What is sent: the theme, the app language and the words you typed, over an "
+          "encrypted connection to Onira's own server, which writes the session and sends it "
+          "back. The text is not stored and there is no account. A short video ad pays for "
+          "each cloud session. Details are in the [privacy policy](/privacy/)."],
+         []),
+    ],
+    "faq": [
+        ("My phone has 4 GB of RAM. Can I use Onira?",
+         "Yes. Ready-made sessions work as on any phone, and personalized sessions are "
+         "written by Onira Cloud, if you agree to it."),
+        ("Do I need an internet connection?",
+         "Once, to download the model and the narration voice. After that, on a compatible "
+         "phone, sessions are written and narrated offline."),
+        ("How much space does it take?",
+         "About 1.7 GB for the model and 80 MB for the narration voice of your language."),
+        ("Is there an iPhone version?",
+         "Not yet: Onira is an Android app."),
+    ],
+}
+
+FR["guides"]["phones"] = {
+    "slug": "telephones-compatibles-hors-ligne",
+    "nav": "Téléphones compatibles",
+    "card": "Sur quels téléphones Onira écrit vos séances hors ligne, et ce qui se passe sur les autres.",
+    "title": "Onira hors ligne : quels téléphones compatibles ? | Onira",
+    "desc": "Onira écrit vos séances sur le téléphone, hors ligne, s'il a environ 6 Go de "
+            "RAM. Comment le vérifier, et ce que fait Onira Cloud sur les autres.",
+    "h1": "Sur quels téléphones Onira fonctionne-t-elle hors ligne ?",
+    "lede": "Onira peut écrire chaque séance directement sur votre téléphone, sans connexion "
+            "et sans rien envoyer. Cela demande un téléphone assez puissant : voici lesquels, "
+            "comment le savoir, et ce qui se passe sur les autres.",
+    "answer": "Il faut un téléphone Android avec environ 6 Go de mémoire vive (RAM) ou plus, "
+              "et à peu près 2 Go d'espace libre pour télécharger une seule fois le modèle "
+              "d'IA (1,7 Go). Sur ces téléphones, la séance est écrite sur l'appareil, en mode "
+              "avion si vous voulez, et ce que vous tapez ne le quitte jamais. Sur les "
+              "téléphones plus modestes, Onira propose Onira Cloud : la séance est écrite sur "
+              "le serveur d'Onira, seulement si vous l'acceptez, et le texte n'est pas conservé.",
+    "sections": [
+        ("Pourquoi la mémoire compte plus que la vitesse",
+         ["Le modèle qui écrit votre séance doit tenir dans la mémoire du téléphone pendant "
+          "qu'il travaille. Sur un téléphone de 6 Go, il occupe environ 1,6 Go pendant "
+          "l'écriture, puis il est déchargé dès que la dernière partie est écrite : la séance "
+          "se poursuit avec la mémoire libérée. En dessous, Android commencerait à fermer des "
+          "applis, Onira comprise, au milieu d'une séance.",
+          "Onira vérifie elle-même la mémoire du téléphone, il n'y a rien à régler. Elle a été "
+          "testée sur un Samsung Galaxy S20 FE de 6 Go, un milieu de gamme déjà ancien, qui "
+          "écrit une séance complète sans difficulté. Les détails techniques sont dans "
+          "[notre article sur l'IA embarquée](/guides/running-an-llm-on-a-phone/) (en anglais)."],
+         []),
+        ("Comment vérifier votre téléphone",
+         ["Vous pouvez regarder vous-même, ou laisser Onira décider."],
+         ["Ouvrez Paramètres, puis À propos du téléphone : la quantité de RAM y figure (selon "
+          "les marques, sous Caractéristiques ou Informations sur le matériel).",
+          "6 Go ou plus : Onira peut écrire vos séances sur le téléphone, hors ligne.",
+          "4 Go ou moins : les séances prêtes à écouter marchent normalement, et les séances "
+          "personnalisées passent par Onira Cloud, avec votre accord.",
+          "Pas sûr ? Lancez une séance personnalisée : si le téléphone ne peut pas faire "
+          "tourner le modèle, Onira vous le dit et vous propose Onira Cloud."]),
+        ("Ce qui se passe la première fois",
+         ["À la première séance personnalisée, Onira vous demande une fois s'il faut utiliser "
+          "Onira Cloud. Choisissez « Garder sur mon téléphone » et le modèle se télécharge "
+          "(1,7 Go, de préférence en Wi-Fi), puis chaque séance est écrite sur l'appareil. "
+          "Choisissez « Utiliser le cloud » et la séance démarre tout de suite, sans "
+          "téléchargement. Vous pouvez changer d'avis plus tard dans les Réglages.",
+          "Les séances prêtes à écouter n'envoient jamais rien et marchent sur tous les "
+          "téléphones."],
+         []),
+        ("Onira Cloud, sur les autres téléphones",
+         ["Ce qui est envoyé : le thème, la langue de l'appli et les mots que vous avez "
+          "écrits, par une connexion chiffrée, au serveur d'Onira, qui écrit la séance et la "
+          "renvoie. Le texte n'est pas conservé et il n'y a pas de compte. Une courte vidéo "
+          "publicitaire paie chaque séance dans le cloud. Le détail est dans la "
+          "[politique de confidentialité](/privacy/) (en anglais)."],
+         []),
+    ],
+    "faq": [
+        ("Mon téléphone a 4 Go de RAM, puis-je utiliser Onira ?",
+         "Oui. Les séances prêtes à écouter marchent comme sur n'importe quel téléphone, et "
+         "les séances personnalisées sont écrites par Onira Cloud, si vous l'acceptez."),
+        ("Faut-il une connexion internet ?",
+         "Une fois, pour télécharger le modèle et la voix. Ensuite, sur un téléphone "
+         "compatible, les séances sont écrites et lues hors ligne."),
+        ("Combien de place cela prend-il ?",
+         "Environ 1,7 Go pour le modèle et 80 Mo pour la voix de votre langue."),
+        ("Existe-t-il une version iPhone ?",
+         "Pas encore : Onira est une appli Android."),
+    ],
+}
+
+ES["guides"]["phones"] = {
+    "slug": "telefonos-compatibles-sin-conexion",
+    "nav": "Teléfonos compatibles",
+    "card": "En qué teléfonos Onira escribe tus sesiones sin conexión, y qué pasa en los demás.",
+    "title": "Onira sin conexión: ¿qué teléfonos son compatibles? | Onira",
+    "desc": "Onira escribe tus sesiones en el teléfono, sin conexión, si tiene unos 6 GB de "
+            "RAM. Cómo comprobarlo y qué hace Onira Cloud en los demás.",
+    "h1": "¿En qué teléfonos funciona Onira sin conexión?",
+    "lede": "Onira puede escribir cada sesión en tu propio teléfono, sin conexión y sin enviar "
+            "nada. Para eso hace falta un teléfono con cierta potencia: aquí tienes cuáles, "
+            "cómo saberlo y qué pasa en los demás.",
+    "answer": "Hace falta un teléfono Android con unos 6 GB de memoria (RAM) o más, y unos 2 GB "
+              "libres para descargar una sola vez el modelo de IA (1,7 GB). En esos teléfonos "
+              "la sesión se escribe en el dispositivo, en modo avión si quieres, y lo que "
+              "escribes nunca sale de él. En teléfonos más modestos, Onira ofrece Onira Cloud: "
+              "la sesión se escribe en el servidor de Onira, solo si lo aceptas, y el texto no "
+              "se guarda.",
+    "sections": [
+        ("Por qué importa más la memoria que la velocidad",
+         ["El modelo que escribe tu sesión tiene que caber en la memoria del teléfono mientras "
+          "trabaja. En un teléfono de 6 GB ocupa unos 1,6 GB durante la escritura y se descarga "
+          "en cuanto termina la última parte, así que la sesión sigue con la memoria libre. Por "
+          "debajo, Android empezaría a cerrar apps, Onira incluida, en mitad de una sesión.",
+          "Onira comprueba la memoria del teléfono por sí misma, no hay nada que configurar. Se "
+          "probó en un Samsung Galaxy S20 FE de 6 GB, una gama media ya antigua, que escribe una "
+          "sesión completa sin problema. Los detalles técnicos están en "
+          "[nuestro artículo sobre IA en el teléfono](/guides/running-an-llm-on-a-phone/) (en inglés)."],
+         []),
+        ("Cómo comprobar tu teléfono",
+         ["Puedes mirarlo tú, o dejar que Onira decida."],
+         ["Abre Ajustes y luego Información del teléfono: ahí aparece la RAM (según la marca, "
+          "en Especificaciones o Información del hardware).",
+          "6 GB o más: Onira puede escribir tus sesiones en el teléfono, sin conexión.",
+          "4 GB o menos: las sesiones listas para escuchar funcionan con normalidad, y las "
+          "personalizadas pasan por Onira Cloud, con tu permiso.",
+          "¿No estás seguro? Empieza una sesión personalizada: si el teléfono no puede con el "
+          "modelo, Onira te lo dice y te ofrece Onira Cloud."]),
+        ("Qué pasa la primera vez",
+         ["En la primera sesión personalizada, Onira te pregunta una vez si quieres usar Onira "
+          "Cloud. Elige «Mantenerlo en mi teléfono» y el modelo se descarga (1,7 GB, mejor con "
+          "wifi); después cada sesión se escribe en el dispositivo. Elige «Usar la nube» y la "
+          "sesión empieza enseguida, sin descarga. Puedes cambiar de opinión más tarde en "
+          "Ajustes.",
+          "Las sesiones listas para escuchar nunca envían nada y funcionan en todos los "
+          "teléfonos."],
+         []),
+        ("Onira Cloud, en los demás teléfonos",
+         ["Lo que se envía: el tema, el idioma de la app y las palabras que escribiste, por una "
+          "conexión cifrada, al servidor de Onira, que escribe la sesión y la devuelve. El texto "
+          "no se guarda y no hay cuenta. Un breve vídeo publicitario paga cada sesión en la "
+          "nube. Los detalles están en la [política de privacidad](/privacy/) (en inglés)."],
+         []),
+    ],
+    "faq": [
+        ("Mi teléfono tiene 4 GB de RAM, ¿puedo usar Onira?",
+         "Sí. Las sesiones listas para escuchar funcionan como en cualquier teléfono, y las "
+         "personalizadas las escribe Onira Cloud, si lo aceptas."),
+        ("¿Hace falta conexión a internet?",
+         "Una vez, para descargar el modelo y la voz. Después, en un teléfono compatible, las "
+         "sesiones se escriben y se narran sin conexión."),
+        ("¿Cuánto espacio ocupa?",
+         "Unos 1,7 GB el modelo y 80 MB la voz de tu idioma."),
+        ("¿Hay versión para iPhone?",
+         "Todavía no: Onira es una app para Android."),
+    ],
+}
+
+# -------------------------------------------------------- comparison pages ----
+#
+# Facts checked on 2026-11-22 on each publisher's own pages:
+#   Hypnothera  hypnothera.ai (home, /pricing, /best/free-hypnosis-apps), App Store listing
+#   InTheMoment inthemoment.app (home: plans and FAQ)
+#   Hypnova     hypnova.ai (/llms.txt, /pricing)
+# Prices are the ones those pages show in US dollars or pounds; store prices vary by country.
+
+FR["guides"]["best_ai_apps"] = {
+    "slug": "meilleures-applis-hypnose-ia",
+    "nav": "Applis d'hypnose IA comparées",
+    "card": "Onira, Hypnothera, InTheMoment et Hypnova : gratuité, compte, hors ligne, langues.",
+    "title": "Applis d'hypnose IA : le comparatif 2026 | Onira",
+    "desc": "Onira, Hypnothera, InTheMoment et Hypnova comparées : gratuité, compte, hors "
+            "ligne, Android, langues et prix, vérifiés sur leurs sites.",
+    "h1": "Applis d'hypnose IA : le comparatif 2026",
+    "lede": "Quatre applis écrivent une séance d'hypnose à partir de ce que vous leur dites. "
+            "Elles ne se ressemblent pas pour autant : ce qui est gratuit, le compte, l'endroit "
+            "où la séance est écrite et les langues changent tout. Cette page est publiée par "
+            "Onira ; les informations sur les autres applis viennent de leurs propres sites.",
+    "answer": "Si vous voulez rester sans compte ni crédits, et que rien ne quitte le téléphone, "
+              "Onira est la seule des quatre à écrire la séance sur l'appareil, "
+              "[si le téléphone le permet](/fr/guides/telephones-compatibles-hors-ligne/). Si "
+              "vous êtes sur iPhone, ou si vous voulez beaucoup de voix et de langues, "
+              "Hypnothera et InTheMoment en proposent davantage, avec un compte et une "
+              "gratuité limitée. Hypnova se distingue par sa bibliothèque de plus de 300 "
+              "séances prêtes, gratuites.",
+    "table": {
+        "headers": ["", "Gratuit", "Compte", "Où la séance est écrite", "Hors ligne",
+                    "Plateformes", "Langues", "Payant"],
+        "rows": [
+            ["Onira", "Séances personnalisées sans crédits ni limite, une pub pendant la préparation",
+             "Aucun", "Sur le téléphone [s'il le permet](/fr/guides/telephones-compatibles-hors-ligne/), sinon Onira Cloud avec votre accord",
+             "Oui, écriture comprise, sur un téléphone compatible", "Android",
+             "Français, anglais, espagnol", "Achat unique pour retirer la pub ; Onira Cloud : une pub par séance ou abonnement facultatif"],
+            ["Hypnothera", "25 crédits puis recharge à 15 par semaine (1 crédit ≈ 1 min d'audio), séances rapides de 30 s à 5 min illimitées",
+             "Oui (un essai de 5 min sans compte)", "Sur leurs serveurs",
+             "Téléchargement des séances avec un abonnement", "iOS, Android, web",
+             "14 langues", "6,99 $/semaine, 19,99 $/mois ou 99,99 $/an (hausse annoncée pour les nouveaux abonnés au 1er décembre 2026)"],
+            ["InTheMoment", "2 nouvelles séances par jour, 20 min maximum, gardées 60 jours",
+             "Oui", "Sur leurs serveurs", "Téléchargement des séances avec Pro",
+             "iOS, Android, web", "18 langues avec Pro", "Pro : 14,99 £/mois"],
+            ["Hypnova", "Plus de 300 séances prêtes ; 60 crédits à l'inscription pour les séances personnalisées",
+             "Oui, pour les crédits", "Sur leurs serveurs", "Non précisé",
+             "iOS, Android, web", "Non précisé", "Pro : 12,99 $/mois ou 99,99 $/an"],
+        ],
+        "caption": "Vérifié le 22 novembre 2026 sur les sites de Hypnothera, InTheMoment et "
+                   "Hypnova. Les prix en boutique varient selon le pays.",
+    },
+    "sections": [
+        ("Comment nous avons comparé",
+         ["Nous avons retenu les applis qui écrivent une séance à partir de vos propres mots, "
+          "et non celles qui proposent seulement des enregistrements. Pour chacune, nous avons "
+          "noté ce que leur site annonce : ce qui est gratuit et pour combien de temps, s'il "
+          "faut un compte, où le texte est écrit, ce qui marche hors ligne, les plateformes, "
+          "les langues et les prix. Nous éditons Onira : lisez ce tableau en le sachant, et "
+          "vérifiez les prix au moment de vous abonner, ils changent souvent."],
+         []),
+        ("Si la confidentialité compte le plus",
+         ["Hypnothera, InTheMoment et Hypnova écrivent la séance sur leurs serveurs, ce qui "
+          "suppose d'envoyer ce que vous décrivez et, en général, de créer un compte. Onira "
+          "écrit la séance sur le téléphone quand il a environ 6 Go de RAM : ce que vous tapez "
+          "ne le quitte pas, et elle marche en mode avion. Sur un téléphone plus modeste, "
+          "Onira Cloud prend le relais, seulement si vous l'acceptez, sans compte et sans "
+          "conserver le texte."],
+         []),
+        ("Si vous voulez beaucoup de séances gratuites",
+         ["La gratuité prend des formes différentes. Hypnothera compte en crédits, environ une "
+          "minute d'audio par crédit, avec une recharge chaque semaine. InTheMoment autorise "
+          "deux nouvelles séances par jour. Hypnova offre une grande bibliothèque prête et des "
+          "crédits pour personnaliser. Onira ne compte rien : chaque séance personnalisée "
+          "coûte une publicité."],
+         []),
+        ("Si vous êtes sur iPhone ou voulez choisir parmi beaucoup de voix",
+         ["Onira n'existe que sur Android et propose une voix par langue, faite pour "
+          "l'hypnose. Hypnothera annonce plus de 100 voix et 14 langues, InTheMoment 18 "
+          "langues avec Pro et la possibilité de modifier le script ; tous deux sont aussi "
+          "sur iPhone et sur le web."],
+         []),
+        ("Comparer deux à deux",
+         ["Le détail de chaque comparaison : [Onira ou Hypnothera](/fr/guides/onira-ou-hypnothera/), "
+          "[Onira ou InTheMoment](/fr/guides/onira-ou-inthemoment/), "
+          "[Onira ou Hypnova](/fr/guides/onira-ou-hypnova/)."],
+         []),
+    ],
+    "faq": [
+        ("Quelle appli d'hypnose IA est vraiment gratuite ?",
+         "Toutes ont une part gratuite, mais limitée différemment : crédits chez Hypnothera et "
+         "Hypnova, deux séances par jour chez InTheMoment. Onira n'a ni crédits ni limite : "
+         "une publicité par séance personnalisée, qu'un achat unique retire."),
+        ("Une appli d'hypnose IA peut-elle marcher sans internet ?",
+         "Onira peut écrire et lire la séance sans connexion, sur un téléphone d'environ 6 Go "
+         "de RAM. Les autres écrivent la séance en ligne ; certaines permettent ensuite de "
+         "télécharger l'audio avec un abonnement."),
+        ("Faut-il un compte pour ces applis ?",
+         "Pour Hypnothera, InTheMoment et Hypnova, oui, au moins pour utiliser les crédits ou "
+         "les séances gratuites du jour. Onira n'a pas de compte."),
+        ("L'hypnose par une IA remplace-t-elle un thérapeute ?",
+         "Non. Ces applis sont des outils de relaxation et d'auto-hypnose. En cas de trouble "
+         "anxieux, de dépression, de douleur persistante ou de dépendance, parlez-en à un "
+         "médecin."),
+    ],
+}
+
+ES["guides"]["best_ai_apps"] = {
+    "slug": "mejores-apps-hipnosis-ia",
+    "nav": "Apps de hipnosis con IA comparadas",
+    "card": "Onira, Hypnothera, InTheMoment e Hypnova: qué es gratis, cuenta, sin conexión, idiomas.",
+    "title": "Apps de hipnosis con IA: comparativa 2026 | Onira",
+    "desc": "Onira, Hypnothera, InTheMoment e Hypnova comparadas: qué es gratis, si piden "
+            "cuenta, sin conexión, Android, idiomas y precios, comprobados en sus webs.",
+    "h1": "Apps de hipnosis con IA: comparativa 2026",
+    "lede": "Cuatro apps escriben una sesión de hipnosis a partir de lo que les cuentas. No por "
+            "eso se parecen: lo que es gratis, la cuenta, dónde se escribe la sesión y los "
+            "idiomas lo cambian todo. Esta página la publica Onira; los datos de las demás apps "
+            "vienen de sus propias webs.",
+    "answer": "Si quieres seguir sin cuenta ni créditos, y que nada salga del teléfono, Onira es "
+              "la única de las cuatro que escribe la sesión en el dispositivo, "
+              "[si tu teléfono lo permite](/es/guias/telefonos-compatibles-sin-conexion/). Si "
+              "usas iPhone, o quieres muchas voces e idiomas, Hypnothera e InTheMoment ofrecen "
+              "más, con cuenta y una parte gratuita limitada. Hypnova destaca por su biblioteca "
+              "de más de 300 sesiones listas, gratis.",
+    "table": {
+        "headers": ["", "Gratis", "Cuenta", "Dónde se escribe la sesión", "Sin conexión",
+                    "Plataformas", "Idiomas", "De pago"],
+        "rows": [
+            ["Onira", "Sesiones personalizadas sin créditos ni límite, un anuncio mientras se prepara",
+             "Ninguna", "En el teléfono [si lo permite](/es/guias/telefonos-compatibles-sin-conexion/); si no, Onira Cloud con tu permiso",
+             "Sí, escritura incluida, en un teléfono compatible", "Android",
+             "Español, inglés, francés", "Compra única para quitar los anuncios; Onira Cloud: un anuncio por sesión o suscripción opcional"],
+            ["Hypnothera", "25 créditos y recarga a 15 cada semana (1 crédito ≈ 1 min de audio), sesiones rápidas de 30 s a 5 min ilimitadas",
+             "Sí (una prueba de 5 min sin cuenta)", "En sus servidores",
+             "Descarga de sesiones con suscripción", "iOS, Android, web",
+             "14 idiomas", "6,99 $/semana, 19,99 $/mes o 99,99 $/año (subida anunciada para nuevos suscriptores el 1 de diciembre de 2026)"],
+            ["InTheMoment", "2 sesiones nuevas al día, 20 min como máximo, guardadas 60 días",
+             "Sí", "En sus servidores", "Descarga de sesiones con Pro",
+             "iOS, Android, web", "18 idiomas con Pro", "Pro: 14,99 £/mes"],
+            ["Hypnova", "Más de 300 sesiones listas; 60 créditos al registrarte para sesiones personalizadas",
+             "Sí, para los créditos", "En sus servidores", "No indicado",
+             "iOS, Android, web", "No indicado", "Pro: 12,99 $/mes o 99,99 $/año"],
+        ],
+        "caption": "Comprobado el 22 de noviembre de 2026 en las webs de Hypnothera, InTheMoment "
+                   "e Hypnova. Los precios en las tiendas cambian según el país.",
+    },
+    "sections": [
+        ("Cómo las comparamos",
+         ["Elegimos las apps que escriben una sesión a partir de tus propias palabras, no las "
+          "que solo ofrecen grabaciones. De cada una anotamos lo que anuncia su web: qué es "
+          "gratis y durante cuánto tiempo, si hace falta cuenta, dónde se escribe el texto, qué "
+          "funciona sin conexión, plataformas, idiomas y precios. Nosotros hacemos Onira: lee "
+          "esta tabla sabiéndolo, y comprueba los precios cuando vayas a suscribirte, cambian a "
+          "menudo."],
+         []),
+        ("Si lo que más te importa es la privacidad",
+         ["Hypnothera, InTheMoment e Hypnova escriben la sesión en sus servidores, lo que "
+          "supone enviar lo que describes y, por lo general, crear una cuenta. Onira escribe la "
+          "sesión en el teléfono cuando tiene unos 6 GB de RAM: lo que escribes no sale de él, "
+          "y funciona en modo avión. En un teléfono más modesto, Onira Cloud toma el relevo, "
+          "solo si lo aceptas, sin cuenta y sin guardar el texto."],
+         []),
+        ("Si quieres muchas sesiones gratis",
+         ["Lo gratuito toma formas distintas. Hypnothera cuenta en créditos, más o menos un "
+          "minuto de audio por crédito, con una recarga semanal. InTheMoment permite dos "
+          "sesiones nuevas al día. Hypnova ofrece una gran biblioteca lista y créditos para "
+          "personalizar. Onira no cuenta nada: cada sesión personalizada cuesta un anuncio."],
+         []),
+        ("Si usas iPhone o quieres elegir entre muchas voces",
+         ["Onira solo está en Android y tiene una voz por idioma, hecha para la hipnosis. "
+          "Hypnothera anuncia más de 100 voces y 14 idiomas, InTheMoment 18 idiomas con Pro y "
+          "la opción de editar el guion; las dos están también en iPhone y en la web."],
+         []),
+        ("Comparar de dos en dos",
+         ["El detalle de cada comparación: [Onira o Hypnothera](/es/guias/onira-o-hypnothera/), "
+          "[Onira o InTheMoment](/es/guias/onira-o-inthemoment/), "
+          "[Onira o Hypnova](/es/guias/onira-o-hypnova/)."],
+         []),
+    ],
+    "faq": [
+        ("¿Qué app de hipnosis con IA es realmente gratis?",
+         "Todas tienen una parte gratuita, pero con límites distintos: créditos en Hypnothera "
+         "e Hypnova, dos sesiones al día en InTheMoment. Onira no tiene créditos ni límite: un "
+         "anuncio por sesión personalizada, que una compra única quita."),
+        ("¿Una app de hipnosis con IA puede funcionar sin internet?",
+         "Onira puede escribir y narrar la sesión sin conexión, en un teléfono de unos 6 GB de "
+         "RAM. Las demás escriben la sesión en línea; algunas permiten luego descargar el "
+         "audio con una suscripción."),
+        ("¿Hace falta cuenta en estas apps?",
+         "En Hypnothera, InTheMoment e Hypnova, sí, al menos para usar los créditos o las "
+         "sesiones gratis del día. Onira no tiene cuenta."),
+        ("¿La hipnosis con IA sustituye a un terapeuta?",
+         "No. Estas apps son herramientas de relajación y autohipnosis. Ante un trastorno de "
+         "ansiedad, una depresión, un dolor persistente o una adicción, habla con un médico."),
+    ],
+}
+
+
+def _transpose(table):
+    """Criteria as rows, apps as columns: five narrow columns fit the page, eight did not."""
+    apps = [r[0] for r in table["rows"]]
+    crit = table["headers"][1:]
+    table["headers"] = [""] + apps
+    table["rows"] = [[c] + [r[i + 1] for r in table["rows"]] for i, c in enumerate(crit)]
+
+
+_transpose(FR["guides"]["best_ai_apps"]["table"])
+_transpose(ES["guides"]["best_ai_apps"]["table"])
+
+def _vs(lang_code, key, rival, slug, facts):
+    """One "Onira or <rival>" page per rival, same shape in both languages."""
+    fr = lang_code == "fr"
+    phones = ("/fr/guides/telephones-compatibles-hors-ligne/" if fr
+              else "/es/guias/telefonos-compatibles-sin-conexion/")
+    best = "/fr/guides/meilleures-applis-hypnose-ia/" if fr else "/es/guias/mejores-apps-hipnosis-ia/"
+    onira_row = facts["onira_fr" if fr else "onira_es"]
+    rival_row = facts["rival_fr" if fr else "rival_es"]
+    rows = [[h, o, r] for h, o, r in zip(facts["rows_fr" if fr else "rows_es"], onira_row, rival_row)]
+    page = {
+        "slug": slug,
+        "nav": ("Onira ou %s" if fr else "Onira o %s") % rival,
+        "card": facts["card_fr" if fr else "card_es"],
+        "title": ("Onira ou %s : quelle appli d'hypnose IA ? | Onira" if fr
+                  else "Onira o %s: ¿qué app de hipnosis con IA? | Onira") % rival,
+        "desc": facts["desc_fr" if fr else "desc_es"],
+        "h1": ("Onira ou %s : laquelle choisir ?" if fr else "Onira o %s: ¿cuál elegir?") % rival,
+        "lede": facts["lede_fr" if fr else "lede_es"],
+        "answer": facts["answer_fr" if fr else "answer_es"].replace("@PHONES@", phones),
+        "table": {
+            "headers": ["", "Onira", rival],
+            "rows": rows,
+            "caption": (("Vérifié le %s sur le site de %s. Page publiée par Onira." if fr else
+                         "Comprobado el %s en la web de %s. Página publicada por Onira.")
+                        % (COMPARED_ON[lang_code], rival)),
+        },
+        "sections": [
+            ("Choisir Onira si…" if fr else "Elige Onira si…", [], facts["onira_if_fr" if fr else "onira_if_es"]),
+            (("Choisir %s si…" if fr else "Elige %s si…") % rival, [], facts["rival_if_fr" if fr else "rival_if_es"]),
+            ("Les autres applis" if fr else "Las demás apps",
+             [("Hypnothera, InTheMoment et Hypnova côte à côte : [le comparatif complet](%s)." if fr
+               else "Hypnothera, InTheMoment e Hypnova lado a lado: [la comparativa completa](%s).") % best],
+             []),
+        ],
+        "faq": facts["faq_fr" if fr else "faq_es"],
+    }
+    (FR if fr else ES)["guides"][key] = page
+
+
+ROWS_FR = ["Gratuit", "Compte", "Où la séance est écrite", "Hors ligne", "Plateformes", "Langues", "Payant"]
+ROWS_ES = ["Gratis", "Cuenta", "Dónde se escribe la sesión", "Sin conexión", "Plataformas", "Idiomas", "De pago"]
+ONIRA_FR = ["Séances personnalisées sans crédits ni limite, une pub pendant la préparation", "Aucun",
+            "Sur le téléphone [s'il le permet](/fr/guides/telephones-compatibles-hors-ligne/), sinon Onira Cloud avec votre accord",
+            "Oui, écriture comprise, sur un téléphone compatible", "Android", "Français, anglais, espagnol",
+            "Achat unique pour retirer la pub ; Onira Cloud : une pub par séance ou abonnement facultatif"]
+ONIRA_ES = ["Sesiones personalizadas sin créditos ni límite, un anuncio mientras se prepara", "Ninguna",
+            "En el teléfono [si lo permite](/es/guias/telefonos-compatibles-sin-conexion/); si no, Onira Cloud con tu permiso",
+            "Sí, escritura incluida, en un teléfono compatible", "Android", "Español, inglés, francés",
+            "Compra única para quitar los anuncios; Onira Cloud: un anuncio por sesión o suscripción opcional"]
+COMMON = {"rows_fr": ROWS_FR, "rows_es": ROWS_ES, "onira_fr": ONIRA_FR, "onira_es": ONIRA_ES}
+
+VS = {
+    "vs_hypnothera": ("Hypnothera", "onira-ou-hypnothera", "onira-o-hypnothera", dict(COMMON,
+        rival_fr=["25 crédits puis recharge à 15 par semaine (1 crédit ≈ 1 min d'audio), séances rapides de 30 s à 5 min illimitées",
+                  "Oui (un essai de 5 min sans compte)", "Sur leurs serveurs",
+                  "Téléchargement des séances avec un abonnement", "iOS, Android, web",
+                  "14 langues, plus de 100 voix", "6,99 $/semaine, 19,99 $/mois ou 99,99 $/an (hausse annoncée pour les nouveaux abonnés au 1er décembre 2026)"],
+        rival_es=["25 créditos y recarga a 15 cada semana (1 crédito ≈ 1 min de audio), sesiones rápidas de 30 s a 5 min ilimitadas",
+                  "Sí (una prueba de 5 min sin cuenta)", "En sus servidores",
+                  "Descarga de sesiones con suscripción", "iOS, Android, web",
+                  "14 idiomas, más de 100 voces", "6,99 $/semana, 19,99 $/mes o 99,99 $/año (subida anunciada para nuevos suscriptores el 1 de diciembre de 2026)"],
+        card_fr="Crédits ou pas de crédits, compte ou pas de compte : les différences, vérifiées.",
+        card_es="Créditos o no, cuenta o no: las diferencias, comprobadas.",
+        desc_fr="Onira ou Hypnothera : gratuité, compte, hors ligne, voix, langues et prix "
+                "comparés, à partir du site de Hypnothera. Pour choisir selon ce qui compte.",
+        desc_es="Onira o Hypnothera: qué es gratis, cuenta, sin conexión, voces, idiomas y "
+                "precios comparados con la web de Hypnothera. Para elegir según lo que importa.",
+        lede_fr="Les deux écrivent une séance d'hypnose à partir de vos mots et la lisent à voix "
+                "haute. Hypnothera mise sur le choix (voix, langues, durées, web et iPhone) ; "
+                "Onira sur la simplicité et la confidentialité, sans compte ni crédits.",
+        lede_es="Las dos escriben una sesión de hipnosis a partir de tus palabras y la narran en "
+                "voz alta. Hypnothera apuesta por la variedad (voces, idiomas, duraciones, web e "
+                "iPhone); Onira por la sencillez y la privacidad, sin cuenta ni créditos.",
+        answer_fr="Prenez Onira si vous êtes sur Android et voulez des séances sans compte ni "
+                  "crédits, écrites sur le téléphone [s'il le permet](@PHONES@). Prenez "
+                  "Hypnothera si vous êtes sur iPhone, voulez choisir parmi plus de 100 voix et "
+                  "14 langues, ou des séances très longues, et que les crédits ne vous gênent pas.",
+        answer_es="Elige Onira si usas Android y quieres sesiones sin cuenta ni créditos, "
+                  "escritas en el teléfono [si lo permite](@PHONES@). Elige Hypnothera si usas "
+                  "iPhone, quieres elegir entre más de 100 voces y 14 idiomas, o sesiones muy "
+                  "largas, y no te importan los créditos.",
+        onira_if_fr=["Vous ne voulez ni compte, ni adresse e-mail, ni crédits à surveiller.",
+                     "Vous voulez que ce que vous écrivez reste sur le téléphone, ou utiliser l'appli en mode avion.",
+                     "Vous écoutez en français, en anglais ou en espagnol, sur Android."],
+        onira_if_es=["No quieres cuenta, ni correo, ni créditos que vigilar.",
+                     "Quieres que lo que escribes se quede en el teléfono, o usar la app en modo avión.",
+                     "Escuchas en español, inglés o francés, en Android."],
+        rival_if_fr=["Vous êtes sur iPhone ou voulez écouter depuis un navigateur.",
+                     "Vous voulez choisir la voix parmi beaucoup, ou une autre langue que les trois d'Onira.",
+                     "Vous voulez des séances très longues ou modifier le script vous-même."],
+        rival_if_es=["Usas iPhone o quieres escuchar desde el navegador.",
+                     "Quieres elegir la voz entre muchas, o un idioma distinto de los tres de Onira.",
+                     "Quieres sesiones muy largas o editar el guion tú mismo."],
+        faq_fr=[("Hypnothera est-elle gratuite ?",
+                 "En partie : un compte gratuit reçoit 25 crédits, puis une recharge à 15 crédits "
+                 "par semaine (environ une minute d'audio par crédit), et des séances rapides de "
+                 "30 secondes à 5 minutes sans limite, d'après son site au 22 novembre 2026."),
+                ("Faut-il un compte pour Onira ?",
+                 "Non, ni pour les séances personnalisées ni pour les séances prêtes à écouter.")],
+        faq_es=[("¿Hypnothera es gratis?",
+                 "En parte: una cuenta gratuita recibe 25 créditos, luego una recarga a 15 "
+                 "créditos por semana (más o menos un minuto de audio por crédito), y sesiones "
+                 "rápidas de 30 segundos a 5 minutos sin límite, según su web a 22 de noviembre de 2026."),
+                ("¿Hace falta cuenta para Onira?",
+                 "No, ni para las sesiones personalizadas ni para las listas para escuchar.")])),
+    "vs_inthemoment": ("InTheMoment", "onira-ou-inthemoment", "onira-o-inthemoment", dict(COMMON,
+        rival_fr=["2 nouvelles séances par jour, 20 min maximum, gardées 60 jours", "Oui",
+                  "Sur leurs serveurs", "Téléchargement des séances avec Pro", "iOS, Android, web",
+                  "18 langues avec Pro", "Pro : 14,99 £/mois (5 séances par jour, jusqu'à 45 min)"],
+        rival_es=["2 sesiones nuevas al día, 20 min como máximo, guardadas 60 días", "Sí",
+                  "En sus servidores", "Descarga de sesiones con Pro", "iOS, Android, web",
+                  "18 idiomas con Pro", "Pro: 14,99 £/mes (5 sesiones al día, hasta 45 min)"],
+        card_fr="Deux séances par jour ou sans limite, en ligne ou sur le téléphone : la comparaison.",
+        card_es="Dos sesiones al día o sin límite, en línea o en el teléfono: la comparación.",
+        desc_fr="Onira ou InTheMoment : séances gratuites, compte, hors ligne, langues et prix "
+                "comparés à partir du site d'InTheMoment. Pour choisir l'appli qui vous va.",
+        desc_es="Onira o InTheMoment: sesiones gratis, cuenta, sin conexión, idiomas y precios "
+                "comparados con la web de InTheMoment. Para elegir la app que te va.",
+        lede_fr="Les deux écrivent une séance à partir de ce que vous décrivez. InTheMoment "
+                "mélange méditation et hypnose et se souvient de vos retours ; Onira se consacre "
+                "à l'auto-hypnose, sans compte, avec une IA qui peut tourner sur le téléphone.",
+        lede_es="Las dos escriben una sesión a partir de lo que describes. InTheMoment mezcla "
+                "meditación e hipnosis y recuerda tus valoraciones; Onira se dedica a la "
+                "autohipnosis, sin cuenta, con una IA que puede funcionar en el teléfono.",
+        answer_fr="Prenez Onira si vous voulez des séances sans compte et sans limite par jour, "
+                  "écrites sur le téléphone [s'il le permet](@PHONES@). Prenez InTheMoment si "
+                  "vous voulez aussi de la méditation, modifier le script ou d'autres langues "
+                  "que le français, l'anglais et l'espagnol, avec un compte.",
+        answer_es="Elige Onira si quieres sesiones sin cuenta y sin límite diario, escritas en el "
+                  "teléfono [si lo permite](@PHONES@). Elige InTheMoment si también quieres "
+                  "meditación, editar el guion u otros idiomas además del español, el inglés y "
+                  "el francés, con una cuenta.",
+        onira_if_fr=["Deux séances par jour ne vous suffisent pas, ou vous ne voulez pas compter.",
+                     "Vous ne voulez pas créer de compte.",
+                     "Vous voulez que ce que vous écrivez reste sur le téléphone."],
+        onira_if_es=["Dos sesiones al día no te bastan, o no quieres contar.",
+                     "No quieres crear una cuenta.",
+                     "Quieres que lo que escribes se quede en el teléfono."],
+        rival_if_fr=["Vous voulez alterner méditation et hypnose dans la même appli.",
+                     "Vous voulez relire et modifier le script avant de l'écouter (avec Pro).",
+                     "Vous êtes sur iPhone ou écoutez depuis un navigateur."],
+        rival_if_es=["Quieres alternar meditación e hipnosis en la misma app.",
+                     "Quieres leer y editar el guion antes de escucharlo (con Pro).",
+                     "Usas iPhone o escuchas desde el navegador."],
+        faq_fr=[("InTheMoment est-elle gratuite ?",
+                 "En partie : la formule gratuite permet de créer deux nouvelles séances par "
+                 "jour, de 20 minutes au plus, gardées 60 jours, d'après son site au 22 novembre 2026."),
+                ("Onira limite-t-elle le nombre de séances ?",
+                 "Non. Chaque séance personnalisée est précédée d'une publicité, qu'un achat "
+                 "unique retire ; il n'y a ni crédits ni plafond par jour.")],
+        faq_es=[("¿InTheMoment es gratis?",
+                 "En parte: el plan gratuito permite crear dos sesiones nuevas al día, de 20 "
+                 "minutos como máximo, guardadas 60 días, según su web a 22 de noviembre de 2026."),
+                ("¿Onira limita el número de sesiones?",
+                 "No. Cada sesión personalizada va precedida de un anuncio, que una compra única "
+                 "quita; no hay créditos ni tope diario.")])),
+    "vs_hypnova": ("Hypnova", "onira-ou-hypnova", "onira-o-hypnova", dict(COMMON,
+        rival_fr=["Plus de 300 séances prêtes ; 60 crédits à l'inscription pour les séances personnalisées",
+                  "Oui, pour les crédits", "Sur leurs serveurs", "Non précisé", "iOS, Android, web",
+                  "Non précisé", "Pro : 12,99 $/mois (240 crédits) ou 99,99 $/an"],
+        rival_es=["Más de 300 sesiones listas; 60 créditos al registrarte para sesiones personalizadas",
+                  "Sí, para los créditos", "En sus servidores", "No indicado", "iOS, Android, web",
+                  "No indicado", "Pro: 12,99 $/mes (240 créditos) o 99,99 $/año"],
+        card_fr="Une grande bibliothèque à crédits ou des séances écrites sans compter : la comparaison.",
+        card_es="Una gran biblioteca con créditos o sesiones escritas sin contar: la comparación.",
+        desc_fr="Onira ou Hypnova : bibliothèque, crédits, compte, hors ligne et prix comparés "
+                "à partir du site d'Hypnova. Pour choisir selon votre façon d'écouter.",
+        desc_es="Onira o Hypnova: biblioteca, créditos, cuenta, sin conexión y precios "
+                "comparados con la web de Hypnova. Para elegir según cómo escuchas.",
+        lede_fr="Hypnova offre plus de 300 séances prêtes et des crédits pour en faire écrire "
+                "de nouvelles ; Onira écrit chaque séance pour vous, sans crédits ni compte, avec "
+                "une IA qui peut tourner sur le téléphone.",
+        lede_es="Hypnova ofrece más de 300 sesiones listas y créditos para que te escriba otras "
+                "nuevas; Onira escribe cada sesión para ti, sin créditos ni cuenta, con una IA "
+                "que puede funcionar en el teléfono.",
+        answer_fr="Prenez Hypnova si vous aimez piocher dans une grande bibliothèque de séances "
+                  "prêtes, sur iPhone ou Android. Prenez Onira si vous voulez surtout des "
+                  "séances écrites pour votre situation, sans crédits ni compte, et écrites sur "
+                  "le téléphone [s'il le permet](@PHONES@).",
+        answer_es="Elige Hypnova si te gusta escoger en una gran biblioteca de sesiones listas, "
+                  "en iPhone o Android. Elige Onira si quieres sobre todo sesiones escritas para "
+                  "tu situación, sin créditos ni cuenta, y escritas en el teléfono "
+                  "[si lo permite](@PHONES@).",
+        onira_if_fr=["Vous voulez surtout des séances personnalisées, sans surveiller un solde de crédits.",
+                     "Vous ne voulez pas créer de compte.",
+                     "Vous voulez que ce que vous écrivez reste sur le téléphone."],
+        onira_if_es=["Quieres sobre todo sesiones personalizadas, sin vigilar un saldo de créditos.",
+                     "No quieres crear una cuenta.",
+                     "Quieres que lo que escribes se quede en el teléfono."],
+        rival_if_fr=["Vous voulez une grande bibliothèque de séances prêtes, gratuites.",
+                     "Vous êtes sur iPhone ou écoutez depuis un navigateur.",
+                     "Quelques séances personnalisées par mois vous suffisent."],
+        rival_if_es=["Quieres una gran biblioteca de sesiones listas, gratis.",
+                     "Usas iPhone o escuchas desde el navegador.",
+                     "Te bastan unas pocas sesiones personalizadas al mes."],
+        faq_fr=[("Hypnova est-elle gratuite ?",
+                 "Ses plus de 300 séances prêtes sont gratuites. Les séances personnalisées "
+                 "utilisent des crédits, comptés à la minute d'audio : 60 à l'inscription, "
+                 "240 par mois avec Pro, d'après son site au 22 novembre 2026."),
+                ("Onira a-t-elle des séances prêtes ?",
+                 "Oui, pour chaque thème, à écouter sans rien envoyer ; mais son principe reste "
+                 "d'écrire la séance à partir de ce que vous dites.")],
+        faq_es=[("¿Hypnova es gratis?",
+                 "Sus más de 300 sesiones listas son gratis. Las sesiones personalizadas usan "
+                 "créditos, contados por minuto de audio: 60 al registrarte, 240 al mes con Pro, "
+                 "según su web a 22 de noviembre de 2026."),
+                ("¿Onira tiene sesiones listas?",
+                 "Sí, para cada tema, para escuchar sin enviar nada; pero su idea es escribir la "
+                 "sesión a partir de lo que cuentas.")])),
+}
+
+for _key, (_rival, _slug_fr, _slug_es, _facts) in VS.items():
+    _vs("fr", _key, _rival, _slug_fr, _facts)
+    _vs("es", _key, _rival, _slug_es, _facts)
+
 
 LANGS = [EN, FR, ES]  # PT, DE go live with the app release (mindease#57)

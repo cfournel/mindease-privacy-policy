@@ -169,6 +169,81 @@ def esc(s):
     return html.escape(s, quote=False)
 
 
+# Copy in content.py is plain text; `[words](/path/)` is the one markup it may carry, so a
+# sentence can point at the page that explains it ("if your phone can run it" -> the
+# phones guide). rich() renders it as a link, plain() drops it for <meta> and JSON-LD.
+# Every internal target is recorded and checked once the site is written (main()).
+_LINK_RE = re.compile(r"\[([^\]]+)\]\((/[^)\s]*|https://[^)\s]+)\)")
+LINKED = set()
+
+
+def rich(s):
+    def link(m):
+        href = m.group(2)
+        if href.startswith("/"):
+            LINKED.add(href)
+        return '<a href="%s">%s</a>' % (href, m.group(1))
+    return _LINK_RE.sub(link, esc(s))
+
+
+def plain(s):
+    return _LINK_RE.sub(r"\1", s)
+
+
+def faq_jsonld(lang, entries):
+    return {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": lang["code"],
+        "mainEntity": [
+            {"@type": "Question", "name": plain(q),
+             "acceptedAnswer": {"@type": "Answer", "text": plain(a)}}
+            for q, a in entries
+        ],
+    }
+
+
+def faq_html(lang, entries):
+    return '<h2>%s</h2>\n<div class="faq">%s</div>\n' % (
+        esc(lang["ui"]["faq_title"]),
+        "".join("<h3>%s</h3><p>%s</p>" % (esc(plain(q)), rich(a)) for q, a in entries))
+
+
+def table_html(table):
+    """A comparison table: {"headers": [...], "rows": [[...], ...], "caption": "..."}.
+    The first cell of each row is its header (the thing being compared)."""
+    head = "".join('<th scope="col">%s</th>' % esc(h) for h in table["headers"])
+    rows = "".join(
+        "<tr>%s</tr>" % ('<th scope="row">%s</th>' % rich(r[0]) + "".join("<td>%s</td>" % rich(c) for c in r[1:]))
+        for r in table["rows"])
+    cap = "<caption>%s</caption>" % rich(table["caption"]) if table.get("caption") else ""
+    return '<div class="table-wrap"><table>%s<thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>\n' % (
+        cap, head, rows)
+
+
+MONTHS = {
+    "fr": "janvier février mars avril mai juin juillet août septembre octobre novembre décembre".split(),
+    "es": "enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split(),
+    "en": "January February March April May June July August September October November December".split(),
+    "pt": "janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro dezembro".split(),
+    "de": "Januar Februar März April Mai Juni Juli August September Oktober November Dezember".split(),
+}
+
+
+def human_date(iso, code):
+    y, m, d = (int(x) for x in iso.split("-"))
+    months = MONTHS.get(code)
+    if not months:
+        return iso
+    if code == "en":
+        return "%s %d, %d" % (months[m - 1], d, y)
+    if code in ("es", "pt"):
+        return "%d de %s de %d" % (d, months[m - 1], y)
+    if code == "de":
+        return "%d. %s %d" % (d, months[m - 1], y)
+    return "%d %s %d" % (d, months[m - 1], y)
+
+
 # --------------------------------------------------------------- template ----
 
 def head(lang, title, desc, url, alternates, jsonld):
@@ -319,7 +394,7 @@ def privacy_and_safety(lang):
               % (lang["code"], esc(alt), esc(caption)))
     return ("<h2>%s</h2>\n<p>%s</p>\n%s<p><a href=\"%s\">%s</a></p>\n"
             "<h2>%s</h2>\n<div class=\"callout\"><p>%s</p></div>\n" % (
-                esc(ui["privacy_title"]), esc(ui["privacy_body"]), figure,
+                esc(ui["privacy_title"]), rich(ui["privacy_body"]), figure,
                 privacy_url(lang), esc(ui["privacy_link"]),
                 esc(ui["safety_title"]), esc(ui["safety_body"])))
 
@@ -399,6 +474,10 @@ LASTMOD_TOKEN = "@@LASTMOD@@"
 LASTMOD = {}
 _TODAY = datetime.date.today().isoformat()
 _DATEMOD_RE = re.compile(r'("dateModified":\s*")[^"]*(")')
+# The visible "Updated on ..." line of a guide is part of the page too: same treatment.
+LASTMOD_HUMAN = "@@LASTMOD_H:%s@@"
+_HUMAN_TOKEN_RE = re.compile(r"@@LASTMOD_H:(\w+)@@")
+_UPDATED_RE = re.compile(r'(<time class="updated" datetime=")[^"]*(">)[^<]*(</time>)')
 
 
 def _git(*args):
@@ -412,7 +491,8 @@ def _git(*args):
 
 
 def _normalise(markup):
-    return _DATEMOD_RE.sub(r"\1" + LASTMOD_TOKEN + r"\2", markup)
+    markup = _DATEMOD_RE.sub(r"\1" + LASTMOD_TOKEN + r"\2", markup)
+    return _UPDATED_RE.sub(r"\1" + LASTMOD_TOKEN + r"\2@@LASTMOD_H@@\3", markup)
 
 
 def in_git_repo():
@@ -447,6 +527,7 @@ def write(url, markup):
     stamp = page_lastmod(relpath, markup)
     LASTMOD[url] = stamp
     markup = markup.replace(LASTMOD_TOKEN, stamp)
+    markup = _HUMAN_TOKEN_RE.sub(lambda m: human_date(stamp, m.group(1)), markup)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(markup)
@@ -563,8 +644,12 @@ def build_home(lang):
     body.append(theme_cards(lang))
     body.append("<h2>%s</h2>\n" % esc(lang["ui"]["guides_title"]))
     body.append(guide_cards(lang))
+    jsonld = [site_ld, app_ld]
+    if h.get("faq"):
+        body.append(faq_html(lang, h["faq"]))
+        jsonld.append(faq_jsonld(lang, h["faq"]))
     body.append(privacy_and_safety(lang))
-    markup = (head(lang, h["title"], h["desc"], url, alts, [site_ld, app_ld])
+    markup = (head(lang, h["title"], h["desc"], url, alts, jsonld)
               + header(lang, alts, h["title"], scene=False) + "".join(body) + footer(lang))
     return write(url, markup)
 
@@ -577,16 +662,7 @@ def build_theme(lang, key):
     url = theme_url(lang, key)
     alts = alternates_theme(key)
 
-    faq_ld = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "inLanguage": lang["code"],
-        "mainEntity": [
-            {"@type": "Question", "name": q,
-             "acceptedAnswer": {"@type": "Answer", "text": a}}
-            for q, a in t["faq"]
-        ],
-    }
+    faq_ld = faq_jsonld(lang, t["faq"])
     crumbs_ld = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -610,9 +686,7 @@ def build_theme(lang, key):
     body.append("<h2>%s</h2>\n<p>%s</p>\n" % (esc(ui["expect_title"]), esc(t["expect"])))
     body.append(screens(lang, only={"session"}))
     body.append(cta(lang))
-    body.append('<h2>%s</h2>\n<div class="faq">%s</div>\n' % (
-        esc(ui["faq_title"]),
-        "".join("<h3>%s</h3><p>%s</p>" % (esc(q), esc(a)) for q, a in t["faq"])))
+    body.append(faq_html(lang, t["faq"]))
     body.append(privacy_and_safety(lang))
     body.append("<h2>%s</h2>\n%s" % (esc(ui["related_title"]), theme_cards(lang, exclude=key)))
     body.append("<h2>%s</h2>\n%s" % (esc(ui["guides_title"]), guide_cards(lang)))
@@ -637,16 +711,7 @@ def build_guide(lang, key):
     url = guide_url(lang, key)
     alts = alternates_guide(key)
 
-    faq_ld = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "inLanguage": lang["code"],
-        "mainEntity": [
-            {"@type": "Question", "name": q,
-             "acceptedAnswer": {"@type": "Answer", "text": a}}
-            for q, a in g["faq"]
-        ],
-    }
+    faq_ld = faq_jsonld(lang, g["faq"])
     crumbs_ld = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -664,7 +729,7 @@ def build_guide(lang, key):
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": g["h1"],
-        "description": g["desc"],
+        "description": plain(g["desc"]),
         "inLanguage": lang["code"],
         "mainEntityOfPage": ORIGIN + url,
         "author": {"@type": "Organization", "name": "Onira", "url": ORIGIN + "/"},
@@ -675,21 +740,25 @@ def build_guide(lang, key):
     body = ['<p class="crumbs"><a href="%s">%s</a> &rsaquo; %s</p>\n'
             % (home_url(lang), esc(ui["home_crumb"]), esc(g["nav"]))]
     body.append("<h1>%s</h1>\n" % esc(g["h1"]))
-    body.append('<p class="lede">%s</p>\n' % esc(g["lede"]))
+    # Visible date: every comparison page that ranks shows one, and the date is
+    # the page's real last change (see "dates" above), never a frozen constant.
+    body.append('<p class="muted updated">%s <time class="updated" datetime="%s">%s</time></p>\n'
+                % (esc(ui["updated_label"]), LASTMOD_TOKEN, LASTMOD_HUMAN % lang["code"]))
+    body.append('<p class="lede">%s</p>\n' % rich(g["lede"]))
     body.append('<div class="callout"><p><strong>%s</strong> %s</p></div>\n'
-                % (esc(ui["guide_answer_title"]), esc(g["answer"])))
+                % (esc(ui["guide_answer_title"]), rich(g["answer"])))
+    if g.get("table"):
+        body.append(table_html(g["table"]))
     for title, paras, bullets in g["sections"]:
         body.append("<h2>%s</h2>\n" % esc(title))
-        body += ["<p>%s</p>\n" % esc(t) for t in paras]
+        body += ["<p>%s</p>\n" % rich(t) for t in paras]
         if bullets:
             body.append("<ol class=\"steps\">%s</ol>\n"
-                        % "".join("<li>%s</li>" % esc(b) for b in bullets))
+                        % "".join("<li>%s</li>" % rich(b) for b in bullets))
     body.append("<h2>%s</h2>\n" % esc(ui["guide_cta_title"]))
     body.append(screens(lang, only={"session"}))
     body.append(cta(lang))
-    body.append('<h2>%s</h2>\n<div class="faq">%s</div>\n' % (
-        esc(ui["faq_title"]),
-        "".join("<h3>%s</h3><p>%s</p>" % (esc(q), esc(a)) for q, a in g["faq"])))
+    body.append(faq_html(lang, g["faq"]))
     body.append(privacy_and_safety(lang))
     body.append("<h2>%s</h2>\n%s" % (esc(ui["works_title"]), theme_cards(lang)))
     related = guide_cards(lang, exclude=key)
@@ -829,8 +898,11 @@ def build_robots():
 
 
 APP_SUMMARY = ("Onira is a free Android app that writes a personal self-hypnosis session "
-               "with an AI model running entirely on the phone, then narrates it aloud. "
-               "Nothing the user types or receives leaves the device.")
+               "with an AI model, then narrates it aloud. When the phone can run the model "
+               "(about 6 GB of RAM or more), everything is written on the phone, offline, and "
+               "nothing the user types leaves the device; otherwise, or if the user prefers, "
+               "Onira Cloud writes it on Onira's own server, only after the user agrees, "
+               "without storing it. Which phones qualify: " + ORIGIN + "/guides/which-phones-can-run-onira-offline/")
 
 APP_NOTES = [
     "Onira is a relaxation and self-hypnosis tool, not therapy, medical or psychiatric "
@@ -1134,6 +1206,12 @@ def main():
     for path in written:
         print(os.path.relpath(path, ROOT))
     print("\n%d files written" % len(written))
+    broken = sorted(h for h in LINKED if not os.path.exists(out_path(h.split("#")[0])))
+    if broken:
+        print("\nLinks in content.py point at pages that were not built:")
+        for h in broken:
+            print("  " + h)
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
