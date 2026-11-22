@@ -194,6 +194,10 @@ def main():
     out += ["Check the trend in Search Console too (gsc_report.py): \"Detected, currently not "
             "indexed\" going down is the goal, not the link count."]
     report = OUT_DIR / ("backlinks-%s.md" % today)
+    n = 2
+    while report.exists():  # a second run the same day must not erase the first one's list
+        report = OUT_DIR / ("backlinks-%s-%d.md" % (today, n))
+        n += 1
     report.write_text("\n".join(out) + "\n")
     STATE.write_text(json.dumps(state, indent=1, sort_keys=True))
     print("\n".join(out))
