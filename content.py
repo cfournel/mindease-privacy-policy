@@ -5074,43 +5074,56 @@ def _transpose(table):
 _transpose(FR["guides"]["best_ai_apps"]["table"])
 _transpose(ES["guides"]["best_ai_apps"]["table"])
 
-def _vs(lang_code, key, rival, slug, facts):
-    """One "Onira or <rival>" page per rival, same shape in both languages."""
-    fr = lang_code == "fr"
-    phones = ("/fr/guides/telephones-compatibles-hors-ligne/" if fr
-              else "/es/guias/telefonos-compatibles-sin-conexion/")
-    best = "/fr/guides/meilleures-applis-hypnose-ia/" if fr else "/es/guias/mejores-apps-hipnosis-ia/"
-    onira_row = facts["onira_fr" if fr else "onira_es"]
-    rival_row = facts["rival_fr" if fr else "rival_es"]
-    rows = [[h, o, r] for h, o, r in zip(facts["rows_fr" if fr else "rows_es"], onira_row, rival_row)]
-    page = {
+VS_LABELS = {
+    "en": dict(lang=EN, phones="/guides/which-phones-can-run-onira-offline/",
+               best="/guides/best-ai-hypnosis-apps/",
+               nav="Onira vs %s", title="Onira vs %s: Which AI Hypnosis App? | Onira",
+               h1="Onira vs %s: which one to choose?",
+               caption="Checked on %s on the %s website. Page published by Onira.",
+               onira_if="Choose Onira if…", rival_if="Choose %s if…", others="The other apps",
+               others_text="Hypnothera, InTheMoment and Hypnova side by side: [the full comparison](%s)."),
+    "fr": dict(lang=FR, phones="/fr/guides/telephones-compatibles-hors-ligne/",
+               best="/fr/guides/meilleures-applis-hypnose-ia/",
+               nav="Onira ou %s", title="Onira ou %s : quelle appli d'hypnose IA ? | Onira",
+               h1="Onira ou %s : laquelle choisir ?",
+               caption="Vérifié le %s sur le site de %s. Page publiée par Onira.",
+               onira_if="Choisir Onira si…", rival_if="Choisir %s si…", others="Les autres applis",
+               others_text="Hypnothera, InTheMoment et Hypnova côte à côte : [le comparatif complet](%s)."),
+    "es": dict(lang=ES, phones="/es/guias/telefonos-compatibles-sin-conexion/",
+               best="/es/guias/mejores-apps-hipnosis-ia/",
+               nav="Onira o %s", title="Onira o %s: ¿qué app de hipnosis con IA? | Onira",
+               h1="Onira o %s: ¿cuál elegir?",
+               caption="Comprobado el %s en la web de %s. Página publicada por Onira.",
+               onira_if="Elige Onira si…", rival_if="Elige %s si…", others="Las demás apps",
+               others_text="Hypnothera, InTheMoment e Hypnova lado a lado: [la comparativa completa](%s)."),
+}
+
+
+def _vs(lc, key, rival, slug, facts):
+    """One "Onira or <rival>" page per rival, same shape in every language."""
+    L = VS_LABELS[lc]
+    rows = [[h, o, r] for h, o, r in zip(facts["rows_" + lc], facts["onira_" + lc], facts["rival_" + lc])]
+    L["lang"]["guides"][key] = {
         "slug": slug,
-        "nav": ("Onira ou %s" if fr else "Onira o %s") % rival,
-        "card": facts["card_fr" if fr else "card_es"],
-        "title": ("Onira ou %s : quelle appli d'hypnose IA ? | Onira" if fr
-                  else "Onira o %s: ¿qué app de hipnosis con IA? | Onira") % rival,
-        "desc": facts["desc_fr" if fr else "desc_es"],
-        "h1": ("Onira ou %s : laquelle choisir ?" if fr else "Onira o %s: ¿cuál elegir?") % rival,
-        "lede": facts["lede_fr" if fr else "lede_es"],
-        "answer": facts["answer_fr" if fr else "answer_es"].replace("@PHONES@", phones),
+        "nav": L["nav"] % rival,
+        "card": facts["card_" + lc],
+        "title": L["title"] % rival,
+        "desc": facts["desc_" + lc],
+        "h1": L["h1"] % rival,
+        "lede": facts["lede_" + lc],
+        "answer": facts["answer_" + lc].replace("@PHONES@", L["phones"]),
         "table": {
             "headers": ["", "Onira", rival],
             "rows": rows,
-            "caption": (("Vérifié le %s sur le site de %s. Page publiée par Onira." if fr else
-                         "Comprobado el %s en la web de %s. Página publicada por Onira.")
-                        % (COMPARED_ON[lang_code], rival)),
+            "caption": L["caption"] % (COMPARED_ON[lc], rival),
         },
         "sections": [
-            ("Choisir Onira si…" if fr else "Elige Onira si…", [], facts["onira_if_fr" if fr else "onira_if_es"]),
-            (("Choisir %s si…" if fr else "Elige %s si…") % rival, [], facts["rival_if_fr" if fr else "rival_if_es"]),
-            ("Les autres applis" if fr else "Las demás apps",
-             [("Hypnothera, InTheMoment et Hypnova côte à côte : [le comparatif complet](%s)." if fr
-               else "Hypnothera, InTheMoment e Hypnova lado a lado: [la comparativa completa](%s).") % best],
-             []),
+            (L["onira_if"], [], facts["onira_if_" + lc]),
+            (L["rival_if"] % rival, [], facts["rival_if_" + lc]),
+            (L["others"], [L["others_text"] % L["best"]], []),
         ],
-        "faq": facts["faq_fr" if fr else "faq_es"],
+        "faq": facts["faq_" + lc],
     }
-    (FR if fr else ES)["guides"][key] = page
 
 
 ROWS_FR = ["Gratuit", "Compte", "Où la séance est écrite", "Hors ligne", "Plateformes", "Langues", "Payant"]
@@ -5285,7 +5298,181 @@ VS = {
                  "sesión a partir de lo que cuentas.")])),
 }
 
+# English (added 2026-11-23): same facts, same checked date.
+ROWS_EN = ["Free", "Account", "Where the session is written", "Offline", "Platforms", "Languages", "Paid"]
+ONIRA_EN = ["Personalized sessions with no credits and no limit, one ad while each is prepared", "None",
+            "On the phone [if it can run the model](/guides/which-phones-can-run-onira-offline/), otherwise Onira Cloud with your consent",
+            "Yes, writing included, on a compatible phone", "Android", "English, French, Spanish",
+            "One-time purchase removes ads; Onira Cloud: one ad per session or an optional subscription"]
+COMMON.update(rows_en=ROWS_EN, onira_en=ONIRA_EN)
+for _v in VS.values():
+    _v[3].update(rows_en=ROWS_EN, onira_en=ONIRA_EN)
+
+VS["vs_hypnothera"][3].update(
+    rival_en=["25 credits, then 15 more each week (1 credit ≈ 1 min of audio); unlimited quick sessions of 30 s to 5 min",
+              "Yes (a 5-min trial without one)", "On their servers",
+              "Session downloads with a subscription", "iOS, Android, web",
+              "14 languages, 100+ voices", "$6.99/week, $19.99/month or $99.99/year (price rise announced for new subscribers on December 1, 2026)"],
+    card_en="Credits or no credits, an account or none: the differences, checked.",
+    desc_en="Onira vs Hypnothera: free tier, account, offline use, voices, languages and "
+            "prices compared from Hypnothera's own site, to choose by what matters to you.",
+    lede_en="Both write a hypnosis session from your own words and read it aloud. Hypnothera "
+            "bets on choice (voices, languages, lengths, web and iPhone); Onira on simplicity "
+            "and privacy, with no account and no credits.",
+    answer_en="Choose Onira if you are on Android and want sessions with no account and no "
+              "credits, written on the phone [if it can run the model](@PHONES@). Choose "
+              "Hypnothera if you are on iPhone, want to pick from 100+ voices and 14 languages, "
+              "or very long sessions, and don't mind credits.",
+    onira_if_en=["You want no account, no email address and no credits to watch.",
+                 "You want what you type to stay on the phone, or to use the app in airplane mode.",
+                 "You listen in English, French or Spanish, on Android."],
+    rival_if_en=["You are on iPhone or want to listen in a browser.",
+                 "You want to pick from many voices, or a language other than Onira's three.",
+                 "You want very long sessions or to edit the script yourself."],
+    faq_en=[("Is Hypnothera free?",
+             "Partly: a free account gets 25 credits, then 15 more each week (about one minute "
+             "of audio per credit), plus unlimited quick sessions of 30 seconds to 5 minutes, "
+             "according to its site on November 22, 2026."),
+            ("Do I need an account for Onira?",
+             "No, neither for personalized sessions nor for ready-made ones.")])
+
+VS["vs_inthemoment"][3].update(
+    rival_en=["2 new sessions a day, 20 min max, kept 60 days", "Yes",
+              "On their servers", "Session downloads with Pro", "iOS, Android, web",
+              "18 languages with Pro", "Pro: £14.99/month (5 sessions a day, up to 45 min)"],
+    card_en="Two sessions a day or no limit, online or on the phone: the comparison.",
+    desc_en="Onira vs InTheMoment: free sessions, account, offline use, languages and prices "
+            "compared from InTheMoment's own site, to choose the app that suits you.",
+    lede_en="Both write a session from what you describe. InTheMoment mixes meditation and "
+            "hypnosis and remembers your feedback; Onira is all about self-hypnosis, with no "
+            "account and an AI that can run on the phone.",
+    answer_en="Choose Onira if you want sessions with no account and no daily limit, written "
+              "on the phone [if it can run the model](@PHONES@). Choose InTheMoment if you "
+              "also want meditation, to edit the script, or languages beyond English, French "
+              "and Spanish, with an account.",
+    onira_if_en=["Two sessions a day are not enough, or you don't want to count.",
+                 "You don't want to create an account.",
+                 "You want what you type to stay on the phone."],
+    rival_if_en=["You want meditation and hypnosis in the same app.",
+                 "You want to read and edit the script before listening (with Pro).",
+                 "You are on iPhone or listen in a browser."],
+    faq_en=[("Is InTheMoment free?",
+             "Partly: the free plan lets you create two new sessions a day, of up to 20 "
+             "minutes, kept for 60 days, according to its site on November 22, 2026."),
+            ("Does Onira limit the number of sessions?",
+             "No. Each personalized session comes with one ad, which a one-time purchase "
+             "removes; there are no credits and no daily cap.")])
+
+VS["vs_hypnova"][3].update(
+    rival_en=["300+ ready-made sessions; 60 credits on sign-up for personalized sessions",
+              "Yes, for credits", "On their servers", "Not stated", "iOS, Android, web",
+              "Not stated", "Pro: $12.99/month (240 credits) or $99.99/year"],
+    card_en="A large library with credits, or sessions written without counting: the comparison.",
+    desc_en="Onira vs Hypnova: library, credits, account, offline use and prices compared "
+            "from Hypnova's own site, to choose by the way you like to listen.",
+    lede_en="Hypnova offers 300+ ready-made sessions and credits to have new ones written; "
+            "Onira writes every session for you, with no credits and no account, using an AI "
+            "that can run on the phone.",
+    answer_en="Choose Hypnova if you like picking from a large library of ready-made sessions, "
+              "on iPhone or Android. Choose Onira if you mostly want sessions written for your "
+              "situation, with no credits and no account, written on the phone "
+              "[if it can run the model](@PHONES@).",
+    onira_if_en=["You mostly want personalized sessions, without watching a credit balance.",
+                 "You don't want to create an account.",
+                 "You want what you type to stay on the phone."],
+    rival_if_en=["You want a large library of free ready-made sessions.",
+                 "You are on iPhone or listen in a browser.",
+                 "A few personalized sessions a month are enough for you."],
+    faq_en=[("Is Hypnova free?",
+             "Its 300+ ready-made sessions are free. Personalized sessions use credits, counted "
+             "per minute of audio: 60 on sign-up, 240 a month with Pro, according to its site "
+             "on November 22, 2026."),
+            ("Does Onira have ready-made sessions?",
+             "Yes, for every theme, playing without sending anything; but its idea is to write "
+             "the session from what you tell it.")])
+
+EN["guides"]["best_ai_apps"] = {
+    "slug": "best-ai-hypnosis-apps",
+    "nav": "AI hypnosis apps compared",
+    "card": "Onira, Hypnothera, InTheMoment and Hypnova: free tier, account, offline, languages.",
+    "title": "Best AI Hypnosis Apps in 2026, Compared | Onira",
+    "desc": "Onira, Hypnothera, InTheMoment and Hypnova compared: free tier, account, offline "
+            "use, Android, languages and prices, checked on their own sites.",
+    "h1": "AI hypnosis apps compared (2026)",
+    "lede": "Four apps write a hypnosis session from what you tell them. They are not alike for "
+            "all that: what is free, the account, where the session is written and the "
+            "languages change everything. This page is published by Onira; the facts about the "
+            "other apps come from their own sites.",
+    "answer": "If you want no account, no credits and nothing leaving your phone, Onira is the "
+              "only one of the four that writes the session on the device, "
+              "[if your phone can run it](/guides/which-phones-can-run-onira-offline/). If you "
+              "are on iPhone, or want many voices and languages, Hypnothera and InTheMoment offer "
+              "more, with an account and a limited free tier. Hypnova stands out for its free "
+              "library of 300+ ready-made sessions.",
+    "table": {
+        "headers": [""] + ROWS_EN,
+        "rows": [
+            ["Onira"] + ONIRA_EN,
+            ["Hypnothera"] + VS["vs_hypnothera"][3]["rival_en"],
+            ["InTheMoment"] + VS["vs_inthemoment"][3]["rival_en"],
+            ["Hypnova"] + VS["vs_hypnova"][3]["rival_en"],
+        ],
+        "caption": "Checked on November 22, 2026 on the Hypnothera, InTheMoment and Hypnova "
+                   "websites. Store prices vary by country.",
+    },
+    "sections": [
+        ("How we compared",
+         ["We kept the apps that write a session from your own words, not those that only offer "
+          "recordings. For each one we noted what its site states: what is free and for how "
+          "long, whether you need an account, where the text is written, what works offline, "
+          "platforms, languages and prices. We make Onira: read this table knowing that, and "
+          "check prices when you subscribe, they change often."],
+         []),
+        ("If privacy matters most",
+         ["Hypnothera, InTheMoment and Hypnova write the session on their servers, which means "
+          "sending what you describe and, usually, creating an account. Onira writes the session "
+          "on the phone when it has about 6 GB of RAM: what you type never leaves it, and it "
+          "works in airplane mode. On a lighter phone, Onira Cloud takes over, only if you agree, "
+          "with no account and without keeping the text."],
+         []),
+        ("If you want plenty of free sessions",
+         ["Free means different things. Hypnothera counts in credits, about one minute of audio "
+          "per credit, topped up each week. InTheMoment allows two new sessions a day. Hypnova "
+          "offers a large ready-made library and credits to personalize. Onira counts nothing: "
+          "each personalized session costs one ad."],
+         []),
+        ("If you are on iPhone or want many voices to choose from",
+         ["Onira is Android only and has one voice per language, made for hypnosis. Hypnothera "
+          "lists 100+ voices and 14 languages, InTheMoment 18 languages with Pro and the option "
+          "to edit the script; both are also on iPhone and the web."],
+         []),
+        ("Compare two at a time",
+         ["Each comparison in detail: [Onira vs Hypnothera](/guides/onira-vs-hypnothera/), "
+          "[Onira vs InTheMoment](/guides/onira-vs-inthemoment/), "
+          "[Onira vs Hypnova](/guides/onira-vs-hypnova/)."],
+         []),
+    ],
+    "faq": [
+        ("Which AI hypnosis app is really free?",
+         "They all have a free part, limited in different ways: credits at Hypnothera and "
+         "Hypnova, two sessions a day at InTheMoment. Onira has no credits and no limit: one "
+         "ad per personalized session, which a one-time purchase removes."),
+        ("Can an AI hypnosis app work without internet?",
+         "Onira can write and narrate the session offline, on a phone with about 6 GB of RAM. "
+         "The others write the session online; some then let you download the audio with a "
+         "subscription."),
+        ("Do these apps need an account?",
+         "Hypnothera, InTheMoment and Hypnova do, at least to use credits or the daily free "
+         "sessions. Onira has no account."),
+        ("Does AI hypnosis replace a therapist?",
+         "No. These apps are relaxation and self-hypnosis tools. For an anxiety disorder, "
+         "depression, persistent pain or an addiction, talk to a doctor."),
+    ],
+}
+_transpose(EN["guides"]["best_ai_apps"]["table"])
+
 for _key, (_rival, _slug_fr, _slug_es, _facts) in VS.items():
+    _vs("en", _key, _rival, "onira-vs-" + _rival.lower(), _facts)
     _vs("fr", _key, _rival, _slug_fr, _facts)
     _vs("es", _key, _rival, _slug_es, _facts)
 

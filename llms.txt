@@ -43,6 +43,10 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Learning it](https://onirahypno.com/guides/how-to-learn-self-hypnosis/): A realistic way to learn self-hypnosis on your own: what to practise first, how long it takes, what going under feels like, and when to stop.
 - [Running an LLM on a phone](https://onirahypno.com/guides/running-an-llm-on-a-phone/): How Onira runs a fine-tuned Gemma 4 E2B with llama.cpp on Android: memory, mmap, threads, weight repacking and token bans, with numbers from real phones.
 - [Compatible phones](https://onirahypno.com/guides/which-phones-can-run-onira-offline/): Onira writes sessions on the phone, offline, when it has about 6 GB of RAM. How to check yours, and what Onira Cloud does on other phones.
+- [AI hypnosis apps compared](https://onirahypno.com/guides/best-ai-hypnosis-apps/): Onira, Hypnothera, InTheMoment and Hypnova compared: free tier, account, offline use, Android, languages and prices, checked on their own sites.
+- [Onira vs Hypnothera](https://onirahypno.com/guides/onira-vs-hypnothera/): Onira vs Hypnothera: free tier, account, offline use, voices, languages and prices compared from Hypnothera's own site, to choose by what matters to you.
+- [Onira vs InTheMoment](https://onirahypno.com/guides/onira-vs-inthemoment/): Onira vs InTheMoment: free sessions, account, offline use, languages and prices compared from InTheMoment's own site, to choose the app that suits you.
+- [Onira vs Hypnova](https://onirahypno.com/guides/onira-vs-hypnova/): Onira vs Hypnova: library, credits, account, offline use and prices compared from Hypnova's own site, to choose by the way you like to listen.
 
 ## Session themes (Français)
 
