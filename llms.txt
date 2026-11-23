@@ -4,7 +4,7 @@
 
 Onira is a relaxation and self-hypnosis tool, not therapy, medical or psychiatric advice, and not a substitute for professional care or emergency services.
 
-Free, no account, no subscription; a one-time purchase removes ads. Sessions are available in English, French and Spanish. Not every theme or guide is published in every language: each page exists where people search for it.
+Free, no account, no subscription; a one-time purchase removes ads. Sessions are available in English, French, Spanish, Brazilian Portuguese and German. Not every theme or guide is published in every language: each page exists where people search for it.
 
 ## App
 
@@ -119,9 +119,69 @@ Free, no account, no subscription; a one-time purchase removes ads. Sessions are
 - [Onira o InTheMoment](https://onirahypno.com/es/guias/onira-o-inthemoment/): Onira o InTheMoment: sesiones gratis, cuenta, sin conexión, idiomas y precios comparados con la web de InTheMoment. Para elegir la app que te va.
 - [Onira o Hypnova](https://onirahypno.com/es/guias/onira-o-hypnova/): Onira o Hypnova: biblioteca, créditos, cuenta, sin conexión y precios comparados con la web de Hypnova. Para elegir según cómo escuchas.
 
+## Session themes (Português)
+
+- [Ansiedade](https://onirahypno.com/pt/hipnose/ansiedade/): Auto-hipnose guiada para ansiedade, escrita no seu celular com base no que você realmente teme, e narrada em voz alta. Privada, gratuita, sem assinatura.
+- [Sono](https://onirahypno.com/pt/hipnose/dormir/): Auto-hipnoterapia para o sono, escrita no seu celular com base no que te impede de dormir e narrada em áudio. Pode funcionar totalmente offline.
+- [Confiança](https://onirahypno.com/pt/hipnose/autoconfianca/): Auto-hipnose guiada para confiança, escrita no seu celular com base na situação real que você enfrenta e narrada em voz alta. Privada e gratuita.
+- [Estresse](https://onirahypno.com/pt/hipnose/estresse/): Auto-hipnose guiada para o estresse, adaptada ao seu nível de pressão atual e narrada em voz alta. Privada, até offline.
+- [Parar de fumar](https://onirahypno.com/pt/hipnose/parar-de-fumar/): Auto-hipnose guiada para parar de fumar, escrita no seu celular a partir dos seus gatilhos e motivos, e narrada em voz alta. Privada e gratuita.
+- [Foco](https://onirahypno.com/pt/hipnose/foco-e-concentracao/): Auto-hipnose guiada para foco, escrita no seu celular em torno do trabalho que você vai realizar e narrada em voz alta. Pode funcionar totalmente offline.
+- [Peso](https://onirahypno.com/pt/hipnose/emagrecer/): Auto-hipnose para emagrecer e mudar hábitos alimentares, escrita no seu celular a partir dos seus padrões e narrada em voz alta. Grátis, sem assinatura.
+- [Medo](https://onirahypno.com/pt/hipnose/medos-e-fobias/): Auto-hipnose guiada para medo de voar, dirigir ou altura, escrita no seu telefone ao redor da situação que você realmente enfrenta. Grátis, até offline.
+- [Memória](https://onirahypno.com/pt/hipnose/memoria-e-aprendizado/): Auto-hipnose guiada para estudar, memorizar e aprender idiomas, escrita no seu celular a partir do que você está estudando. Grátis, até offline.
+- [Motivação](https://onirahypno.com/pt/hipnose/motivacao-e-energia/): Auto-hipnose guiada para procrastinação, baixa energia e para começar, escrita no seu celular em torno da tarefa que você está evitando. Gratuita e privada.
+- [Hábitos nervosos](https://onirahypno.com/pt/hipnose/habitos-nervosos/): Auto-hipnose guiada para roer unhas, ranger os dentes ou travar a mandíbula, escrita no seu celular em torno do seu gatilho. Grátis, até offline.
+- [Dor](https://onirahypno.com/pt/hipnose/dor/): Auto-hipnose como complemento ao seu tratamento: menos tensão, menos medo da próxima crise, noites mais tranquilas. Um conforto, não uma cura.
+- [SII](https://onirahypno.com/pt/hipnose/sindrome-do-intestino-irritavel/): Auto-hipnose guiada para o lado estressante da SII: intestino mais calmo, menos antecipação, dias mais leves. Um apoio ao seu tratamento, não um tratamento.
+- [Recuperação emocional](https://onirahypno.com/pt/hipnose/recuperacao-emocional/): Auto-hipnose guiada depois de um período difícil: noites mais tranquilas, menos ruminação, dias mais estáveis. Relaxamento, não terapia para trauma.
+- [Raiva](https://onirahypno.com/pt/hipnose/controlar-a-raiva/): Auto-hipnose guiada para a raiva e o pavio curto: acalme o corpo primeiro e treine uma reação mais lenta aos seus gatilhos. Grátis, até offline.
+- [Esgotamento](https://onirahypno.com/pt/hipnose/burnout/): Auto-hipnose guiada para o burnout: descanso de verdade, desligar do trabalho e dormir melhor. Um apoio ao relaxamento, não um tratamento.
+- [Acordar à noite](https://onirahypno.com/pt/hipnose/acordar-de-madrugada/): Uma sessão guiada para quando você acorda de madrugada e não volta a dormir: baixe o alerta, esqueça o relógio e adormeça de novo.
+
+## Guides (Português)
+
+- [Adormecer](https://onirahypno.com/pt/guias/como-dormir-com-auto-hipnose/): Um método de auto-hipnose passo a passo para adormecer quando sua mente não para, e o que fazer se não funcionar na primeira tentativa.
+- [Hipnose vs meditação](https://onirahypno.com/pt/guias/hipnose-ou-meditacao/): O que separa a hipnose guiada da meditação, para que cada uma serve melhor e como escolher para dormir, ansiedade ou mudar um hábito.
+- [Funciona mesmo?](https://onirahypno.com/pt/guias/auto-hipnose-funciona/): Uma análise honesta: para que a auto-hipnose serve, o que as pesquisas mostram, para quem não funciona e como saber se está fazendo efeito.
+- [Hipnose de rua](https://onirahypno.com/pt/guias/como-funciona-a-hipnose-de-rua/): O que realmente acontece na hipnose de rua: o braço rígido, o aperto de mão congelado, por que funciona em algumas pessoas e não em outras, e se é legal.
+- [É seguro?](https://onirahypno.com/pt/guias/auto-hipnose-e-segura/): Os riscos reais da auto-hipnose, quem deve evitá-la e quando é necessário consultar um médico antes — gravidez, epilepsia, crianças e mais.
+- [Aprendendo](https://onirahypno.com/pt/guias/como-aprender-auto-hipnose/): Um método realista para aprender auto-hipnose sozinho: o que praticar primeiro, quanto tempo leva, como é o transe e quando parar.
+
+## Session themes (Deutsch)
+
+- [Angst](https://onirahypno.com/de/hypnose/angst/): Geführte Selbsthypnose bei Angst, erstellt auf deinem Handy genau zu dem, worüber du dir tatsächlich Sorgen machst, und vorgelesen. Privat, kostenlos, kein Abo.
+- [Schlafen](https://onirahypno.com/de/hypnose/schlafen/): Selbsthypnose für besseren Schlaf, individuell auf dein Handy zugeschnitten und basierend auf dem, was dich wachhält. Kann komplett offline laufen.
+- [Selbstvertrauen](https://onirahypno.com/de/hypnose/selbstbewusstsein/): Geführte Selbsthypnose für mehr Selbstvertrauen, zugeschnitten auf deine konkrete Situation, direkt auf dem Handy erstellt und vorgelesen. Privat und kostenlos.
+- [Stress](https://onirahypno.com/de/hypnose/stress/): Geführte Selbsthypnose gegen Stress, maßgeschneidert für deinen aktuellen Druck, direkt auf dem Handy. Privat, auch offline.
+- [Rauchen aufhören](https://onirahypno.com/de/hypnose/rauchen-aufhoeren/): Geführte Selbsthypnose zum Rauchstopp, auf deinem Handy aus deinen eigenen Auslösern und Gründen geschrieben und vorgelesen. Privat und kostenlos.
+- [Fokus](https://onirahypno.com/de/hypnose/konzentration/): Geführte Selbsthypnose für mehr Fokus, auf deinem Handy rund um die anstehende Arbeit geschrieben und vorgelesen. Kann offline laufen.
+- [Gewicht](https://onirahypno.com/de/hypnose/abnehmen/): Selbsthypnose zum Abnehmen und für bessere Essgewohnheiten, auf deinem Handy aus deinen eigenen Mustern geschrieben. Kostenlos, ohne Abo.
+- [Angst](https://onirahypno.com/de/hypnose/aengste-und-phobien/): Geführte Selbsthypnose bei Flugangst, Angst vorm Autofahren oder Höhenangst, geschrieben für die Situation, die dir bevorsteht. Kostenlos, auch offline.
+- [Gedächtnis](https://onirahypno.com/de/hypnose/lernen-und-gedaechtnis/): Geführte Selbsthypnose zum Lernen, Erinnern und Sprachenlernen, auf deinem Handy rund um deinen Lernstoff geschrieben. Kostenlos, auch offline.
+- [Motivation](https://onirahypno.com/de/hypnose/motivation-und-energie/): Geführte Selbsthypnose gegen Aufschieben und Antriebslosigkeit, geschrieben für die Aufgabe, die du gerade vor dir herschiebst. Kostenlos.
+- [Nervöse Gewohnheiten](https://onirahypno.com/de/hypnose/nervoese-angewohnheiten/): Geführte Selbsthypnose bei Nägelkauen, Zähneknirschen und verspanntem Kiefer, auf deinem Handy rund um deinen Auslöser geschrieben. Auch offline.
+- [Schmerzen](https://onirahypno.com/de/hypnose/schmerzen/): Geführte Selbsthypnose als Ergänzung zur Behandlung: weniger Anspannung, weniger Angst vor dem nächsten Schub, ruhigere Nächte. Kein Heilmittel.
+- [Reizdarm](https://onirahypno.com/de/hypnose/reizdarm/): Geführte Selbsthypnose für die Stressseite des Reizdarms: ein ruhigerer Bauch, weniger Erwartungsangst, leichtere Tage. Ergänzung, kein Ersatz.
+- [Emotionale Erholung](https://onirahypno.com/de/hypnose/emotionale-heilung/): Geführte Selbsthypnose nach einer schweren Zeit: ruhigere Nächte, weniger Grübeln, stabilere Tage. Ein Entspannungstool, keine Traumatherapie.
+- [Wut](https://onirahypno.com/de/hypnose/wut-kontrollieren/): Geführte Selbsthypnose bei Wut und kurzer Zündschnur: erst den Körper beruhigen, dann eine langsamere Reaktion auf deine Auslöser üben. Auch offline.
+- [Burnout](https://onirahypno.com/de/hypnose/burnout/): Geführte Selbsthypnose bei Burnout, wenn du müde und zugleich aufgedreht bist: echte Erholung, Abschalten, besserer Schlaf. Keine Behandlung.
+- [Nachts aufwachen](https://onirahypno.com/de/hypnose/naechtliches-aufwachen/): Eine geführte Sitzung, wenn du nachts aufwachst und nicht mehr einschläfst: Wachheit senken, die Uhr vergessen, wieder einschlafen.
+
+## Guides (Deutsch)
+
+- [Einschlafen](https://onirahypno.com/de/ratgeber/mit-selbsthypnose-einschlafen/): Eine schrittweise Selbsthypnose-Methode zum Einschlafen, wenn der Kopf nicht still wird, und was du tun kannst, wenn es beim ersten Mal nicht klappt.
+- [Hypnose vs. Meditation](https://onirahypno.com/de/ratgeber/hypnose-oder-meditation/): Was Hypnose und Meditation wirklich unterscheidet, wofür beide gut sind und wie du für Schlaf, Angst oder eine Gewohnheit die richtige wählst.
+- [Funktioniert es?](https://onirahypno.com/de/ratgeber/funktioniert-selbsthypnose/): Ein ehrlicher Blick darauf, wofür Selbsthypnose gut ist, was die Forschung unterstützt, für wen sie nicht funktioniert und wie du erkennst, dass sie wirkt.
+- [Straßenhypnose](https://onirahypno.com/de/ratgeber/wie-funktioniert-strassenhypnose/): Was bei der Straßenhypnose wirklich passiert: der steife Arm, der eingefrorene Händedruck, warum es nur bei manchen klappt, und ob es legal ist.
+- [Ist das sicher?](https://onirahypno.com/de/ratgeber/ist-selbsthypnose-gefaehrlich/): Die ehrlichen Risiken der Selbsthypnose, wer darauf verzichten sollte und wann du erst ärztlichen Rat brauchst: Schwangerschaft, Epilepsie, Kinder.
+- [Lernen](https://onirahypno.com/de/ratgeber/selbsthypnose-lernen/): Ein realistischer Weg, Selbsthypnose allein zu lernen: was du zuerst übst, wie lange es dauert, wie sich Trance anfühlt, wann du aufhörst.
+
 ## Optional
 
 - [Home page (Français)](https://onirahypno.com/fr/)
 - [Home page (Español)](https://onirahypno.com/es/)
+- [Home page (Português)](https://onirahypno.com/pt/)
+- [Home page (Deutsch)](https://onirahypno.com/de/)
 - [Sitemap](https://onirahypno.com/sitemap.xml): every page with its hreflang alternates
 - [Support](mailto:support@onirahypno.com): contact address

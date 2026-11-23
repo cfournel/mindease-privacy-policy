@@ -107,10 +107,10 @@ EN = {
         ],
     },
     "home": {
-        "news_title": "New in Onira 0.17",
+        "news_title": "New in Onira 0.18",
         "news": [
-            "Onira's own narration voice in English, French and Spanish, made for hypnosis: soft and slow, it changes tone as the session deepens.",
-            'The background music is a little quieter by default.',
+            "Onira now speaks Brazilian Portuguese and German, with its own hypnosis voice in each: soft and slow, it changes tone as the session deepens.",
+            "On first launch the app now starts in your phone's language.",
         ],
         "title": "Onira — Self-Hypnosis Sessions Written for You",
         "desc": "Onira writes a personal hypnosis session on your phone and narrates it aloud — "
@@ -923,10 +923,10 @@ FR = {
         ],
     },
     "home": {
-        "news_title": "Nouveautés d'Onira 0.17",
+        "news_title": "Nouveautés d'Onira 0.18",
         "news": [
-            "La voix de narration d'Onira, en français, anglais et espagnol, créée pour l'hypnose : douce et lente, elle change de ton à mesure que la séance s'approfondit.",
-            'La musique de fond est un peu plus douce par défaut.',
+            "Onira parle maintenant portugais du Brésil et allemand, avec sa propre voix d'hypnose dans chaque langue : douce et lente, elle change de ton à mesure que la séance s'approfondit.",
+            "Au premier lancement, l'app démarre dans la langue du téléphone.",
         ],
         "title": "Onira — Séances d'auto-hypnose écrites pour vous",
         "desc": "Onira écrit une séance d'hypnose personnelle sur votre téléphone et la narre à voix "
@@ -1716,10 +1716,10 @@ ES = {
         ],
     },
     "home": {
-        "news_title": "Novedades de Onira 0.17",
+        "news_title": "Novedades de Onira 0.18",
         "news": [
-            'La voz de narración de Onira, en español, inglés y francés, creada para la hipnosis: suave y lenta, cambia de tono a medida que la sesión se hace más profunda.',
-            'La música de fondo suena un poco más baja por defecto.',
+            "Onira ahora habla portugués de Brasil y alemán, con su propia voz de hipnosis en cada idioma: suave y lenta, cambia de tono a medida que la sesión se hace más profunda.",
+            "En el primer inicio la app arranca en el idioma del teléfono.",
         ],
         "title": "Onira — Sesiones de autohipnosis escritas para ti",
         "desc": "Onira escribe una sesión de hipnosis personal en tu teléfono y la narra en voz alta: "
@@ -5477,4 +5477,4 @@ for _key, (_rival, _slug_fr, _slug_es, _facts) in VS.items():
     _vs("es", _key, _rival, _slug_es, _facts)
 
 
-LANGS = [EN, FR, ES]  # PT, DE go live with the app release (mindease#57)
+LANGS = [EN, FR, ES, PT, DE]

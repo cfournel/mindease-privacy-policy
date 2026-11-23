@@ -68,8 +68,8 @@ PT = {'code': 'pt',
  'home': {'news_title': 'Novidade: o Onira em português',
           'news': ['O Onira agora fala português do Brasil: a interface, as sessões prontas e as sessões escritas para '
                    'você.',
-                   'Por enquanto, a narração em português usa a voz do seu celular; uma voz própria do Onira está a '
-                   'caminho.'],
+                   'A narração usa a voz própria do Onira, feita para a hipnose: suave e lenta, ela muda de tom '
+                   'conforme a sessão se aprofunda.'],
           'title': 'Onira: sessões de auto-hipnose escritas para você',
           'desc': 'O Onira cria no seu celular uma sessão de hipnose só para você e a narra em voz alta: sono, '
                   'ansiedade, estresse, confiança e foco.',
@@ -1449,7 +1449,8 @@ DE = {'code': 'de',
  'home': {'news_title': 'Neu: Onira auf Deutsch',
           'news': ['Onira gibt es jetzt auf Deutsch: die Oberfläche, die fertigen Sitzungen und die Sitzungen, die nur '
                    'für dich geschrieben werden.',
-                   'Vorerst liest auf Deutsch die Stimme deines Handys vor; eine eigene Onira-Stimme ist in Arbeit.'],
+                   'Vorgelesen wird mit Oniras eigener Stimme für Hypnose: sanft und langsam, sie ändert ihren Ton, je '
+                   'tiefer die Sitzung wird.'],
           'title': 'Onira: Selbsthypnose, nur für dich geschrieben',
           'desc': 'Onira schreibt auf deinem Handy eine persönliche Hypnose-Sitzung und liest sie vor: für Schlaf, '
                   'Angst, Stress, Selbstvertrauen und Fokus.',

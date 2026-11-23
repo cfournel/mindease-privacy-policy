@@ -908,7 +908,7 @@ APP_NOTES = [
     "Onira is a relaxation and self-hypnosis tool, not therapy, medical or psychiatric "
     "advice, and not a substitute for professional care or emergency services.",
     "Free, no account, no subscription; a one-time purchase removes ads. Sessions "
-    "are available in English, French and Spanish. Not every theme or guide is "  # + Brazilian Portuguese and German at the app release (mindease#57)
+    "are available in English, French, Spanish, Brazilian Portuguese and German. Not every theme or guide is "
     "published in every language: each page exists where people search for it.",
 ]
 

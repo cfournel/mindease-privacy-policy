@@ -1,7 +1,7 @@
 """Turns the reviewed drafts (tools/drafts/<lang>.json, from translate_site.py) into content_ptde.py (mindease#57).
 
 Everything a translation cannot know is set here by hand: slugs (the natural search phrasing of each country), the
-narration voice (no Onira voice in pt/de yet: the phone's voice), the local helplines and the news block.
+narration voice (Onira's own pt/de voices, app 0.18.0), the local helplines and the news block.
 Rerun after editing a draft: python3 tools/make_ptde.py
 """
 import json
@@ -41,11 +41,13 @@ GUIDE_SLUGS = {
 NEWS = {
     "pt": ("Novidade: o Onira em português",
            ["O Onira agora fala português do Brasil: a interface, as sessões prontas e as sessões escritas para você.",
-            "Por enquanto, a narração em português usa a voz do seu celular; uma voz própria do Onira está a caminho."]),
+            "A narração usa a voz própria do Onira, feita para a hipnose: suave e lenta, ela muda de tom conforme a sessão "
+            "se aprofunda."]),
     "de": ("Neu: Onira auf Deutsch",
            ["Onira gibt es jetzt auf Deutsch: die Oberfläche, die fertigen Sitzungen und die Sitzungen, die nur für dich "
             "geschrieben werden.",
-            "Vorerst liest auf Deutsch die Stimme deines Handys vor; eine eigene Onira-Stimme ist in Arbeit."]),
+            "Vorgelesen wird mit Oniras eigener Stimme für Hypnose: sanft und langsam, sie ändert ihren Ton, je tiefer die "
+            "Sitzung wird."]),
 }
 HELPLINE = {
     "pt": " No Brasil, o CVV atende 24 horas pelo 188, de graça; em caso de emergência, ligue 192 (SAMU).",
