@@ -4620,7 +4620,7 @@ EN["home"]["faq"] = [
      "No. Onira is a relaxation and self-hypnosis tool. It does not replace a doctor, a "
      "therapist or emergency services."),
     ("Which languages does Onira speak?",
-     "English, French and Spanish, each with its own narration voice made for hypnosis."),
+     "English, French, Spanish, Brazilian Portuguese and German, each with its own narration voice made for hypnosis."),
 ]
 
 FR["home"]["faq"] = [
@@ -4640,7 +4640,7 @@ FR["home"]["faq"] = [
      "Non. Onira est un outil de relaxation et d'auto-hypnose. Elle ne remplace ni un médecin, "
      "ni un psychologue, ni les services d'urgence."),
     ("En quelles langues ?",
-     "Français, anglais et espagnol, chacune avec sa propre voix, faite pour l'hypnose."),
+     "Français, anglais, espagnol, portugais du Brésil et allemand, chacune avec sa propre voix, faite pour l'hypnose."),
 ]
 
 ES["home"]["faq"] = [
@@ -4659,7 +4659,7 @@ ES["home"]["faq"] = [
      "No. Onira es una herramienta de relajación y autohipnosis. No sustituye a un médico, a "
      "un psicólogo ni a los servicios de emergencia."),
     ("¿En qué idiomas?",
-     "Español, inglés y francés, cada uno con su propia voz, hecha para la hipnosis."),
+     "Español, inglés, francés, portugués de Brasil y alemán, cada uno con su propia voz, hecha para la hipnosis."),
 ]
 
 # ------------------------------------------------------------- phones guide ----
@@ -4901,7 +4901,7 @@ FR["guides"]["best_ai_apps"] = {
             ["Onira", "Séances personnalisées sans crédits ni limite, une pub pendant la préparation",
              "Aucun", "Sur le téléphone [s'il le permet](/fr/guides/telephones-compatibles-hors-ligne/), sinon Onira Cloud avec votre accord",
              "Oui, écriture comprise, sur un téléphone compatible", "Android",
-             "Français, anglais, espagnol", "Achat unique pour retirer la pub ; Onira Cloud : une pub par séance ou abonnement facultatif"],
+             "Français, anglais, espagnol, portugais, allemand", "Achat unique pour retirer la pub ; Onira Cloud : une pub par séance ou abonnement facultatif"],
             ["Hypnothera", "25 crédits puis recharge à 15 par semaine (1 crédit ≈ 1 min d'audio), séances rapides de 30 s à 5 min illimitées",
              "Oui (un essai de 5 min sans compte)", "Sur leurs serveurs",
              "Téléchargement des séances avec un abonnement", "iOS, Android, web",
@@ -4996,7 +4996,7 @@ ES["guides"]["best_ai_apps"] = {
             ["Onira", "Sesiones personalizadas sin créditos ni límite, un anuncio mientras se prepara",
              "Ninguna", "En el teléfono [si lo permite](/es/guias/telefonos-compatibles-sin-conexion/); si no, Onira Cloud con tu permiso",
              "Sí, escritura incluida, en un teléfono compatible", "Android",
-             "Español, inglés, francés", "Compra única para quitar los anuncios; Onira Cloud: un anuncio por sesión o suscripción opcional"],
+             "Español, inglés, francés, portugués, alemán", "Compra única para quitar los anuncios; Onira Cloud: un anuncio por sesión o suscripción opcional"],
             ["Hypnothera", "25 créditos y recarga a 15 cada semana (1 crédito ≈ 1 min de audio), sesiones rápidas de 30 s a 5 min ilimitadas",
              "Sí (una prueba de 5 min sin cuenta)", "En sus servidores",
              "Descarga de sesiones con suscripción", "iOS, Android, web",
@@ -5130,11 +5130,11 @@ ROWS_FR = ["Gratuit", "Compte", "Où la séance est écrite", "Hors ligne", "Pla
 ROWS_ES = ["Gratis", "Cuenta", "Dónde se escribe la sesión", "Sin conexión", "Plataformas", "Idiomas", "De pago"]
 ONIRA_FR = ["Séances personnalisées sans crédits ni limite, une pub pendant la préparation", "Aucun",
             "Sur le téléphone [s'il le permet](/fr/guides/telephones-compatibles-hors-ligne/), sinon Onira Cloud avec votre accord",
-            "Oui, écriture comprise, sur un téléphone compatible", "Android", "Français, anglais, espagnol",
+            "Oui, écriture comprise, sur un téléphone compatible", "Android", "Français, anglais, espagnol, portugais, allemand",
             "Achat unique pour retirer la pub ; Onira Cloud : une pub par séance ou abonnement facultatif"]
 ONIRA_ES = ["Sesiones personalizadas sin créditos ni límite, un anuncio mientras se prepara", "Ninguna",
             "En el teléfono [si lo permite](/es/guias/telefonos-compatibles-sin-conexion/); si no, Onira Cloud con tu permiso",
-            "Sí, escritura incluida, en un teléfono compatible", "Android", "Español, inglés, francés",
+            "Sí, escritura incluida, en un teléfono compatible", "Android", "Español, inglés, francés, portugués, alemán",
             "Compra única para quitar los anuncios; Onira Cloud: un anuncio por sesión o suscripción opcional"]
 COMMON = {"rows_fr": ROWS_FR, "rows_es": ROWS_ES, "onira_fr": ONIRA_FR, "onira_es": ONIRA_ES}
 
@@ -5170,15 +5170,15 @@ VS = {
                   "largas, y no te importan los créditos.",
         onira_if_fr=["Vous ne voulez ni compte, ni adresse e-mail, ni crédits à surveiller.",
                      "Vous voulez que ce que vous écrivez reste sur le téléphone, ou utiliser l'appli en mode avion.",
-                     "Vous écoutez en français, en anglais ou en espagnol, sur Android."],
+                     "Vous écoutez dans l'une des cinq langues d'Onira, sur Android."],
         onira_if_es=["No quieres cuenta, ni correo, ni créditos que vigilar.",
                      "Quieres que lo que escribes se quede en el teléfono, o usar la app en modo avión.",
-                     "Escuchas en español, inglés o francés, en Android."],
+                     "Escuchas en uno de los cinco idiomas de Onira, en Android."],
         rival_if_fr=["Vous êtes sur iPhone ou voulez écouter depuis un navigateur.",
-                     "Vous voulez choisir la voix parmi beaucoup, ou une autre langue que les trois d'Onira.",
+                     "Vous voulez choisir la voix parmi beaucoup, ou une autre langue que les cinq d'Onira.",
                      "Vous voulez des séances très longues ou modifier le script vous-même."],
         rival_if_es=["Usas iPhone o quieres escuchar desde el navegador.",
-                     "Quieres elegir la voz entre muchas, o un idioma distinto de los tres de Onira.",
+                     "Quieres elegir la voz entre muchas, o un idioma distinto de los cinco de Onira.",
                      "Quieres sesiones muy largas o editar el guion tú mismo."],
         faq_fr=[("Hypnothera est-elle gratuite ?",
                  "En partie : un compte gratuit reçoit 25 crédits, puis une recharge à 15 crédits "
@@ -5214,11 +5214,11 @@ VS = {
         answer_fr="Prenez Onira si vous voulez des séances sans compte et sans limite par jour, "
                   "écrites sur le téléphone [s'il le permet](@PHONES@). Prenez InTheMoment si "
                   "vous voulez aussi de la méditation, modifier le script ou d'autres langues "
-                  "que le français, l'anglais et l'espagnol, avec un compte.",
+                  "que les cinq d'Onira, avec un compte.",
         answer_es="Elige Onira si quieres sesiones sin cuenta y sin límite diario, escritas en el "
                   "teléfono [si lo permite](@PHONES@). Elige InTheMoment si también quieres "
-                  "meditación, editar el guion u otros idiomas además del español, el inglés y "
-                  "el francés, con una cuenta.",
+                  "meditación, editar el guion u otros idiomas además de los cinco de Onira, "
+                  "con una cuenta.",
         onira_if_fr=["Deux séances par jour ne vous suffisent pas, ou vous ne voulez pas compter.",
                      "Vous ne voulez pas créer de compte.",
                      "Vous voulez que ce que vous écrivez reste sur le téléphone."],
@@ -5302,7 +5302,7 @@ VS = {
 ROWS_EN = ["Free", "Account", "Where the session is written", "Offline", "Platforms", "Languages", "Paid"]
 ONIRA_EN = ["Personalized sessions with no credits and no limit, one ad while each is prepared", "None",
             "On the phone [if it can run the model](/guides/which-phones-can-run-onira-offline/), otherwise Onira Cloud with your consent",
-            "Yes, writing included, on a compatible phone", "Android", "English, French, Spanish",
+            "Yes, writing included, on a compatible phone", "Android", "English, French, Spanish, Portuguese, German",
             "One-time purchase removes ads; Onira Cloud: one ad per session or an optional subscription"]
 COMMON.update(rows_en=ROWS_EN, onira_en=ONIRA_EN)
 for _v in VS.values():
@@ -5325,9 +5325,9 @@ VS["vs_hypnothera"][3].update(
               "or very long sessions, and don't mind credits.",
     onira_if_en=["You want no account, no email address and no credits to watch.",
                  "You want what you type to stay on the phone, or to use the app in airplane mode.",
-                 "You listen in English, French or Spanish, on Android."],
+                 "You listen in one of Onira's five languages, on Android."],
     rival_if_en=["You are on iPhone or want to listen in a browser.",
-                 "You want to pick from many voices, or a language other than Onira's three.",
+                 "You want to pick from many voices, or a language other than Onira's five.",
                  "You want very long sessions or to edit the script yourself."],
     faq_en=[("Is Hypnothera free?",
              "Partly: a free account gets 25 credits, then 15 more each week (about one minute "
@@ -5348,8 +5348,8 @@ VS["vs_inthemoment"][3].update(
             "account and an AI that can run on the phone.",
     answer_en="Choose Onira if you want sessions with no account and no daily limit, written "
               "on the phone [if it can run the model](@PHONES@). Choose InTheMoment if you "
-              "also want meditation, to edit the script, or languages beyond English, French "
-              "and Spanish, with an account.",
+              "also want meditation, to edit the script, or languages beyond Onira's five, "
+              "with an account.",
     onira_if_en=["Two sessions a day are not enough, or you don't want to count.",
                  "You don't want to create an account.",
                  "You want what you type to stay on the phone."],

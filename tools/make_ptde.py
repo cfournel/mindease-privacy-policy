@@ -8,6 +8,10 @@ import json
 import pathlib
 import pprint
 import re
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import ptde_comparisons  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
@@ -361,6 +365,9 @@ def fix_de(v):
 
 def build(lang):
     d = json.loads((ROOT / "tools" / "drafts" / f"{lang}.json").read_text())
+    # Pages added after the drafts (home FAQ, phones, comparisons): translated by hand in ptde_comparisons.py.
+    d.update(ptde_comparisons.units(lang))
+    d["home"]["faq"] = ptde_comparisons.HOME_FAQ[lang]
     d = fix(d, FIXES[lang])
     if lang == "de":
         d = fix_de(d)
@@ -374,7 +381,7 @@ def build(lang):
     for key, slug in THEME_SLUGS[lang].items():
         out["themes"][key] = {**d[f"themes.{key}"], "slug": slug}
     out["guides"] = {}
-    for key, slug in GUIDE_SLUGS[lang].items():
+    for key, slug in {**GUIDE_SLUGS[lang], **ptde_comparisons.SLUGS[lang]}.items():
         out["guides"][key] = {**d[f"guides.{key}"], "slug": slug}
     apply_overrides(out, lang)
     hits = set()
