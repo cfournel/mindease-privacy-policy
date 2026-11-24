@@ -343,7 +343,33 @@ def badges():
     return '\n  <p class="badges">%s</p>' % links
 
 
-def footer(lang):
+# The other app by the same developer, linked from the home page only: one plain,
+# named link (no keyword anchor, no site-wide footer link), for visitors and the
+# press rather than for ranking.
+SISTER_APP = {
+    "en": ("Also by the same developer:", "HydroPulse", "a hydration reminder for Wear OS watches."),
+    "fr": ("Du même développeur :", "HydroPulse", "un rappel d'hydratation pour montres Wear OS."),
+    "es": ("Del mismo desarrollador:", "HydroPulse", "un recordatorio de hidratación para relojes Wear OS."),
+    "de": ("Vom selben Entwickler:", "HydroPulse", "eine Trinkerinnerung für Wear-OS-Uhren."),
+    "pt": ("Do mesmo desenvolvedor:", "HydroPulse", "um lembrete de hidratação para relógios Wear OS."),
+}
+SISTER_ORIGIN = "https://gethydropulse.com"
+
+# The publisher as Google Play names it, shared with gethydropulse.com's JSON-LD.
+PUBLISHER_LD = {
+    "@type": "Organization",
+    "name": "Oytaub",
+    "url": "https://play.google.com/store/apps/dev?id=8013150125250994565",
+}
+
+
+def sister_app(lang):
+    lead, name, what = SISTER_APP[lang["code"]]
+    return '\n  <p class="muted">%s <a href="%s%s">%s</a>, %s</p>' % (
+        esc(lead), SISTER_ORIGIN, home_url(lang), esc(name), esc(what))
+
+
+def footer(lang, sister=False):
     ui = lang["ui"]
     items = "".join("<li>%s</li>" % i for i in [
         '<a href="%s">%s</a>' % (home_url(lang), esc(ui["home_crumb"])),
@@ -353,11 +379,11 @@ def footer(lang):
     return """</main>
 <footer class="site-foot"><div class="wrap">
   <ul>%s</ul>
-  <p>%s</p>%s
+  <p>%s</p>%s%s
 </div></footer>
 </body>
 </html>
-""" % (items, esc(lang["ui"]["foot_tag"]), badges())
+""" % (items, esc(lang["ui"]["foot_tag"]), sister_app(lang) if sister else "", badges())
 
 
 def cta(lang):
@@ -618,6 +644,7 @@ def build_home(lang):
                        for n in ("home", "day", "custom", "session")
                        if any(s[0] == n for s in lang["ui"]["screens"])],  # pt/de have no "day" capture yet
         "featureList": lang["ui"]["features"],
+        "author": PUBLISHER_LD,
     }
     site_ld = {
         "@context": "https://schema.org",
@@ -650,7 +677,7 @@ def build_home(lang):
         jsonld.append(faq_jsonld(lang, h["faq"]))
     body.append(privacy_and_safety(lang))
     markup = (head(lang, h["title"], h["desc"], url, alts, jsonld)
-              + header(lang, alts, h["title"], scene=False) + "".join(body) + footer(lang))
+              + header(lang, alts, h["title"], scene=False) + "".join(body) + footer(lang, sister=True))
     return write(url, markup)
 
 
